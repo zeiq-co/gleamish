@@ -18,7 +18,7 @@ export default class HTML extends React.Component {
           {/* Add custom css or scripts here */}
           <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
           />
           <script
             defer
