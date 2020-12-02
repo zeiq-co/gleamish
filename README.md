@@ -1,20 +1,17 @@
-# Kickoff GatsbyJs
+# Paint
 
-A starting point using ReactJs, bundled with awesome GatsbyJs v2.
-
-[Demo](https://kickoff-gatsbyjs.netlify.com/)
+Fetch data from Sanity CMS
 
 ## Stack
 
 - [GatsbyJs](https://www.gatsbyjs.org/)
 - [React.js](https://reactjs.org/)
+- [sanity](https://www.sanity.io/)
 
 ## To use
 
 - Fork or download this repository
 - Ready!
-
-To change site config `./utils/config.js`
 
 ## Setup
 
