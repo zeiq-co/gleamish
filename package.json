@@ -1,17 +1,17 @@
 {
-  "name": "kickoff-gatsbyjs",
-  "description": "A react starting point using GatsbyJS",
+  "name": "paint",
+  "description": "static gatsby website",
   "version": "2.0.1",
-  "author": "Parminder Klair",
+  "author": "zeiq.co",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perminder-klair/kickoff-gatsbyjs.git"
+    "url": "https://github.com/zeiq-co/Paint.git"
   },
   "bugs": {
-    "url": "https://github.com/perminder-klair/kickoff-gatsbyjs/issues"
+    "url": "https://github.com/zeiq-co/Paint/issues"
   },
-  "homepage": "https://github.com/perminder-klair/kickoff-gatsbyjs#readme",
+  "homepage": "https://github.com/zeiq-co/Paint/blob/master/README.md",
   "scripts": {
     "start": "npm run develop",
     "develop": "gatsby develop",
