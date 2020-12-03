@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import HomeHero from '../components/HomeHero';
+import HomeSlider from '../components/HomeSlider';
 import Features from '../components/Features';
 
 const Container = styled.div`
@@ -20,7 +20,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="paint" />
-        <HomeHero />
+        <HomeSlider />
         <Features />
       </Layout>
     );
