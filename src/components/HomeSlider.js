@@ -5,6 +5,15 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import HomeBanner from './HomeBanner';
 
+const Wrapper = styled.div`
+  .slick-list {
+    outline: none !important;
+  }
+  .slick-slide div {
+    outline: none;
+  }
+`;
+
 const bannerItem = [
   {
     id: 1,
@@ -26,6 +35,7 @@ const bannerItem = [
 const HomeSlider = () => {
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -35,7 +45,7 @@ const HomeSlider = () => {
     cssEase: 'linear',
   };
   return (
-    <div>
+    <Wrapper>
       <Slider {...settings}>
         {bannerItem.map((item) => (
           <div>
@@ -43,7 +53,7 @@ const HomeSlider = () => {
           </div>
         ))}
       </Slider>
-    </div>
+    </Wrapper>
   );
 };
 export default HomeSlider;
