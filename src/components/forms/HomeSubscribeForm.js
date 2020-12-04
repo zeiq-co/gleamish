@@ -34,8 +34,10 @@ const HomeSubscribeForm = ({
 }) => {
   return (
     <>
-      <h1 className="subtitle is-3 has-text-centered">bchjschsdgcvjhk</h1>
-      <p className="subtitle is-6">acjhsc</p>
+      <h1 className="subtitle is-4 has-text-centered">
+        Lorem ipsum dolor sit amet
+      </h1>
+      <p className="subtitle is-6 has-text-centered">Lorem ipsum</p>
       <Container onSubmit={handleSubmit}>
         <div className="field is-horizontal">
           <div className="field-body">

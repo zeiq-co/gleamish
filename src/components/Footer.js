@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import SocialIcon from './SocialIcon';
 
 const Container = styled.footer`
+  padding-top: 3rem;
   background-color: #31aabf;
   li,
   p {
@@ -13,10 +14,9 @@ const Container = styled.footer`
   }
 `;
 const Bottom = styled.div`
-     margin-top: 5rem;
-     .has-addons{
-  justify-content:flex-end !important;
-     }
+  margin-top: 5rem;
+  .has-addons {
+    justify-content: flex-end !important;
   }
 `;
 
@@ -50,9 +50,9 @@ const Information = [
 ];
 const Footer = () => {
   return (
-    <Container>
-      <div className="section container">
-        <div className="columns is-multiline ">
+    <Container className="section">
+      <div className="container">
+        <div className="columns is-multiline">
           <div className="column">
             <LogoImg
               src="/images/logo.jpg"
@@ -107,28 +107,26 @@ const Footer = () => {
           </div>
         </div>
         <Bottom>
-          <div>
-            <BorderBottom />
-            <div className="columns has-text-white">
-              <div className="column">
-                <p className="has-text-white">Follow Us On Social Icons </p>
-                <SocialIcon />
-              </div>
-              <div className="column has-text-right is-hidden-mobile">
-                <p className="has-text-white">Subscribe On Our Newsletter </p>
-                <div className="field has-addons">
-                  <div className="control has-icons-right">
-                    <input
-                      className="input is-rounded"
-                      type="email"
-                      placeholder="Your email"
-                    />
-                  </div>
-                  <div className="control">
-                    <button type="submit" className="button is-rounded">
-                      Subscribe
-                    </button>
-                  </div>
+          <BorderBottom />
+          <div className="columns has-text-white">
+            <div className="column">
+              <p className="has-text-white">Follow Us On Social Icons </p>
+              <SocialIcon />
+            </div>
+            <div className="column has-text-right is-hidden-mobile">
+              <p className="has-text-white">Subscribe On Our Newsletter </p>
+              <div className="field has-addons">
+                <div className="control has-icons-right">
+                  <input
+                    className="input is-rounded"
+                    type="email"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div className="control">
+                  <button type="submit" className="button is-rounded">
+                    Subscribe
+                  </button>
                 </div>
               </div>
             </div>
