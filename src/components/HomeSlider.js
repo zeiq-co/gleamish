@@ -43,6 +43,7 @@ const HomeSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'linear',
+    lazyLoad: true,
   };
   return (
     <Wrapper>

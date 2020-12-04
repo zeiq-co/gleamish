@@ -7,21 +7,29 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #f3f4f6;
+  float: left;
+  width: 100%;
+  clear: both;
+  position: relative;
+`;
+
+const OverlayBox = styled.div`
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8rem 2rem 8rem 2rem;
+  border-radius: 0;
 `;
 
 const Contact = () => {
   return (
-    <Container className="section hero is-medium">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-6">
-              <div className="box">
-                <HomeSubscribeForm />
-              </div>
-            </div>
-            <div className="column is-6" />
+    <Container>
+      <div className="container">
+        <div className="columns is-vcentered">
+          <div className="column is-6">
+            <OverlayBox className="box">
+              <HomeSubscribeForm />
+            </OverlayBox>
           </div>
+          <div className="column is-6" />
         </div>
       </div>
     </Container>
