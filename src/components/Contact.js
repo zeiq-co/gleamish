@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Parallax } from 'react-parallax';
 import HomeSubscribeForm from './forms/HomeSubscribeForm';
 
 const Container = styled.div`
@@ -22,16 +23,21 @@ const OverlayBox = styled.div`
 const Contact = () => {
   return (
     <Container>
-      <div className="container">
-        <div className="columns is-vcentered">
-          <div className="column is-6">
-            <OverlayBox className="box">
-              <HomeSubscribeForm />
-            </OverlayBox>
+      <Parallax
+        strength={600}
+        bgImage="http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/speckle-blur.png"
+      >
+        <div className="container">
+          <div className="columns is-vcentered">
+            <div className="column is-6">
+              <OverlayBox className="box">
+                <HomeSubscribeForm />
+              </OverlayBox>
+            </div>
+            <div className="column is-6" />
           </div>
-          <div className="column is-6" />
         </div>
-      </div>
+      </Parallax>
     </Container>
   );
 };
