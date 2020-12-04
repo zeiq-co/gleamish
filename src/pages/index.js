@@ -7,6 +7,7 @@ import HomeSlider from '../components/HomeSlider';
 import Features from '../components/Features';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
+import Categories from '../components/Categories';
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -24,6 +25,7 @@ export default class IndexPage extends React.Component {
         <Seo title="Home" description="paint" />
         <HomeSlider />
         <Features />
+        <Categories />
         <Gallery />
         <News />
       </Layout>

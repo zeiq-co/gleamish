@@ -13,7 +13,7 @@ const FeaturesCard = ({ title, subtitle, image }) => {
       <Card className="card p-6">
         <div className="card-image is-flex is-justify-content-center mb-5">
           <figure className="image is-96x96">
-            <img src={image} alt="Placeholder image" />
+            <img src={image} alt="painting Images" />
           </figure>
         </div>
         <h3 className="title has-text-centered is-size-4 mb-5 is-spaced">
