@@ -5,7 +5,6 @@ import SocialIcon from './SocialIcon';
 
 const Container = styled.footer`
   background-color: #31aabf;
-  position: relative;
   li,
   p {
     margin-bottom: 1rem;
