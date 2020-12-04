@@ -9,6 +9,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: config.sanityId,
+        dataset: 'production',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: config.mailchimp,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {

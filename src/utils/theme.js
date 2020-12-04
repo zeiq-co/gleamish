@@ -95,6 +95,9 @@ const GlobalStyle = createGlobalStyle`
   .has-text-warning {
     color: ${theme.lightAccent} !important;
   }
+  .help.is-danger {
+    color:${theme.dangerColor} !important;
+  }
 `;
 
 export default GlobalStyle;

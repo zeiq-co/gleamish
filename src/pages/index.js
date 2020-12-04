@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
@@ -8,27 +7,19 @@ import Features from '../components/Features';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
 import Categories from '../components/Categories';
+import Contact from '../components/Contact';
 
-const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${(props) => props.theme.mainBrandColor} !important;
-  }
-`;
-
-export default class IndexPage extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <Seo title="Home" description="paint" />
-        <HomeSlider />
-        <Features />
-        <Categories />
-        <Gallery />
-        <News />
-      </Layout>
-    );
-  }
-}
+const IndexPage = () => {
+  return (
+    <Layout>
+      <Seo title="Home" description="paint" />
+      <HomeSlider />
+      <Features />
+      <Categories />
+      <Gallery />
+      <News />
+      <Contact />
+    </Layout>
+  );
+};
+export default IndexPage;
