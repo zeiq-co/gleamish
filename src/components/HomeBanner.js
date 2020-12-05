@@ -15,7 +15,16 @@ const HomeBanner = ({ bgImage }) => {
       bgImage={bgImage}
     >
       <div className="hero-body">
-        <h1></h1>
+        <div className="columns is-centered">
+          <div className="column is-5 has-text-centered">
+            <h1 class="title is-1 has-text-weight-normal has-text-white is-spaced">
+              Proven Reliability
+            </h1>
+            <h1 class="subtitle is-6 has-text-weight-normal has-text-white">
+              Proven Reliability
+            </h1>
+          </div>
+        </div>
       </div>
     </Section>
   );

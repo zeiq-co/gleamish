@@ -50,7 +50,11 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   return (
     <Section>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav
+        className="navbar py-4"
+        role="navigation"
+        aria-label="main navigation"
+      >
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
@@ -71,39 +75,36 @@ const Header = () => {
           </div>
           <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
             <div className="navbar-end">
-              <Link
-                to="/"
-                className="navbar-item is-size-7  has-text-weight-normal p-5"
-              >
+              <Link to="/" className="navbar-item has-text-weight-medium p-5">
                 HOME
               </Link>
               <Link
                 to="/about"
-                className="navbar-item is-size-7  has-text-weight-normal p-5"
+                className="navbar-item has-text-weight-medium p-5"
               >
                 ABOUT
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7  has-text-weight-normal p-5"
+                className="navbar-item has-text-weight-medium p-5"
               >
                 SERVICES
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7  has-text-weight-normal p-5"
+                className="navbar-item has-text-weight-medium p-5"
               >
                 PROJECTS
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-weight-normal p-5"
+                className="navbar-item has-text-weight-medium p-5"
               >
                 NEWS
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item is-size-7  has-text-weight-normal p-5"
+                className="navbar-item has-text-weight-medium p-5"
               >
                 CONTACT
               </Link>
