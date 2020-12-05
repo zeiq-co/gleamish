@@ -3,7 +3,12 @@ import styled from 'styled-components';
 import GalleryCard from './GalleryCard';
 
 const GalleryWrapper = styled.div`
-  padding: 50px 0px;
+  .button {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #f1f5f7;
+    border-color: #f1f5f7;
+  }
 `;
 
 const GalleryItem = [
@@ -52,14 +57,44 @@ const GalleryItem = [
 const Gallery = () => {
   return (
     <GalleryWrapper>
-      <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
-        Gallery{' '}
-      </h1>
-      <div className="columns is-gapless is-multiline is-mobile">
-        {GalleryItem.map((item) => (
-          <GalleryCard key={item.id} image={item.image} />
-        ))}
-      </div>
+      <section className="section">
+        <div className="container">
+          <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
+            Gallery{' '}
+          </h1>
+          <div className="columns  is-centered">
+            <div className="column is-6">
+              <div className="columns is-centered">
+                <div className="column">
+                  <button class="button is-medium is-fullwidth">
+                    Filter - All
+                  </button>
+                </div>
+                <div className="column">
+                  <button class="button is-medium is-fullwidth">
+                    Exterior
+                  </button>
+                </div>
+                <div className="column">
+                  <button class="button is-medium is-fullwidth">
+                    Interior
+                  </button>
+                </div>
+                <div className="column">
+                  <button class="button is-medium is-fullwidth">
+                    Stairwell
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="columns  is-multiline is-mobile">
+            {GalleryItem.map((item) => (
+              <GalleryCard key={item.id} image={item.image} />
+            ))}
+          </div>
+        </div>
+      </section>
     </GalleryWrapper>
   );
 };

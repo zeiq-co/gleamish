@@ -7,7 +7,7 @@ const CardWrapper = styled.div`
 
 const GalleryCard = ({ image }) => {
   return (
-    <div className="column is-3">
+    <div className="column is-4">
       <CardWrapper className="card">
         <div className="card-image">
           <figure className="image is-3by2">
