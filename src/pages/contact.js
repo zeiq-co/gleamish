@@ -41,8 +41,8 @@ const Contact = () => (
             </div>
             <div className="column is-6">
               <Heading centered>Head Office</Heading>
-              <a href={`mailto:${config.email}`}>{config.email}</a>
-              <a href={`tel:${config.telephone}`}>{config.telephone}</a>
+              {/* <a href={`mailto:${config.email}`}>{config.email}</a>
+              <a href={`tel:${config.telephone}`}>{config.telephone}</a> */}
             </div>
           </div>
         </div>
