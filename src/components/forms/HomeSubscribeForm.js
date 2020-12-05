@@ -14,7 +14,7 @@ const Container = styled.form`
     color: #696969;
 
     margin: 5px 0;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.backgroundColor};
   }
   p {
     font-size: 10px;
