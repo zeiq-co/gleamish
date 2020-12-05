@@ -7,16 +7,15 @@ const Section = styled.div`
   .navbar {
     background: linear-gradient(
       to right,
-      #00d39f 0%,
-      #008bd3 25%,
-      #d40063 75%,
+      #d40063 0%,
+      #008bd3 55%,
       #d4be00 100%
     );
   }
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.75rem;
+      max-height: 3.5rem;
     }
   }
   .navbar-item {
@@ -53,11 +52,10 @@ const Header = () => {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <img src="/images/logo.jpg" alt="site logo" />
+              <img src="/images/logo.png" alt="site logo" />
             </Link>
             <a
               href="#"
-              role="button"
               className={isActive ? 'is-active navbar-burger' : 'navbar-burger'}
               aria-label="menu"
               aria-expanded="false"
@@ -73,37 +71,37 @@ const Header = () => {
             <div className="navbar-end">
               <Link
                 to="/"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-5 has-text-white has-text-weight-normal p-5"
               >
                 HOME
               </Link>
               <Link
                 to="/about"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-5 has-text-white has-text-weight-normal p-5"
               >
                 ABOUT
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-5 has-text-white has-text-weight-normal p-5"
               >
                 SERVICES
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-5 has-text-white has-text-weight-normal p-5"
               >
                 PROJECTS
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-5 has-text-white has-text-weight-normal p-5"
               >
                 NEWS
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-5 has-text-white has-text-weight-normal p-5"
               >
                 CONTACT
               </Link>
