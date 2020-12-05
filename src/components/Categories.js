@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CategoryItem from './CategoryItem';
+import Heading from './elements/Heading';
 
 const Category = [
   {
