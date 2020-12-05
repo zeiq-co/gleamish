@@ -10,7 +10,7 @@ const Section = styled.div`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.75rem;
+      max-height: 3.5rem;
     }
   }
   .navbar-item {
@@ -54,11 +54,10 @@ const Header = () => {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <img src="/images/logo.jpg" alt="site logo" />
+              <img src="/images/logo.png" alt="site logo" />
             </Link>
             <a
               href="#"
-              role="button"
               className={isActive ? 'is-active navbar-burger' : 'navbar-burger'}
               aria-label="menu"
               aria-expanded="false"
