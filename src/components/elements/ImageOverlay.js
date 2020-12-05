@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BeforeAfterSlider from 'react-before-after-slider';
+import Heading from './Heading';
 
 const Section = styled.div``;
 const ImageOverlay = () => {
@@ -12,8 +13,13 @@ const ImageOverlay = () => {
   return (
     <Section className="section">
       <div className="container">
-        <div className="columns is-centered ">
-          <div className="column is-6">
+        <div className="columns">
+          <div className="column is-7">
+            <div className="box">
+              <Heading centered>relative</Heading>
+            </div>
+          </div>
+          <div className="column is-5">
             <BeforeAfterSlider
               before={before}
               after={after}
