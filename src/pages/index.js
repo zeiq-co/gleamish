@@ -18,7 +18,6 @@ const IndexPage = () => {
       <Categories />
       <Gallery />
       <News />
-      {/* <Contact /> */}
       <ImageBeforeAfter />
     </Layout>
   );

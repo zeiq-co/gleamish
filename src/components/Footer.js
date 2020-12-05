@@ -11,6 +11,9 @@ const Container = styled.footer`
     font-size: ${(props) => props.theme.fontSizeSmall}px !important;
     color: #fff;
   }
+  .container {
+    position: inherit !important;
+  }
 `;
 
 const LogoImg = styled.img`
