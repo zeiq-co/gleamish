@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import SocialIcon from './SocialIcon';
+import config from '../utils/config';
 
 const Container = styled.footer`
   padding: 7rem 0;
@@ -41,16 +42,13 @@ const Footer = () => {
             </h1>
             <ul>
               <li>
-                Tel :<a href="tel:7 87 753 780">7 87 753 780</a>{' '}
+                Tel : <a href={`tel:${config.telephone}`}>{config.telephone}</a>
               </li>
               <li>
-                E-MAIL :
-                <a href="mailto:Midaspainting@gmail.com">
-                  Midaspainting@gmail.com
-                </a>
+                E-MAIL :<a href={`mailto:${config.email}`}>{config.email}</a>
               </li>
               <li>
-                <span> 58, Thomson Street, USA</span>
+                <span>{config.address}</span>
               </li>
             </ul>
           </div>
