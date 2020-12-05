@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 const Section = styled.div`
@@ -28,19 +29,23 @@ const Section = styled.div`
 
 const HomeBanner = ({ bgImage }) => {
   return (
-    <Section className="" bgImage={bgImage}>
-      <div className="columns is-centered is-vcentered">
-        <div className="column is-5 has-text-centered">
-          <h1 class="heading has-text-weight-normal has-text-white mb-4">
-            Lorem Ipsum
-          </h1>
-          <h1 class="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
-            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit...
-          </h1>
-          <button class="button is-medium">Get Started</button>
+    <Section bgImage={bgImage}>
+      <Fade bottom>
+        <div className="columns is-centered is-vcentered">
+          <div className="column is-5 has-text-centered">
+            <h1 className="heading has-text-weight-normal has-text-white mb-4">
+              Lorem Ipsum
+            </h1>
+            <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </h1>
+            <button type="button" className="button is-medium">
+              Get Started
+            </button>
+          </div>
         </div>
-      </div>
+      </Fade>
     </Section>
   );
 };
