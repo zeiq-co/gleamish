@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CategoryItem from './CategoryItem';
+import Heading from './elements/Heading';
 
 const Category = [
   {
@@ -53,6 +54,7 @@ const Categories = () => {
   return (
     <Section className="section">
       <div className="container">
+        {/* <Heading centered> Why Choose Us?</Heading> */}
         <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
           Why Choose Us?{' '}
         </h1>
