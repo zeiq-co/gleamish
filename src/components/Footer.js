@@ -12,6 +12,9 @@ const Container = styled.footer`
     font-size: ${(props) => props.theme.fontSizeSmall}px !important;
     color: #fff;
   }
+  .container {
+    position: inherit !important;
+  }
   span {
     line-height: 25px;
   }
