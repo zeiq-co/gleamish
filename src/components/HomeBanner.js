@@ -14,7 +14,9 @@ const HomeBanner = ({ bgImage }) => {
       className="hero is-large is-large-widescreen is-large-fullhd"
       bgImage={bgImage}
     >
-      <div className="hero-body"></div>
+      <div className="hero-body">
+        <h1></h1>
+      </div>
     </Section>
   );
 };

@@ -5,13 +5,7 @@ import { Link } from 'gatsby';
 const Section = styled.div`
   font-family: ${(props) => props.theme.primaryFontFamily};
   .navbar {
-    background: linear-gradient(
-      to right,
-      #00d39f 0%,
-      #008bd3 25%,
-      #d40063 75%,
-      #d4be00 100%
-    );
+    background: transparent;
   }
   .navbar-brand {
     margin-right: 20px;
@@ -43,6 +37,13 @@ const Section = styled.div`
     opacity: 0.6;
     border-radius: 4px;
   }
+  .navbar-end {
+    a {
+      font-size: ${(props) => props.theme.fontSizeSmall}px;
+      font-family: ${(props) => props.theme.primaryFontFamily};
+      color: ${(props) => props.theme.darkAccent};
+    }
+  }
 `;
 
 const Header = () => {
@@ -73,37 +74,37 @@ const Header = () => {
             <div className="navbar-end">
               <Link
                 to="/"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-7  has-text-weight-normal p-5"
               >
                 HOME
               </Link>
               <Link
                 to="/about"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-7  has-text-weight-normal p-5"
               >
                 ABOUT
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-7  has-text-weight-normal p-5"
               >
                 SERVICES
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-7  has-text-weight-normal p-5"
               >
                 PROJECTS
               </Link>
               <Link
                 to="/news"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-7 has-text-weight-normal p-5"
               >
                 NEWS
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item is-size-7 has-text-white has-text-weight-normal p-5"
+                className="navbar-item is-size-7  has-text-weight-normal p-5"
               >
                 CONTACT
               </Link>
