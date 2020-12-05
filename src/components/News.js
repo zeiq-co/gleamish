@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NewsCard from './NewsCard';
+import Heading from './elements/Heading';
 
 const NewsWrapper = styled.section`
   padding: 50px 0px;
@@ -37,9 +38,7 @@ const News = () => {
   return (
     <NewsWrapper className="section">
       <div className="container">
-        <h1 className="has-text-centered is-size-1 has-text-weight-normal mb-6">
-          News{' '}
-        </h1>
+        <Heading centered>News</Heading>
         <div className="columns ">
           {NewsItem.map((item) => (
             <NewsCard

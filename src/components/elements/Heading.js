@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const Text = styled.h3`
+const Text = styled.h1`
   line-height: 1.2em;
   position: relative;
   ::after {

@@ -18,13 +18,6 @@ const Section = styled.div`
       background-color: transparent;
     }
   }
-  /* .navbar-end {
-    a {
-      :hover {
-        text-decoration: underline;
-      }
-    }
-  } */
   .navbar-menu {
     @media screen and (max-width: 600px) {
       position: absolute;
@@ -40,7 +33,7 @@ const Section = styled.div`
   .navbar-end {
     a {
       font-size: ${(props) => props.theme.fontSizeSmall}px;
-      font-family: ${(props) => props.theme.primaryFontFamily};
+      font-family: ${(props) => props.theme.secondaryFontFamily};
       color: ${(props) => props.theme.darkAccent};
     }
   }

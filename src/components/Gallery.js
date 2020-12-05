@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import GalleryCard from './GalleryCard';
 import TabButton from './TabButtons';
+import Heading from './elements/Heading';
 
 const GalleryWrapper = styled.div`
   margin-top: 15px;
@@ -69,9 +70,7 @@ const Gallery = () => {
   return (
     <section className="section">
       <div className="container">
-        <h1 className="has-text-centered is-size-1 has-text-weight-normal mb-6">
-          Gallery{' '}
-        </h1>
+        <Heading centered> Gallery</Heading>
         <div className="columns  is-centered">
           <div className="column is-6">
             <div className="columns is-centered">
