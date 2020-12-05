@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 const Container = styled.footer`
   padding-top: 3rem;
-  background-color: #31aabf;
+  background-color: #406870;
   li,
   p {
     margin-bottom: 1rem;
@@ -13,6 +13,9 @@ const Container = styled.footer`
   }
   .container {
     position: inherit !important;
+  }
+  span {
+    line-height: 25px;
   }
 `;
 
@@ -46,7 +49,7 @@ const Footer = () => {
         <div className="columns is-multiline">
           <div className="column">
             <LogoImg
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="footer-logo"
               className="mb-2"
             />
