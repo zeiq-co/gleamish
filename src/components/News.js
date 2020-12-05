@@ -37,7 +37,7 @@ const News = () => {
   return (
     <NewsWrapper className="section">
       <div className="container">
-        <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
+        <h1 className="has-text-centered is-size-1 has-text-weight-normal mb-6">
           News{' '}
         </h1>
         <div className="columns ">

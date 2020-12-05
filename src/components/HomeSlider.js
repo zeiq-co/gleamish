@@ -18,17 +18,17 @@ const bannerItem = [
   {
     id: 1,
     bgImage:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/1-1.jpg',
+      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_1.jpg',
   },
   {
     id: 2,
     bgImage:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/2.jpg',
+      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_2.jpg',
   },
   {
     id: 3,
     bgImage:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/3.jpg',
+      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_3.jpg',
   },
 ];
 

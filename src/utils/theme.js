@@ -4,7 +4,7 @@ import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#00D1B2';
 const lightShades = '#F5F5F5';
-const darkAccent = '#3173DC';
+const darkAccent = '#406870';
 const darkShades = '#0A0A0A';
 
 export const theme = {
@@ -38,7 +38,7 @@ export const theme = {
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Dosis', sans-serif",
+  primaryFontFamily: "'Libre Baskerville', sans-serif",
   secondaryFontFamily: "'Dosis', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
@@ -53,9 +53,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: 17px;
   }
   .title {
-    font-family: ${theme.primaryFontFamily};
+    font-family: ${theme.secondaryFontFamily};
   }
   .button {
+    font-family: ${theme.secondaryFontFamily};
+  }
+  h1{
     font-family: ${theme.primaryFontFamily};
   }
   p {

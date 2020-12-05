@@ -22,7 +22,11 @@ export default class HTML extends React.Component {
           />
           <script
             defer
-            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+            src="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"
+            rel="stylesheet"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"

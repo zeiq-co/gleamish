@@ -68,7 +68,7 @@ const Gallery = () => {
     <GalleryWrapper>
       <section className="section">
         <div className="container">
-          <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
+          <h1 className="has-text-centered is-size-1 has-text-weight-normal mb-6">
             Gallery{' '}
           </h1>
           <div className="columns  is-centered">
