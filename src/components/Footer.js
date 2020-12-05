@@ -19,6 +19,11 @@ const Container = styled.footer`
   span {
     line-height: 25px;
   }
+  a {
+    :hover {
+      transition: 0.4s !important;
+    }
+  }
 `;
 
 const LogoImg = styled.img`

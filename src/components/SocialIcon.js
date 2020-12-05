@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import config from '../utils/config';
 
 const Container = styled.section`
   margin-top: 2rem;
@@ -22,18 +23,18 @@ const Icon = styled.i`
 const SocialIcon = () => (
   <Container className="level">
     <div className="level-item">
-      <a href="/" target="_blank">
+      <a href={config.twitter} target="_blank">
         <Icon className="fab fa-twitter mr-5" color="#fff" />
       </a>
     </div>
     <div className="level-item">
-      <a href="/" target="_blank">
+      <a href={config.instagram} target="_blank">
         <Icon className="fab fa-instagram mr-5" color="#fff" />
       </a>
     </div>
     <div className="level-item">
-      <a href="/" target="_blank">
-        <Icon className="fab fa-facebook mr-5" color="#fff"></Icon>
+      <a href={config.facebook} target="_blank">
+        <Icon className="fab fa-facebook mr-5" color="#fff" />
       </a>
     </div>
   </Container>

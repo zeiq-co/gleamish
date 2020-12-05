@@ -37,6 +37,22 @@ const Section = styled.div`
       color: ${(props) => props.theme.darkShades};
     }
   }
+  .animated-line {
+    position: relative;
+    padding: 0;
+    &::before {
+      transition: 300ms ease-out;
+      height: 0.1rem;
+      content: '';
+      position: absolute;
+      background-color: ${(props) => props.theme.darkShades};
+      width: 0%;
+      bottom: 0.875rem;
+    }
+    &:hover::before {
+      width: 65%;
+    }
+  }
 `;
 
 const Header = () => {
@@ -74,31 +90,31 @@ const Header = () => {
             <div className="navbar-end">
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5"
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 HOME
               </Link>
               <Link
                 to="/about"
-                className="navbar-item has-text-weight-semibold  p-5"
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 ABOUT
               </Link>
               <Link
                 to="/news"
-                className="navbar-item has-text-weight-semibold  p-5"
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 SERVICES
               </Link>
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5"
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 GALLERY
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item has-text-weight-semibold  p-5"
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 CONTACT
               </Link>
