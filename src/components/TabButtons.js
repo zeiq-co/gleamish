@@ -19,7 +19,6 @@ const StyledButton = styled.button`
 `;
 
 const TabButton = ({ title, onClick, active }) => {
-  console.log(title == active);
   return (
     <div className="column">
       <StyledButton

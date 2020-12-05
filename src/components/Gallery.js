@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import GalleryCard from './GalleryCard';
 import TabButton from './TabButtons';
 
-const GalleryWrapper = styled.div``;
+const GalleryWrapper = styled.div`
+  margin-top: 15px;
+`;
 
 const GalleryItem = [
   {
@@ -65,49 +67,47 @@ const GalleryItem = [
 const Gallery = () => {
   const [category, setCategory] = useState('All');
   return (
-    <GalleryWrapper>
-      <section className="section">
-        <div className="container">
-          <h1 className="has-text-centered is-size-1 has-text-weight-normal mb-6">
-            Gallery{' '}
-          </h1>
-          <div className="columns  is-centered">
-            <div className="column is-6">
-              <div className="columns is-centered">
-                <TabButton
-                  title="All"
-                  onClick={() => setCategory('All')}
-                  active={category}
-                />
-                <TabButton
-                  title="Exterior"
-                  onClick={() => setCategory('Exterior')}
-                  active={category}
-                />
-                <TabButton
-                  title="Interior"
-                  onClick={() => setCategory('Interior')}
-                  active={category}
-                />
-                <TabButton
-                  title="Stairwell"
-                  onClick={() => setCategory('Stairwell')}
-                  active={category}
-                />
-              </div>
+    <section className="section">
+      <div className="container">
+        <h1 className="has-text-centered is-size-1 has-text-weight-normal mb-6">
+          Gallery{' '}
+        </h1>
+        <div className="columns  is-centered">
+          <div className="column is-6">
+            <div className="columns is-centered">
+              <TabButton
+                title="All"
+                onClick={() => setCategory('All')}
+                active={category}
+              />
+              <TabButton
+                title="Exterior"
+                onClick={() => setCategory('Exterior')}
+                active={category}
+              />
+              <TabButton
+                title="Interior"
+                onClick={() => setCategory('Interior')}
+                active={category}
+              />
+              <TabButton
+                title="Stairwell"
+                onClick={() => setCategory('Stairwell')}
+                active={category}
+              />
             </div>
           </div>
-          <div className="columns  is-multiline is-mobile">
-            {GalleryItem.map((item) => {
-              if (category !== 'All' && category !== item.category) {
-                return null;
-              }
-              return <GalleryCard key={item.id} image={item.image} />;
-            })}
-          </div>
         </div>
-      </section>
-    </GalleryWrapper>
+        <GalleryWrapper className="columns  is-multiline is-mobile">
+          {GalleryItem.map((item) => {
+            if (category !== 'All' && category !== item.category) {
+              return null;
+            }
+            return <GalleryCard key={item.id} image={item.image} />;
+          })}
+        </GalleryWrapper>
+      </div>
+    </section>
   );
 };
 export default Gallery;
