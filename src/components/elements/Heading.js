@@ -20,7 +20,7 @@ const Text = styled.h3`
   }
 `;
 
-const Heading = ({ children, centered, linkTo }) => (
+const Heading = ({ children, centered }) => (
   <>
     <Text
       className={`is-size-1 has-text-weight-normal mb-6 is-size-4-mobile  ${
@@ -28,11 +28,6 @@ const Heading = ({ children, centered, linkTo }) => (
       }`}
     >
       {children}
-      {linkTo && (
-        <Link to={linkTo} className="icon is-small is-pulled-right">
-          <img src="/images/arrow.svg" alt="icon" />
-        </Link>
-      )}
     </Text>
   </>
 );

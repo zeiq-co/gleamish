@@ -7,7 +7,7 @@ import Features from '../components/Features';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
 import Categories from '../components/Categories';
-import ImageOverlay from '../components/elements/ImageOverlay';
+import ImageBeforeAfter from '../components/ImageBeforeAfter';
 
 const IndexPage = () => {
   return (
@@ -19,7 +19,7 @@ const IndexPage = () => {
       <Gallery />
       <News />
       {/* <Contact /> */}
-      <ImageOverlay />
+      <ImageBeforeAfter />
     </Layout>
   );
 };
