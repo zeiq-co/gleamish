@@ -19,11 +19,6 @@ const Heading = ({ children, centered, linkTo }) => (
       }`}
     >
       {children}
-      {linkTo && (
-        <Link to={linkTo} className="icon is-small is-pulled-right">
-          <img src="/images/arrow.svg" alt="icon" />
-        </Link>
-      )}
     </Text>
     <div className="has-text-centered">
       <Img src="/images/paint-roller.png" alt="paint-roller" />
