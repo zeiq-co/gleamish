@@ -40,6 +40,7 @@
     "polished": "^3.6.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-before-after-slider": "^1.0.4",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-parallax": "^3.1.2",

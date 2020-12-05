@@ -12518,6 +12518,19 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-before-after-slider@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-before-after-slider/-/react-before-after-slider-1.0.4.tgz#86bd00ec622132ecc632d5ce32b6ad16aa5ab120"
+  integrity sha512-zXuaiDqJkgkZ/9RaHKXS5Dh+zsOQW5b9nPgQbXt1fcI1bF4q+l/KCM50qhhH/EHKLhbtUYAb7nhqViowFbC3ZQ==
+  dependencies:
+    classnames "^2.2.5"
+    react-block-image "^1.0.0"
+
+react-block-image@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-block-image/-/react-block-image-1.0.0.tgz#5c46d7a115fa7efa70d477a2580ec0c9b2106283"
+  integrity sha1-XEbXoRX6fvpw1HeiWA7AybIQYoM=
+
 react-circular-progressbar@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.0.3.tgz#fa8eb59f8db168d2904bae4590641792c80f5991"

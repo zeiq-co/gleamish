@@ -8,6 +8,7 @@ import Gallery from '../components/Gallery';
 import News from '../components/News';
 import Categories from '../components/Categories';
 import Contact from '../components/Contact';
+import ImageOverlay from '../components/elements/ImageOverlay';
 
 const IndexPage = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <Gallery />
       <News />
       <Contact />
+      <ImageOverlay />
     </Layout>
   );
 };
