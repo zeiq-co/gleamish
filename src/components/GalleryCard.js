@@ -11,7 +11,7 @@ const GalleryCard = ({ image }) => {
       <CardWrapper className="card">
         <div className="card-image">
           <figure className="image is-3by2">
-            <img src={image} alt="gallery Image" />
+            <img src={image} alt="gallery" />
           </figure>
         </div>
       </CardWrapper>

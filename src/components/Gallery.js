@@ -70,7 +70,7 @@ const Gallery = () => {
   return (
     <section className="section">
       <div className="container">
-        <Heading centered> Gallery</Heading>
+        <Heading centered>Gallery</Heading>
         <div className="columns  is-centered">
           <div className="column is-6">
             <div className="columns is-centered">
