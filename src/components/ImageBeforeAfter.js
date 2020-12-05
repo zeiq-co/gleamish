@@ -30,7 +30,7 @@ const ImageBeforeAfter = () => {
                   ensure a high quality finish on a consistent basis.
                 </p>
                 <button type="button" className="button is-secondary is-medium">
-                  svcjakc
+                  View More
                 </button>
               </div>
             </div>
