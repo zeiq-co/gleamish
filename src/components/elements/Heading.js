@@ -26,14 +26,15 @@ const Text = styled.h3`
     );
   }
   ::after {
+    background: url(/images/icons/paint-roller.svg) no-repeat;
+    bottom: 9px;
+    content: '';
+    height: 10px;
+    left: 0;
     position: absolute;
-    bottom: 0;
-    content: '\e90a';
-    font-family: Fontello, sans-serif;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 23px;
-    line-height: 1;
+    width: 32px;
+    right: 0;
+    margin: auto;
   }
 `;
 
