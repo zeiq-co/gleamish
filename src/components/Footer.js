@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import SocialIcon from './SocialIcon';
 
 const Container = styled.footer`
   padding-top: 3rem;
@@ -12,17 +11,6 @@ const Container = styled.footer`
     font-size: ${(props) => props.theme.fontSizeSmall}px !important;
     color: #fff;
   }
-`;
-const Bottom = styled.div`
-  margin-top: 5rem;
-  .has-addons {
-    justify-content: flex-end !important;
-  }
-`;
-
-const BorderBottom = styled.div`
-  border-bottom: 1px solid #ebebeb;
-  margin-bottom: 1.5rem;
 `;
 
 const LogoImg = styled.img`
@@ -106,32 +94,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <Bottom>
-          <BorderBottom />
-          <div className="columns has-text-white">
-            <div className="column">
-              <p className="has-text-white">Follow Us On Social Icons </p>
-              <SocialIcon />
-            </div>
-            <div className="column has-text-right is-hidden-mobile">
-              <p className="has-text-white">Subscribe On Our Newsletter </p>
-              <div className="field has-addons">
-                <div className="control has-icons-right">
-                  <input
-                    className="input is-rounded"
-                    type="email"
-                    placeholder="Your email"
-                  />
-                </div>
-                <div className="control">
-                  <button type="submit" className="button is-rounded">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Bottom>
       </div>
     </Container>
   );
