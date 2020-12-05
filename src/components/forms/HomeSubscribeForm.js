@@ -34,7 +34,7 @@ const HomeSubscribeForm = ({
 }) => {
   return (
     <>
-      <h1 className="subtitle is-4 has-text-centered">Contact Us</h1>
+      <h1 className="subtitle is-4 has-text-centered">Get in touch</h1>
       <p className="subtitle is-6 has-text-centered">
         Leave your details and we will get back to you shortly
       </p>

@@ -8,8 +8,8 @@ module.exports = {
   logo: '/images/logo.jpg',
 
   telephone: '+1-123-123-123',
-  email: 'john@doe.com',
-  location: 'California, USA',
+  email: 'painting123@gmail.com',
+  address: 'California, USA',
   twitter: '@NAME-HERE',
   fbUserId: '@NAME-HERE',
   fbAppID: '@NAME-HERE',
