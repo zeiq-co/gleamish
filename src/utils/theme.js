@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: ${theme.secondaryFontFamily};
   }
-  h1{
+  h1 {
     font-family: ${theme.primaryFontFamily};
   }
   p {
@@ -70,13 +70,6 @@ const GlobalStyle = createGlobalStyle`
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;
   }
-  .button.is-primary {
-    background-color: ${theme.mainBrandColor};
-    transition: background-color 0.2s ease;
-    :hover {
-      background-color: ${darken(0.06, theme.mainBrandColor)};
-    }
-  }
   .button.is-secondary {
     background-color: ${theme.lightAccent};
     transition: background-color 0.2s ease;
@@ -85,13 +78,7 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${darken(0.06, theme.lightAccent)};
     }
   }
-  .button.is-link {
-    background-color: ${theme.darkAccent};
-    transition: background-color 0.2s ease;
-    :hover {
-      background-color: ${darken(0.06, theme.darkAccent)};
-    }
-  }
+
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
@@ -100,6 +87,12 @@ const GlobalStyle = createGlobalStyle`
   }
   .help.is-danger {
     color:${theme.dangerColor} !important;
+  }
+  .is-family-primary {
+    font-family: ${theme.primaryFontFamily} !important;
+  }
+  .is-family-secondary {
+    font-family: ${theme.secondaryFontFamily} !important;
   }
 `;
 

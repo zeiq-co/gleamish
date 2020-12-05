@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 const Text = styled.h1`
   line-height: 1.2em;
@@ -11,7 +10,7 @@ const Img = styled.img`
   height: 1.5rem;
 `;
 
-const Heading = ({ children, centered, linkTo }) => (
+const Heading = ({ children, centered }) => (
   <div className="mb-6">
     <Text
       className={`is-size-1 has-text-weight-normal mb-4 is-size-4-mobile  ${

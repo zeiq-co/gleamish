@@ -12,7 +12,7 @@ const NewsItem = [
     id: 1,
     image:
       'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/blog-3.jpg',
-    title: 'The Benefits of High-Quality Paint',
+    title: 'The Benefits of Quality Paint',
     description:
       'Phasellus aliquet, risus at blandit lobortis, tortor neque accumsan sem, in aliquet purus purus...',
   },
