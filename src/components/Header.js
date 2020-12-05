@@ -34,7 +34,7 @@ const Section = styled.div`
     a {
       font-size: ${(props) => props.theme.fontSizeSmall}px;
       font-family: ${(props) => props.theme.secondaryFontFamily};
-      color: ${(props) => props.theme.darkAccent};
+      color: ${(props) => props.theme.darkShades};
     }
   }
 `;
@@ -50,12 +50,16 @@ const Header = () => {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link className="navbar-item" to="/">
+            <Link className="navbar-item ml-2" to="/">
               <img src="/images/logo.png" alt="site logo" />
             </Link>
             <a
               href="#"
-              className={isActive ? 'is-active navbar-burger' : 'navbar-burger'}
+              className={
+                isActive
+                  ? 'is-active navbar-burger has-text-black'
+                  : 'navbar-burger has-text-black'
+              }
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
@@ -68,36 +72,33 @@ const Header = () => {
           </div>
           <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
             <div className="navbar-end">
-              <Link to="/" className="navbar-item has-text-weight-medium p-5">
+              <Link
+                to="/"
+                className="navbar-item has-text-weight-semibold  p-5"
+              >
                 HOME
               </Link>
               <Link
                 to="/about"
-                className="navbar-item has-text-weight-medium p-5"
+                className="navbar-item has-text-weight-semibold  p-5"
               >
                 ABOUT
               </Link>
               <Link
                 to="/news"
-                className="navbar-item has-text-weight-medium p-5"
+                className="navbar-item has-text-weight-semibold  p-5"
               >
                 SERVICES
               </Link>
               <Link
-                to="/news"
-                className="navbar-item has-text-weight-medium p-5"
+                to="/"
+                className="navbar-item has-text-weight-semibold  p-5"
               >
-                PROJECTS
-              </Link>
-              <Link
-                to="/news"
-                className="navbar-item has-text-weight-medium p-5"
-              >
-                NEWS
+                GALLERY
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item has-text-weight-medium p-5"
+                className="navbar-item has-text-weight-semibold  p-5"
               >
                 CONTACT
               </Link>

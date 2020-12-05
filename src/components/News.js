@@ -38,7 +38,7 @@ const News = () => {
   return (
     <NewsWrapper className="section">
       <div className="container">
-        <Heading centered>News</Heading>
+        <Heading centered>News & Blog</Heading>
         <div className="columns ">
           {NewsItem.map((item) => (
             <NewsCard

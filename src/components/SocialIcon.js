@@ -19,29 +19,24 @@ const Icon = styled.i`
   font-size: 1.9rem;
 `;
 
-const SocialIcons = () => (
+const SocialIcon = () => (
   <Container className="level">
     <div className="level-item">
       <a href="/" target="_blank">
-        <Icon className="fab fa-facebook" color=" #fff"></Icon>
+        <Icon className="fab fa-twitter mr-5" color="#fff" />
       </a>
     </div>
     <div className="level-item">
       <a href="/" target="_blank">
-        <Icon className="fab fa-instagram" color=" #fff" />
+        <Icon className="fab fa-instagram mr-5" color="#fff" />
       </a>
     </div>
     <div className="level-item">
       <a href="/" target="_blank">
-        <Icon className="fab fa-twitter" color=" #fff" />
-      </a>
-    </div>
-    <div className="level-item">
-      <a href="/" target="_blank">
-        <Icon className="fab fa-pinterest" color=" #fff" />
+        <Icon className="fab fa-facebook mr-5" color="#fff"></Icon>
       </a>
     </div>
   </Container>
 );
 
-export default SocialIcons;
+export default SocialIcon;
