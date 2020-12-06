@@ -3,6 +3,12 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.div`
+  .container {
+    background: ${(props) => props.theme.backgroundColor} !important;
+    border-radius: 10px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
   font-family: ${(props) => props.theme.primaryFontFamily};
   .navbar {
     background: transparent;
@@ -34,7 +40,7 @@ const Section = styled.div`
     a {
       font-size: ${(props) => props.theme.fontSizeSmall}px;
       font-family: ${(props) => props.theme.secondaryFontFamily};
-      color: ${(props) => props.theme.textColorLite};
+      color: ${(props) => props.theme.darkShades};
     }
   }
   .animated-line {
@@ -45,7 +51,7 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${(props) => props.theme.textColorLite};
+      background-color: ${(props) => props.theme.darkShades};
       width: 0%;
       bottom: 0.875rem;
     }
