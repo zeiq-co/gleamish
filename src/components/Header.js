@@ -34,7 +34,7 @@ const Section = styled.div`
     a {
       font-size: ${(props) => props.theme.fontSizeSmall}px;
       font-family: ${(props) => props.theme.secondaryFontFamily};
-      color: ${(props) => props.theme.darkShades};
+      color: ${(props) => props.theme.textColorLite};
     }
   }
   .animated-line {
@@ -45,12 +45,17 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${(props) => props.theme.darkShades};
+      background-color: ${(props) => props.theme.textColorLite};
       width: 0%;
       bottom: 0.875rem;
     }
     &:hover::before {
       width: 65%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .navbar-menu {
+      background: ${(props) => props.theme.borderColor} !important;
     }
   }
 `;
