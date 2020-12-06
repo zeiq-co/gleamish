@@ -7,7 +7,7 @@ import config from '../utils/config';
 
 const Container = styled.footer`
   padding: 7rem 0;
-  background-color: #406870;
+  background-color: #0a0a0a;
   li,
   p {
     margin-bottom: 1rem;

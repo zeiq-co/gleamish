@@ -95,13 +95,13 @@ const Header = () => {
                 HOME
               </Link>
               <Link
-                to="/about"
+                to="/"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 ABOUT
               </Link>
               <Link
-                to="/news"
+                to="/"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 SERVICES
@@ -113,7 +113,7 @@ const Header = () => {
                 GALLERY
               </Link>
               <Link
-                to="/contact"
+                to="/"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 CONTACT
