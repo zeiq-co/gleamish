@@ -104,7 +104,9 @@ const Footer = () => {
         </div>
       </Container>
       <Bottom className="has-text-centered ">
-        <h2 className="has-text-white">Copyright © 2020 - Midas-Paint</h2>
+        <h2 className="has-text-white">
+          Copyright © 2020 - Midas-Paint | build by <a>Zeiq.co</a>
+        </h2>
       </Bottom>
     </>
   );
