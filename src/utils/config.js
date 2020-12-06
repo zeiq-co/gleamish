@@ -7,9 +7,9 @@ module.exports = {
   siteUrl: 'https://www.paint.com/',
   logo: '/images/logo.jpg',
 
-  telephone: '7 87 753 780',
+  telephone: '01632 960102',
   email: 'Midaspainting@gmail.com',
-  address: '58, Thomson Street, USA',
+  address: '94 Orpwood Road, Birmingham',
   twitter: 'https://twitter.com/',
   facebook: 'https://www.facebook.com/',
   instagram: 'https://www.instagram.com/',

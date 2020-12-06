@@ -9,7 +9,9 @@ import config from '../utils/config';
 
 const Container = styled.footer`
   padding: 7rem 0;
-  background-color: #0a0a0a;
+  padding-bottom: 1rem;
+
+  background-color: ${theme.darkShades};
   li,
   p {
     margin-bottom: 1rem;
@@ -37,7 +39,7 @@ const LogoImg = styled.img`
 
 const Bottom = styled.div`
   padding: 2rem !important;
-  background: #263d42;
+  background-color: ${theme.darkShades};
 `;
 
 const Information = [
