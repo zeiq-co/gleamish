@@ -18,11 +18,15 @@ const CategoryItem = ({ data }) => {
     <Wrapper className="column is-4" border={data.border}>
       <div className="box-container">
         <figure className="image is-96x96">
-          <img src={data.image} alt="painting images" />
+          <a>
+            <img src={data.image} alt="painting images" />
+          </a>
         </figure>
-        <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5">
-          {data.title}
-        </div>
+        <a>
+          <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5">
+            {data.title}
+          </div>
+        </a>
       </div>
     </Wrapper>
   );

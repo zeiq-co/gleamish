@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ReactCompareImage from 'react-compare-image';
 
 const Section = styled.div`
+  margin-bottom: 5.5rem;
   .column.is-6 {
     position: relative;
     margin: 2rem 0rem -2rem 0rem !important;
@@ -12,16 +13,16 @@ const Section = styled.div`
 const BoxWrapper = styled.div`
   padding: 5rem 5rem 5rem 5rem !important;
   padding: 3rem 2rem;
-  background: #406870;
-  h2,
-  p {
-    color: ${(props) => props.theme.lightShades} !important;
+  background: #f1f5f7;
+
+  @media screen and (min-width: 1400px) {
+    padding: 7rem !important;
   }
 `;
 
 const ImageBeforeAfter = () => {
   return (
-    <Section className="section mb-6">
+    <Section className="section ">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-10">

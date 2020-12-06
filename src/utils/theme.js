@@ -74,9 +74,8 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: none;
     border-radius: 0;
     background-color: ${theme.lightAccent};
-    border-color: # ${theme.borderColor};
+    border-color: transparent;
     transition: all 0.5s ease-out;
-    color: ${theme.backgroundColor};
     :hover {
       background-color: ${darken(0.06, theme.lightAccent)};
       border-color:  ${darken(0.06, theme.lightAccent)};

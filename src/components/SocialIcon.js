@@ -4,7 +4,6 @@ import config from '../utils/config';
 
 const Container = styled.section`
   margin-top: 2rem;
-  width: 160px;
   min-height: 26px;
   .level-item {
     margin-right: 0.3rem;
@@ -18,23 +17,29 @@ const Container = styled.section`
 const Icon = styled.i`
   color: ${(props) => (props.color ? props.color : '#8B8989')};
   font-size: 1.9rem;
+  background: #263d42;
+  width: 57px !important;
+  height: 57px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 18px;
 `;
 
 const SocialIcon = () => (
   <Container className="level">
     <div className="level-item">
       <a href={config.twitter} target="_blank">
-        <Icon className="fab fa-twitter mr-5" color="#fff" />
+        <Icon className="fab fa-twitter" color="#fff" />
       </a>
     </div>
     <div className="level-item">
       <a href={config.instagram} target="_blank">
-        <Icon className="fab fa-instagram mr-5" color="#fff" />
+        <Icon className="fab fa-instagram" color="#fff" />
       </a>
     </div>
     <div className="level-item">
       <a href={config.facebook} target="_blank">
-        <Icon className="fab fa-facebook mr-5" color="#fff" />
+        <Icon className="fab fa-facebook" color="#fff" />
       </a>
     </div>
   </Container>
