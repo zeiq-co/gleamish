@@ -72,7 +72,6 @@ const IndexPage = () => {
           ))}
         </Slider>
       </Wrapper>
-      {/* <HomeSlider /> */}
       <Features />
       <Categories />
       <Gallery />

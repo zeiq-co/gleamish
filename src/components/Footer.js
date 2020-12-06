@@ -109,7 +109,11 @@ const Footer = () => {
       <Bottom className="has-text-centered ">
         <h2 className="has-text-white">
           Copyright © 2020 - Midas-Paint | build by{' '}
-          <a className="has-text-white" href="zeiq.co">
+          <a
+            href="https://www.zeiq.co/"
+            target="_blank"
+            className="has-text-white"
+          >
             Zeiq.co
           </a>
         </h2>
