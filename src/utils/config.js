@@ -8,7 +8,7 @@ module.exports = {
   logo: '/images/logo.jpg',
 
   telephone: '01632 960102',
-  email: 'Midaspainting@gmail.com',
+  email: 'midaspainting@gmail.com',
   address: '94 Orpwood Road, Birmingham',
   twitter: 'https://twitter.com/',
   facebook: 'https://www.facebook.com/',

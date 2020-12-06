@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#00D1B2';
+const mainBrandColor = '#ebc330';
 const lightShades = '#F5F5F5';
 const darkAccent = '#406870';
 const darkShades = '#0A0A0A';
