@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
+import { lighten } from 'polished';
 import SocialIcon from './SocialIcon';
+import { theme } from '../utils/theme';
 import config from '../utils/config';
 
 const Container = styled.footer`
@@ -12,7 +14,7 @@ const Container = styled.footer`
   p {
     margin-bottom: 1rem;
     font-size: ${(props) => props.theme.fontSizeSmall}px !important;
-    color: #fff;
+    color: ${theme.textColorLite} !important;
   }
   .container {
     position: inherit !important;
@@ -23,6 +25,7 @@ const Container = styled.footer`
   a {
     :hover {
       transition: 0.4s !important;
+      color: ${lighten(0.6, theme.textColor)} !important;
     }
   }
 `;
@@ -105,7 +108,8 @@ const Footer = () => {
       </Container>
       <Bottom className="has-text-centered ">
         <h2 className="has-text-white">
-          Copyright © 2020 - Midas-Paint | build by <a>Zeiq.co</a>
+          Copyright © 2020 - Midas-Paint | build by{' '}
+          <a href="zeiq.co">Zeiq.co</a>
         </h2>
       </Bottom>
     </>

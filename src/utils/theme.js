@@ -36,7 +36,7 @@ export const theme = {
   fontSizeLarge: 22,
   textColor: darkShades, // '#0A0B11',
   textColorInverse: lightShades,
-  textColorLite: '#8B8989',
+  textColorLite: '#FFFFFF',
   menuTintColor: darkAccent,
   primaryFontFamily: "'Libre Baskerville', sans-serif",
   secondaryFontFamily: "'Dosis', sans-serif",
