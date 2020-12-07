@@ -38,7 +38,7 @@ const HomeBanner = ({ bgImage }) => {
             </h1>
             <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit...
+              consectetur, adipisci velit emit...
             </h1>
             <button type="button" className="button is-medium">
               Get Started
