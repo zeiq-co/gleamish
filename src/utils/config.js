@@ -7,9 +7,9 @@ module.exports = {
   siteUrl: 'https://www.paint.com/',
   logo: '/images/logo.jpg',
 
-  telephone: '01632 960102',
+  telephone: '07572575313',
   email: 'midaspainting@gmail.com',
-  address: '94 Orpwood Road, Birmingham',
+  address: '31 Chadbourn Street London E14 6QP',
   twitter: 'https://twitter.com/',
   facebook: 'https://www.facebook.com/',
   instagram: 'https://www.instagram.com/',

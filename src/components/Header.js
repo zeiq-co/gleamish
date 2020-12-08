@@ -10,7 +10,7 @@ const Section = styled.div`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.5rem;
+      max-height: 5.5rem;
     }
   }
   .navbar-item {
@@ -64,10 +64,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   return (
     <Section>
-      <nav
-        className="navbar py-4"
-        role="navigation"
-        aria-label="main navigation">
+      <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item ml-2" to="/">
@@ -83,7 +80,8 @@ const Header = () => {
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
-              onClick={() => setIsActive(!isActive)}>
+              onClick={() => setIsActive(!isActive)}
+            >
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
@@ -93,27 +91,32 @@ const Header = () => {
             <div className="navbar-end">
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line">
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+              >
                 HOME
               </Link>
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line">
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+              >
                 ABOUT
               </Link>
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line">
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+              >
                 SERVICES
               </Link>
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line">
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+              >
                 GALLERY
               </Link>
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line">
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+              >
                 CONTACT
               </Link>
             </div>

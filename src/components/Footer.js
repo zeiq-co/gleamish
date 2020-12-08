@@ -33,7 +33,7 @@ const Container = styled.footer`
 `;
 
 const LogoImg = styled.img`
-  height: 70px;
+  height: 100px;
   margin-top: -2rem;
 `;
 
