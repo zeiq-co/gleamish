@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import config from '../utils/config';
 
 const Section = styled.div`
   font-family: ${(props) => props.theme.primaryFontFamily};
@@ -10,7 +11,7 @@ const Section = styled.div`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 5.5rem;
+      max-height: 4rem;
     }
   }
   .navbar-item {
@@ -34,7 +35,8 @@ const Section = styled.div`
     a {
       font-size: ${(props) => props.theme.fontSizeSmall}px;
       font-family: ${(props) => props.theme.secondaryFontFamily};
-      color: ${(props) => props.theme.textColorLite};
+      color: ${(props) =>
+        props.secondary ? props.theme.textColorLite : props.theme.textColor};
     }
   }
   .animated-line {
@@ -59,11 +61,11 @@ const Section = styled.div`
     }
   }
 `;
-
-const Header = () => {
+const Header = ({ secondary }) => {
   const [isActive, setIsActive] = useState(false);
+
   return (
-    <Section>
+    <Section secondary={secondary}>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
@@ -114,10 +116,17 @@ const Header = () => {
                 GALLERY
               </Link>
               <Link
-                to="/"
+                to="/contact"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 CONTACT
+              </Link>
+              <Link
+                href={`tel:${config.telephone}`}
+                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+              >
+                <i class="fas fa-phone-volume mr-3"></i>
+                {config.telephone}
               </Link>
             </div>
           </div>

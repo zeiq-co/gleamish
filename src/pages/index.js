@@ -60,10 +60,9 @@ const IndexPage = () => {
     lazyLoad: true,
   };
   return (
-    <Layout hideHeader>
+    <Layout secondaryNav>
       <Seo title="Home" description="paint" />
       <Wrapper>
-        <Header />
         <Slider {...settings}>
           {bannerItem.map((item) => (
             <div>
