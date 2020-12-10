@@ -11,56 +11,47 @@ const GalleryWrapper = styled.div`
 const GalleryItem = [
   {
     id: 1,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery1.jpg',
+    image: '/images/gallery1.jpg',
     category: 'Exterior',
   },
   {
     id: 2,
-    image:
-      ' https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery2.jpg',
+    image: '/images/gallery2.jpg',
     category: 'Exterior',
   },
   {
     id: 3,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery3.jpg',
+    image: '/images/gallery3.jpg',
     category: 'Exterior',
   },
   {
     id: 4,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery4.jpg',
+    image: '/images/gallery4.jpg',
     category: 'Interior',
   },
   {
     id: 5,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery5.jpg',
+    image: '/images/gallery5.jpg',
     category: 'Interior',
   },
   {
     id: 6,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery6.jpg',
+    image: '/images/gallery6.jpg',
     category: 'Interior',
   },
   {
     id: 7,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery7.jpg',
+    image: '/images/gallery7.jpg',
     category: 'Stairwell',
   },
   {
     id: 8,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery8.jpg',
+    image: '/images/gallery8.jpg',
     category: 'Stairwell',
   },
   {
     id: 9,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/gallery8.jpg',
+    image: '/images/gallery9.jpg',
     category: 'Stairwell',
   },
 ];

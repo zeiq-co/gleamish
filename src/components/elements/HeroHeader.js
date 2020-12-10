@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background-image: url('http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_3.jpg');
+  background-image: url('/images/cantact.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

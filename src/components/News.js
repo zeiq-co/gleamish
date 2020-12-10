@@ -10,24 +10,21 @@ const NewsWrapper = styled.section`
 const NewsItem = [
   {
     id: 1,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/blog-3.jpg',
+    image: '/images/blog01.jpg',
     title: 'The Benefits of Quality Paint',
     description:
       'Phasellus aliquet, risus at blandit lobortis, tortor neque accumsan sem, in aliquet purus purus...',
   },
   {
     id: 2,
-    image:
-      ' https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/blog-4.jpg',
+    image: '/images/blog02.jpg',
     title: 'House Painting',
     description:
       'Phasellus aliquet, risus at blandit lobortis, tortor neque accumsan sem, in aliquet purus purus...',
   },
   {
     id: 3,
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/blog5.jpg',
+    image: '/images/blog03.jpg',
     title: '3 Ways to Properly Store Paint',
     description:
       'Phasellus aliquet, risus at blandit lobortis, tortor neque accumsan sem, in aliquet purus purus...',

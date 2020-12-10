@@ -6,43 +6,37 @@ import Heading from './elements/Heading';
 const Category = [
   {
     id: 1,
-    image:
-      'http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/faux.png',
+    image: '/images/category01.png',
     title: 'Faux Finishes',
     border: ' 0 1px 1px 0',
   },
   {
     id: 2,
-    image:
-      'http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/water-proofing.png',
+    image: '/images/category02.png',
     title: 'Water Proofing',
     border: ' 0 1px 1px 0',
   },
   {
     id: 3,
-    image:
-      'http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/pre-paint.png',
+    image: '/images/category03.png',
     title: 'Pre-Paint Demo',
     border: ' 0 0px 1px 0',
   },
   {
     id: 4,
-    image:
-      'http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/removeal.png',
+    image: '/images/category04.png',
     title: 'Mildew Removal',
     border: ' 0 1px 0px 0',
   },
   {
     id: 5,
-    image:
-      'http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/color-proof.png',
+    image: '/images/category05.png',
     title: 'Color Proof',
     border: ' 0 1px 0px 0',
   },
   {
     id: 6,
-    image:
-      'http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/window-washing.png',
+    image: '/images/category06.png',
     title: 'Window Washing',
     border: ' 0 0 0 0',
   },

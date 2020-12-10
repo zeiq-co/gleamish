@@ -18,6 +18,9 @@ const BoxWrapper = styled.div`
   @media screen and (min-width: 1400px) {
     padding: 7rem !important;
   }
+  @media screen and (max-width: 600px) {
+    padding: 2rem !important;
+  }
 `;
 
 const ImageBeforeAfter = () => {

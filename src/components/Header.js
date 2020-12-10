@@ -37,6 +37,9 @@ const Section = styled.div`
       font-family: ${(props) => props.theme.secondaryFontFamily};
       color: ${(props) =>
         props.secondary ? props.theme.textColorLite : props.theme.textColor};
+      :focus {
+        background-color: transparent;
+      }
     }
   }
   .animated-line {

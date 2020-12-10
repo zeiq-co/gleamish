@@ -8,24 +8,21 @@ const FeaturesItem = [
     title: 'Interior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      'http://exqute.egemenerd.com/wp-content/uploads/2019/01/059-paint-roller.png',
+    image: '/images/feature01.png',
   },
   {
     id: 2,
     title: 'Exterior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      ' http://exqute.egemenerd.com/wp-content/uploads/2019/01/008-building.png',
+    image: '/images/feature02.png',
   },
   {
     id: 3,
     title: 'Flooring',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      'http://exqute.egemenerd.com/wp-content/uploads/2019/01/025-hammer-1.png',
+    image: '/images/feature03.png',
   },
 ];
 

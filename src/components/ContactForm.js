@@ -2,10 +2,9 @@ import React from 'react';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import styled from 'styled-components';
-import Heading from '../components/elements/Heading';
+import Heading from './elements/Heading';
 
 const Section = styled.div`
-  background-color: #f0f4f7;
   input,
   textarea {
     margin-top: 1rem;
@@ -17,12 +16,12 @@ const Section = styled.div`
   .input:focus,
   .textarea:active,
   .textarea:focus {
-    border-color: #b5b5b5;
+    border-color: ${(props) => props.theme.backgroundInputColor};
     box-shadow: none;
   }
   input ::placeholder,
   textarea ::placeholder {
-    color: #b5b5b5;
+    color: ${(props) => props.theme.backgroundInputColor};
     font-size: ${(props) => props.theme.fontSizeSmall}px;
     font-weight: 400;
   }
