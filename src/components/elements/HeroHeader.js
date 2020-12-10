@@ -5,17 +5,22 @@ const HeaderWrapper = styled.div`
   background-image: url('http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  .bottom-content {
+    font-size: ${(props) => props.theme.fontSizeMedium}px;
+  }
 `;
 
 const HeroHeader = () => {
   return (
-    <HeaderWrapper className="hero is-medium is-bold">
+    <HeaderWrapper className="hero ">
       <div className="hero-body">
-        <div className="container has-text-centered">
+        <div className="container has-text-centered py-6">
           <h1 className="has-text-white is-size-1">Contact</h1>
-          <div className="has-text-white mt-4">
+          <div className="bottom-content has-text-white mt-4 has-text-weight-normal">
             <a href="/">Home </a>
-            <span>Contact</span>
+            <span>/</span>
+            <span className="ml-1">Contact</span>
           </div>
         </div>
       </div>

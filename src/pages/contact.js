@@ -7,24 +7,23 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
 
-const ContactFormWrapper = styled.div`
+const Container = styled.div`
   background-color: #f0f4f7;
-  width: 100%;
 `;
 
 const Contact = () => (
   <Layout>
     <Seo title="Contact Us" />
     <HeroHeader />
-    <ContactFormWrapper>
-      <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-6 my-6">
+    <Container className="section">
+      <div className="container ">
+        <div className="columns is-centered ">
+          <div className="column is-6 ">
             <ContactUs />
           </div>
         </div>
       </div>
-    </ContactFormWrapper>
+    </Container>
   </Layout>
 );
 

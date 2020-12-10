@@ -4,7 +4,8 @@ import * as Yup from 'yup';
 import styled from 'styled-components';
 import Heading from '../components/elements/Heading';
 
-const Container = styled.div`
+const Section = styled.div`
+  background-color: #f0f4f7;
   input,
   textarea {
     margin-top: 1rem;
@@ -19,19 +20,13 @@ const Container = styled.div`
     border-color: #b5b5b5;
     box-shadow: none;
   }
-  input ::placeholder {
-    color: #b5b5b5;
-    font-size: 14px;
-    font-weight: 400;
-  }
+  input ::placeholder,
   textarea ::placeholder {
     color: #b5b5b5;
-    font-size: 14px;
+    font-size: ${(props) => props.theme.fontSizeSmall}px;
     font-weight: 400;
   }
 `;
-
-const BuyBtn = styled.button``;
 
 const ContactForm = ({
   values,
@@ -43,7 +38,7 @@ const ContactForm = ({
   handleBlur,
 }) => {
   return (
-    <Container className="container ">
+    <Section>
       <Heading centered>Get in Touch</Heading>
       <form method="post" action="#" onSubmit={handleSubmit}>
         <div className="columns ">
@@ -94,11 +89,11 @@ const ContactForm = ({
             <p className="help is-danger">{errors.message}</p>
           )}
         </div>
-        <BuyBtn className="button is-secondary is-uppercase  is-radiusless mb-5 mt-4 ">
+        <button className="button is-secondary is-uppercase  is-radiusless mb-5 mt-4 ">
           send a message
-        </BuyBtn>
+        </button>
       </form>
-    </Container>
+    </Section>
   );
 };
 
