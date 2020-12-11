@@ -9,7 +9,7 @@ module.exports = {
 
   telephone: '07572575313',
   email: 'midaspainting@gmail.com',
-  address: '31 Chadbourn Street London E14 6QP',
+  address: 'Midas Brush Decorating Ltd,  31 Chadbourn Street London E14 6QP',
   twitter: 'https://twitter.com/',
   facebook: 'https://www.facebook.com/',
   instagram: 'https://www.instagram.com/',

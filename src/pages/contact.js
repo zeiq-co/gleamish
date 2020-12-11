@@ -6,6 +6,7 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
+import ContactAddress from '../components/ContactAddress';
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
@@ -15,6 +16,7 @@ const Contact = () => (
   <Layout>
     <Seo title="Contact Us" />
     <HeroHeader />
+    <ContactAddress />
     <Container className="section">
       <div className="container ">
         <div className="columns is-centered ">

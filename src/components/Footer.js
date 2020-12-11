@@ -68,7 +68,7 @@ const Footer = () => {
                     <a href={`mailto:${config.email}`}>{config.email}</a>
                   </li>
                   <li>
-                    <span>{config.address}</span>
+                    Address :<span>{config.address}</span>
                   </li>
                 </ul>
               </Fade>

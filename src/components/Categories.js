@@ -52,7 +52,7 @@ const Categories = () => {
         {/* <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
           Why Choose Us?{' '}
         </h1> */}
-        <div className="columns is-gapless is-multiline is-mobile">
+        <div className="columns is-gapless is-multiline ">
           {Category.map((item) => (
             <CategoryItem key={item.id} data={item} />
           ))}
