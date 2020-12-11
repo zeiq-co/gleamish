@@ -11,16 +11,19 @@ const HeaderWrapper = styled.div`
   }
 `;
 
-const HeroHeader = () => {
+const HeroHeader = ({ heading, title }) => {
   return (
     <HeaderWrapper className="hero ">
       <div className="hero-body">
         <div className="container has-text-centered py-6">
-          <h1 className="has-text-white is-size-1">Contact</h1>
+          <h1 className="has-text-white is-size-1">{heading}</h1>
           <div className="bottom-content has-text-white mt-4 has-text-weight-normal">
-            <a href="/">Home </a>
+            <a href="/" className="mr-1">
+              {' '}
+              Home
+            </a>
             <span>/</span>
-            <span className="ml-1">Contact</span>
+            <span className="ml-1">{title}</span>
           </div>
         </div>
       </div>

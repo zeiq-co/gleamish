@@ -10,18 +10,20 @@ const Img = styled.img`
   height: 1.5rem;
 `;
 
-const Heading = ({ children, centered }) => (
-  <div className="mb-6">
+const Heading = ({ children, centered, hideBottomIcon }) => (
+  <div className={hideBottomIcon ? 'mb-2' : 'mb-6'}>
     <Text
       className={`is-size-1 has-text-weight-normal mb-4 is-size-4-mobile  ${
         centered ? 'has-text-centered' : ''
       }`}
     >
       {children}
-    </Text>
-    <div className="has-text-centered">
-      <Img src="/images/paint-roller.png" alt="paint-roller" />
-    </div>
+    </Text>{' '}
+    {!hideBottomIcon && (
+      <div className="has-text-centered">
+        <Img src="/images/paint-roller.png" alt="paint-roller" />
+      </div>
+    )}
   </div>
 );
 

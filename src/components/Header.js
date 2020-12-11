@@ -101,7 +101,7 @@ const Header = ({ secondary }) => {
                 HOME
               </Link>
               <Link
-                to="/"
+                to="/about"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 ABOUT

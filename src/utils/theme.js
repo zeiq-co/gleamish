@@ -69,6 +69,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;
+    line-height: 1.5;
   }
   .button.is-secondary {
     box-shadow: none;

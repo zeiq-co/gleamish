@@ -15,7 +15,7 @@ const Container = styled.div`
 const Contact = () => (
   <Layout>
     <Seo title="Contact Us" />
-    <HeroHeader />
+    <HeroHeader heading="Contact" title="contact" />
     <ContactAddress />
     <Container className="section">
       <div className="container ">
