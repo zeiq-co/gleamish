@@ -14,7 +14,7 @@ const PortfolioSlider = ({ image }) => {
     <div className="section">
       <div className="container">
         <Section bgImage={image} className="hero is-primary is-large">
-          <div className="hero-body"></div>
+          <div className="hero-body" />
         </Section>
       </div>
     </div>
