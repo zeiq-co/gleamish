@@ -70,12 +70,12 @@ const GalleryItem = [
   },
 ];
 
-const Gallery = () => {
+const Gallery = ({ pagination, heading }) => {
   const [category, setCategory] = useState('All');
   return (
     <section className="section">
       <div className="container">
-        <Heading centered>Gallery</Heading>
+        {heading && <Heading centered>Gallery</Heading>}
         <div className="columns  is-centered">
           <div className="column is-6">
             <div className="columns is-centered">
@@ -110,47 +110,51 @@ const Gallery = () => {
             return <GalleryCard key={item.id} image={item.image} />;
           })}
         </GalleryWrapper>
-        <Pagination>
-          <nav
-            className="pagination has-text-centered"
-            role="navigation"
-            aria-label="pagination"
-          >
-            <ul className="pagination-list is-flex is-justify-content-center">
-              <li>
-                <a
-                  className="pagination-link is-current has-text-white"
-                  aria-label="Page 1"
-                  aria-current="page"
-                  href="/"
-                >
-                  1
-                </a>
-              </li>
-              <li>
-                <a
-                  className="pagination-link"
-                  aria-label="Goto page 2"
-                  href="/"
-                >
-                  2
-                </a>
-                <a
-                  className="pagination-link"
-                  aria-label="Goto page 2"
-                  href="/"
-                >
-                  3
-                </a>
-              </li>
-              <li>
-                <a className="pagination-next" href="/">
-                  Next
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </Pagination>
+        <div>
+          {pagination && (
+            <Pagination>
+              <nav
+                className="pagination has-text-centered"
+                role="navigation"
+                aria-label="pagination"
+              >
+                <ul className="pagination-list is-flex is-justify-content-center">
+                  <li>
+                    <a
+                      className="pagination-link is-current has-text-white"
+                      aria-label="Page 1"
+                      aria-current="page"
+                      href="/"
+                    >
+                      1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="pagination-link"
+                      aria-label="Goto page 2"
+                      onClick={() => setCategory('Stairwell')}
+                    >
+                      2
+                    </a>
+                    <a
+                      className="pagination-link"
+                      aria-label="Goto page 2"
+                      href="/"
+                    >
+                      3
+                    </a>
+                  </li>
+                  <li>
+                    <a className="pagination-next" href="/">
+                      Next
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </Pagination>
+          )}
+        </div>
       </div>
     </section>
   );

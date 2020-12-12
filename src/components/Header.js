@@ -107,7 +107,7 @@ const Header = ({ secondary }) => {
                 ABOUT
               </Link>
               <Link
-                to="/"
+                to="/#service"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 SERVICES
@@ -128,7 +128,7 @@ const Header = ({ secondary }) => {
                 href={`tel:${config.telephone}`}
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
-                <i class="fas fa-phone-volume mr-3"></i>
+                <i className="fas fa-phone-volume mr-3" />
                 {config.telephone}
               </Link>
             </div>

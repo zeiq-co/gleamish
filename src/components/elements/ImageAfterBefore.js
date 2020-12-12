@@ -41,12 +41,12 @@ const ImageBeforeAfter = ({
                     {title}
                   </h2>
                   <p className="mb-5">{description}</p>
-                  <button
+                  {/* <button
                     type="button"
                     className="button is-secondary is-medium"
                   >
                     View More
-                  </button>
+                  </button> */}
                 </BoxWrapper>
               </div>
 

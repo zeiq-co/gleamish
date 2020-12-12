@@ -10,7 +10,7 @@ const Gallery = () => {
     <Layout>
       <Seo title="Gallery" />
       <HeroHeader heading="Gallery" title="Gallery" />
-      <GalleryImage />
+      <GalleryImage pagination />
     </Layout>
   );
 };

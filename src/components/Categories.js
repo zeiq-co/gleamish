@@ -46,7 +46,7 @@ const Section = styled.section``;
 
 const Categories = () => {
   return (
-    <Section className="section">
+    <Section className="section" id="service">
       <div className="container">
         <Heading centered> Why Choose Us?</Heading>
         {/* <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">

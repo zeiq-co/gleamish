@@ -74,7 +74,7 @@ const IndexPage = () => {
       </Wrapper>
       <Features />
       <Categories />
-      <Gallery />
+      <Gallery heading />
       <News />
       <ImageAfterBefore
         compareImage

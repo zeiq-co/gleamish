@@ -51,7 +51,7 @@ const AboutFeatures = () => {
   return (
     <Section className="section">
       <div className="container my-6">
-        <Heading centered> Why Choose Us?</Heading>
+        <Heading centered> Our Service</Heading>
         <div className="columns is-centered is-vcentered">
           <div className="column">
             {FeaturesItem.slice(0, 2).map((item) => (
