@@ -101,7 +101,7 @@ const Header = ({ secondary }) => {
                 HOME
               </Link>
               <Link
-                to="/about"
+                to="/about-us"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 ABOUT
@@ -113,7 +113,7 @@ const Header = ({ secondary }) => {
                 SERVICES
               </Link>
               <Link
-                to="/"
+                to="/gallery"
                 className="navbar-item has-text-weight-semibold  p-5 animated-line"
               >
                 GALLERY

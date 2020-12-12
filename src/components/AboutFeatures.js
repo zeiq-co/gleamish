@@ -19,27 +19,31 @@ const Section = styled.section`
 const FeaturesItem = [
   {
     id: 1,
+    no: 1,
     title: 'Interior Painting',
     subtitle:
-      'We produce a higher level of residential and commercial professional painting services',
+      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 2,
+    no: 2,
     title: 'Exterior Painting',
     subtitle:
-      'We produce a higher level of residential and commercial professional painting services',
+      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 3,
+    no: 3,
     title: 'Flooring',
     subtitle:
-      'We produce a higher level of residential and commercial professional painting services',
+      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 4,
+    no: 4,
     title: 'Flooring',
     subtitle:
-      'We produce a higher level of residential and commercial professional painting services',
+      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
 ];
 
@@ -57,39 +61,44 @@ const AboutFeatures = () => {
               >
                 <div class="media-left ml-5">
                   <div class="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    2
+                    {item.no}
                   </div>
                 </div>
                 <div class="media-content">
-                  <p class="title is-4 has-text-right">John Smith</p>
+                  <p class="title is-size-4 has-text-right has-text-weight-normal mb-3">
+                    {' '}
+                    {item.title}
+                  </p>
                   <p
-                    class="subtitle is-6 has-text-right
+                    class="subtitle is-size-6  has-text-right mt-1
                 "
                   >
-                    @johnsmith
+                    {item.subtitle}
                   </p>
                 </div>
               </div>
             ))}
           </div>
           <div class="column  ">
-            <img src="/images/aboutbg.png" alt="about us" />
+            <img src="/images/contactbg02.png" alt="about us" />
           </div>
           <div class="column ">
             {FeaturesItem.slice(2, 4).map((item) => (
               <div class="media " key={item.id}>
                 <div class="media-left mr-5">
                   <div class="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    2
+                    {item.no}
                   </div>
                 </div>
                 <div class="media-content">
-                  <p class="title is-4 ">John Smith</p>
+                  <p class="title is-size-4 has-text-weight-normal mb-3">
+                    {item.title}
+                  </p>
                   <p
-                    class="subtitle is-6
+                    class="subtitle is-size-6 mt-1
                 "
                   >
-                    @johnsmith
+                    {item.subtitle}
                   </p>
                 </div>
               </div>
