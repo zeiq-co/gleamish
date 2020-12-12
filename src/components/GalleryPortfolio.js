@@ -55,8 +55,11 @@ const GalleryPortfolio = () => {
         <div className="columns  is-centered is-gapless is-multiline">
           {portfolioItem.map((item) => (
             <div className="column is-4">
-              <figure class="image is-4by5">
-                <img src={item.image} alt="gallery-portfolio" />
+              <figure class="image is-square">
+                <img
+                  src="https://bulma.io/images/placeholders/480x480.png"
+                  alt="gallery-portfolio"
+                />
               </figure>
             </div>
           ))}

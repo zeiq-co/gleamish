@@ -61,7 +61,7 @@ const AboutFeatures = () => {
               >
                 <div class="media-left ml-5">
                   <div class="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    {item.no}
+                    {item.id}
                   </div>
                 </div>
                 <div class="media-content">
@@ -87,7 +87,7 @@ const AboutFeatures = () => {
               <div class="media " key={item.id}>
                 <div class="media-left mr-5">
                   <div class="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    {item.no}
+                    {item.id}
                   </div>
                 </div>
                 <div class="media-content">
