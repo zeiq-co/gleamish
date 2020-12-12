@@ -13,6 +13,7 @@ import Gallery from '../components/Gallery';
 import News from '../components/News';
 import Categories from '../components/Categories';
 import ImageBeforeAfter from '../components/ImageBeforeAfter';
+import ImageAfterBefore from '../components/elements/ImageAfterBefore';
 
 const Wrapper = styled.div`
   .slick-list {
@@ -75,7 +76,11 @@ const IndexPage = () => {
       <Categories />
       <Gallery />
       <News />
-      <ImageBeforeAfter />
+      <ImageAfterBefore
+        compareImage
+        title="Our Latest Projects"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam."
+      />
     </Layout>
   );
 };

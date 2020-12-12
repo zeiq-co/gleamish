@@ -88,8 +88,8 @@ const ContactForm = ({
             <p className="help is-danger">{errors.message}</p>
           )}
         </div>
-        <button className="button is-secondary is-uppercase  is-radiusless mb-5 mt-4 ">
-          send a message
+        <button type="button" className="button is-secondary is-medium mt-5">
+          Send Message
         </button>
       </form>
     </Section>
