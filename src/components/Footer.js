@@ -59,11 +59,11 @@ const Footer = () => {
                 </h1>
                 <ul>
                   <li>
-                    Tel :{' '}
-                    <a href={`tel:${config.telephone}`}>{config.telephone}</a>
+                    Tel :
+                    <a href={`tel:${config.telephone}`}> {config.telephone}</a>
                   </li>
                   <li>
-                    E-MAIL :
+                    E-MAIL : {'                    '}
                     <a href={`mailto:${config.email}`}>{config.email}</a>
                   </li>
                   <li>

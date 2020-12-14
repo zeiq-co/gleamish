@@ -59,7 +59,7 @@ const IndexPage = () => {
   };
   return (
     <Layout secondaryNav>
-      <Seo title="Home" description="paint" />
+      <Seo title="Home" description="Midas Paint" />
       <Wrapper>
         <Slider {...settings}>
           {bannerItem.map((item) => (

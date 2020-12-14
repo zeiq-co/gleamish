@@ -11,10 +11,10 @@ const Section = styled.div`
   }
 `;
 const BoxWrapper = styled.div`
-  padding: 5rem 8rem 5rem 5rem !important;
+  padding: 5rem 8rem 3rem 5rem !important;
   background: #f1f5f7;
   @media screen and (min-width: 1400px) {
-    padding: 7rem !important;
+    padding: 10rem 10rem 10rem 5rem !important;
   }
   @media screen and (max-width: 600px) {
     padding: 2rem !important;
