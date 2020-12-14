@@ -2,6 +2,7 @@ import React from 'react';
 
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
+import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
   background-image: url(${(props) => props.bgImage});
@@ -40,9 +41,12 @@ const HomeBanner = ({ bgImage }) => {
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
               consectetur, adipisci emit...
             </h1>
-            <button type="button" className="button is-medium">
+            {/* <button type="button" className="button is-medium">
               Get Started
-            </button>
+            </button> */}
+            <div className="has-text-center">
+              <OverlayButton />
+            </div>
           </div>
         </div>
       </Fade>
