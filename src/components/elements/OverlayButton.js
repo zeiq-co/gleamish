@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../utils/theme';
 
 const Button = styled.button`
-  padding: 1.5rem 3.5rem !important;
+  padding: 1.2rem 3.2rem !important;
   background: none;
   color: ${theme.textColorLite};
   position: relative;
@@ -36,7 +36,7 @@ const Button = styled.button`
 
 const HeroHeader = () => {
   return (
-    <Button className="button has-text-weight-bold is-size-4">
+    <Button className="button has-text-weight-bold is-size-5">
       Get Started
     </Button>
   );
