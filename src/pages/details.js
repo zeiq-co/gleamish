@@ -9,7 +9,7 @@ const Details = () => {
   return (
     <Layout>
       <Seo title="services" />
-      <HeroHeader heading="Paint Removal and Cleaning" title="Services" />
+      <HeroHeader heading="Lorem Ipsum" title="Services" />
       <ServiceSlider />
     </Layout>
   );

@@ -80,7 +80,7 @@ const AboutFeatures = () => {
           </div>
           <div className="column ">
             {FeaturesItem.slice(2, 4).map((item) => (
-              <div className="media " key={item.id}>
+              <div className="media  mb-5" key={item.id}>
                 <div className="media-left mr-6">
                   <div className="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
                     {item.id}

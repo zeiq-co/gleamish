@@ -13,32 +13,42 @@ const Section = styled.div`
     outline: none !important;
   }
   .slick-slide div {
-    outline: none;
+    outline: none !important;
   }
   .image.is-1by1 {
     padding-top: 50%;
+  }
+  h2 {
+    line-height: 1.2;
+  }
+  .slick-dots {
+    bottom: 26px;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #fff !important;
+    font-size: 10px;
   }
 `;
 
 const serviceItem = [
   {
     id: 1,
-    bgImage: '/images/service01.jpg',
+    bgImage: 'https://bulma.io/images/placeholders/480x480.png',
   },
   {
     id: 2,
 
-    bgImage: '/images/service02.jpg',
+    bgImage: 'https://bulma.io/images/placeholders/480x480.png',
   },
   {
     id: 3,
-    bgImage: '/images/service03.jpg',
+    bgImage: 'https://bulma.io/images/placeholders/480x480.png',
   },
 ];
 
 const ServiceSlider = () => {
   const settings = {
-    dots: false,
+    dots: true,
     arrows: false,
     infinite: true,
     autoplay: true,
@@ -61,9 +71,9 @@ const ServiceSlider = () => {
                 </figure>
               ))}
             </Slider>
-
             <h2 className="has-text-centered is-size-3 mb-5 mt-5">
-              Bring Back the Charm to Your Restoration Project
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
             </h2>
             <p className="mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
