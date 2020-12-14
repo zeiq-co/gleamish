@@ -62,7 +62,7 @@ const IndexPage = () => {
   };
   return (
     <Layout secondaryNav>
-      <Seo title="Home" description="paint" />
+      <Seo title="Home" description="Midas Paint" />
       <Wrapper>
         <Slider {...settings}>
           {bannerItem.map((item) => (
@@ -79,8 +79,8 @@ const IndexPage = () => {
       <ImageAfterBefore
         compareImage
         showButton
-        title="Our Latest Projects"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam."
+        title="OUR LATEST PROJECTS"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
       />
     </Layout>
   );

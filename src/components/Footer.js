@@ -10,12 +10,11 @@ import config from '../utils/config';
 const Container = styled.footer`
   padding: 7rem 0;
   padding-bottom: 1rem;
-
   background-color: ${theme.darkShades};
   li,
   p {
     margin-bottom: 1rem;
-    font-size: ${(props) => props.theme.fontSizeSmall}px !important;
+    font-size: ${(props) => props.theme.fontSize}px !important;
     color: ${theme.textColorLite} !important;
   }
   .container {
@@ -55,16 +54,16 @@ const Footer = () => {
           <div className="columns  ">
             <div className="column has-text-centered ">
               <Fade left>
-                <h1 className="has-text-weight-normal has-text-white mb-5 is-size-4 ">
+                <h1 className="has-text-weight-normal has-text-white mb-5 is-size-3 ">
                   Contact US
                 </h1>
                 <ul>
                   <li>
-                    Tel :{' '}
-                    <a href={`tel:${config.telephone}`}>{config.telephone}</a>
+                    Tel :
+                    <a href={`tel:${config.telephone}`}> {config.telephone}</a>
                   </li>
                   <li>
-                    E-MAIL :
+                    E-MAIL : {'                    '}
                     <a href={`mailto:${config.email}`}>{config.email}</a>
                   </li>
                   <li>
@@ -80,7 +79,7 @@ const Footer = () => {
                   alt="footer-logo"
                   className="mb-5"
                 />
-                <p className="has-text-white">
+                <p className="has-text-white is-size-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                   felis lorem, feugiat et aliquet sed, aliquet sed est.It is a
                   long established fact that a reader will be distracted.

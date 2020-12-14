@@ -6,17 +6,15 @@ const Section = styled.div`
   margin-bottom: 5.5rem;
   .column.is-6 {
     position: relative;
-    margin: 1.3rem 0rem -2rem 0rem !important;
-    right: 8%;
+    margin: 2rem 0rem -1rem 0rem !important;
+    right: 9%;
   }
 `;
 const BoxWrapper = styled.div`
-  padding: 5rem 5rem 5rem 5rem !important;
-  padding: 3rem 2rem;
+  padding: 5rem 8rem 3rem 5rem !important;
   background: #f1f5f7;
-
   @media screen and (min-width: 1400px) {
-    padding: 7rem !important;
+    padding: 10rem 10rem 10rem 5rem !important;
   }
   @media screen and (max-width: 600px) {
     padding: 2rem !important;
@@ -36,9 +34,9 @@ const ImageBeforeAfter = ({
         <div className="columns is-centered">
           <div className="column is-10">
             <div className="columns is-gapless">
-              <div className="column is-7 ">
+              <div className="column is-8">
                 <BoxWrapper>
-                  <h2 className="title is-3 has-text-white is-family-primary ">
+                  <h2 className="title is-3 has-text-white is-family-primary">
                     {title}
                   </h2>
                   <p className="mb-5 is-size-6">{description}</p>
@@ -52,8 +50,7 @@ const ImageBeforeAfter = ({
                   )}
                 </BoxWrapper>
               </div>
-              <div className="column is-6 ">
-                {' '}
+              <div className="column is-6">
                 {compareImage ? (
                   <ReactCompareImage
                     leftImage="/images/before.jpg"
