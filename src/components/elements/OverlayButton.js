@@ -9,7 +9,7 @@ const Button = styled.button`
   color: ${(props) => props.theme.mainBrandColor};
   position: relative;
   transition: color 0.25s ease;
-  border: 2px solid white;
+  border: 1px solid white;
   :hover {
     color: ${(props) => props.theme.darkAccent};
   }
