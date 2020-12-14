@@ -42,9 +42,9 @@ const NewsCard = ({ image, title, description }) => {
                 <p className="subtitle is-6">{description}</p>
                 <div className="border-bottom" />
                 <div className="comment-section is-flex is-justify-content-space-between">
-                  <div className="comments is-size-7">Spray Paint</div>
-                  <div className="comments is-size-7">11 Mar 2016</div>
-                  <div className="comments is-size-7">1 Comment</div>
+                  <div className="comments is-size-7" />
+                  <div className="comments is-size-7">11 DEC 2020</div>
+                  <div className="comments is-size-7" />
                 </div>
               </div>
             </div>
