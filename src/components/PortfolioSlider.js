@@ -8,6 +8,12 @@ const Section = styled.div`
   ul {
     list-style: disc;
   }
+  .slick-list {
+    outline: none !important;
+  }
+  .slick-slide div {
+    outline: none;
+  }
 `;
 
 const PortfolioSlider = () => {
@@ -16,7 +22,7 @@ const PortfolioSlider = () => {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,

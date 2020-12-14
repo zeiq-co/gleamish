@@ -52,7 +52,7 @@ const AboutFeatures = () => {
     <Section className="section">
       <div className="container my-6">
         <Heading centered> Our Service</Heading>
-        <div className="columns is-centered is-vcentered">
+        <div className="columns is-centered ">
           <div className="column">
             {FeaturesItem.slice(0, 2).map((item) => (
               <div
