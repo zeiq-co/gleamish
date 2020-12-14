@@ -6,8 +6,8 @@ const Section = styled.div`
   margin-bottom: 5.5rem;
   .column.is-6 {
     position: relative;
-    margin: 2rem 0rem -2rem 0rem !important;
-    right: 8%;
+    margin: 2rem 0rem -1rem 0rem !important;
+    right: 9%;
   }
 `;
 const BoxWrapper = styled.div`
@@ -32,9 +32,9 @@ const ImageBeforeAfter = ({
     <Section className="section ">
       <div className="container">
         <div className="columns is-centered">
-          <div className="column is-11">
+          <div className="column is-10">
             <div className="columns is-gapless">
-              <div className="column is-7">
+              <div className="column is-8">
                 <BoxWrapper>
                   <h2 className="title is-3 has-text-white is-family-primary">
                     {title}

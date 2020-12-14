@@ -76,8 +76,8 @@ const IndexPage = () => {
       <ImageAfterBefore
         compareImage
         showButton
-        title="Our Latest Projects"
-        description="ProRange quality is one of the most important aspects of painting, we have stong procedures and processes in place to ensure a high quality finish on a consistent basis."
+        title="OUR LATEST PROJECTS"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
       />
     </Layout>
   );
