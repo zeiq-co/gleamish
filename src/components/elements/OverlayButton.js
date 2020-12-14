@@ -11,7 +11,7 @@ const Button = styled.button`
   border: 1px solid ${theme.textColorLite};
   :hover,
   :focus {
-    color: ${theme.mainBrandColor};
+    color: #363636;
   }
 
   ::after {
@@ -21,7 +21,7 @@ const Button = styled.button`
     left: 0;
     width: 0;
     height: 100%;
-    background-color: ${theme.backgroundColor};
+    background-color: ${theme.mainBrandColor};
     transform-origin: left;
     transition: width 0.25s ease;
     z-index: -1;
@@ -34,7 +34,7 @@ const Button = styled.button`
 
 const HeroHeader = () => {
   return (
-    <Button className="button has-text-weight-bold is-size-5">
+    <Button className="button has-text-weight-normal is-size-5">
       Get Started
     </Button>
   );

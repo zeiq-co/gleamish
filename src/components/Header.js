@@ -62,6 +62,11 @@ const Section = styled.div`
     .navbar-menu {
       background: ${(props) => props.theme.borderColor} !important;
     }
+    .navbar-end {
+      a {
+        color: #0a0a0a;
+      }
+    }
   }
 `;
 const Header = ({ secondary }) => {
