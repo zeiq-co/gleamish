@@ -22,6 +22,9 @@ const Wrapper = styled.div`
   .slick-slide div {
     outline: none;
   }
+  .slick-next {
+    right: 0 !important;
+  }
   // properties used  to banners over navigation.
   .slick-slider {
     position: relative !important;

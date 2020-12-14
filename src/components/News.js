@@ -5,6 +5,10 @@ import Heading from './elements/Heading';
 
 const NewsWrapper = styled.section`
   padding: 50px 0px;
+  .columns {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 `;
 
 const NewsItem = [

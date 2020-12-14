@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import CategoryItem from './CategoryItem';
 import Heading from './elements/Heading';
 
+const Section = styled.div`
+  .columns {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+`;
+
 const Category = [
   {
     id: 1,
@@ -41,8 +48,6 @@ const Category = [
     border: ' 0 0 0 0',
   },
 ];
-
-const Section = styled.section``;
 
 const Categories = () => {
   return (

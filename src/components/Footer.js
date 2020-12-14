@@ -87,7 +87,6 @@ const Footer = () => {
                 </p>
               </Fade>
             </div>
-
             <div className="column has-text-centered">
               <Fade right>
                 <h1 className="has-text-weight-normal has-text-white mb-5 is-size-4 ">

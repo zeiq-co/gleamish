@@ -11,7 +11,7 @@ const Button = styled.button`
   border: 1px solid ${theme.textColorLite};
   :hover,
   :focus {
-    color: #363636;
+    color: ${theme.textColorLite};
   }
 
   ::after {

@@ -84,8 +84,8 @@ const Header = ({ secondary }) => {
               href="#"
               className={
                 isActive
-                  ? 'is-active navbar-burger has-text-black'
-                  : 'navbar-burger has-text-black'
+                  ? 'is-active navbar-burger has-text-black mt-3'
+                  : 'navbar-burger has-text-black mt-3'
               }
               aria-label="menu"
               aria-expanded="false"
