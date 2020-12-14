@@ -77,7 +77,7 @@ const IndexPage = () => {
         compareImage
         showButton
         title="Our Latest Projects"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam."
+        description="ProRange quality is one of the most important aspects of painting, we have stong procedures and processes in place to ensure a high quality finish on a consistent basis."
       />
     </Layout>
   );
