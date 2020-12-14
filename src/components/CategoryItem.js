@@ -39,7 +39,7 @@ const CategoryItem = ({ data }) => {
               <img src={data.image} alt="painting images" />
             </a>
           </figure>
-          <a>
+          <a href="/details">
             <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5 mb-0">
               {data.title}
             </div>
