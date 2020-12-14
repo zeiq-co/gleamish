@@ -28,6 +28,7 @@ const ImageBeforeAfter = ({
   description,
   compareImage,
   singleImage,
+  showButton,
 }) => {
   return (
     <Section className="section ">
@@ -41,16 +42,17 @@ const ImageBeforeAfter = ({
                     {title}
                   </h2>
                   <p className="mb-5 is-size-6">{description}</p>
-                  {/* <button
-                    type="button"
-                    className="button is-secondary is-medium"
-                  >
-                    View More
-                  </button> */}
+                  {showButton && (
+                    <button
+                      type="button"
+                      className="button is-secondary is-medium"
+                    >
+                      View More
+                    </button>
+                  )}
                 </BoxWrapper>
               </div>
-
-              <div className="column is-6 left-column">
+              <div className="column is-6 ">
                 {' '}
                 {compareImage ? (
                   <ReactCompareImage
