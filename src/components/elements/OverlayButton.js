@@ -8,10 +8,8 @@ const Button = styled.button`
   color: ${theme.textColorLite};
   position: relative;
   transition: color 0.25s ease;
-  border: 1px solid white;
-  :hover {
-    color: ${theme.mainBrandColor};
-  }
+  border: 1px solid ${theme.textColorLite};
+  :hover,
   :focus {
     color: ${theme.mainBrandColor};
   }
