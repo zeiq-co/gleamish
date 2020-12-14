@@ -23,6 +23,9 @@ const Icon = styled.i`
   border-radius: 50%;
   text-align: center;
   padding: 18px;
+  :hover {
+    color: ${(props) => props.theme.darkShades};
+  }
 `;
 
 const SocialIcon = () => (

@@ -19,28 +19,24 @@ const Section = styled.section`
 const FeaturesItem = [
   {
     id: 1,
-    no: 1,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 2,
-    no: 2,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 3,
-    no: 3,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 4,
-    no: 4,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',

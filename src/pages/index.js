@@ -32,18 +32,15 @@ const Wrapper = styled.div`
 const bannerItem = [
   {
     id: 1,
-    bgImage:
-      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_1.jpg',
+    bgImage: '/images/banner01.jpg',
   },
   {
     id: 2,
-    bgImage:
-      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_2.jpg',
+    bgImage: '/images/banner02.jpg',
   },
   {
     id: 3,
-    bgImage:
-      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_3.jpg',
+    bgImage: '/images/banner03.jpg',
   },
 ];
 
