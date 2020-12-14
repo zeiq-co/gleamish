@@ -5,12 +5,12 @@ import { theme } from '../../utils/theme';
 const Button = styled.button`
   padding: 1.5rem 3.5rem !important;
   background: none;
-  color: ${theme.mainBrandColor};
+  color: ${theme.textColorLite};
   position: relative;
   transition: color 0.25s ease;
   border: 1px solid white;
   :hover {
-    color: ${theme.darkAccent};
+    color: ${theme.mainBrandColor};
   }
   :focus {
     color: ${theme.mainBrandColor};
