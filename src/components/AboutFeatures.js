@@ -19,28 +19,24 @@ const Section = styled.section`
 const FeaturesItem = [
   {
     id: 1,
-    no: 1,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 2,
-    no: 2,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 3,
-    no: 3,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
   },
   {
     id: 4,
-    no: 4,
     title: 'Lorem Ipsum',
     subtitle:
       'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
@@ -52,7 +48,7 @@ const AboutFeatures = () => {
     <Section className="section">
       <div className="container my-6">
         <Heading centered> Our Service</Heading>
-        <div className="columns is-centered is-vcentered">
+        <div className="columns is-centered ">
           <div className="column">
             {FeaturesItem.slice(0, 2).map((item) => (
               <div

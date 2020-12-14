@@ -5,18 +5,44 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const Section = styled.div`
+  margin-top: 5rem;
   ul {
     list-style: disc;
   }
+  .slick-list {
+    outline: none !important;
+  }
+  .slick-slide div {
+    outline: none;
+  }
+  .image.is-1by1 {
+    padding-top: 50%;
+  }
 `;
 
-const PortfolioSlider = () => {
+const serviceItem = [
+  {
+    id: 1,
+    bgImage: '/images/service01.jpg',
+  },
+  {
+    id: 2,
+
+    bgImage: '/images/service02.jpg',
+  },
+  {
+    id: 3,
+    bgImage: '/images/service03.jpg',
+  },
+];
+
+const ServiceSlider = () => {
   const settings = {
     dots: false,
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -24,29 +50,16 @@ const PortfolioSlider = () => {
     lazyLoad: true,
   };
   return (
-    <Section className="section mt-6">
+    <Section className="section ">
       <div className="container ">
         <div className="columns is-centered ">
           <div className="column is-three-fifths ">
             <Slider {...settings}>
-              <div>
-                <img
-                  src="http://prorange.ancorathemes.com/wp-content/uploads/2017/03/image-45.jpg"
-                  alt="service-imade"
-                />
-              </div>
-              <div>
-                <img
-                  src="http://prorange.ancorathemes.com/wp-content/uploads/2017/03/image-46.jpg"
-                  alt="service-imade"
-                />
-              </div>
-              <div>
-                <img
-                  src="http://prorange.ancorathemes.com/wp-content/uploads/2017/03/image-47.jpg"
-                  alt="service-imade"
-                />
-              </div>
+              {serviceItem.map((item) => (
+                <figure className="image is-1by1">
+                  <img src={item.bgImage} key={item.id} alt="service-images" />
+                </figure>
+              ))}
             </Slider>
 
             <h2 className="has-text-centered is-size-3 mb-5 mt-5">
@@ -88,4 +101,4 @@ const PortfolioSlider = () => {
   );
 };
 
-export default PortfolioSlider;
+export default ServiceSlider;

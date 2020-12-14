@@ -6,7 +6,7 @@ const Section = styled.div`
   margin-bottom: 5.5rem;
   .column.is-6 {
     position: relative;
-    margin: 2rem 0rem -2rem 0rem !important;
+    margin: 1.3rem 0rem -2rem 0rem !important;
     right: 8%;
   }
 `;
@@ -40,7 +40,7 @@ const ImageBeforeAfter = ({
                   <h2 className="title is-3 has-text-white is-family-primary ">
                     {title}
                   </h2>
-                  <p className="mb-5">{description}</p>
+                  <p className="mb-5 is-size-6">{description}</p>
                   {/* <button
                     type="button"
                     className="button is-secondary is-medium"

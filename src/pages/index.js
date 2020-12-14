@@ -32,18 +32,15 @@ const Wrapper = styled.div`
 const bannerItem = [
   {
     id: 1,
-    bgImage:
-      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_1.jpg',
+    bgImage: '/images/banner01.jpg',
   },
   {
     id: 2,
-    bgImage:
-      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_2.jpg',
+    bgImage: '/images/banner02.jpg',
   },
   {
     id: 3,
-    bgImage:
-      'http://prorange.ancorathemes.com/wp-content/uploads/2017/05/slide_3.jpg',
+    bgImage: '/images/banner03.jpg',
   },
 ];
 
@@ -79,7 +76,7 @@ const IndexPage = () => {
       <ImageAfterBefore
         compareImage
         title="Our Latest Projects"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam."
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam."
       />
     </Layout>
   );
