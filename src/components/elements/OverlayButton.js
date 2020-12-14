@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../utils/theme';
 
 const Button = styled.button`
-  margin: 1em;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem !important;
+  padding: 1.5rem 3.5rem !important;
   background: none;
-  color: ${(props) => props.theme.mainBrandColor};
+  color: ${theme.mainBrandColor};
   position: relative;
   transition: color 0.25s ease;
   border: 1px solid white;
   :hover {
-    color: ${(props) => props.theme.darkAccent};
+    color: ${theme.darkAccent};
   }
   :focus {
-    color: ${(props) => props.theme.mainBrandColor};
+    color: ${theme.mainBrandColor};
   }
 
   ::after {
@@ -24,7 +23,7 @@ const Button = styled.button`
     left: 0;
     width: 0;
     height: 100%;
-    background-color: white;
+    background-color: ${theme.backgroundColor};
     transform-origin: left;
     transition: width 0.25s ease;
     z-index: -1;
@@ -36,6 +35,10 @@ const Button = styled.button`
 `;
 
 const HeroHeader = () => {
-  return <Button className="button has-text-weight-bold">Button</Button>;
+  return (
+    <Button className="button has-text-weight-bold is-size-4">
+      Get Started
+    </Button>
+  );
 };
 export default HeroHeader;
