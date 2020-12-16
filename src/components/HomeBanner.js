@@ -12,8 +12,8 @@ const Section = styled.div`
   align-items: center;
   height: 100vh;
   .heading {
-    font-size: 70px !important;
-    line-height: 5rem;
+    font-size: 48px !important;
+    line-height: 4rem;
   }
   .subheading {
     font-size: 18px !important;
@@ -33,9 +33,9 @@ const HomeBanner = ({ bgImage }) => {
     <Section bgImage={bgImage}>
       <Fade bottom>
         <div className="columns is-centered is-vcentered">
-          <div className="column is-5 has-text-centered">
+          <div className="column is-5 has-text-centered ">
             <h1 className="heading has-text-weight-normal has-text-white mb-4">
-              Lorem Ipsum
+              Reliable Painters and Decorators
             </h1>
             <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
