@@ -51,7 +51,7 @@ const Category = [
 
 const Categories = () => {
   return (
-    <Section className="section" id="service">
+    <Section className="section">
       <div className="container">
         <Heading centered> Why Choose Us?</Heading>
         {/* <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">

@@ -5,13 +5,13 @@ import config from '../utils/config';
 
 const Section = styled.div`
   font-family: ${(props) => props.theme.primaryFontFamily};
-  .navbar {
+  /* .navbar {
     background: transparent;
-  }
+  } */
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 4rem;
+      max-height: 5.5rem;
     }
   }
   .navbar-item {
@@ -28,15 +28,14 @@ const Section = styled.div`
   }
   .navbar-burger {
     color: ${(props) => props.theme.textColorLite};
-    opacity: 0.6;
+    opacity: 0.5;
     border-radius: 4px;
   }
   .navbar-end {
     a {
-      font-size: ${(props) => props.theme.fontSizeSmall}px;
+      font-size: ${(props) => props.theme.fontSizeMedium}px;
       font-family: ${(props) => props.theme.secondaryFontFamily};
-      color: ${(props) =>
-        props.secondary ? props.theme.textColorLite : props.theme.textColor};
+      color: ${(props) => props.theme.textColor};
       :focus {
         background-color: transparent;
       }
@@ -50,9 +49,9 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${(props) => props.theme.textColorLite};
+      background-color: ${(props) => props.theme.mainBrandColor};
       width: 0%;
-      bottom: 0.875rem;
+      bottom: 1.5rem;
     }
     &:hover::before {
       width: 65%;
@@ -62,18 +61,13 @@ const Section = styled.div`
     .navbar-menu {
       background: ${(props) => props.theme.borderColor} !important;
     }
-    .navbar-end {
-      a {
-        color: #0a0a0a;
-      }
-    }
   }
 `;
-const Header = ({ secondary }) => {
+const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <Section secondary={secondary}>
+    <Section>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
@@ -101,40 +95,47 @@ const Header = ({ secondary }) => {
             <div className="navbar-end">
               <Link
                 to="/"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+                className="navbar-item has-text-weight-normal p-5 animated-line"
               >
                 HOME
               </Link>
               <Link
                 to="/about-us"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+                className="navbar-item has-text-weight-normal  p-5 animated-line"
               >
                 ABOUT
               </Link>
               <Link
-                to="/#service"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+                to="/service"
+                className="navbar-item has-text-weight-normal  p-5 animated-line"
               >
                 SERVICES
               </Link>
               <Link
                 to="/gallery"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+                className="navbar-item has-text-weight-normal p-5 animated-line"
               >
                 GALLERY
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+                className="navbar-item has-text-weight-normal  p-5 animated-line"
               >
                 CONTACT
               </Link>
               <Link
                 href={`tel:${config.telephone}`}
-                className="navbar-item has-text-weight-semibold  p-5 animated-line"
+                className="navbar-item has-text-weight-normal  p-5 animated-line"
               >
                 <i className="fas fa-phone-volume mr-3" />
                 {config.telephone}
+              </Link>
+              <Link
+                href={`mailto:${config.email}`}
+                className="navbar-item has-text-weight-normal  p-5 animated-line"
+              >
+                <i className="far fa-envelope mr-3" />
+                {config.email}
               </Link>
             </div>
           </div>

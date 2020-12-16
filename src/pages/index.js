@@ -4,15 +4,12 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import HomeBanner from '../components/HomeBanner';
-
-import Header from '../components/Header';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
 import Categories from '../components/Categories';
-import ImageBeforeAfter from '../components/ImageBeforeAfter';
 import ImageAfterBefore from '../components/elements/ImageAfterBefore';
 
 const Wrapper = styled.div`
@@ -41,10 +38,10 @@ const bannerItem = [
     id: 2,
     bgImage: '/images/banner02.jpg',
   },
-  {
-    id: 3,
-    bgImage: '/images/banner03.jpg',
-  },
+  // {
+  //   id: 3,
+  //   bgImage: '/images/banner03.jpg',
+  // },
 ];
 
 const IndexPage = () => {
@@ -52,7 +49,7 @@ const IndexPage = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     speed: 600,
     slidesToShow: 1,
@@ -61,7 +58,7 @@ const IndexPage = () => {
     lazyLoad: true,
   };
   return (
-    <Layout secondaryNav>
+    <Layout>
       <Seo title="Home" description="Midas Paint" />
       <Wrapper>
         <Slider {...settings}>
