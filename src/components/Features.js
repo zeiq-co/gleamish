@@ -1,28 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
-import FeaturesCard from './FeaturesCard';
+// import FeaturesCard from './FeaturesCard';
+
+const Card = styled.div`
+  .subtitle {
+    line-height: 30px;
+  }
+`;
 
 const FeaturesItem = [
   {
     id: 1,
-    title: 'Interior Painting',
+    title: 'Residential',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/feature01.png',
+    image: '/images/paintbrush (2).png',
   },
   {
     id: 2,
-    title: 'Exterior Painting',
+    title: 'Commercial',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/feature02.png',
+    image: '/images/painting-02.jpg',
   },
   {
     id: 3,
-    title: 'Flooring',
+    title: 'Interior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/feature03.png',
+    image: '/images/painting-03.jpg',
+  },
+  {
+    id: 4,
+    title: 'Exterior Painting',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+    image: '/images/painting-04.jpg',
   },
 ];
 
@@ -34,12 +47,21 @@ const Features = () => {
       <div className="container">
         <div className="columns">
           {FeaturesItem.map((item) => (
-            <FeaturesCard
-              key={item.id}
-              image={item.image}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
+            <div key={item.id} className="column">
+              <Card className="card p-4">
+                <div className="card-image is-flex is-justify-content-center mb-5">
+                  <figure className="image is-96x96">
+                    <img src={item.image} alt="painting Images" />
+                  </figure>
+                </div>
+                <h3 className="title has-text-centered is-size-4 mb-5 is-spaced">
+                  {item.title}
+                </h3>
+                <p className="subtitle has-text-centered is-size-6">
+                  {item.subtitle}
+                </p>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

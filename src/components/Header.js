@@ -8,6 +8,15 @@ const Section = styled.div`
   /* .navbar {
     background: transparent;
   } */
+  .nav-secondary {
+    background: ${(props) => props.theme.darkShades};
+  }
+  .secondary-start {
+    margin: 0 auto;
+    a {
+      font-size: ${(props) => props.theme.fontSizeSmall}px;
+    }
+  }
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
@@ -68,6 +77,42 @@ const Header = () => {
 
   return (
     <Section>
+      <div
+        className=" nav-secondary p-0"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="container">
+          <div className="navbar-menu">
+            <div className="navbar-start secondary-start">
+              <Link
+                href={`mailto:${config.email}`}
+                className="navbar-item has-text-weight-normal has-text-white"
+              >
+                <i className="far fa-envelope mr-3" />
+                {config.email}
+              </Link>
+              {/* <div className="level">
+                <div className="level-item mr-4">
+                  <a href={config.twitter} target="_blank">
+                    <i className="fab fa-twitter has-text-white" />
+                  </a>
+                </div>
+                <div className="level-item mr-4">
+                  <a href={config.instagram} target="_blank">
+                    <i className="fab fa-instagram has-text-white" />
+                  </a>
+                </div>
+                <div className="level-item mr-4">
+                  <a href={config.facebook} target="_blank">
+                    <i className="fab fa-facebook has-text-white" />
+                  </a>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
@@ -129,13 +174,6 @@ const Header = () => {
               >
                 <i className="fas fa-phone-volume mr-3" />
                 {config.telephone}
-              </Link>
-              <Link
-                href={`mailto:${config.email}`}
-                className="navbar-item has-text-weight-normal  p-5 animated-line"
-              >
-                <i className="far fa-envelope mr-3" />
-                {config.email}
               </Link>
             </div>
           </div>
