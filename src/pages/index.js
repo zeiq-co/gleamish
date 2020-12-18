@@ -32,16 +32,12 @@ const Wrapper = styled.div`
 const bannerItem = [
   {
     id: 1,
-    bgImage: '/images/banner01.jpg',
+    bgImage: '/images/homebanner02.jpg',
   },
   {
     id: 2,
-    bgImage: '/images/banner02.jpg',
+    bgImage: '/images/homebanner-01.jpg',
   },
-  // {
-  //   id: 3,
-  //   bgImage: '/images/banner03.jpg',
-  // },
 ];
 
 const IndexPage = () => {
