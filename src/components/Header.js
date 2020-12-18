@@ -5,11 +5,8 @@ import HeaderInformation from './HeaderInformation';
 
 const Section = styled.div`
   font-family: ${(props) => props.theme.primaryFontFamily};
-  /* .navbar {
-    background: transparent;
-  } */
   .navbar-brand {
-    margin-right: 20px;
+    margin-left: -1.5rem !important;
     .navbar-item img {
       max-height: 5.5rem;
     }
@@ -20,6 +17,7 @@ const Section = styled.div`
     }
   }
   .navbar-menu {
+    margin-right: -1.5rem !important;
     @media screen and (max-width: 600px) {
       position: absolute;
       width: 100%;
