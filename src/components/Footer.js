@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 import { lighten } from 'polished';
 import SocialIcon from './SocialIcon';
 import { theme } from '../utils/theme';
@@ -53,52 +52,46 @@ const Footer = () => {
         <div className="container">
           <div className="columns  ">
             <div className="column has-text-centered ">
-              <Fade left>
-                <h1 className="has-text-weight-normal has-text-white mb-5 is-size-3 ">
-                  Contact US
-                </h1>
-                <ul>
-                  <li>
-                    Tel :
-                    <a href={`tel:${config.telephone}`}> {config.telephone}</a>
-                  </li>
-                  <li>
-                    E-MAIL : {'                    '}
-                    <a href={`mailto:${config.email}`}>{config.email}</a>
-                  </li>
-                  <li>
-                    Address :<span>{config.address}</span>
-                  </li>
-                </ul>
-              </Fade>
+              <h1 className="has-text-weight-normal has-text-white mb-5 is-size-3 ">
+                Contact US
+              </h1>
+              <ul>
+                <li>
+                  Tel :
+                  <a href={`tel:${config.telephone}`}> {config.telephone}</a>
+                </li>
+                <li>
+                  E-MAIL : {'                    '}
+                  <a href={`mailto:${config.email}`}>{config.email}</a>
+                </li>
+                <li>
+                  Address :<span>{config.address}</span>
+                </li>
+              </ul>
             </div>
             <div className="column has-text-centered is-5">
-              <Fade top>
-                <LogoImg
-                  src="/images/logo.png"
-                  alt="footer-logo"
-                  className="mb-5"
-                />
-                <p className="has-text-white is-size-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  felis lorem, feugiat et aliquet sed, aliquet sed est.It is a
-                  long established fact that a reader will be distracted.
-                </p>
-              </Fade>
+              <LogoImg
+                src="/images/logo.png"
+                alt="footer-logo"
+                className="mb-5"
+              />
+              <p className="has-text-white is-size-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                felis lorem, feugiat et aliquet sed, aliquet sed est.It is a
+                long established fact that a reader will be distracted.
+              </p>
             </div>
             <div className="column has-text-centered">
-              <Fade right>
-                <h1 className="has-text-weight-normal has-text-white mb-5 is-size-4 ">
-                  Our Information
-                </h1>
-                <ul>
-                  {Information.map((item) => (
-                    <li key={item.id}>
-                      <Link to={item.url}>{item.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </Fade>
+              <h1 className="has-text-weight-normal has-text-white mb-5 is-size-4 ">
+                Our Information
+              </h1>
+              <ul>
+                {Information.map((item) => (
+                  <li key={item.id}>
+                    <Link to={item.url}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <div className="has-text-centered is-flex  is-justify-content-center">

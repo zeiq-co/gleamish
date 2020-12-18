@@ -8,15 +8,6 @@ const Section = styled.div`
   /* .navbar {
     background: transparent;
   } */
-  .nav-secondary {
-    background: ${(props) => props.theme.darkShades};
-  }
-  .secondary-start {
-    margin: 0 auto;
-    a {
-      font-size: ${(props) => props.theme.fontSizeSmall}px;
-    }
-  }
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
@@ -133,6 +124,15 @@ const Header = () => {
               >
                 CONTACT
               </Link>
+              <div className="navbar-item has-text-weight-normal p-5 ">
+                <Link
+                  to="/quote"
+                  type="button"
+                  className="button is-secondary is-medium"
+                >
+                  GET A QUOTE
+                </Link>
+              </div>
             </div>
           </div>
         </div>
