@@ -8,7 +8,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import Gallery from '../components/Gallery';
-import News from '../components/News';
+import Review from '../components/Review';
 import Categories from '../components/Categories';
 import ImageAfterBefore from '../components/elements/ImageAfterBefore';
 
@@ -40,6 +40,33 @@ const bannerItem = [
   },
 ];
 
+const reviewItem = [
+  {
+    id: 1,
+    reviews:
+      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+    title: 'Residential',
+    subtitle: 'Lorem ipsum',
+    image: '/images/paintbrush (2).png',
+  },
+  {
+    id: 2,
+    reviews:
+      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+    title: 'Residential',
+    subtitle: 'Lorem ipsum',
+    image: '/images/paintbrush (2).png',
+  },
+  {
+    id: 3,
+    reviews:
+      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+    title: 'Residential',
+    subtitle: 'Lorem ipsum',
+    image: '/images/paintbrush (2).png',
+  },
+];
+
 const IndexPage = () => {
   const settings = {
     dots: false,
@@ -68,7 +95,7 @@ const IndexPage = () => {
       <Features />
       <Categories />
       <Gallery heading />
-      <News />
+      <Review />
       <ImageAfterBefore
         compareImage
         showButton
