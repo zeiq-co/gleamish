@@ -52,8 +52,8 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.03rem !important;
     font-size: 17px;
      .columns {
-    ${'' /* margin-left: 0 !important;
-    margin-right: 0 !important; */}
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   }
   .title {

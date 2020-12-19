@@ -12,7 +12,7 @@ const Section = styled.div`
 
 const HeaderInformation = () => {
   return (
-    <Section>
+    <Section className="is-hidden-mobile">
       <div className="container">
         <div className="is-flex is-justify-content-space-between is-align-items-center">
           <div className="has-text-left">
