@@ -11,6 +11,7 @@ import Gallery from '../components/Gallery';
 import Review from '../components/Review';
 import Categories from '../components/Categories';
 import ImageAfterBefore from '../components/elements/ImageAfterBefore';
+import Members from '../components/Members';
 
 const Wrapper = styled.div`
   .slick-list {
@@ -23,10 +24,10 @@ const Wrapper = styled.div`
     right: 0 !important;
   }
   // properties used  to banners over navigation.
-  .slick-slider {
+  /* .slick-slider {
     position: relative !important;
     bottom: 105px !important;
-  }
+  } */
 `;
 
 const bannerItem = [
@@ -92,6 +93,7 @@ const IndexPage = () => {
           ))}
         </Slider>
       </Wrapper>
+      <Members />
       <Features />
       <Categories />
       <Gallery heading />

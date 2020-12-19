@@ -21,21 +21,21 @@ const FeaturesItem = [
     title: 'Commercial',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting-02.jpg',
+    image: '/images/paintbrush (2).png',
   },
   {
     id: 3,
     title: 'Interior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting-03.jpg',
+    image: '/images/paintbrush (2).png',
   },
   {
     id: 4,
     title: 'Exterior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting-04.jpg',
+    image: '/images/paintbrush (2).png',
   },
 ];
 

@@ -55,6 +55,7 @@ const reviewItem = [
 ];
 
 const Section = styled.section`
+  padding-bottom: 5rem;
   .card {
     box-shadow: none;
   }
@@ -118,7 +119,7 @@ const Review = () => {
             <div className="columns">
               <div className="column">
                 <Icon className="fas fa-quote-left is-size-3 mb-2" />
-                <div className="card">
+                <div className="card" key={item.id}>
                   <div className="card-content">
                     <p className="mb-5"> {item.reviews}</p>
                     <div className="media">
@@ -146,5 +147,4 @@ const Review = () => {
     </Section>
   );
 };
-
 export default Review;
