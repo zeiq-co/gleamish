@@ -13,7 +13,7 @@ const Container = styled.footer`
   li,
   p {
     margin-bottom: 1rem;
-    font-size: ${(props) => props.theme.fontSize}px !important;
+    font-size: ${(props) => props.theme.fontSizeSmall}px !important;
     color: #9b9b9b !important;
     :hover {
       color: #fff !important;

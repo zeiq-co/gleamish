@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ReactCompareImage from 'react-compare-image';
 
 const Section = styled.div`
-  margin-bottom: 5.5rem;
   margin-top: 3rem;
   .column.is-6 {
     position: relative;

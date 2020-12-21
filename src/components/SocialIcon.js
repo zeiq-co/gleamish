@@ -15,7 +15,7 @@ const Container = styled.section`
   }
 `;
 const Icon = styled.i`
-  color: ${(props) => (props.color ? props.color : '#8B8989')};
+  color: ${(props) => props.theme.darkAccent};
   font-size: 1.9rem;
   background: #eac343 !important;
   width: 57px !important;
@@ -24,7 +24,7 @@ const Icon = styled.i`
   text-align: center;
   padding: 18px;
   :hover {
-    color: ${(props) => props.theme.darkShades};
+    color: #fff;
   }
 `;
 
@@ -32,17 +32,17 @@ const SocialIcon = () => (
   <Container className="level">
     <div className="level-item">
       <a href={config.twitter} target="_blank">
-        <Icon className="fab fa-twitter" color="#fff" />
+        <Icon className="fab fa-twitter" />
       </a>
     </div>
     <div className="level-item">
       <a href={config.instagram} target="_blank">
-        <Icon className="fab fa-instagram" color="#fff" />
+        <Icon className="fab fa-instagram" />
       </a>
     </div>
     <div className="level-item">
       <a href={config.facebook} target="_blank">
-        <Icon className="fab fa-facebook" color="#fff" />
+        <Icon className="fab fa-facebook" />
       </a>
     </div>
   </Container>

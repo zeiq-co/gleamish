@@ -9,7 +9,7 @@ const OurLogo = [
   },
   {
     id: 1,
-    image: '/images/brand02.png',
+    image: '/images/brand01.png',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const OurLogo = [
   },
   {
     id: 3,
-    image: '/images/brand02.png',
+    image: '/images/brand01.png',
   },
   {
     id: 4,
@@ -25,7 +25,7 @@ const OurLogo = [
   },
   {
     id: 5,
-    image: '/images/brand02.png',
+    image: '/images/brand01.png',
   },
   {
     id: 6,
@@ -37,15 +37,6 @@ const SliderContainer = styled(Slider)`
   .slick-slide div {
     outline: none;
   }
-  /* .item {
-    opacity: 0.3;
-    max-width: 100%;
-    transition: all 0.5s;
-    :hover {
-      transform: scale(1.04);
-      opacity: 0.8;
-    }
-  } */
   img {
     border-radius: 10px;
     margin: 0 auto;

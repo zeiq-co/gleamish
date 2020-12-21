@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     .hovered-text {
       visibility: visible;
       transition: 0.6s;
-      color: #e9bd16;
+      color: ${(props) => props.theme.mainBrandColor};
     }
     .box-inside {
       margin-top: -2rem;
@@ -32,6 +32,9 @@ const Wrapper = styled.div`
   .title {
     color: ${(props) => props.theme.darkAccent} !important;
   }
+  .subtitle {
+    color: ${(props) => props.theme.textColorDark} !important;
+  }
   h2 {
     font-size: ${(props) => props.theme.fontSizeSmall}px !important;
   }
@@ -48,8 +51,11 @@ const CategoryItem = ({ data }) => {
             </a>
           </figure>
           <a href="/details">
-            <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5 mb-0 is-family-primary">
+            <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5 mb-6 is-family-primary">
               {data.title}
+            </div>
+            <div className="subtitle is-size-6 has-text-weight-normal has-text-centered  is-family-primary">
+              {data.subtitle}
             </div>
             <h2 className="hovered-text has-text-centered mt-5">View Detail</h2>
           </a>
