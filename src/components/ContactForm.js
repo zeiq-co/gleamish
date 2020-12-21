@@ -5,6 +5,10 @@ import styled from 'styled-components';
 import Heading from './elements/Heading';
 
 const Section = styled.div`
+  .columns {
+    margin-left: -0.75rem !important;
+    margin-right: -0.75rem !important;
+  }
   input,
   textarea {
     margin-top: 1rem;

@@ -8,6 +8,10 @@ const Section = styled.div`
   a {
     font-size: ${(props) => props.theme.fontSizeSmall}px !important;
   }
+  .has-text-left,
+  .has-text-right {
+    flex: 1;
+  }
 `;
 
 const HeaderInformation = () => {

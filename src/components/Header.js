@@ -32,7 +32,7 @@ const Section = styled.div`
   .navbar-end {
     a {
       font-size: ${(props) => props.theme.fontSizeMedium}px;
-      font-family: ${(props) => props.theme.secondaryFontFamily};
+      font-family: ${(props) => props.theme.primaryFontFamily};
       color: ${(props) => props.theme.textColor};
       :focus {
         background-color: transparent;
@@ -94,41 +94,41 @@ const Header = () => {
             <div className="navbar-end">
               <Link
                 to="/"
-                className="navbar-item has-text-weight-normal p-5 animated-line"
+                className="navbar-item has-text-weight-normal is-size-4 p-5 animated-line"
               >
-                HOME
+                Home
               </Link>
               <Link
                 to="/about-us"
-                className="navbar-item has-text-weight-normal  p-5 animated-line"
+                className="navbar-item has-text-weight-normal is-size-4  p-5 animated-line"
               >
-                ABOUT
+                About
               </Link>
               <Link
                 to="/service"
-                className="navbar-item has-text-weight-normal  p-5 animated-line"
+                className="navbar-item has-text-weight-normal is-size-4  p-5 animated-line"
               >
-                SERVICES
+                Services
               </Link>
               <Link
                 to="/gallery"
-                className="navbar-item has-text-weight-normal p-5 animated-line"
+                className="navbar-item has-text-weight-normal is-size-4 p-5 animated-line"
               >
-                GALLERY
+                Gallery
               </Link>
               <Link
                 to="/contact"
-                className="navbar-item has-text-weight-normal  p-5 animated-line"
+                className="navbar-item has-text-weight-normal is-size-4  p-5 animated-line"
               >
-                CONTACT
+                Contact
               </Link>
-              <div className="navbar-item has-text-weight-normal p-5 ">
+              <div className="navbar-item has-text-weight-normal is-size-4 p-5 ">
                 <Link
                   to="/quote"
                   type="button"
-                  className="button is-secondary is-medium"
+                  className="button is-secondary is-normal"
                 >
-                  GET A QUOTE
+                  Get a Quote
                 </Link>
               </div>
             </div>

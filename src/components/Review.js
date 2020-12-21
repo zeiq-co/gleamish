@@ -8,7 +8,7 @@ const reviewItem = [
     id: 1,
     reviews:
       '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Mr. Nobody',
+    title: 'John Doe',
     subtitle: 'Unknwon',
     image: '/images/paintbrush (2).png',
   },
@@ -16,7 +16,7 @@ const reviewItem = [
     id: 2,
     reviews:
       '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Mr. Nobody',
+    title: 'John Doe',
     subtitle: 'Unknwon',
     image: '/images/paintbrush (2).png',
   },
@@ -24,7 +24,7 @@ const reviewItem = [
     id: 3,
     reviews:
       '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Mr. Nobody',
+    title: 'John Doe',
     subtitle: 'Unknwon',
     image: '/images/paintbrush (2).png',
   },
@@ -32,7 +32,7 @@ const reviewItem = [
     id: 4,
     reviews:
       '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Mr. Nobody',
+    title: 'John Doe',
     subtitle: 'Unknwon',
     image: '/images/paintbrush (2).png',
   },
@@ -40,7 +40,7 @@ const reviewItem = [
     id: 5,
     reviews:
       '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Mr. Nobody',
+    title: 'John Doe',
     subtitle: 'Unknwon',
     image: '/images/paintbrush (2).png',
   },
@@ -48,7 +48,7 @@ const reviewItem = [
     id: 6,
     reviews:
       '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Mr. Nobody',
+    title: 'John Doe',
     subtitle: 'Unknwon',
     image: '/images/paintbrush (2).png',
   },
@@ -74,6 +74,13 @@ const Section = styled.section`
   .slick-dots li.slick-active button:before {
     color: ${(props) => props.theme.mainBrandColor};
     font-size: 10px;
+  }
+  .review-section {
+    line-height: 1.3 !important;
+    color: ${(props) => props.theme.textColorDark} !important;
+  }
+  .reviews-name {
+    color: ${(props) => props.theme.darkAccent} !important;
   }
 `;
 
@@ -121,20 +128,16 @@ const Review = () => {
                 <Icon className="fas fa-quote-left is-size-3 mb-2" />
                 <div className="card" key={item.id}>
                   <div className="card-content">
-                    <p className="mb-5"> {item.reviews}</p>
+                    <p className="review-section is-family-primary mb-4">
+                      {' '}
+                      {item.reviews}
+                    </p>
                     <div className="media">
-                      <div className="media-left">
-                        <figure className="image is-64x64">
-                          <img
-                            className="is-rounded"
-                            src="https://bulma.io/images/placeholders/96x96.png"
-                            alt="Reviws"
-                          />
-                        </figure>
-                      </div>
-                      <div className="media-content mt-2">
-                        <p className="title is-5"> {item.title}</p>
-                        <p className="subtitle is-6"> {item.subtitle}</p>
+                      <div className="media-content">
+                        <p className="title reviews-name is-size-6 has-text-weight-normal">
+                          {' '}
+                          {item.title}
+                        </p>
                       </div>
                     </div>
                   </div>

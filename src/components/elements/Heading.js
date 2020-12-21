@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Text = styled.h1`
   line-height: 1.2em;
+  color: ${(props) => props.theme.darkAccent} !important;
 `;
 
 const Img = styled.img`
@@ -13,7 +14,7 @@ const Img = styled.img`
 const Heading = ({ children, centered, hideBottomIcon }) => (
   <div className={hideBottomIcon ? 'mb-2' : 'mb-6'}>
     <Text
-      className={`is-size-1 has-text-weight-normal mb-4 is-size-4-mobile  ${
+      className={`is-size-2 has-text-weight-normal mb-4 is-size-4-mobile  ${
         centered ? 'has-text-centered' : ''
       }`}
     >

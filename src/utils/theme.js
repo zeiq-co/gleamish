@@ -2,17 +2,17 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#ebc330';
+const mainBrandColor = '#e9bd16';
 const lightShades = '#F5F5F5';
-const darkAccent = '#406870';
-const darkShades = '#0A0A0A';
+const darkAccent = '#151515';
+const darkShades = '#333333';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
   mainBrandColor,
   // Accent colors can be used to bring attention to design elements
   // by contrasting with the rest of the palette.
-  lightAccent: '#ebc330',
+  lightAccent: '#e9bd16',
   // Use this color as the background for your dark-on-light designs,
   // or the text color of an inverted design.
   lightShades,
@@ -37,9 +37,10 @@ export const theme = {
   textColor: darkShades, // '#0A0B11',
   textColorInverse: lightShades,
   textColorLite: '#FFFFFF',
+  textColorDark: '#585858',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Libre Baskerville', sans-serif",
-  secondaryFontFamily: "'Dosis', sans-serif",
+  primaryFontFamily: "'Cormorant Garamond', serif",
+  secondaryFontFamily: "'Lato', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 
@@ -106,6 +107,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .is-family-secondary {
     font-family: ${theme.secondaryFontFamily} !important;
+  }
+  .line-height{
+    line-height:26px !important;
   }
 `;
 

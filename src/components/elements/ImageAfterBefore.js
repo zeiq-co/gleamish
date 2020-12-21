@@ -4,10 +4,14 @@ import ReactCompareImage from 'react-compare-image';
 
 const Section = styled.div`
   margin-bottom: 5.5rem;
+  margin-top: 3rem;
   .column.is-6 {
     position: relative;
     margin: 2rem 0rem -1rem 0rem !important;
     right: 9%;
+  }
+  p {
+    color: ${(props) => props.theme.textColorDark} !important;
   }
 `;
 const BoxWrapper = styled.div`

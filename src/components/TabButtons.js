@@ -8,6 +8,7 @@ const StyledButton = styled.button`
     props.active ? '#ebc330' : '#f1f5f7'} !important;
   border-color: #f1f5f7;
   transition: all 0.5s ease-out;
+  color: ${(props) => props.theme.darkAccent} !important;
   :focus {
     box-shadow: none !important;
     border-color: transparent !important;
@@ -23,7 +24,7 @@ const TabButton = ({ title, onClick, active }) => {
     <div className="column">
       <StyledButton
         type="button"
-        className="button is-medium is-fullwidth"
+        className="button is-medium is-fullwidth is-size-6"
         onClick={onClick}
         active={title == active}
       >

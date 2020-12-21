@@ -14,7 +14,10 @@ const Container = styled.footer`
   p {
     margin-bottom: 1rem;
     font-size: ${(props) => props.theme.fontSize}px !important;
-    color: ${theme.textColorLite} !important;
+    color: #9b9b9b !important;
+    :hover {
+      color: #fff !important;
+    }
   }
   .container {
     position: inherit !important;
@@ -27,6 +30,9 @@ const Container = styled.footer`
       transition: 0.4s !important;
       color: ${lighten(0.6, theme.textColor)} !important;
     }
+  }
+  h1 {
+    margin-bottom: 32px;
   }
 `;
 
@@ -52,8 +58,8 @@ const Footer = () => {
         <div className="container">
           <div className="columns  ">
             <div className="column has-text-centered ">
-              <h1 className="has-text-weight-normal has-text-white mb-5 is-size-3 ">
-                Contact US
+              <h1 className="has-text-weight-normal has-text-white is-size-3">
+                Contact Us
               </h1>
               <ul>
                 <li>
@@ -82,7 +88,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="column has-text-centered">
-              <h1 className="has-text-weight-normal has-text-white mb-5 is-size-4 ">
+              <h1 className="has-text-weight-normal has-text-white is-size-4">
                 Our Information
               </h1>
               <ul>

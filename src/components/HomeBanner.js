@@ -38,10 +38,10 @@ const HomeBanner = ({ bgImage }) => {
           <Fade bottom>
             <div className="columns is-centered is-vcentered">
               <div className="column is-5 has-text-centered ">
-                <h1 className="heading has-text-weight-normal has-text-white mb-4">
+                <h1 className="heading has-text-weight-normal has-text-white mb-4 is-family-primary ">
                   Reliable Painters and Decorators
                 </h1>
-                <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
+                <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
                   Neque porro quisquam est qui dolorem ipsum quia dolor sit
                   amet, consectetur, adipisci emit...
                 </h1>
