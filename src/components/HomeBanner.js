@@ -7,6 +7,7 @@ const Section = styled.div`
   background-image: url(${(props) => props.bgImage});
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.9;
   display: flex;
   align-items: center;
   height: 100vh;

@@ -10,13 +10,6 @@ const CardWrapper = styled.div`
     border-radius: 0;
     box-shadow: none !important;
   }
-  h1 {
-    font-size: ${(props) => props.theme.fontSizeLarge}px !important;
-    line-height: 1.4;
-  }
-  p {
-    line-height: 1.7;
-  }
   .border-bottom{
     margin-top: 30px;
     border-top: 1px solid #e5e5e5;
@@ -36,7 +29,7 @@ const NewsCard = ({ image, title, description }) => {
           <div className="card-content">
             <div className="media-content">
               <div className="box">
-                <h1 className="title is-4 has-text-weight-normal is-spaced">
+                <h1 className="title is-size-4 has-text-weight-normal is-spaced is-family-primary">
                   {title}
                 </h1>
                 <p className="subtitle is-6">{description}</p>

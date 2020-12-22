@@ -61,7 +61,7 @@ const AboutFeatures = () => {
                   </div>
                 </div>
                 <div className="media-content">
-                  <p className="title is-size-4 has-text-right has-text-weight-normal mb-3">
+                  <p className="title is-size-4 has-text-right has-text-weight-normal mb-3 is-family-primary">
                     {' '}
                     {item.title}
                   </p>
@@ -87,7 +87,7 @@ const AboutFeatures = () => {
                   </div>
                 </div>
                 <div className="media-content">
-                  <p className="title is-size-4 has-text-weight-normal mb-3">
+                  <p className="title is-size-4 has-text-weight-normal mb-3 is-family-primary">
                     {item.title}
                   </p>
                   <p
