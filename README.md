@@ -1,4 +1,4 @@
-# Paint
+# Paint website
 
 Fetch data from Sanity CMS
 
