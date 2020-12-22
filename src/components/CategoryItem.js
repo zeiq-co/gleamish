@@ -46,12 +46,12 @@ const CategoryItem = ({ data }) => {
       <div className="box-container">
         <div className="box-inside">
           <figure className="image is-96x96">
-            <a>
+            <div>
               <img src={data.image} alt="painting images" />
-            </a>
+            </div>
           </figure>
           <a href="/details">
-            <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5 mb-6 is-family-primary">
+            <div className="title is-size-5 has-text-weight-normal has-text-centered mt-5 mb-5 is-family-primary">
               {data.title}
             </div>
             <div className="subtitle is-size-6 has-text-weight-normal has-text-centered  is-family-primary">

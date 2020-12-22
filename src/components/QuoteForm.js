@@ -4,25 +4,23 @@ import * as Yup from 'yup';
 import styled from 'styled-components';
 
 const Section = styled.div`
+  .columns {
+    margin-left: -0.75rem !important;
+    margin-right: -0.75rem !important;
+  }
   input,
   textarea {
     margin-top: 1rem;
-    border-color: transparent;
+    border-color: #e8edf0;
     box-shadow: none;
     border-radius: 0;
-    background-color: transparent;
-    border-bottom: 1px solid #dbdbdb;
-    padding: 0;
   }
   input:active,
   .input:focus,
-  .input:hover,
   .textarea:active,
-  .textarea:hover,
   .textarea:focus {
-    border-color: transparent;
+    border-color: ${(props) => props.theme.backgroundInputColor};
     box-shadow: none;
-    border-bottom: 1px solid #dbdbdb;
   }
   input ::placeholder,
   textarea ::placeholder {
@@ -30,12 +28,9 @@ const Section = styled.div`
     font-size: ${(props) => props.theme.fontSizeSmall}px;
     font-weight: 400;
   }
-  .send-buttton {
-    margin-top: 5.5rem;
-  }
 `;
 
-const ContactForm = ({
+const QuoteForm = ({
   values,
   touched,
   errors,
@@ -62,37 +57,23 @@ const ContactForm = ({
             {errors.name && touched.name && (
               <p className="help is-danger">{errors.name}</p>
             )}
-            <input
-              className="input is-medium"
-              type="number"
-              name="phoneNumber"
-              id="phoneNumber"
-              placeholder="Phone number"
-              value={values.phoneNumber}
-              onChange={handleChange}
-              onBlur={handleBlur}
-            />
-            {errors.phoneNumber && touched.phoneNumber && (
-              <p className="help is-danger">{errors.phoneNumber}</p>
-            )}
+
             <div>
-              <textarea
-                className="textarea"
-                name="message"
-                id="message"
-                placeholder="Message*"
-                rows={6}
-                defaultValue=""
-                value={values.message}
+              <input
+                className="input is-medium"
+                type="number"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="Phone number"
+                value={values.phoneNumber}
                 onChange={handleChange}
                 onBlur={handleBlur}
               />
-              {errors.message && touched.message && (
-                <p className="help is-danger">{errors.message}</p>
+              {errors.phoneNumber && touched.phoneNumber && (
+                <p className="help is-danger">{errors.phoneNumber}</p>
               )}
             </div>
           </div>
-
           <div className="column">
             <input
               className="input is-medium"
@@ -107,29 +88,48 @@ const ContactForm = ({
             {errors.email && touched.email && (
               <p className="help is-danger">{errors.email}</p>
             )}
-            <input
-              className="input is-medium"
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              value={values.subject}
-              onChange={handleChange}
-              onBlur={handleBlur}
-            />
-            {errors.subject && touched.subject && (
-              <p className="help is-danger">{errors.subject}</p>
-            )}
-            <div className="send-buttton">
-              <button
-                type="button"
-                className="button is-secondary is-medium mt-5"
-                onClick={handleSubmit}
-              >
-                Send Message
-              </button>
+
+            <div>
+              <input
+                className="input is-medium"
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                value={values.subject}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.subject && touched.subject && (
+                <p className="help is-danger">{errors.subject}</p>
+              )}
             </div>
           </div>
+        </div>
+        <div>
+          <textarea
+            className="textarea"
+            name="message"
+            id="message"
+            placeholder="Message*"
+            rows={6}
+            defaultValue=""
+            value={values.message}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {errors.message && touched.message && (
+            <p className="help is-danger">{errors.message}</p>
+          )}
+        </div>
+        <div className="send-buttton">
+          <button
+            type="button"
+            className="button is-secondary is-medium mt-5"
+            onClick={handleSubmit}
+          >
+            Send
+          </button>
         </div>
       </form>
     </Section>
@@ -172,4 +172,4 @@ export default withFormik({
     //   });
   },
   displayName: 'ContactForm', // helps with React DevTools
-})(ContactForm);
+})(QuoteForm);

@@ -22,7 +22,7 @@ const HeaderInformation = () => {
           <div className="has-text-left">
             <a
               href={`mailto:${config.email}`}
-              className="has-text-weight-normal has-text-white"
+              className="has-text-weight-normal has-text-white is-family-secondary"
             >
               <i className="far fa-envelope mr-3" />
               {config.email}
@@ -50,7 +50,7 @@ const HeaderInformation = () => {
           <div className="has-text-right">
             <a
               href={`tel:${config.telephone}`}
-              className="has-text-weight-normal has-text-white "
+              className="has-text-weight-normal has-text-white is-family-secondary"
             >
               <i className="fas fa-phone-volume mr-3" />
               {config.telephone}

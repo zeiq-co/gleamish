@@ -75,6 +75,9 @@ const Section = styled.section`
     color: ${(props) => props.theme.mainBrandColor};
     font-size: 10px;
   }
+  .slick-dots li {
+    margin: 0;
+  }
   .review-section {
     line-height: 1.3 !important;
     color: ${(props) => props.theme.textColorDark} !important;
