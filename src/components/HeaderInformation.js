@@ -5,9 +5,6 @@ import config from '../utils/config';
 const Section = styled.div`
   background-color: ${(props) => props.theme.darkShades} !important;
   padding: 10px 0px;
-  a {
-    font-size: ${(props) => props.theme.fontSizeSmall}px !important;
-  }
   .has-text-left,
   .has-text-right {
     flex: 1;
@@ -22,7 +19,7 @@ const HeaderInformation = () => {
           <div className="has-text-left">
             <a
               href={`mailto:${config.email}`}
-              className="has-text-weight-normal has-text-white is-family-secondary"
+              className="has-text-weight-normal has-text-white is-family-secondary is-size-6"
             >
               <i className="far fa-envelope mr-3" />
               {config.email}
@@ -31,17 +28,21 @@ const HeaderInformation = () => {
           <div className="has-text-centered is-flex  is-justify-content-center">
             <div className="level">
               <div className="level-item mr-5">
-                <a href={config.twitter} target="_blank">
+                <a href={config.twitter} target="_blank" className="is-size-6">
                   <i className="fab fa-twitter has-text-white" />
                 </a>
               </div>
               <div className="level-item mr-5">
-                <a href={config.instagram} target="_blank">
+                <a
+                  href={config.instagram}
+                  target="_blank"
+                  className="is-size-6"
+                >
                   <i className="fab fa-instagram has-text-white" />
                 </a>
               </div>
               <div className="level-item mr-5">
-                <a href={config.facebook} target="_blank">
+                <a href={config.facebook} target="_blank" className="is-size-6">
                   <i className="fab fa-facebook has-text-white" />
                 </a>
               </div>
@@ -50,7 +51,7 @@ const HeaderInformation = () => {
           <div className="has-text-right">
             <a
               href={`tel:${config.telephone}`}
-              className="has-text-weight-normal has-text-white is-family-secondary"
+              className="has-text-weight-normal has-text-white is-family-secondary is-size-6"
             >
               <i className="fas fa-phone-volume mr-3" />
               {config.telephone}

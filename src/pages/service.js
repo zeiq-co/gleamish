@@ -3,53 +3,49 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
 import ServiceFeatures from '../components/ServiceFeatures';
+import ServiceCategories from '../components/ServiceCategories';
 
 const Service = () => {
   return (
     <Layout>
       <Seo title="Service" />
       <HeroHeader heading="Service" title="Service" />
+      <ServiceCategories />
       <ServiceFeatures
-        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry."
+        title="Faux Finishes"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
               dolore nisi sunt quamquam..."
       />
       <ServiceFeatures
         secondary
-        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry."
+        title="Water Proofing"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
               dolore nisi sunt quamquam..."
       />
       <ServiceFeatures
-        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry."
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-      />
-      <ServiceFeatures
-        secondary
-        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry."
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-      />
-      <ServiceFeatures
-        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry."
+        title=" Pre-Paint Demo"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
               dolore nisi sunt quamquam..."
       />
       <ServiceFeatures
         secondary
-        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry."
+        title="Mildew Removal"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        title="Color Proof"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        secondary
+        title=" Window Washing"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
               dolore nisi sunt quamquam..."

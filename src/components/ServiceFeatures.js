@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 
 const ServiceFeatures = ({ title, subtitle, secondary }) => {
   return (
-    <section className="section mt-6">
+    <section className="section">
       <div className="container">
         <Wrapper
           secondary={secondary}
@@ -23,7 +23,7 @@ const ServiceFeatures = ({ title, subtitle, secondary }) => {
               {subtitle}
             </p>
             <Link
-              to="/quote"
+              to="/details"
               type="button"
               className="button is-secondary is-normal"
             >
