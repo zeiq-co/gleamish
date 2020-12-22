@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import Categories from '../components/Categories';
 import HeroHeader from '../components/elements/HeroHeader';
 import ServiceFeatures from '../components/ServiceFeatures';
 
@@ -11,8 +9,51 @@ const Service = () => {
     <Layout>
       <Seo title="Service" />
       <HeroHeader heading="Service" title="Service" />
-      <ServiceFeatures />
-      <Categories />
+      <ServiceFeatures
+        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry."
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        secondary
+        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry."
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry."
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        secondary
+        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry."
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry."
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
+      <ServiceFeatures
+        secondary
+        title=" Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry."
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
+              dolore nisi sunt quamquam..."
+      />
     </Layout>
   );
 };

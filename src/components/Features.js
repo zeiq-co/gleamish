@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import FeaturesCard from './FeaturesCard';
 
 const Card = styled.div`
   margin-top: 3.5rem;

@@ -57,5 +57,4 @@ const HomeBanner = ({ bgImage }) => {
     </Section>
   );
 };
-
 export default HomeBanner;

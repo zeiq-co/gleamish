@@ -1,70 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-const serviceFeaturesItem = [
-  {
-    id: 1,
-    title: 'Lorem ipsum',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/wall-paining.png',
-  },
-  {
-    id: 2,
-    title: 'Lorem ipsum',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/house-fix.png',
-  },
-  {
-    id: 3,
-    title: 'Lorem ipsum',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/new-make.png',
-  },
-  {
-    id: 4,
-    title: 'Lorem ipsum',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    image:
-      'https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/plumbing.png',
-  },
-];
+const Wrapper = styled.div`
+  flex-direction: ${(props) => (props.secondary ? 'row-reverse' : '')};
+`;
 
-const Section = styled.section``;
-
-const ServiceFeatures = () => {
+const ServiceFeatures = ({ title, subtitle, secondary }) => {
   return (
-    <Section className="section mt-6">
+    <section className="section mt-6">
       <div className="container">
-        <div className="columns is-multiline">
-          {serviceFeaturesItem.map((item) => (
-            <div className="column is-6">
-              <div className="media mb-5">
-                <div className="media-left mr-6">
-                  <div className=" is-size-5">
-                    <figure className="image is-64x64">
-                      <img src={item.image} alt="painting-photos" />
-                    </figure>
-                  </div>
-                </div>
-                <div className="media-content">
-                  <p className="title is-size-4  has-text-weight-normal mb-3">
-                    {item.title}
-                  </p>
-                  <p className="subtitle is-size-6 mt-1">{item.subtitle}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Wrapper
+          secondary={secondary}
+          className="columns is-vcentered is-variable is-8"
+        >
+          <div className="column">
+            {' '}
+            <h3 className="title has-text-left is-family-primary  has-text-weight-bold is-size-4 mb-4 is-spaced">
+              {title}
+            </h3>
+            <p className="subtitle has-text-left is-size-6 line-height">
+              {subtitle}
+            </p>
+            <Link
+              to="/quote"
+              type="button"
+              className="button is-secondary is-normal"
+            >
+              View Details
+            </Link>
+          </div>
+          <div className="column">
+            <figure className="image is-5by3">
+              <img
+                src="https://bulma.io/images/placeholders/800x480.png"
+                alt="placeholder-img"
+              />
+            </figure>
+          </div>
+        </Wrapper>
       </div>
-    </Section>
+    </section>
   );
 };
 export default ServiceFeatures;
