@@ -27,6 +27,9 @@ const Section = styled.div`
   .slide-wrapper {
     background: rgba(0, 0, 0, 0.3);
   }
+  .sc-AxmLO {
+    display: none !important;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -107,7 +110,6 @@ const HomeSlider = () => {
                     <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
                       {item.subtitle}
                     </h1>
-
                     <OverlayButton />
                   </Wrapper>
                 </OverlayContainers>

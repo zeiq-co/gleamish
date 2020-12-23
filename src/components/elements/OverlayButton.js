@@ -5,6 +5,7 @@ import { theme } from '../../utils/theme';
 const Button = styled.button`
   padding: 1.2rem 3.2rem !important;
   background: none;
+  border-radius: 0;
   color: ${theme.textColorLite};
   position: relative;
   transition: color 0.25s ease;
