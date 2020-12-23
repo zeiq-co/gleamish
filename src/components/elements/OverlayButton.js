@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../utils/theme';
 
 const Button = styled.button`
+  border-radius: 0;
   padding: 1.2rem 3.2rem !important;
   background: none;
   color: ${theme.textColorLite};
@@ -26,7 +27,6 @@ const Button = styled.button`
     transition: width 0.25s ease;
     z-index: -1;
   }
-
   :hover::after {
     width: 100%;
   }
