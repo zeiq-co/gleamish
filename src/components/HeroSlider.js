@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HeroSlider, { Slide, Nav, OverlayContainer } from 'hero-slider';
 import styled from 'styled-components';
-
 import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
@@ -26,7 +25,7 @@ const Section = styled.div`
     height: 40px;
   }
   .slide-wrapper {
-    background-color: #ffffff80;
+    background: rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -48,7 +47,7 @@ const OverlayContainers = styled(OverlayContainer)`
 const content = [
   {
     id: 1,
-    bgImage: '/images/homebanner02.jpg',
+    bgImage: '/images/homebanner-01.jpg',
     title: 'Reliable Painters and Decorators',
     subtitle:
       'Neque porro quisquam est qui dolorem ipsum quia dolor sit   amet, consectetur, adipisci emit...',
