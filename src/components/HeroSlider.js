@@ -30,7 +30,16 @@ const Section = styled.div`
   }
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  .heading {
+    font-size: 48px !important;
+    line-height: 4rem;
+  }
+  .subheading {
+    font-size: ${(props) => props.theme.fontSizeMedium}px !important;
+    line-height: 27px;
+  }
+`;
 
 const OverlayContainers = styled(OverlayContainer)`
   display: flex;
@@ -53,7 +62,7 @@ const content = [
   },
 ];
 
-const HomeSlider = ({ data }) => {
+const HomeSlider = () => {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
