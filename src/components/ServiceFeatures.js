@@ -11,16 +11,19 @@ const ServiceFeatures = ({ title, subtitle, secondary, image }) => {
   return (
     <section className="section">
       <div className="container">
-        <Wrapper secondary={secondary} className="columns is-variable is-6">
-          <div className="column content">
+        <Wrapper
+          secondary={secondary}
+          className="columns is-vcentered is-variable is-6"
+        >
+          <div className="column content has-text-centered">
             {' '}
-            <h3 className="title has-text-left is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced">
+            <h3 className="title is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced has-text-centered">
               {title}
             </h3>
-            <p className="subtitle has-text-left is-size-6 line-height mb-5">
+            <p className="subtitle is-size-6 line-height mb-5 has-text-centered">
               {subtitle}
             </p>
-            <Link to="/details">
+            <Link className="has-text-centered" to="/details">
               <OverlayButton buttonText="View Details" />
             </Link>
           </div>
