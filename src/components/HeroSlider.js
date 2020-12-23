@@ -40,12 +40,16 @@ const content = [
   {
     id: 1,
     bgImage: '/images/homebanner02.jpg',
-    title: '/images/homebanner02.jpg',
+    title: 'Reliable Painters and Decorators',
+    subtitle:
+      'Neque porro quisquam est qui dolorem ipsum quia dolor sit   amet, consectetur, adipisci emit...',
   },
   {
     id: 2,
     bgImage: '/images/homebanner02.jpg',
-    title: '/images/homebanner02.jpg',
+    title: 'Reliable Painters and Decorators',
+    subtitle:
+      'Neque porro quisquam est qui dolorem ipsum quia dolor sit   amet, consectetur, adipisci emit...',
   },
 ];
 
@@ -90,11 +94,10 @@ const HomeSlider = ({ data }) => {
                 <OverlayContainers className="columns is-mobile is-centered">
                   <Wrapper className="column is-8 has-text-centered">
                     <h1 className="heading has-text-weight-normal has-text-white mb-4 is-family-primary ">
-                      Reliable Painters and Decorators
+                      {item.title}
                     </h1>
                     <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci emit...
+                      {item.subtitle}
                     </h1>
 
                     <OverlayButton />
