@@ -72,6 +72,7 @@ const Section = styled.div`
   }
   .empty-padding {
     padding: 3rem 4rem !important;
+    cursor: default !important;
   }
 `;
 

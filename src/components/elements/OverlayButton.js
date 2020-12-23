@@ -8,20 +8,20 @@ const LinkStyled = styled(Link)`
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
-    background: #e9bd16;
-    color: ${theme.textColorLite};
-    border: 1px solid ${theme.textColorLite};
+    background: ${theme.textColorLite};
+    color: ${theme.darkAccent};
+    border: 1px solid ${theme.darkAccent};
     padding: 1rem 3rem !important;
     position: relative;
     z-index: 1;
     overflow: hidden;
   }
   button:hover {
-    color: ${theme.textColorDark};
+    color: ${theme.textColorLite};
   }
   button::after {
     content: '';
-    background: #ecf0f1;
+    background: ${theme.darkAccent};
     position: absolute;
     z-index: -1;
     padding: 0.85em 0.75em;
