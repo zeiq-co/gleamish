@@ -111,7 +111,7 @@ const HomeSlider = () => {
                       {item.subtitle}
                     </h1>
 
-                    <OverlayButton buttonText="Get Started" />
+                    <OverlayButton linkTo="/" buttonText="Get Started" />
                   </Wrapper>
                 </OverlayContainers>
               </Slide>

@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { theme } from '../../utils/theme';
 
-const Container = styled.div`
+const LinkStyled = styled(Link)`
   button {
+    cursor: pointer;
     font-size: 18px;
     font-weight: 600;
     background: #e9bd16;
     color: ${theme.textColorLite};
     border: 1px solid ${theme.textColorLite};
-
     padding: 1rem 3rem !important;
-    margin: 1rem;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -121,15 +121,13 @@ const Container = styled.div`
   }
 `;
 
-const OverlayButton = ({ buttonText }) => {
+const OverlayButton = ({ buttonText, linkTo }) => {
   return (
-    <Container>
-      <div className="wrapper">
-        <button type="button" className="grow_skew_backward">
-          {buttonText}
-        </button>
-      </div>
-    </Container>
+    <LinkStyled to={linkTo}>
+      <button to={linkTo} type="button" className="grow_skew_backward">
+        {buttonText}
+      </button>
+    </LinkStyled>
   );
 };
 export default OverlayButton;

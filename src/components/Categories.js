@@ -60,9 +60,6 @@ const Categories = () => {
     <Section className="section">
       <div className="container">
         <Heading centered> Why Choose Us?</Heading>
-        {/* <h1 className="has-text-centered is-size-1 has-text-weight-light mb-6">
-          Why Choose Us?{' '}
-        </h1> */}
         <div className="columns is-gapless is-multiline ">
           {Category.map((item) => (
             <CategoryItem key={item.id} data={item} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import OverlayButton from './elements/OverlayButton';
 
 const Wrapper = styled.div`
   flex-direction: ${(props) => (props.secondary ? 'row-reverse' : '')};
@@ -22,19 +23,12 @@ const ServiceFeatures = ({ title, subtitle, secondary, image }) => {
             <p className="subtitle has-text-left is-size-6 line-height mb-5">
               {subtitle}
             </p>
-            <Link
-              to="/details"
-              type="button"
-              className="button is-secondary is-normal"
-            >
-              View Details
+            <Link to="/details">
+              <OverlayButton buttonText="View Details" />
             </Link>
           </div>
           <div className="column">
             <img src={image} alt="service-img" />
-            {/* <figure className="image is-128x128">
-
-            </figure> */}
           </div>
         </Wrapper>
       </div>

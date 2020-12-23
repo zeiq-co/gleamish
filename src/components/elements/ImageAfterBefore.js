@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReactCompareImage from 'react-compare-image';
-
 import OverlayButton from './OverlayButton';
 
 const Section = styled.div`
@@ -45,7 +44,9 @@ const ImageBeforeAfter = ({
                     {title}
                   </h2>
                   <p className="mb-5 is-size-6">{description}</p>
-                  {showButton && <OverlayButton buttonText=" View More" />}
+                  {showButton && (
+                    <OverlayButton linkTo="/details" buttonText=" View More" />
+                  )}
                 </BoxWrapper>
               </div>
               <div className="column is-6">
