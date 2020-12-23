@@ -32,11 +32,11 @@ const Button = styled.button`
   }
 `;
 
-const HeroHeader = () => {
+const OverlayButton = () => {
   return (
     <Button className="button has-text-weight-normal is-size-5">
       Get Started
     </Button>
   );
 };
-export default HeroHeader;
+export default OverlayButton;
