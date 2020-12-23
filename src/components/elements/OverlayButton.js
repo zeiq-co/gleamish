@@ -17,7 +17,7 @@ const LinkStyled = styled(Link)`
     overflow: hidden;
   }
   button:hover {
-    color: #e9bd16;
+    color: ${theme.textColorDark};
   }
   button::after {
     content: '';

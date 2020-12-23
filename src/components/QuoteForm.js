@@ -2,6 +2,7 @@ import React from 'react';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import styled from 'styled-components';
+import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
   .columns {
@@ -34,7 +35,6 @@ const QuoteForm = ({
   values,
   touched,
   errors,
-  isSubmitting,
   handleSubmit,
   handleChange,
   handleBlur,
@@ -122,14 +122,8 @@ const QuoteForm = ({
             <p className="help is-danger">{errors.message}</p>
           )}
         </div>
-        <div className="send-buttton">
-          <button
-            type="button"
-            className="button is-secondary is-medium mt-5"
-            onClick={handleSubmit}
-          >
-            Send
-          </button>
+        <div className="send-buttton mt-5">
+          <OverlayButton buttonText="Send" onClick={handleSubmit} />
         </div>
       </form>
     </Section>
