@@ -26,7 +26,7 @@ const Section = styled.div`
     height: 40px;
   }
   .slide-wrapper {
-    background-color: #ffffff80;
+    background: rgba(0, 0, 0, 0.3);
   }
 `;
 
