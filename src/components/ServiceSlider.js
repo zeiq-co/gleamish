@@ -60,7 +60,6 @@ const ServiceSlider = () => {
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
-    cssEase: 'linear',
     lazyLoad: true,
   };
   return (
