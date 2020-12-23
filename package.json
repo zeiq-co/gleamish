@@ -37,6 +37,7 @@
     "gatsby-remark-images": "^3.3.25",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-source-sanity": "^6.0.4",
+    "hero-slider": "^2.0.3",
     "polished": "^3.6.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

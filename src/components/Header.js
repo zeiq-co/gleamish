@@ -75,6 +75,9 @@ const Section = styled.div`
 const ButtonStyle = styled(Link)`
   background-color: transparent !important;
   border: 1px solid ${(props) => props.theme.textColorDark} !important;
+  :hover {
+    color: ${(props) => props.theme.textColorLite} !important;
+  }
 `;
 
 const Header = () => {

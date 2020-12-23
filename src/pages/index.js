@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import HomeBanner from '../components/HomeBanner';
+import HeroSlider from '../components/HeroSlider';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
@@ -52,61 +52,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const bannerItem = [
-  {
-    id: 1,
-    bgImage: '/images/homebanner02.jpg',
-  },
-  {
-    id: 2,
-    bgImage: '/images/homebanner-01.jpg',
-  },
-];
-
-const reviewItem = [
-  {
-    id: 1,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Residential',
-    subtitle: 'Lorem ipsum',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 2,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Residential',
-    subtitle: 'Lorem ipsum',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 3,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'Residential',
-    subtitle: 'Lorem ipsum',
-    image: '/images/paintbrush (2).png',
-  },
-];
-
 const IndexPage = () => {
-  const settings = {
-    dots: false,
-    arrows: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 600,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    cssEase: 'linear',
-    lazyLoad: true,
-  };
   return (
     <Layout>
       <Seo title="Home" description="Midas Paint" />
-      <Wrapper>
+      {/* <Wrapper>
         <Slider {...settings}>
           {bannerItem.map((item) => (
             <div>
@@ -114,7 +64,9 @@ const IndexPage = () => {
             </div>
           ))}
         </Slider>
-      </Wrapper>
+      </Wrapper> */}
+
+      <HeroSlider />
       <Features />
       <Categories />
       <Gallery heading />
