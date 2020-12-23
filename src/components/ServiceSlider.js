@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+
 import Slider from 'react-slick';
+import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
   margin-top: 3.5rem;
@@ -105,13 +106,9 @@ const ServiceSlider = () => {
               <li className="mb-3 is-size-6">Stenciling</li>
               <li className="mb-3 is-size-6">Wood Refinishing</li>
             </ul>
-            <Link
-              to="/contact"
-              type="button"
-              className="button is-secondary mt-5"
-            >
-              GET A QUOTE
-            </Link>
+            <div className="mt-5">
+              <OverlayButton linkTo="/contact" buttonText="GET A QUOTE" />
+            </div>
           </div>
         </div>
       </div>
