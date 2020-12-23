@@ -27,6 +27,9 @@ const Section = styled.div`
   .slide-wrapper {
     background: rgba(0, 0, 0, 0.3);
   }
+  .sc-AxmLO {
+    display: none !important;
+  }
 `;
 
 const Wrapper = styled.div`
