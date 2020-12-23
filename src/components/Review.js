@@ -89,9 +89,6 @@ const Section = styled.section`
     color: ${(props) => props.theme.textColorLite} !important;
   }
 
-  .ijzlkx {
-    color: #fff !important;
-  }
   .card {
     background-color: transparent;
   }
@@ -136,7 +133,9 @@ const Review = () => {
     >
       <Section className="section">
         <div className="container">
-          <Heading centered>Client Reviews</Heading>
+          <Heading primary centered>
+            Client Reviews
+          </Heading>
           <Slider {...settings}>
             {reviewItem.map((item) => (
               <div className="columns">
