@@ -19,28 +19,28 @@ const FeaturesItem = [
     id: 1,
     title: 'Interior Painting',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
     image: '/images/painting-02.jpg',
   },
   {
     id: 2,
     title: 'Residential',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
     image: '/images/painting-03.jpg',
   },
   {
     id: 3,
     title: 'Commercial',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
     image: '/images/painting-04.jpg',
   },
   {
     id: 4,
     title: 'Exterior Painting',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
     image: '/images/painting.jpg',
   },
 ];

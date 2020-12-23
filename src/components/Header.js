@@ -30,6 +30,10 @@ const Section = styled.div`
     border-radius: 4px;
   }
   .navbar-end {
+    background-image: url(/images/icons/nav-backg-2.png);
+    background-size: 100% 77%;
+    background-position-y: 13px;
+    background-repeat: no-repeat;
     a {
       font-size: ${(props) => props.theme.fontSizeMedium}px;
       font-family: ${(props) => props.theme.primaryFontFamily};
@@ -47,7 +51,7 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${(props) => props.theme.mainBrandColor};
+      background-color: ${(props) => props.theme.darkShades};
       width: 0%;
       bottom: 1.5rem;
     }
@@ -60,7 +64,19 @@ const Section = styled.div`
       background: ${(props) => props.theme.borderColor} !important;
     }
   }
+  button.is-secondary.is-normal {
+    background: transparent !important;
+  }
+  .empty-padding {
+    padding: 3rem 4rem !important;
+  }
 `;
+
+const ButtonStyle = styled(Link)`
+  background-color: transparent !important;
+  border: 1px solid ${(props) => props.theme.textColorDark} !important;
+`;
+
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -90,8 +106,14 @@ const Header = () => {
               <span aria-hidden="true" />
             </a>
           </div>
+
           <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
             <div className="navbar-end">
+              {' '}
+              <Link
+                to="/"
+                className="navbar-item has-text-weight-normal is-size-4 p-5 empty-padding"
+              />
               <Link
                 to="/"
                 className="navbar-item has-text-weight-normal is-size-4 p-5 animated-line"
@@ -123,13 +145,13 @@ const Header = () => {
                 Contact
               </Link>
               <div className="navbar-item has-text-weight-normal is-size-4 p-5 ">
-                <Link
+                <ButtonStyle
                   to="/quote"
                   type="button"
                   className="button is-secondary is-normal"
                 >
                   Get a Quote
-                </Link>
+                </ButtonStyle>
               </div>
             </div>
           </div>
