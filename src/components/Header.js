@@ -94,7 +94,7 @@ const ButtonStyle = styled(Link)`
   }
   button::after {
     content: '';
-    background: ${theme.mainBrandColor};
+    background: ${theme.darkAccent};
     position: absolute;
     z-index: -1;
     padding: 0.85em 0.75em;
