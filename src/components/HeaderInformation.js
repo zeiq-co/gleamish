@@ -5,9 +5,19 @@ import config from '../utils/config';
 const Section = styled.div`
   background-color: ${(props) => props.theme.darkShades} !important;
   padding: 10px 0px;
-  .has-text-left,
-  .has-text-right {
-    flex: 1;
+  .has-text-left {
+    font-size: ${(props) => props.theme.fontSizeExtraSmall}px;
+  }
+  .mail-icon,
+  .phone-icon {
+    margin-right: ${(props) => props.theme.fontSize}px;
+    font-size: ${(props) => props.theme.fontSize}px;
+  }
+  .mailWrapper {
+    margin-right: 64px;
+  }
+  .social-icon {
+    font-size: ${(props) => props.theme.fontSizeMedium}px;
   }
 `;
 
@@ -19,16 +29,27 @@ const HeaderInformation = () => {
           <div className="has-text-left">
             <a
               href={`mailto:${config.email}`}
-              className="has-text-weight-normal has-text-white is-family-secondary is-size-6"
+              className="has-text-weight-normal has-text-white is-family-secondary mailWrapper"
             >
-              <i className="far fa-envelope mr-3" />
+              <i className="far fa-envelope mail-icon" />
               {config.email}
             </a>
+            <a
+              href={`tel:${config.telephone}`}
+              className="has-text-weight-normal has-text-white is-family-secondary "
+            >
+              <i className="fas fa-phone-volume phone-icon" />
+              {config.telephone}
+            </a>
           </div>
-          <div className="has-text-centered is-flex  is-justify-content-center">
+          <div className="has-text-left is-flex  is-justify-content-center">
             <div className="level">
               <div className="level-item mr-5">
-                <a href={config.twitter} target="_blank" className="is-size-6">
+                <a
+                  href={config.twitter}
+                  target="_blank"
+                  className="social-icon"
+                >
                   <i className="fab fa-twitter has-text-white" />
                 </a>
               </div>
@@ -36,26 +57,21 @@ const HeaderInformation = () => {
                 <a
                   href={config.instagram}
                   target="_blank"
-                  className="is-size-6"
+                  className="social-icon"
                 >
                   <i className="fab fa-instagram has-text-white" />
                 </a>
               </div>
               <div className="level-item mr-5">
-                <a href={config.facebook} target="_blank" className="is-size-6">
+                <a
+                  href={config.facebook}
+                  target="_blank"
+                  className="social-icon"
+                >
                   <i className="fab fa-facebook has-text-white" />
                 </a>
               </div>
             </div>
-          </div>
-          <div className="has-text-right">
-            <a
-              href={`tel:${config.telephone}`}
-              className="has-text-weight-normal has-text-white is-family-secondary is-size-6"
-            >
-              <i className="fas fa-phone-volume mr-3" />
-              {config.telephone}
-            </a>
           </div>
         </div>
       </div>

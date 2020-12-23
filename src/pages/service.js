@@ -3,14 +3,12 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
 import ServiceFeatures from '../components/ServiceFeatures';
-import ServiceCategories from '../components/ServiceCategories';
 
 const Service = () => {
   return (
     <Layout>
       <Seo title="Service" />
       <HeroHeader heading="Service" title="Service" />
-      <ServiceCategories />
       <ServiceFeatures
         title="Faux Finishes"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit

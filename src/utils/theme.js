@@ -39,8 +39,8 @@ export const theme = {
   textColorLite: '#FFFFFF',
   textColorDark: '#585858',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Cormorant Garamond', serif",
-  secondaryFontFamily: "'Lato', sans-serif",
+  primaryFontFamily: "'Poppins', sans-serif",
+  secondaryFontFamily: "'Poppins', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 

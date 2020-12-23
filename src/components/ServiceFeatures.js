@@ -4,22 +4,22 @@ import { Link } from 'gatsby';
 
 const Wrapper = styled.div`
   flex-direction: ${(props) => (props.secondary ? 'row-reverse' : '')};
+  .content {
+    padding: 5rem 6rem;
+  }
 `;
 
 const ServiceFeatures = ({ title, subtitle, secondary }) => {
   return (
     <section className="section">
       <div className="container">
-        <Wrapper
-          secondary={secondary}
-          className="columns is-vcentered is-variable is-8"
-        >
-          <div className="column">
+        <Wrapper secondary={secondary} className="columns">
+          <div className="column content">
             {' '}
             <h3 className="title has-text-left is-family-primary  has-text-weight-bold is-size-4 mb-4 is-spaced">
               {title}
             </h3>
-            <p className="subtitle has-text-left is-size-6 line-height">
+            <p className="subtitle has-text-left is-size-6 line-height mb-4">
               {subtitle}
             </p>
             <Link

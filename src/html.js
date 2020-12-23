@@ -24,20 +24,8 @@ export default class HTML extends React.Component {
             defer
             src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
           />
-          {/* <link
-            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"
-            rel="stylesheet"
-          />
           <link
-            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-          /> */}
-          <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
           />
           <script src="/js/scripts.js" />

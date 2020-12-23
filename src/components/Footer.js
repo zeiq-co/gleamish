@@ -19,6 +19,9 @@ const Container = styled.footer`
       color: #fff !important;
     }
   }
+  p {
+    color: #fff !important;
+  }
   .container {
     position: inherit !important;
   }
