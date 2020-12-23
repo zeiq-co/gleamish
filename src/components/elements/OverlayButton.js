@@ -2,41 +2,134 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../utils/theme';
 
-const Button = styled.button`
-  border-radius: 0;
-  padding: 1.2rem 3.2rem !important;
-  background: none;
-  color: ${theme.textColorLite};
-  position: relative;
-  transition: color 0.25s ease;
-  border: 1px solid ${theme.textColorLite};
-  :hover,
-  :focus {
+const Container = styled.div`
+  button {
+    font-size: 18px;
+    font-weight: 600;
+    background: #e9bd16;
     color: ${theme.textColorLite};
-  }
+    border: 1px solid ${theme.textColorLite};
 
-  ::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: ${theme.mainBrandColor};
-    transform-origin: left;
-    transition: width 0.25s ease;
-    z-index: -1;
+    padding: 1rem 3rem !important;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
   }
-  :hover::after {
-    width: 100%;
+  button:hover {
+    color: #e9bd16;
+  }
+  button::after {
+    content: '';
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  button[class^='slide']::after {
+    transition: all 0.35s;
+  }
+  button[class^='slide']:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+  button.slide_from_right::after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+  }
+  button.slide_from_top::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  button.slide_from_bottom::after {
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+  }
+  button[class^='grow']::after {
+    transition: all 0.3s ease;
+  }
+  button[class^='grow']:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  button.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  button.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+  button.grow_ellipse::after {
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+  }
+  button.grow_ellipse:hover::after {
+    transform: scale(1, 1);
+  }
+  button.grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+  button.grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+  button.grow_skew_backward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+  }
+  button.grow_skew_backward:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+  }
+  button.grow_spin::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+  }
+  button.grow_spin:hover::after {
+    transform: scale(1, 1) rotate(0deg);
   }
 `;
 
-const OverlayButton = () => {
+const OverlayButton = ({ buttonText }) => {
   return (
-    <Button className="button has-text-weight-normal is-size-5">
-      Get Started
-    </Button>
+    <Container>
+      <div className="wrapper">
+        <button type="button" className="grow_skew_backward">
+          {buttonText}
+        </button>
+      </div>
+    </Container>
   );
 };
 export default OverlayButton;

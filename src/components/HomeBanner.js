@@ -55,7 +55,7 @@ const HomeBanner = ({ bgImage }) => {
                     amet, consectetur, adipisci emit...
                   </h1>
                   <div className="has-text-center">
-                    <OverlayButton />
+                    <OverlayButton buttonText="Get Started" />
                   </div>
                 </div>
               </div>
