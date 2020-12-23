@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HeroSlider, { Slide, Nav, OverlayContainer } from 'hero-slider';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
-// import { useTrail, animated } from 'react-spring';
 
 import OverlayButton from './elements/OverlayButton';
 
