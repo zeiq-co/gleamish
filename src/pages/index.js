@@ -21,13 +21,35 @@ const Wrapper = styled.div`
     outline: none;
   }
   .slick-next {
-    right: 0 !important;
+    right: 100px !important;
   }
-  // properties used  to banners over navigation.
-  /* .slick-slider {
-    position: relative !important;
-    bottom: 105px !important;
-  } */
+  .slick-prev {
+    left: 100px;
+    z-index: 1;
+  }
+  .slick-prev:before {
+    font-size: 32px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    content: '' !important;
+    position: absolute;
+    background-size: 50%;
+    background-image: url('/images/right-scroll.png');
+    background-repeat: no-repeat;
+  }
+
+  .slick-next:before {
+    font-size: 32px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    content: '' !important;
+    position: absolute;
+    background-size: 50%;
+    background-image: url('/images/left-scroll.png');
+    background-repeat: no-repeat;
+  }
 `;
 
 const bannerItem = [
@@ -71,7 +93,7 @@ const reviewItem = [
 const IndexPage = () => {
   const settings = {
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 5000,

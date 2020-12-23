@@ -9,17 +9,17 @@ const Wrapper = styled.div`
   }
 `;
 
-const ServiceFeatures = ({ title, subtitle, secondary }) => {
+const ServiceFeatures = ({ title, subtitle, secondary, image }) => {
   return (
     <section className="section">
       <div className="container">
-        <Wrapper secondary={secondary} className="columns">
+        <Wrapper secondary={secondary} className="columns ">
           <div className="column content">
             {' '}
-            <h3 className="title has-text-left is-family-primary  has-text-weight-bold is-size-4 mb-4 is-spaced">
+            <h3 className="title has-text-left is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced">
               {title}
             </h3>
-            <p className="subtitle has-text-left is-size-6 line-height mb-4">
+            <p className="subtitle has-text-left is-size-6 line-height mb-5">
               {subtitle}
             </p>
             <Link
@@ -31,12 +31,10 @@ const ServiceFeatures = ({ title, subtitle, secondary }) => {
             </Link>
           </div>
           <div className="column">
-            <figure className="image is-5by3">
-              <img
-                src="https://bulma.io/images/placeholders/800x480.png"
-                alt="placeholder-img"
-              />
-            </figure>
+            <img src={image} alt="service-img" />
+            {/* <figure className="image is-128x128">
+
+            </figure> */}
           </div>
         </Wrapper>
       </div>

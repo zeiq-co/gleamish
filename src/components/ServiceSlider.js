@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import Slider from 'react-slick';
 
 const Section = styled.div`
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   ul {
     list-style: disc;
   }
@@ -31,16 +32,19 @@ const Section = styled.div`
 const serviceItem = [
   {
     id: 1,
-    bgImage: 'https://bulma.io/images/placeholders/480x480.png',
+    bgImage:
+      'https://demo.voidcoders.com/htmldemo/we-paintV2/wepaint-yellow/assets/images/hero1.png',
   },
   {
     id: 2,
 
-    bgImage: 'https://bulma.io/images/placeholders/480x480.png',
+    bgImage:
+      'https://demo.voidcoders.com/htmldemo/we-paintV2/wepaint-yellow/assets/images/hero1.png',
   },
   {
     id: 3,
-    bgImage: 'https://bulma.io/images/placeholders/480x480.png',
+    bgImage:
+      'https://demo.voidcoders.com/htmldemo/we-paintV2/wepaint-yellow/assets/images/hero1.png',
   },
 ];
 
@@ -69,11 +73,11 @@ const ServiceSlider = () => {
                 </figure>
               ))}
             </Slider>
-            <h2 className="has-text-centered is-size-3 mb-5 mt-5">
+            <h2 className="has-text-centered is-size-4 mb-5 mt-5">
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
               consectetur, adipisci velit...
             </h2>
-            <p className="mb-5">
+            <p className="mb-5 is-size-6 has-text-weight-normal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               in libero eros. Cras interdum et turpis in varius. Vivamus euismod
               eros vitae nulla condimentum aliquam. Phasellus ultrices vel diam
@@ -82,7 +86,7 @@ const ServiceSlider = () => {
               dui, faucibus eget iaculis in, lobortis quis ligula. Suspendisse
               bibendum metus sed facilisis tempus.
             </p>
-            <p className=" mb-5">
+            <p className=" mb-5 is-size-6 has-text-weight-normal">
               Praesent tristique dictum lacinia. Aliquam erat volutpat. Aenean
               in purus id leo tincidunt porttitor ac nec dui. Sed sed pulvinar
               metus, nec placerat tortor. Maecenas vel leo ligula. Aliquam erat
@@ -91,22 +95,27 @@ const ServiceSlider = () => {
               vitae eros sagittis tempus. Sed et mi viverra, volutpat quam vel,
               ultricies urna. In risus velit.
             </p>
-            <h2 className="mb-5">Our restoration services include:</h2>
+            <h2 className="mb-5 is-size-4 has-text-weight-normal">
+              Our restoration services include:
+            </h2>
             <ul className="ml-4">
-              <li className="mb-3">Coating Removal</li>
-              <li className="mb-3">Decorative Plaster</li>
-              <li className="mb-3">Faux Finishing</li>
-              <li className="mb-3">Stenciling</li>
-              <li className="mb-3">Wood Refinishing</li>
+              <li className="mb-3 is-size-6">Coating Removal</li>
+              <li className="mb-3 is-size-6">Decorative Plaster</li>
+              <li className="mb-3 is-size-6">Faux Finishing</li>
+              <li className="mb-3 is-size-6">Stenciling</li>
+              <li className="mb-3 is-size-6">Wood Refinishing</li>
             </ul>
-            <button type="button" className="button is-secondary mt-5">
+            <Link
+              to="/contact"
+              type="button"
+              className="button is-secondary mt-5"
+            >
               GET A QUOTE
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </Section>
   );
 };
-
 export default ServiceSlider;
