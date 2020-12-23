@@ -7,7 +7,7 @@ const Section = styled.div`
   background-image: url(${(props) => props.bgImage});
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9;
+
   display: flex;
   align-items: center;
   height: 100vh;
@@ -27,33 +27,42 @@ const Section = styled.div`
     flex: 1;
   }
   .info {
-    margin-top: 7rem;
+    margin-top: 9rem;
   }
+`;
+
+const Opacity = styled.div`
+  background: #23211b;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
 `;
 
 const HomeBanner = ({ bgImage }) => {
   return (
     <Section bgImage={bgImage}>
-      <div className="container">
-        <div className="info ">
-          <Fade bottom>
-            <div className="columns is-centered is-vcentered">
-              <div className="column is-5 has-text-centered ">
-                <h1 className="heading has-text-weight-normal has-text-white mb-4 is-family-primary ">
-                  Reliable Painters and Decorators
-                </h1>
-                <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
-                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci emit...
-                </h1>
-                <div className="has-text-center">
-                  <OverlayButton />
+      <Opacity>
+        <div className="container">
+          <div className="info ">
+            <Fade bottom>
+              <div className="columns is-centered is-vcentered">
+                <div className="column is-5 has-text-centered ">
+                  <h1 className="heading has-text-weight-normal has-text-white mb-4 is-family-primary ">
+                    Reliable Painters and Decorators
+                  </h1>
+                  <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                    amet, consectetur, adipisci emit...
+                  </h1>
+                  <div className="has-text-center">
+                    <OverlayButton />
+                  </div>
                 </div>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
         </div>
-      </div>
+      </Opacity>
     </Section>
   );
 };
