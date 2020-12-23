@@ -30,10 +30,12 @@ const Section = styled.div`
     border-radius: 4px;
   }
   .navbar-end {
-    background-image: url(/images/icons/nav-backg-2.png);
-    background-size: 100% 77%;
-    background-position-y: 13px;
-    background-repeat: no-repeat;
+    @media screen and (min-width: 769px) {
+      background-image: url(/images/icons/nav-backg-2.png);
+      background-size: 100% 77%;
+      background-position-y: 13px;
+      background-repeat: no-repeat;
+    }
     a {
       font-size: ${(props) => props.theme.fontSizeMedium}px;
       font-family: ${(props) => props.theme.primaryFontFamily};
@@ -115,7 +117,7 @@ const Header = () => {
               {' '}
               <Link
                 to="/"
-                className="navbar-item has-text-weight-normal is-size-4 p-5 empty-padding"
+                className="is-hidden-mobile navbar-item has-text-weight-normal is-size-4 p-5 empty-padding"
               />
               <Link
                 to="/"
