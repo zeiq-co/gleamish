@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
-  margin: 1rem 0;
   .slide-button-container {
     :hover {
       background: transparent !important;
@@ -110,7 +109,7 @@ const HomeSlider = () => {
                       {item.subtitle}
                     </h1>
 
-                    <OverlayButton linkTo="/" buttonText="Get Started" />
+                    <OverlayButton linkTo="/quote" buttonText="Get a Quote" />
                   </Wrapper>
                 </OverlayContainers>
               </Slide>

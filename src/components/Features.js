@@ -1,16 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../utils/theme';
 
 const Card = styled.div`
   margin-top: 3.5rem;
+  background-color: ${theme.darkAccent};
   .subtitle {
     line-height: 30px;
-  }
-  h3 {
-    color: ${(props) => props.theme.darkAccent} !important;
-  }
-  p {
-    color: ${(props) => props.theme.textColorDark} !important;
   }
 `;
 
@@ -60,10 +56,10 @@ const Features = () => {
                     <img src={item.image} alt="painting Images" />
                   </figure>
                 </div>
-                <h3 className="title has-text-centered is-family-primary  has-text-weight-normal is-size-4 mb-5 is-spaced">
+                <h3 className="has-text-centered is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced has-text-white">
                   {item.title}
                 </h3>
-                <p className="subtitle has-text-centered is-size-6 line-height">
+                <p className="has-text-centered is-size-6 line-height has-text-white">
                   {item.subtitle}
                 </p>
               </Card>

@@ -9,7 +9,7 @@ import config from '../utils/config';
 const Container = styled.footer`
   padding: 7rem 0;
   padding-bottom: 1rem;
-  background-color: ${theme.darkShades};
+  background-color: ${theme.darkAccent};
   li,
   p {
     margin-bottom: 1rem;

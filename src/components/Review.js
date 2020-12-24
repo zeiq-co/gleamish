@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import { Parallax } from 'react-parallax';
+import { theme } from '../utils/theme';
 import Heading from './elements/Heading';
 
 const reviewItem = [
@@ -56,7 +56,7 @@ const reviewItem = [
 ];
 
 const Section = styled.section`
-  background: #23211b;
+  background-color: ${theme.darkAccent};
   opacity: 0.9;
   padding-bottom: 5rem;
   .card {
@@ -88,7 +88,6 @@ const Section = styled.section`
   .reviews-name {
     color: ${(props) => props.theme.textColorLite} !important;
   }
-
   .card {
     background-color: transparent;
   }
@@ -127,43 +126,38 @@ const Review = () => {
     ],
   };
   return (
-    <Parallax
-      bgImage="http://smartdemowp.com/wazors/wp-content/uploads/interior-design-area-bg.jpg"
-      strength={600}
-    >
-      <Section className="section">
-        <div className="container">
-          <Heading primary centered>
-            Client Reviews
-          </Heading>
-          <Slider {...settings}>
-            {reviewItem.map((item) => (
-              <div className="columns">
-                <div className="column">
-                  <Icon className="fas fa-quote-left is-size-3 mb-2" />
-                  <div className="card" key={item.id}>
-                    <div className="card-content">
-                      <p className="review-section is-family-primary mb-4">
-                        {' '}
-                        {item.reviews}
-                      </p>
-                      <div className="media">
-                        <div className="media-content">
-                          <p className="title reviews-name is-size-6 has-text-weight-normal">
-                            {' '}
-                            {item.title}
-                          </p>
-                        </div>
+    <Section className="section">
+      <div className="container">
+        <Heading primary centered>
+          Client Reviews
+        </Heading>
+        <Slider {...settings}>
+          {reviewItem.map((item) => (
+            <div className="columns">
+              <div className="column">
+                <Icon className="fas fa-quote-left is-size-3 mb-2" />
+                <div className="card" key={item.id}>
+                  <div className="card-content">
+                    <p className="review-section is-family-primary mb-4">
+                      {' '}
+                      {item.reviews}
+                    </p>
+                    <div className="media">
+                      <div className="media-content">
+                        <p className="title reviews-name is-size-6 has-text-weight-normal">
+                          {' '}
+                          {item.title}
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-      </Section>
-    </Parallax>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </Section>
   );
 };
 export default Review;
