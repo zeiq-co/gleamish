@@ -6,7 +6,8 @@ import HeroHeader from '../components/elements/HeroHeader';
 import ServiceFeatures from '../components/ServiceFeatures';
 
 const Wrapper = styled.div`
-  padding: 4rem 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 `;
 
 const Service = () => {

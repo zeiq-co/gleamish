@@ -34,7 +34,6 @@ const Section = styled.div`
 
 const Wrapper = styled.div`
   .heading {
-    font-size: 48px !important;
     line-height: 4rem;
   }
   .subheading {
@@ -104,7 +103,7 @@ const HomeSlider = () => {
               >
                 <OverlayContainers className="columns is-mobile is-centered">
                   <Wrapper className="column is-8 has-text-centered">
-                    <h1 className="heading has-text-weight-normal has-text-white mb-4 is-family-primary ">
+                    <h1 className="heading is-size-1 is-size-3-mobile has-text-weight-normal has-text-white mb-4 is-family-primary ">
                       {item.title}
                     </h1>
                     <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
