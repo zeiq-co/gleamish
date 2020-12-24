@@ -102,7 +102,7 @@ const Gallery = ({ pagination, heading }) => {
             </div>
           </div>
         </div>
-        <GalleryWrapper className="columns  is-multiline is-mobile">
+        <GalleryWrapper className="columns is-multiline">
           {GalleryItem.map((item) => {
             if (category !== 'All' && category !== item.category) {
               return null;

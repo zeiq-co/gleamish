@@ -23,6 +23,12 @@ const Wrapper = styled.div`
     border-style: dashed;
     border-color: #cccccc;
   }
+
+  @media only screen and (max-width: 600px) {
+    .box-container {
+      border-color: transparent;
+    }
+  }
   figure {
     margin: 0 auto;
   }
