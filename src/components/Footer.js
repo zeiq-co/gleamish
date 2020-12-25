@@ -54,7 +54,8 @@ const Information = [
   { id: 2, name: 'Term and condition', url: '/' },
   { id: 3, name: 'Privacy Policy', url: '/' },
 ];
-const Footer = () => {
+const Footer = ({ home }) => {
+  console.log(home, 'home');
   return (
     <>
       <Container className="section">
@@ -66,15 +67,14 @@ const Footer = () => {
               </h1>
               <ul>
                 <li>
-                  Tel :
-                  <a href={`tel:${config.telephone}`}> {config.telephone}</a>
+                  Tel :<a href={`tel:${home.telephone}`}> {config.telephone}</a>
                 </li>
                 <li>
                   E-MAIL : {'                    '}
-                  <a href={`mailto:${config.email}`}>{config.email}</a>
+                  <a href={`mailto:${home.email}`}>{home.email}</a>
                 </li>
                 <li>
-                  Address :<span>{config.address}</span>
+                  Address :<span>{home.address}</span>
                 </li>
               </ul>
             </div>
