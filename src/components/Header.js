@@ -66,11 +66,12 @@ const Section = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = ({ home }) => {
   const [isActive, setIsActive] = useState(false);
+
   return (
     <Section>
-      <HeaderInformation />
+      <HeaderInformation home={home} />
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
