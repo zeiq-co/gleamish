@@ -57,7 +57,6 @@ const reviewItem = [
 
 const Section = styled.section`
   background-color: ${theme.darkAccent};
-  opacity: 0.9;
   padding-bottom: 5rem;
   .card {
     box-shadow: none;
