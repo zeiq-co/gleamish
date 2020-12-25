@@ -1,14 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
-import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Heading from '../components/elements/Heading';
+import config from '../utils/config';
 
 export const pageQuery = graphql`
-  query PageByPath($slug: String!) {
-    sanityPage(slug: { current: { eq: $slug } }) {
+  query ArticlePage($slug: String!) {
+    sanityArticle(slug: { current: { eq: $slug } }) {
       _id
       title
       slug {
@@ -17,7 +17,7 @@ export const pageQuery = graphql`
       description
       image {
         asset {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbySanityImageFluid
           }
         }
@@ -27,26 +27,22 @@ export const pageQuery = graphql`
 `;
 
 const PageView = ({ data }) => {
-  const page = data.sanityPage;
+  const news = data.sanityArticle;
 
   return (
     <Layout>
       <Seo
-        title={page.title}
-        description={`Read news & updates about ${page.title}`}
-        url={`${config.siteUrl}/page/${page.slug.current}`}
+        title={news.title}
+        description={`Read blog post about ${news.title}`}
+        url={`${config.siteUrl}/article/${news.slug.current}`}
       />
       <section className="section">
         <div className="container">
-          {/* <div className="columns is-centered"> */}
-          {/* <div className="column is-10"> */}
-          <Heading centered>{page.title}</Heading>
+          <Heading centered>{news.title}</Heading>
           <div className="markdown-container">
-            <ReactMarkdown source={page.description} />
+            <ReactMarkdown source={news.description} />
           </div>
         </div>
-        {/* </div> */}
-        {/* </div> */}
       </section>
     </Layout>
   );
