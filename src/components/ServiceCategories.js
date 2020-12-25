@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heading from './elements/Heading';
 
 const ServiceWrapper = styled.div`
   .card {
@@ -50,8 +49,8 @@ const ServiceCategories = () => {
         <div className="container">
           <div className="columns is-multiline is-mobile">
             {serviceCategoryItem.map((item) => (
-              <div className="column is-6">
-                <div className="card" key={item.id}>
+              <div className="column is-6" key={item.id}>
+                <div className="card">
                   <div className="card-content">
                     <div className="media">
                       <div className="media-left">
