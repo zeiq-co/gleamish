@@ -53,11 +53,6 @@ export default {
       title: 'Instagram URL',
     },
     {
-      name: 'pinterest',
-      type: 'string',
-      title: 'Pinterest URL',
-    },
-    {
       name: 'telephone',
       type: 'string',
       title: 'Telephone',
