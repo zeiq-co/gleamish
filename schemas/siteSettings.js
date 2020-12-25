@@ -32,27 +32,11 @@ export default {
       },
     },
     {
-      name: 'homeHeroTitle',
-      type: 'text',
-      title: 'Home Hero Title',
+      title: 'Home Hero',
+      name: 'homeHero',
+      type: 'array',
+      of: [{type: 'banner'}]
     },
-    {
-      name: 'homeHeroSubTitle',
-      type: 'text',
-      title: 'Home Hero SubTitle',
-    },
-    {
-      name: 'homeHeroImage',
-      title: 'Home Hero Image',
-      type: 'image',
-    },
-
-    {
-      title: 'Home Hero Link',
-      name: 'homeHeroLink',
-      type: 'string',
-    },
-
     {
       name: 'facebook',
       type: 'string',
