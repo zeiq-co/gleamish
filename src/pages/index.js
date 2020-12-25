@@ -9,11 +9,11 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import HomeCategories from '../components/HomeCategories';
+import Review from '../components/Review';
+import Members from '../components/Members';
+// import ImageAfterBefore from '../components/elements/ImageAfterBefore';
 // import Gallery from '../components/Gallery';
 // import Categories from '../components/Categories';
-import Review from '../components/Review';
-// import ImageAfterBefore from '../components/elements/ImageAfterBefore';
-import Members from '../components/Members';
 
 export const query = graphql`
   query HomePageQuery {
@@ -50,16 +50,16 @@ const IndexPage = ({ data }) => {
       <HeroSlider data={home} />
       <HomeCategories />
       <Features />
-      {/* <Categories />
-      <Gallery heading /> */}
       <Review />
-      {/* <ImageAfterBefore
+      <Members />
+      {/* <Categories />
+      <Gallery heading />
+      <ImageAfterBefore
         compareImage
         showButton
         title="OUR LATEST PROJECTS"
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
       /> */}
-      <Members />
     </Layout>
   );
 };
