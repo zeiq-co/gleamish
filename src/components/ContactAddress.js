@@ -17,13 +17,6 @@ const BoxWrapper = styled.div`
   padding-top: 5rem;
   padding-right: 2rem;
   background: #f1f5f7;
-
-  /* @media screen and (min-width: 1400px) {
-    padding: 7rem !important;
-  }
-  @media screen and (max-width: 600px) {
-    padding: 2rem !important;
-  } */
 `;
 
 const ContactAddress = () => {

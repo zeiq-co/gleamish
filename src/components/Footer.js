@@ -9,7 +9,7 @@ import config from '../utils/config';
 const Container = styled.footer`
   padding: 7rem 0;
   padding-bottom: 1rem;
-  background-color: ${theme.darkShades};
+  background-color: ${theme.darkAccent};
   li,
   p {
     margin-bottom: 1rem;
@@ -46,7 +46,7 @@ const LogoImg = styled.img`
 
 const Bottom = styled.div`
   padding: 2rem !important;
-  background-color: ${theme.darkShades};
+  background-color: ${theme.darkAccent};
 `;
 
 const Information = [
@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
             <div className="column has-text-centered is-5">
               <LogoImg
-                src="/images/logo.png"
+                src="/images/logo-dark.png"
                 alt="footer-logo"
                 className="mb-5"
               />

@@ -13,6 +13,11 @@ const Section = styled.div`
   p {
     color: ${(props) => props.theme.textColorDark} !important;
   }
+  @media screen and (max-width: 600px) {
+    .column.is-6 {
+      right: 0;
+    }
+  }
 `;
 const BoxWrapper = styled.div`
   padding: 5rem 8rem 3rem 5rem !important;

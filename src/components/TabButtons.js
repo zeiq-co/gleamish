@@ -5,7 +5,7 @@ const StyledButton = styled.button`
   box-shadow: none;
   border-radius: 0;
   background-color: ${(props) =>
-    props.active ? '#ebc330' : '#f1f5f7'} !important;
+    props.active ? props.theme.mainBrandColor : '#f1f5f7'} !important;
   border-color: #f1f5f7;
   transition: all 0.5s ease-out;
   color: ${(props) => props.theme.darkAccent} !important;
@@ -14,7 +14,7 @@ const StyledButton = styled.button`
     border-color: transparent !important;
   }
   :hover {
-    border-color: #ebc330 !important;
+    border-color: ${(props) => props.theme.mainBrandColor} !important;
     border-width: 0.5px;
   }
 `;
@@ -24,7 +24,7 @@ const TabButton = ({ title, onClick, active }) => {
     <div className="column">
       <StyledButton
         type="button"
-        className="button is-medium is-fullwidth is-size-6"
+        className="button is-fullwidth is-medium is-size-6"
         onClick={onClick}
         active={title == active}
       >
