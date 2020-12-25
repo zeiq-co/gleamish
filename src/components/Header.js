@@ -5,7 +5,7 @@ import HeaderInformation from './HeaderInformation';
 import { theme } from '../utils/theme';
 
 const Section = styled.div`
-  font-family: ${(props) => props.theme.primaryFontFamily};
+  font-family: ${theme.primaryFontFamily};
   .navbar-brand {
     margin-left: -1.5rem !important;
     .navbar-item img {
@@ -26,15 +26,15 @@ const Section = styled.div`
     }
   }
   .navbar-burger {
-    color: ${(props) => props.theme.textColorLite};
+    color: ${theme.textColorLite};
     opacity: 0.5;
     border-radius: 4px;
   }
   .navbar-end {
     a {
-      font-size: ${(props) => props.theme.fontSizeMedium}px;
-      font-family: ${(props) => props.theme.primaryFontFamily};
-      color: ${(props) => props.theme.textColor};
+      font-size: ${theme.fontSizeMedium}px;
+      font-family: ${theme.primaryFontFamily};
+      color: ${theme.textColor};
       :focus {
         background-color: transparent;
       }
@@ -48,7 +48,7 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${(props) => props.theme.darkShades};
+      background-color: ${theme.darkShades};
       width: 0%;
       bottom: 1.5rem;
     }
@@ -58,7 +58,7 @@ const Section = styled.div`
   }
   @media screen and (max-width: 700px) {
     .navbar-menu {
-      background: ${(props) => props.theme.borderColor} !important;
+      background: ${theme.borderColor} !important;
     }
   }
   button.is-secondary.is-normal {

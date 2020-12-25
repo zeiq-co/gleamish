@@ -41,7 +41,7 @@ const IndexLayout = ({ children }) => (
           const home = data.sanitySiteSettings;
           return (
             <>
-              <Header />
+              <Header home={home} />
               <Container>{children}</Container>
               <Footer home={home} />
             </>
