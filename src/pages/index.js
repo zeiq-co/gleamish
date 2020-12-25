@@ -5,6 +5,7 @@ import HeroSlider from '../components/HeroSlider';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
+import HomeCategories from '../components/HomeCategories';
 // import Gallery from '../components/Gallery';
 // import Categories from '../components/Categories';
 import Review from '../components/Review';
@@ -16,6 +17,7 @@ const IndexPage = () => {
     <Layout>
       <Seo title="Home" description="Midas Paint" />
       <HeroSlider />
+      <HomeCategories />
       <Features />
       {/* <Categories />
       <Gallery heading /> */}

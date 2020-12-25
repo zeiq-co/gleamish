@@ -17,7 +17,7 @@ const Container = styled.section`
 const Icon = styled.i`
   color: ${(props) => props.theme.darkAccent};
   font-size: 1.9rem;
-  background: #eac343 !important;
+  background: ${(props) => props.theme.mainBrandColor} !important;
   width: 57px !important;
   height: 57px;
   border-radius: 50%;

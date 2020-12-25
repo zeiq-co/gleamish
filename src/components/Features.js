@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../utils/theme';
 
 const Card = styled.div`
-  margin-top: 3.5rem;
+  border-radius: 0rem;
   background-color: ${theme.darkAccent};
   .subtitle {
     line-height: 30px;
@@ -16,28 +16,28 @@ const FeaturesItem = [
     title: 'Interior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting-02.jpg',
+    image: '/images/interior-painting.png',
   },
   {
     id: 2,
     title: 'Residential',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting-03.jpg',
+    image: '/images/Residential.png',
   },
   {
     id: 3,
     title: 'Commercial',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting-04.jpg',
+    image: '/images/Commercial.png',
   },
   {
     id: 4,
     title: 'Exterior Painting',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/painting.jpg',
+    image: '/images/exterior.png',
   },
 ];
 

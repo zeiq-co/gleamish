@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import { theme } from '../../utils/theme';
 
 const LinkStyled = styled(Link)`
+  margin-top: ${(props) => (props.marginTop ? '14px' : '')};
+  margin-left: ${(props) => (props.marginLeft ? '12px' : '')};
   button {
     cursor: pointer;
     font-size: 18px;
@@ -18,10 +20,11 @@ const LinkStyled = styled(Link)`
   }
   button:hover {
     color: ${theme.textColorLite};
+    border: 1px solid ${theme.mainBrandColor};
   }
   button::after {
     content: '';
-    background: ${theme.darkAccent};
+    background: ${theme.mainBrandColor};
     position: absolute;
     z-index: -1;
     padding: 0.85em 0.75em;
@@ -121,9 +124,9 @@ const LinkStyled = styled(Link)`
   }
 `;
 
-const OverlayButton = ({ buttonText, linkTo }) => {
+const OverlayButton = ({ buttonText, linkTo, marginTop, marginLeft }) => {
   return (
-    <LinkStyled to={linkTo}>
+    <LinkStyled to={linkTo} marginTop={marginTop} marginLeft={marginLeft}>
       <button to={linkTo} type="button" className="grow_skew_backward">
         {buttonText}
       </button>
