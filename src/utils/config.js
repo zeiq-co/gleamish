@@ -5,7 +5,7 @@ module.exports = {
   author: 'Parminder Klair',
   description: 'paint',
   siteUrl: 'https://www.paint.com/',
-  logo: '/images/logo.jpg',
+  logo: '/images/logo.png',
 
   telephone: '07572575313',
   email: 'eldan@midasbrushdecorating.co.uk',

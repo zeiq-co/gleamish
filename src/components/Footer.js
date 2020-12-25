@@ -46,7 +46,7 @@ const LogoImg = styled.img`
 
 const Bottom = styled.div`
   padding: 2rem !important;
-  background-color: ${theme.darkShades};
+  background-color: ${theme.darkAccent};
 `;
 
 const Information = [
