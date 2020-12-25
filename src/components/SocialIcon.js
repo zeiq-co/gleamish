@@ -28,24 +28,25 @@ const Icon = styled.i`
   }
 `;
 
-const SocialIcon = () => (
-  <Container className="level">
-    <div className="level-item">
-      <a href={config.twitter} target="_blank">
-        <Icon className="fab fa-twitter" />
-      </a>
-    </div>
-    <div className="level-item">
-      <a href={config.instagram} target="_blank">
-        <Icon className="fab fa-instagram" />
-      </a>
-    </div>
-    <div className="level-item">
-      <a href={config.facebook} target="_blank">
-        <Icon className="fab fa-facebook" />
-      </a>
-    </div>
-  </Container>
-);
-
+const SocialIcon = ({ home }) => {
+  return (
+    <Container className="level">
+      <div className="level-item">
+        <a href={home.twitter} target="_blank">
+          <Icon className="fab fa-twitter" />
+        </a>
+      </div>
+      <div className="level-item">
+        <a href={home.instagram} target="_blank">
+          <Icon className="fab fa-instagram" />
+        </a>
+      </div>
+      <div className="level-item">
+        <a href={home.facebook} target="_blank">
+          <Icon className="fab fa-facebook" />
+        </a>
+      </div>
+    </Container>
+  );
+};
 export default SocialIcon;

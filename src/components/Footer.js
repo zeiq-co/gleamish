@@ -55,7 +55,6 @@ const Information = [
   { id: 3, name: 'Privacy Policy', url: '/' },
 ];
 const Footer = ({ home }) => {
-  console.log(home, 'home');
   return (
     <>
       <Container className="section">
@@ -104,7 +103,7 @@ const Footer = ({ home }) => {
             </div>
           </div>
           <div className="has-text-centered is-flex  is-justify-content-center">
-            <SocialIcon />
+            <SocialIcon home={home} />
           </div>
         </div>
       </Container>
