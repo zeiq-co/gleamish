@@ -33,11 +33,15 @@ const PageView = ({ data }) => {
       <Seo title={page.title} />
       <section className="section">
         <div className="container">
+          {/* <div className="columns is-centered"> */}
+          {/* <div className="column is-10"> */}
           <Heading centered>{page.title}</Heading>
           <div className="markdown-container">
             <ReactMarkdown source={page.description} />
           </div>
         </div>
+        {/* </div> */}
+        {/* </div> */}
       </section>
     </Layout>
   );
