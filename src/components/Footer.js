@@ -13,14 +13,14 @@ const Container = styled.footer`
   li,
   p {
     margin-bottom: 1rem;
-    font-size: ${(props) => props.theme.fontSizeSmall}px !important;
+    font-size: ${theme.fontSizeSmall}px !important;
     color: #9b9b9b !important;
     :hover {
-      color: #fff !important;
+      color:  ${theme.textColorLite}; !important;
     }
   }
   p {
-    color: #fff !important;
+    color: ${theme.textColorLite}; !important;
   }
   .container {
     position: inherit !important;
