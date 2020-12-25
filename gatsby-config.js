@@ -8,13 +8,14 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
-    // {
-    //   resolve: 'gatsby-source-sanity',
-    //   options: {
-    //     projectId: config.sanityId,
-    //     dataset: 'production',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: config.sanityId,
+        dataset: 'production',
+        watchMode: true,
+      },
+    },
     // {
     //   resolve: 'gatsby-plugin-mailchimp',
     //   options: {
