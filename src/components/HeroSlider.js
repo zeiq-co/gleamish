@@ -45,29 +45,14 @@ const OverlayContainers = styled(OverlayContainer)`
   display: flex;
   align-items: center;
 `;
-const content = [
-  {
-    id: 1,
-    bgImage: '/images/homebanner-01.jpg',
-    title: 'Reliable Painters and Decorators',
-    subtitle:
-      'Neque porro quisquam est qui dolorem ipsum quia dolor sit   amet, consectetur, adipisci emit...',
-  },
-  {
-    id: 2,
-    bgImage: '/images/homebanner02.jpg',
-    title: 'Reliable Painters and Decorators',
-    subtitle:
-      'Neque porro quisquam est qui dolorem ipsum quia dolor sit   amet, consectetur, adipisci emit...',
-  },
-];
 
-const HomeSlider = () => {
+const HomeSlider = ({ data }) => {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
     setCount(1);
   }, [count]);
+  console.log(data, 'data');
   return (
     <Section className="">
       <div className="">
@@ -92,11 +77,11 @@ const HomeSlider = () => {
             height: '90vh',
           }}
         >
-          {content.map((item) => (
+          {data.homeHero.map((item) => (
             <>
               <Slide
                 background={{
-                  backgroundImage: item.bgImage,
+                  backgroundImage: item.image ? item.image.asset.fluid.src : '',
                   backgroundAnimation: 'zoom',
                 }}
               >
@@ -108,8 +93,10 @@ const HomeSlider = () => {
                     <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
                       {item.subtitle}
                     </h1>
-
-                    <OverlayButton linkTo="/quote" buttonText="Get a Quote" />
+                    <OverlayButton
+                      linkTo={`/${item.linkTo}`}
+                      buttonText="Get a Quote"
+                    />
                   </Wrapper>
                 </OverlayContainers>
               </Slide>

@@ -51,8 +51,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: node.fields.slug,
       // This component will wrap our MDX content
       component: path.resolve(`./src/components/NewsLayout.js`),
-      // We can use the values in this context in
-      // our page layout component
+
       context: { id: node.id },
     });
   });

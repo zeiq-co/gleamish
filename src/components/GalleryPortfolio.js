@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import GalleryCard from './GalleryCard';
-// import TabButton from './TabButtons';
-import Heading from './elements/Heading';
 
-// const GalleryWrapper = styled.div`
-//   margin-top: 15px;
-// `;
+import Heading from './elements/Heading';
 
 const portfolioItem = [
   {
@@ -55,7 +50,7 @@ const GalleryPortfolio = () => {
         <div className="columns  is-centered is-gapless is-multiline">
           {portfolioItem.map((item) => (
             <div className="column is-4">
-              <figure class="image is-square">
+              <figure className="image is-square">
                 <img
                   src="https://bulma.io/images/placeholders/480x480.png"
                   alt="gallery-portfolio"

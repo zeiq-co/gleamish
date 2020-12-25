@@ -1,6 +1,9 @@
 import React from 'react';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { graphql } from 'gatsby';
+import config from '../utils/config';
 import HeroSlider from '../components/HeroSlider';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
@@ -12,11 +15,39 @@ import Review from '../components/Review';
 // import ImageAfterBefore from '../components/elements/ImageAfterBefore';
 import Members from '../components/Members';
 
-const IndexPage = () => {
+export const query = graphql`
+  query HomePageQuery {
+    sanitySiteSettings {
+      title
+      description
+      keywords
+      homeHero {
+        _key
+        title
+        subtitle
+        linkTo
+        image {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = ({ data }) => {
+  const home = data.sanitySiteSettings;
   return (
     <Layout>
-      <Seo title="Home" description="Midas Paint" />
-      <HeroSlider />
+      <Seo
+        title={home.title}
+        description={home.description}
+        url={config.siteUrl}
+      />
+      <HeroSlider data={home} />
       <HomeCategories />
       <Features />
       {/* <Categories />
