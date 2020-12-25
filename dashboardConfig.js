@@ -18,7 +18,7 @@ export default {
         title: 'My Netlify deploys',
         sites: [
           {
-            title: 'Sanity Studio',
+            title: 'Paint Sanity Studio',
             apiId: '',
             buildHookId: '',
             name: '-',

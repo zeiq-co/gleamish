@@ -8,14 +8,7 @@ export default {
       title: 'Person Name',
       type: 'string',
     },
-    {
-      name: 'comment',
-      title: 'Comment',
-      type: 'markdown',
-      options: {
-        minRows: 20,
-      },
-    },
+
     {
       title: 'Rating',
       name: 'rating',
@@ -27,15 +20,12 @@ export default {
       type: 'image',
     },
     {
-      name: 'product',
-      title: 'Products',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'product' }],
-        },
-      ],
+      name: 'comment',
+      title: 'Comment',
+      type: 'markdown',
+      options: {
+        minRows: 20,
+      },
     },
   ],
 };

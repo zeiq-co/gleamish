@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "2jkk6tlv",
+    "projectId": "mczms7bd",
     "dataset": "production"
   },
   "project": {
-    "name": "zeiq commerce"
+    "name": "Paint"
   },
   "plugins": [
     "@sanity/base",

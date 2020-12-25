@@ -2,7 +2,7 @@
   "name": "admin",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "sanity content management system",
   "main": "package.json",
   "author": "Parminder Klair <perminder.klair@gmail.com>",
   "license": "MIT",

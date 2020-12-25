@@ -46,21 +46,13 @@ export default {
       title: 'Home Hero Image',
       type: 'image',
     },
-    {
-      title: 'Home Hero Text Color',
-      name: 'homeHeroTextColor',
-      type: 'color',
-    },
+
     {
       title: 'Home Hero Link',
       name: 'homeHeroLink',
       type: 'string',
     },
-    {
-      name: 'homeAboutUs',
-      type: 'text',
-      title: 'Home About Us',
-    },
+
     {
       name: 'facebook',
       type: 'string',
@@ -95,22 +87,6 @@ export default {
       name: 'address',
       type: 'string',
       title: 'Address',
-    },
-    {
-      name: 'productDeliveryInfo',
-      title: 'Product Delivery Info',
-      type: 'markdown',
-      options: {
-        minRows: 20,
-      },
-    },
-    {
-      name: 'productShippingReturns',
-      title: 'Product Shipping Returns',
-      type: 'markdown',
-      options: {
-        minRows: 20,
-      },
     },
   ],
 };
