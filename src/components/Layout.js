@@ -17,7 +17,6 @@ const query = graphql`
       facebook
       twitter
       instagram
-      pinterest
       telephone
       address
       email
