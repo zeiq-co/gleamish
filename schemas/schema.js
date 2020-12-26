@@ -10,12 +10,18 @@ import article from './article';
 import siteSettings from './siteSettings';
 import address from './address';
 import review from './review';
+import about from './about';
+import aboutServices from './aboutServices';
 
 import localeString from './locale/String';
 import localeText from './locale/Text';
 import localeBlockContent from './locale/BlockContent';
 import banner from './banner';
-
+import homeFeatures from './homeFeatures';
+import brands from './brands';
+import whyChooseUs from './whyChooseUs';
+import services from './services';
+import gallery from './gallery';
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -29,6 +35,7 @@ export default createSchema({
     page,
     article,
     review,
+    about,
     siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
@@ -38,5 +45,11 @@ export default createSchema({
     localeString,
     address,
     banner,
+    homeFeatures,
+    brands,
+    whyChooseUs,
+    aboutServices,
+    services,
+    gallery,
   ]),
 });
