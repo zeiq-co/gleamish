@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -8,6 +7,7 @@ import News from '../components/News';
 import AboutFeatures from '../components/AboutFeatures';
 import ImageAfterBefore from '../components/elements/ImageAfterBefore';
 import Heading from '../components/elements/Heading';
+import config from '../utils/config';
 
 export const aboutQuery = graphql`
   query myBlog {
@@ -30,21 +30,38 @@ export const aboutQuery = graphql`
         }
       }
     }
+    sanityAbout {
+      heroTitle
+      heroDescription
+      image {
+        asset {
+          fluid(maxWidth: 800) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
+      services {
+        _key
+        title
+        description
+      }
+    }
   }
 `;
 
 const About = ({ data }) => {
   const { edges: posts } = data.allSanityArticle;
+  const aboutUs = data.sanityAbout;
   return (
     <Layout>
-      <Seo title="about" />
+      <Seo title="about" description={`about  ${config.siteName}`} />
       <HeroHeader heading="About" title="About" />
       <ImageAfterBefore
-        title="Lorem Ipsum"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam.Lorem ipsum dolor sit amet"
-        singleImage="https://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/color-box.jpg"
+        title={aboutUs.heroTitle}
+        description={aboutUs.heroDescription}
+        singleImage={aboutUs.image.asset.fluid.src}
       />
-      <AboutFeatures />
+      <AboutFeatures data={aboutUs} />
       <div className="section">
         <div className="container">
           <Heading centered>News & Blog</Heading>
