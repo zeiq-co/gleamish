@@ -59,35 +59,30 @@ const categorySubItem = [
   },
 ];
 
-const HomeCategories = () => {
+const HomeAboutUs = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
         <Heading centered> Why Choose Us?</Heading>
         <div className="columns is-variable is-6">
           <div className="column">
-            <Img
-              src="https://demo.voidcoders.com/htmldemo/we-paintV2/wepaint-yellow/assets/images/project/about.png"
-              alt="placeholder-img"
-            />
+            <Img src={data.image.asset.fluid.src} alt="placeholder-img" />
           </div>
           <div className="column ">
             <h1 className="mb-4 ml-3 is-size-6 info-section">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec
-              ullamcorper mattis leo. Ab dolore nisi sunt quamquam...
+              {data.description}
             </h1>
             <div className="columns is-multiline ">
-              {categorySubItem.map((item) => (
+              {data.featuresList.map((item) => (
                 <div className="column is-6 is-flex is-align-items-center ">
                   <Icon className="far fa-check-circle mr-4" />
-                  <p className="">{item.title}</p>
+                  <p className="">{item}</p>
                 </div>
               ))}
               <OverlayButton
                 marginTop
                 marginLeft
-                linkTo="/"
+                linkTo="/service"
                 buttonText=" View More"
               />
             </div>
@@ -97,4 +92,4 @@ const HomeCategories = () => {
     </Section>
   );
 };
-export default HomeCategories;
+export default HomeAboutUs;

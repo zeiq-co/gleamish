@@ -42,7 +42,7 @@ const SliderContainer = styled(Slider)`
     margin: 0 auto;
   }
 `;
-const Members = () => {
+const Members = ({ data }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -75,9 +75,9 @@ const Members = () => {
     <div className="section">
       <div className="container">
         <SliderContainer {...settings}>
-          {OurLogo.map((item) => (
+          {data.map((item) => (
             <div className="column is-3 has-text-centered item">
-              <img src={item.image} alt="brands" />
+              <img src={item.image.asset.fluid.src} alt="brands" />
             </div>
           ))}
         </SliderContainer>

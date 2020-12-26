@@ -1,5 +1,4 @@
 import React from 'react';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { graphql } from 'gatsby';
@@ -8,12 +7,9 @@ import HeroSlider from '../components/HeroSlider';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
-import HomeCategories from '../components/HomeCategories';
+import HomeAboutUs from '../components/HomeAboutUs';
 import Review from '../components/Review';
 import Members from '../components/Members';
-// import ImageAfterBefore from '../components/elements/ImageAfterBefore';
-// import Gallery from '../components/Gallery';
-// import Categories from '../components/Categories';
 
 export const query = graphql`
   query HomePageQuery {
@@ -34,12 +30,56 @@ export const query = graphql`
           }
         }
       }
+      homeFeatures {
+        title
+        subtitle
+        image {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+      brands {
+        image {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+      whyChoose {
+        description
+        image {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        featuresList
+      }
+    }
+    allSanityReview {
+      edges {
+        node {
+          personName
+          comment
+        }
+      }
     }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
+  const homeFeatures = data.sanitySiteSettings.homeFeatures;
+  const brands = data.sanitySiteSettings.brands;
+  const homeAboutUs = data.sanitySiteSettings.whyChoose;
+  const review = data.allSanityReview.edges;
+  console.log(review, 'data');
   return (
     <Layout>
       <Seo
@@ -48,18 +88,10 @@ const IndexPage = ({ data }) => {
         url={config.siteUrl}
       />
       <HeroSlider data={home} />
-      <HomeCategories />
-      <Features />
-      <Review />
-      <Members />
-      {/* <Categories />
-      <Gallery heading />
-      <ImageAfterBefore
-        compareImage
-        showButton
-        title="OUR LATEST PROJECTS"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
-      /> */}
+      <HomeAboutUs data={homeAboutUs} />
+      <Features data={homeFeatures} />
+      <Review review={review} />
+      <Members data={brands} />
     </Layout>
   );
 };

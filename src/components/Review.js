@@ -95,7 +95,7 @@ const Icon = styled.div`
   color: ${(props) => props.theme.mainBrandColor};
 `;
 
-const Review = () => {
+const Review = ({ review }) => {
   const settings = {
     dots: true,
     arrows: false,
@@ -131,21 +131,21 @@ const Review = () => {
           Client Reviews
         </Heading>
         <Slider {...settings}>
-          {reviewItem.map((item) => (
+          {review.map(({ node }) => (
             <div className="columns">
               <div className="column">
                 <Icon className="fas fa-quote-left is-size-3 mb-2" />
-                <div className="card" key={item.id}>
+                <div className="card" key={node.id}>
                   <div className="card-content">
                     <p className="review-section is-family-primary mb-4">
                       {' '}
-                      {item.reviews}
+                      {node.comment}
                     </p>
                     <div className="media">
                       <div className="media-content">
                         <p className="title reviews-name is-size-6 has-text-weight-normal">
                           {' '}
-                          {item.title}
+                          {node.personName}
                         </p>
                       </div>
                     </div>

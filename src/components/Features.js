@@ -43,17 +43,20 @@ const FeaturesItem = [
 
 const Section = styled.section``;
 
-const Features = () => {
+const Features = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
         <div className="columns">
-          {FeaturesItem.map((item) => (
+          {data.map((item) => (
             <div key={item.id} className="column">
               <Card className="card p-4">
                 <div className="card-image is-flex is-justify-content-center mb-5">
                   <figure className="image is-64x64">
-                    <img src={item.image} alt="painting Images" />
+                    <img
+                      src={item.image.asset.fluid.src}
+                      alt="painting Images"
+                    />
                   </figure>
                 </div>
                 <h3 className="has-text-centered is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced has-text-white">
