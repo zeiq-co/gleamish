@@ -48,7 +48,29 @@ export default {
       name: 'whyChoose',
       type: 'whyChooseUs',
     },
+    {
+      name: 'contact',
+      title: 'Contact Us',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+        },
+        {
+          name: 'description',
+          title: 'Description',
+          type: 'string',
+        },
+        {
+          name: 'image',
+          title: 'Hero Image',
+          type: 'image',
+        },
 
+      ],
+    },
     {
       title: 'Brands',
       name: 'brands',
