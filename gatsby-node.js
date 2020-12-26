@@ -68,7 +68,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   });
   myServices.forEach(({ node }) => {
     createPage({
-      path: `services/${node.slug.current}`,
+      path: `service/${node.slug.current}`,
       component: path.resolve(`src/templates/services.js`),
       context: {
         slug: node.slug.current,

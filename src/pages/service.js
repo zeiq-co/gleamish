@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
@@ -10,57 +11,40 @@ const Wrapper = styled.div`
   margin-bottom: 4rem;
 `;
 
-const Service = () => {
+export const query = graphql`
+  query servicePageQueries {
+    allSanityServices {
+      edges {
+        node {
+          _id
+          title
+          slug {
+            current
+          }
+          description
+          images {
+            asset {
+              fluid(maxWidth: 1000) {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const Service = ({ data }) => {
+  const service = data.allSanityServices.edges;
   return (
     <Layout>
       <Seo title="Service" />
       <HeroHeader heading="Service" title="Service" />
       <Wrapper>
-        <ServiceFeatures
-          image="/images/service-painting.jpg"
-          title="Faux Finishes"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-        />
-        <ServiceFeatures
-          secondary
-          image="/images/service-painting.jpg"
-          title="Water Proofing"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-        />
-        <ServiceFeatures
-          image="/images/service-painting.jpg"
-          title=" Pre-Paint Demo"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-        />
-        <ServiceFeatures
-          secondary
-          image="/images/service-painting.jpg"
-          title="Mildew Removal"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-        />
-        <ServiceFeatures
-          title="Color Proof"
-          image="/images/service-painting.jpg"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-        />
-        <ServiceFeatures
-          secondary
-          image="/images/service-painting.jpg"
-          title=" Window Washing"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab
-              dolore nisi sunt quamquam..."
-        />
+        {service.map(({ node }) => (
+          <ServiceFeatures node={node} />
+        ))}
       </Wrapper>
     </Layout>
   );

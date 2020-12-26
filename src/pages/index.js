@@ -75,8 +75,8 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
-  const homeFeatures = data.sanitySiteSettings.homeFeatures;
-  const brands = data.sanitySiteSettings.brands;
+  const homeFeatures = data.sanitySiteSettings;
+  const brands = data.sanitySiteSettings;
   const homeAboutUs = data.sanitySiteSettings.whyChoose;
   const review = data.allSanityReview.edges;
   return (

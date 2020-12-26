@@ -19,7 +19,6 @@ const HeroHeader = ({ heading, title }) => {
           <h1 className="has-text-white is-size-1">{heading}</h1>
           <div className="bottom-content has-text-white mt-4 has-text-weight-normal">
             <a href="/" className="mr-1">
-              {' '}
               Home
             </a>
             <span>/</span>

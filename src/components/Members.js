@@ -1,37 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-
-const OurLogo = [
-  {
-    id: 0,
-    image: '/images/brand01.png',
-  },
-  {
-    id: 1,
-    image: '/images/brand01.png',
-  },
-  {
-    id: 2,
-    image: '/images/brand01.png',
-  },
-  {
-    id: 3,
-    image: '/images/brand01.png',
-  },
-  {
-    id: 4,
-    image: '/images/brand01.png',
-  },
-  {
-    id: 5,
-    image: '/images/brand01.png',
-  },
-  {
-    id: 6,
-    image: '/images/brand01.png',
-  },
-];
+import Img from 'gatsby-image';
 
 const SliderContainer = styled(Slider)`
   .slick-slide div {
@@ -75,9 +45,9 @@ const Members = ({ data }) => {
     <div className="section">
       <div className="container">
         <SliderContainer {...settings}>
-          {data.map((item) => (
+          {data.brands.map((item) => (
             <div className="column is-3 has-text-centered item">
-              <img src={item.image.asset.fluid.src} alt="brands" />
+              <Img fluid={item.image.asset.fluid} alt="brands" />
             </div>
           ))}
         </SliderContainer>

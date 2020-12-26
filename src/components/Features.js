@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 import { theme } from '../utils/theme';
 
 const Card = styled.div`
@@ -10,52 +11,19 @@ const Card = styled.div`
   }
 `;
 
-const FeaturesItem = [
-  {
-    id: 1,
-    title: 'Interior Painting',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/interior-painting.png',
-  },
-  {
-    id: 2,
-    title: 'Residential',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/Residential.png',
-  },
-  {
-    id: 3,
-    title: 'Commercial',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/Commercial.png',
-  },
-  {
-    id: 4,
-    title: 'Exterior Painting',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus luctus nec ullamcorper mattis leo. Ab dolore nisi sunt quamquam...',
-    image: '/images/exterior.png',
-  },
-];
-
-const Section = styled.section``;
-
 const Features = ({ data }) => {
   return (
-    <Section className="section">
+    <div className="section">
       <div className="container">
         <div className="columns">
-          {data.map((item) => (
-            <div key={item.id} className="column">
+          {data.homeFeatures.map((item) => (
+            <div key={item._id} className="column">
               <Card className="card p-4">
                 <div className="card-image is-flex is-justify-content-center mb-5">
                   <figure className="image is-64x64">
-                    <img
-                      src={item.image.asset.fluid.src}
-                      alt="painting Images"
+                    <Img
+                      fluid={item.image ? item.image.asset.fluid : ''}
+                      alt={item.title}
                     />
                   </figure>
                 </div>
@@ -70,7 +38,7 @@ const Features = ({ data }) => {
           ))}
         </div>
       </div>
-    </Section>
+    </div>
   );
 };
 export default Features;
