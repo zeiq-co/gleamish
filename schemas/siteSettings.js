@@ -48,12 +48,7 @@ export default {
       name: 'whyChoose',
       type: 'whyChooseUs',
     },
-    {
-      title: 'Reviews',
-      name: 'review',
-      type: 'array',
-      of: [{type: 'review'}]
-    },
+
     {
       title: 'Brands',
       name: 'brands',
