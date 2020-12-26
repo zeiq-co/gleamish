@@ -7,7 +7,7 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
-      validation: Rule => Rule.required().max(20),
+      validation: Rule => Rule.required().max(30),
     },
     {
       title: 'Description',
