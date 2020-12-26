@@ -15,6 +15,9 @@ import localeString from './locale/String';
 import localeText from './locale/Text';
 import localeBlockContent from './locale/BlockContent';
 import banner from './banner';
+import homeFeatures from './homeFeatures';
+import brands from './brands';
+import whyChooseUs from './whyChooseUs';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -38,5 +41,8 @@ export default createSchema({
     localeString,
     address,
     banner,
+    homeFeatures,
+    brands,
+    whyChooseUs,
   ]),
 });

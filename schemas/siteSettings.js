@@ -38,6 +38,29 @@ export default {
       of: [{type: 'banner'}]
     },
     {
+      title: 'Home Features',
+      name: 'homeFeatures',
+      type: 'array',
+      of: [{type: 'homeFeatures'}]
+    },
+    {
+      title: 'Why Choose Us',
+      name: 'whyChoose',
+      type: 'whyChooseUs',
+    },
+    {
+      title: 'Reviews',
+      name: 'review',
+      type: 'array',
+      of: [{type: 'review'}]
+    },
+    {
+      title: 'Brands',
+      name: 'brands',
+      type: 'array',
+      of: [{type: 'brands'}]
+    },
+    {
       name: 'facebook',
       type: 'string',
       title: 'Facebook URL',
