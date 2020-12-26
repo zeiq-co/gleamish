@@ -59,7 +59,6 @@ export default {
       name: 'footerDescription',
       type: 'string',
       title: 'Footer Description',
-      validation: Rule => Rule.required().max(200)
     },
     {
       name: 'facebook',
