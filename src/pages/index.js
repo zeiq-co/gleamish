@@ -79,7 +79,6 @@ const IndexPage = ({ data }) => {
   const brands = data.sanitySiteSettings.brands;
   const homeAboutUs = data.sanitySiteSettings.whyChoose;
   const review = data.allSanityReview.edges;
-  console.log(review, 'data');
   return (
     <Layout>
       <Seo

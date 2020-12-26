@@ -43,21 +43,21 @@ const FeaturesItem = [
   },
 ];
 
-const AboutFeatures = () => {
+const AboutFeatures = ({ data }) => {
   return (
     <Section className="section">
       <div className="container my-6">
         <Heading centered> Our Service</Heading>
         <div className="columns is-centered ">
           <div className="column">
-            {FeaturesItem.slice(0, 2).map((item) => (
+            {data.services.slice(0, 2).map((item) => (
               <div
-                key={item.id}
+                key={item._key}
                 className="media is-flex-direction-row-reverse mb-5"
               >
                 <div className="media-left ml-6">
                   <div className="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    {item.id}
+                    1
                   </div>
                 </div>
                 <div className="media-content">
@@ -69,7 +69,7 @@ const AboutFeatures = () => {
                     className="subtitle is-size-6  has-text-right mt-1
                 "
                   >
-                    {item.subtitle}
+                    {item.description}
                   </p>
                 </div>
               </div>
@@ -79,8 +79,8 @@ const AboutFeatures = () => {
             <img src="/images/contactbg02.png" alt="about us" />
           </div>
           <div className="column ">
-            {FeaturesItem.slice(2, 4).map((item) => (
-              <div className="media  mb-5" key={item.id}>
+            {data.services.slice(2, 4).map((item) => (
+              <div className="media  mb-5" key={item._key}>
                 <div className="media-left mr-6">
                   <div className="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
                     {item.id}
@@ -94,7 +94,7 @@ const AboutFeatures = () => {
                     className="subtitle is-size-6 mt-1
                 "
                   >
-                    {item.subtitle}
+                    {item.description}
                   </p>
                 </div>
               </div>
