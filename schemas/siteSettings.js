@@ -56,6 +56,12 @@ export default {
       of: [{type: 'brands'}]
     },
     {
+      name: 'footerDescription',
+      type: 'string',
+      title: 'Footer Description',
+      validation: Rule => Rule.required().max(200)
+    },
+    {
       name: 'facebook',
       type: 'string',
       title: 'Facebook URL',

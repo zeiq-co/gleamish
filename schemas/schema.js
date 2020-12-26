@@ -10,6 +10,8 @@ import article from './article';
 import siteSettings from './siteSettings';
 import address from './address';
 import review from './review';
+import about from './about';
+import aboutServices from './aboutServices';
 
 import localeString from './locale/String';
 import localeText from './locale/Text';
@@ -32,6 +34,7 @@ export default createSchema({
     page,
     article,
     review,
+    about,
     siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
@@ -44,5 +47,6 @@ export default createSchema({
     homeFeatures,
     brands,
     whyChooseUs,
+    aboutServices,
   ]),
 });
