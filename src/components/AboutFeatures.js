@@ -50,14 +50,14 @@ const AboutFeatures = ({ data }) => {
         <Heading centered> Our Service</Heading>
         <div className="columns is-centered ">
           <div className="column">
-            {data.services.slice(0, 2).map((item) => (
+            {data.services.slice(0, 2).map((item, index) => (
               <div
                 key={item._key}
                 className="media is-flex-direction-row-reverse mb-5"
               >
                 <div className="media-left ml-6">
                   <div className="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    1
+                    {index + 1}
                   </div>
                 </div>
                 <div className="media-content">
@@ -79,11 +79,11 @@ const AboutFeatures = ({ data }) => {
             <img src="/images/contactbg02.png" alt="about us" />
           </div>
           <div className="column ">
-            {data.services.slice(2, 4).map((item) => (
+            {data.services.slice(2, 4).map((item, index) => (
               <div className="media  mb-5" key={item._key}>
                 <div className="media-left mr-6">
                   <div className="counting is-size-5 has-text-white has-text-weight-semibold is-flex has-text-centered">
-                    {item.id}
+                    {index + 3}
                   </div>
                 </div>
                 <div className="media-content">

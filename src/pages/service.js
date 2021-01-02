@@ -42,8 +42,8 @@ const Service = ({ data }) => {
       <Seo title="Service" />
       <HeroHeader heading="Service" title="Service" />
       <Wrapper>
-        {service.map(({ node }) => (
-          <ServiceFeatures node={node} />
+        {service.map(({ node }, index) => (
+          <ServiceFeatures key={node._id} item={node} number={index + 1} />
         ))}
       </Wrapper>
     </Layout>

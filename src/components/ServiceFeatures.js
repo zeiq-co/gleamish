@@ -6,34 +6,36 @@ import ReactMarkdown from 'react-markdown';
 import OverlayButton from './elements/OverlayButton';
 
 const Wrapper = styled.div`
-  flex-direction: ${(props) => (props.secondary ? 'row-reverse' : '')};
+  flex-direction: ${(props) => (props.isSecondary ? 'row-reverse' : '')};
 `;
 
-const ServiceFeatures = ({ secondary, node }) => {
+const ServiceFeatures = ({ item, number }) => {
+  const isSecondary = number % 2 === 0;
+
   return (
     <section className="section">
       <div className="container">
         <Wrapper
-          secondary={secondary}
+          isSecondary={isSecondary}
           className="columns is-vcentered is-variable is-6"
         >
           <div className="column content has-text-centered">
             <h3 className="title is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced has-text-centered">
-              {node.title}
+              {item.title}
             </h3>
             <p className="subtitle is-size-6 line-height mb-5 has-text-centered react-markdown">
-              <ReactMarkdown source={node.description} />
+              <ReactMarkdown source={item.description} />
             </p>
             <Link className="has-text-centered" to="/details">
               <OverlayButton
-                linkTo={node.slug.current}
+                linkTo={item.slug ? item.slug.current : '#'}
                 buttonText="View Details"
               />
             </Link>
           </div>
           <div className="column">
             <Img
-              fluid={node.images[0] ? node.images[0].asset.fluid : ''}
+              fluid={item.images[0] ? item.images[0].asset.fluid : ''}
               alt="service-img"
             />
           </div>

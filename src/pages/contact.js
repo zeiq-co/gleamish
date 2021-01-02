@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 import ContactForm from '../components/ContactForm';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
@@ -10,25 +11,45 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
 `;
 
-const Contact = () => (
-  <Layout>
-    <Seo title="Contact Us" />
-    <HeroHeader heading="Contact" title="contact" />
-    <ImageAfterBefore
-      title="Lorem Ipsum"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat eros eu mi eleifend, at consequat velit suscipit. Duis sed dignissim urna. Curabitur at placerat ligula. Etiam eu tempus nisl. Quisque id tortor ac diam."
-      singleImage="http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/restoration.jpg"
-    />
-    <Container className="section">
-      <div className="container ">
-        <div className="columns is-centered ">
-          <div className="column is-6 ">
-            <ContactForm />
+export const query = graphql`
+  query ContactPageQuery {
+    sanitySiteSettings {
+      contact {
+        title
+        description
+        image {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const Contact = ({ data }) => {
+  const { contact } = data.sanitySiteSettings;
+  return (
+    <Layout>
+      <Seo title="Contact Us" />
+      <HeroHeader heading="Contact" title="contact" />
+      <ImageAfterBefore
+        title={contact.title}
+        description={contact.description}
+        singleImage={contact.image.asset.fluid.src}
+      />
+      <Container className="section">
+        <div className="container ">
+          <div className="columns is-centered ">
+            <div className="column is-6 ">
+              <ContactForm />
+            </div>
           </div>
         </div>
-      </div>
-    </Container>
-  </Layout>
-);
-
+      </Container>
+    </Layout>
+  );
+};
 export default Contact;

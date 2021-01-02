@@ -74,7 +74,10 @@ const HomeAboutUs = ({ data }) => {
             </h1>
             <div className="columns is-multiline ">
               {data.featuresList.map((item) => (
-                <div className="column is-6 is-flex is-align-items-center ">
+                <div
+                  key={item._key}
+                  className="column is-6 is-flex is-align-items-center "
+                >
                   <Icon className="far fa-check-circle mr-4" />
                   <p className="">{item}</p>
                 </div>

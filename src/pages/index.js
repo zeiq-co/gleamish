@@ -31,6 +31,7 @@ export const query = graphql`
         }
       }
       homeFeatures {
+        _key
         title
         subtitle
         image {
@@ -42,6 +43,7 @@ export const query = graphql`
         }
       }
       brands {
+        _key
         image {
           asset {
             fluid(maxWidth: 1200) {
@@ -65,6 +67,7 @@ export const query = graphql`
     allSanityReview {
       edges {
         node {
+          id
           personName
           comment
         }

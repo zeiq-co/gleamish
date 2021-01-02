@@ -17,7 +17,7 @@ const Features = ({ data }) => {
       <div className="container">
         <div className="columns">
           {data.homeFeatures.map((item) => (
-            <div key={item._id} className="column">
+            <div key={item._key} className="column">
               <Card className="card p-4">
                 <div className="card-image is-flex is-justify-content-center mb-5">
                   <figure className="image is-64x64">
