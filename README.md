@@ -18,7 +18,9 @@ Fetch data from Sanity CMS
 Run:
 
 ```
-yarn install
+
+yarn instal
+
 ```
 
 ## Development
