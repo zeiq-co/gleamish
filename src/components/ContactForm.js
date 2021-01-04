@@ -107,7 +107,6 @@ export default withFormik({
   mapPropsToValues: () => ({
     name: '',
     email: '',
-    phoneNumber: '',
     message: '',
   }),
   validationSchema: Yup.object().shape({
@@ -115,12 +114,6 @@ export default withFormik({
     email: Yup.string()
       .email('Invalid email address')
       .required('Email is required!'),
-    phoneNumber: Yup.number()
-      .typeError("That doesn't look like a phone number")
-      .positive("A phone number can't start with a minus")
-      .integer("A phone number can't include a decimal point")
-      .min(8)
-      .required('A phone number is required'),
     message: Yup.string().required('Message is required!'),
   }),
   handleSubmit: (values, { setSubmitting }) => {
