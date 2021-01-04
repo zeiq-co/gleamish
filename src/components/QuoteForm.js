@@ -122,7 +122,7 @@ const QuoteForm = ({
             <p className="help is-danger">{errors.message}</p>
           )}
         </div>
-        <div className="send-buttton mt-5">
+        <div className="send-button mt-5">
           <OverlayButton buttonText="Send" onClick={handleSubmit} />
         </div>
       </form>
