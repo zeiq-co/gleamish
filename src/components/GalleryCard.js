@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 const CardWrapper = styled.div`
   border-radius: 0;
+`;
+const Image = styled(Img)`
+  height: 270px !important;
+  object-fit: cover;
 `;
 
 const GalleryCard = ({ image }) => {
@@ -10,9 +15,7 @@ const GalleryCard = ({ image }) => {
     <div className="column is-4">
       <CardWrapper className="card">
         <div className="card-image">
-          <figure className="image is-3by2">
-            <img src={image} alt="gallery" />
-          </figure>
+          <Image fluid={image} alt="gallery" />
         </div>
       </CardWrapper>
     </div>
