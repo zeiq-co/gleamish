@@ -7,7 +7,7 @@ const Section = styled.div`
   margin-top: 3rem;
   .column.is-6 {
     position: relative;
-    margin: 2rem 0rem -1rem 0rem !important;
+    margin: 5rem 0rem -1rem 0rem !important;
     right: 9%;
   }
   p {
