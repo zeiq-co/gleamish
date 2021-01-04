@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 import Heading from './elements/Heading';
 import OverlayButton from './elements/OverlayButton';
 
@@ -8,65 +9,23 @@ const Section = styled.div`
     line-height: 24px;
   }
 `;
-const Img = styled.img`
-  width: 100%;
-  height: 104%;
-`;
+
 const Icon = styled.i`
   color: ${(props) => props.theme.mainBrandColor};
 `;
 
-const categorySubItem = [
-  {
-    id: 1,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 2,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 3,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 4,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 5,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 6,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 7,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 8,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 9,
-    title: 'Lorem ipsum',
-  },
-  {
-    id: 10,
-    title: 'Lorem ipsum',
-  },
-];
+const Image = styled(Img)`
+  object-fit: cover;
+`;
 
 const HomeAboutUs = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
-        <Heading centered> Why Choose Us?</Heading>
+        <Heading centered>Why Choose Us?</Heading>
         <div className="columns is-variable is-6">
           <div className="column">
-            <Img src={data.image.asset.fluid.src} alt="placeholder-img" />
+            <Image fluid={data.image.asset.fluid} alt="placeholder-img" />
           </div>
           <div className="column ">
             <h1 className="mb-4 ml-3 is-size-6 info-section">

@@ -67,14 +67,13 @@ const Footer = ({ home }) => {
               </h1>
               <ul>
                 <li>
-                  Tel :<a href={`tel:${home.telephone}`}> {config.telephone}</a>
+                  <a href={`tel:${home.telephone}`}>{home.telephone}</a>
                 </li>
                 <li>
-                  E-MAIL : {'                    '}
                   <a href={`mailto:${home.email}`}>{home.email}</a>
                 </li>
                 <li>
-                  Address :<span>{home.address}</span>
+                  <span>{home.address}</span>
                 </li>
               </ul>
             </div>
@@ -85,9 +84,7 @@ const Footer = ({ home }) => {
                 className="mb-5"
               />
               <p className="has-text-white is-size-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                felis lorem, feugiat et aliquet sed, aliquet sed est.It is a
-                long established fact that a reader will be distracted.
+                {home.footerDescription}
               </p>
             </div>
             <div className="column has-text-centered">

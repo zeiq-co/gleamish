@@ -20,6 +20,7 @@ const query = graphql`
       telephone
       address
       email
+      footerDescription
     }
   }
 `;
