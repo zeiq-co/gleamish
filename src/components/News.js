@@ -23,11 +23,14 @@ const CardWrapper = styled(Link)`
 
 const News = ({ node }) => {
   return (
-    <CardWrapper to={`/article/${node.slug.current}`} className="card">
+    <CardWrapper
+      to={`/article/${node.slug ? node.slug.current : ''}`}
+      className="card"
+    >
       <div className="card-image">
         {node.image && (
           <Img
-            fluid={node.image.asset.fluid}
+            fluid={node.image ? node.image.asset.fluid : ''}
             alt={node.title}
             className="blog-img"
           />

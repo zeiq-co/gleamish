@@ -50,28 +50,28 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   pages.forEach(({ node }) => {
     createPage({
-      path: `page/${node.slug.current}`,
+      path: `page/${node.slug ? node.slug.current : ''}`,
       component: path.resolve(`src/templates/pageView.js`),
       context: {
-        slug: node.slug.current,
+        slug: node.slug ? node.slug.current : '',
       },
     });
   });
   article.forEach(({ node }) => {
     createPage({
-      path: `article/${node.slug.current}`,
+      path: `article/${node.slug ? node.slug.current : ''}`,
       component: path.resolve(`src/templates/articleView.js`),
       context: {
-        slug: node.slug.current,
+        slug: node.slug ? node.slug.current : '',
       },
     });
   });
   myServices.forEach(({ node }) => {
     createPage({
-      path: `service/${node.slug.current}`,
+      path: `service/${node.slug ? node.slug.current : ''}`,
       component: path.resolve(`src/templates/services.js`),
       context: {
-        slug: node.slug.current,
+        slug: node.slug ? node.slug.current : '',
       },
     });
   });

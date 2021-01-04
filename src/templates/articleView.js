@@ -34,7 +34,7 @@ const PageView = ({ data }) => {
       <Seo
         title={news.title}
         description={`Read blog post about ${news.title}`}
-        url={`${config.siteUrl}/article/${news.slug.current}`}
+        url={`${config.siteUrl}/article/${news.slug ? news.slug.current : ''}`}
       />
       <section className="section">
         <div className="container">

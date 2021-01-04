@@ -27,7 +27,10 @@ const ContactAddress = () => {
           <div className="column is-10">
             <div className="columns is-gapless">
               <div className="column right-image">
-                <img src="http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/restoration.jpg" />
+                <img
+                  src="http://3put9a43ycne3koyi63vujgg-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/restoration.jpg"
+                  alt=""
+                />
               </div>
               <div className="column">
                 <BoxWrapper>

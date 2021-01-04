@@ -77,9 +77,14 @@ const Services = ({ data }) => {
       <Seo
         title={service.title}
         description={`Read news & updates about ${service.title}`}
-        url={`${config.siteUrl}/page/${service.slug.current}`}
+        url={`${config.siteUrl}/page/${
+          service.slug ? service.slug.current : ''
+        }`}
       />
-      <HeroHeader heading={service.title} title={service.slug.current} />
+      <HeroHeader
+        heading={service.title}
+        title={service.slug ? service.slug.current : ''}
+      />
       <Section className="section ">
         <div className="container ">
           <div className="columns is-centered ">
