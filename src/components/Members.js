@@ -7,11 +7,13 @@ const SliderContainer = styled(Slider)`
   .slick-slide div {
     outline: none;
   }
-  img {
-    border-radius: 10px;
-    margin: 0 auto;
+  .slick-track {
+    display: flex;
+    align-items: center;
   }
 `;
+
+const Image = styled(Img)``;
 const Members = ({ data }) => {
   const settings = {
     dots: false,
@@ -47,7 +49,7 @@ const Members = ({ data }) => {
         <SliderContainer {...settings}>
           {data.brands.map((item) => (
             <div key={item._key} className="column is-3 has-text-centered item">
-              <Img
+              <Image
                 fluid={item.image ? item.image.asset.fluid : ' '}
                 alt="brands"
               />
