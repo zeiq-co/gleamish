@@ -46,7 +46,10 @@ const Gallery = ({ heading, data }) => {
               return null;
             }
             return (
-              <GalleryCard key={item.id} image={item.node.image.asset.fluid} />
+              <GalleryCard
+                key={item.id}
+                image={item.node.image ? item.node.image.asset.fluid : ' '}
+              />
             );
           })}
         </GalleryWrapper>

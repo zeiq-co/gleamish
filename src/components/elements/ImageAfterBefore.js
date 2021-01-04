@@ -49,7 +49,7 @@ const ImageBeforeAfter = ({ title, description, image, showButton }) => {
                 </BoxWrapper>
               </div>
               <div className="column is-6">
-                <Img fluid={image} alt={title} />
+                {image && <Img fluid={image} alt={title} />}
               </div>
             </div>
           </div>

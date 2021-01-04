@@ -25,7 +25,10 @@ const HomeAboutUs = ({ data }) => {
         <Heading centered>Why Choose Us?</Heading>
         <div className="columns is-variable is-6">
           <div className="column">
-            <Image fluid={data.image.asset.fluid} alt="placeholder-img" />
+            <Image
+              fluid={data.image ? data.image.asset.fluid : ' '}
+              alt="placeholder-img"
+            />
           </div>
           <div className="column ">
             <h1 className="mb-4 ml-3 is-size-6 info-section">

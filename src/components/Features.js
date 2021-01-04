@@ -22,7 +22,7 @@ const Features = ({ data }) => {
                 <div className="card-image is-flex is-justify-content-center mb-5">
                   <figure className="image is-64x64">
                     <Img
-                      fluid={item.image ? item.image.asset.fluid : ''}
+                      fluid={item.image ? item.image.asset.fluid : ' '}
                       alt={item.title}
                     />
                   </figure>

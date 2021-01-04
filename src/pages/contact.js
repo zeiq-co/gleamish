@@ -38,7 +38,7 @@ const Contact = ({ data }) => {
       <ImageAfterBefore
         title={contact.title}
         description={contact.description}
-        image={contact.image ? contact.image.asset.fluid : ''}
+        image={contact && contact.image ? contact.image.asset.fluid : ' '}
       />
       <Container className="section">
         <div className="container ">

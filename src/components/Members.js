@@ -47,7 +47,10 @@ const Members = ({ data }) => {
         <SliderContainer {...settings}>
           {data.brands.map((item) => (
             <div key={item._key} className="column is-3 has-text-centered item">
-              <Img fluid={item.image.asset.fluid} alt="brands" />
+              <Img
+                fluid={item.image ? item.image.asset.fluid : ' '}
+                alt="brands"
+              />
             </div>
           ))}
         </SliderContainer>

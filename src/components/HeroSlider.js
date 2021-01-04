@@ -52,7 +52,6 @@ const HomeSlider = ({ data }) => {
   useEffect(() => {
     setCount(1);
   }, [count]);
-  console.log(data, 'data');
   return (
     <Section className="">
       <div className="">
@@ -81,7 +80,9 @@ const HomeSlider = ({ data }) => {
             <>
               <Slide
                 background={{
-                  backgroundImage: item.image ? item.image.asset.fluid.src : '',
+                  backgroundImage: item.image
+                    ? item.image.asset.fluid.src
+                    : ' ',
                   backgroundAnimation: 'zoom',
                 }}
               >
