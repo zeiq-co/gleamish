@@ -56,7 +56,11 @@ const About = ({ data }) => {
     <Layout>
       <Seo title="about" description={`about  ${config.siteName}`} />
       <HeroHeader heading="About" title="About" />
-      <ImageAfterBefore data={aboutUs} />
+      <ImageAfterBefore
+        title={aboutUs.heroTitle}
+        description={aboutUs.heroDescription}
+        image={aboutUs.image ? aboutUs.image.asset.fluid : ''}
+      />
       <AboutFeatures data={aboutUs} />
       <div className="section">
         <div className="container">

@@ -30,7 +30,7 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ImageBeforeAfter = ({ data, showButton }) => {
+const ImageBeforeAfter = ({ title, description, image, showButton }) => {
   return (
     <Section className="section ">
       <div className="container">
@@ -40,19 +40,16 @@ const ImageBeforeAfter = ({ data, showButton }) => {
               <div className="column is-8">
                 <BoxWrapper>
                   <h2 className="title is-3 has-text-white is-family-primary">
-                    {data.heroTitle}
+                    {title}
                   </h2>
-                  <p className="mb-5 is-size-6">{data.heroDescription}</p>
+                  <p className="mb-5 is-size-6">{description}</p>
                   {showButton && (
                     <OverlayButton linkTo="/details" buttonText="View More" />
                   )}
                 </BoxWrapper>
               </div>
               <div className="column is-6">
-                <Img
-                  fluid={data.image ? data.image.asset.fluid : ''}
-                  alt={data.heroTitle}
-                />
+                <Img fluid={image} alt={title} />
               </div>
             </div>
           </div>
