@@ -2,12 +2,7 @@ export default {
   name: 'services',
   title: 'Services',
   type: 'document',
-  // __experimental_actions: [
-  //   // 'create',
-  //   'update',
-  //   // 'delete',
-  //   'publish',
-  // ],
+
   fields: [
     {
       name: 'title',
