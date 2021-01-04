@@ -15,7 +15,10 @@ import HeroHeader from '../components/elements/HeroHeader';
 const Section = styled.div`
   margin-top: 3.5rem;
   ul {
-    list-style: disc;
+    list-style: disc outside;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1rem;
   }
   .slick-list {
     outline: none !important;
@@ -98,7 +101,9 @@ const Services = ({ data }) => {
                   />
                 ))}
               </Slider>
-              <ReactMarkdown source={service.description} />
+              <div className="markdown-container">
+                <ReactMarkdown source={service.description} />
+              </div>
               <div className="mt-5">
                 <OverlayButton linkTo="/contact" buttonText="GET A QUOTE" />
               </div>
