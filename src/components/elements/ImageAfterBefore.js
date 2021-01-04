@@ -30,7 +30,7 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ImageBeforeAfter = ({ title, description, image, showButton }) => {
+const ImageAfterBefore = ({ title, description, image, showButton }) => {
   return (
     <Section className="section ">
       <div className="container">
@@ -58,4 +58,4 @@ const ImageBeforeAfter = ({ title, description, image, showButton }) => {
     </Section>
   );
 };
-export default ImageBeforeAfter;
+export default ImageAfterBefore;

@@ -2,7 +2,10 @@ import React from 'react';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import styled from 'styled-components';
+import swal from 'sweetalert';
+import { useMutation } from '@apollo/react-hooks';
 import Heading from './elements/Heading';
+
 import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
@@ -36,7 +39,6 @@ const ContactForm = ({
   values,
   touched,
   errors,
-  isSubmitting,
   handleSubmit,
   handleChange,
   handleBlur,
