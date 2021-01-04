@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ReactCompareImage from 'react-compare-image';
+import Img from 'gatsby-image';
 import OverlayButton from './OverlayButton';
 
 const Section = styled.div`
@@ -30,13 +30,7 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ImageBeforeAfter = ({
-  title,
-  description,
-  compareImage,
-  singleImage,
-  showButton,
-}) => {
+const ImageBeforeAfter = ({ data, showButton }) => {
   return (
     <Section className="section ">
       <div className="container">
@@ -46,23 +40,19 @@ const ImageBeforeAfter = ({
               <div className="column is-8">
                 <BoxWrapper>
                   <h2 className="title is-3 has-text-white is-family-primary">
-                    {title}
+                    {data.heroTitle}
                   </h2>
-                  <p className="mb-5 is-size-6">{description}</p>
+                  <p className="mb-5 is-size-6">{data.heroDescription}</p>
                   {showButton && (
-                    <OverlayButton linkTo="/details" buttonText=" View More" />
+                    <OverlayButton linkTo="/details" buttonText="View More" />
                   )}
                 </BoxWrapper>
               </div>
               <div className="column is-6">
-                {compareImage ? (
-                  <ReactCompareImage
-                    leftImage="/images/before.jpg"
-                    rightImage="/images/after.jpg"
-                  />
-                ) : (
-                  <img src={singleImage} alt="paint-images" />
-                )}
+                <Img
+                  fluid={data.image ? data.image.asset.fluid : ''}
+                  alt={data.heroTitle}
+                />
               </div>
             </div>
           </div>

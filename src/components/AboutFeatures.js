@@ -16,38 +16,11 @@ const Section = styled.section`
   }
 `;
 
-const FeaturesItem = [
-  {
-    id: 1,
-    title: 'Lorem Ipsum',
-    subtitle:
-      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
-  },
-  {
-    id: 2,
-    title: 'Lorem Ipsum',
-    subtitle:
-      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
-  },
-  {
-    id: 3,
-    title: 'Lorem Ipsum',
-    subtitle:
-      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
-  },
-  {
-    id: 4,
-    title: 'Lorem Ipsum',
-    subtitle:
-      'Lorem ipsum dolor consecte tur adipiscing sed do eiusmod tempor incididunt ut labore et dolore',
-  },
-];
-
 const AboutFeatures = ({ data }) => {
   return (
     <Section className="section">
       <div className="container my-6">
-        <Heading centered> Our Service</Heading>
+        <Heading centered>Our Service</Heading>
         <div className="columns is-centered ">
           <div className="column">
             {data.services.slice(0, 2).map((item, index) => (
@@ -62,20 +35,16 @@ const AboutFeatures = ({ data }) => {
                 </div>
                 <div className="media-content">
                   <p className="title is-size-4 has-text-right has-text-weight-normal mb-3 is-family-primary">
-                    {' '}
                     {item.title}
                   </p>
-                  <p
-                    className="subtitle is-size-6  has-text-right mt-1
-                "
-                  >
+                  <p className="subtitle is-size-6  has-text-right mt-1">
                     {item.description}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <div className="column  ">
+          <div className="column">
             <img src="/images/contactbg02.png" alt="about us" />
           </div>
           <div className="column ">
@@ -90,12 +59,7 @@ const AboutFeatures = ({ data }) => {
                   <p className="title is-size-4 has-text-weight-normal mb-3 is-family-primary">
                     {item.title}
                   </p>
-                  <p
-                    className="subtitle is-size-6 mt-1
-                "
-                  >
-                    {item.description}
-                  </p>
+                  <p className="subtitle is-size-6 mt-1">{item.description}</p>
                 </div>
               </div>
             ))}
