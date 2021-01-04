@@ -13,7 +13,6 @@ const SliderContainer = styled(Slider)`
   }
 `;
 
-const Image = styled(Img)``;
 const Members = ({ data }) => {
   const settings = {
     dots: false,
@@ -49,7 +48,7 @@ const Members = ({ data }) => {
         <SliderContainer {...settings}>
           {data.brands.map((item) => (
             <div key={item._key} className="column is-3 has-text-centered item">
-              <Image
+              <Img
                 fluid={item.image ? item.image.asset.fluid : ' '}
                 alt="brands"
               />

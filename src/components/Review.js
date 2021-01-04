@@ -4,57 +4,6 @@ import Slider from 'react-slick';
 import { theme } from '../utils/theme';
 import Heading from './elements/Heading';
 
-const reviewItem = [
-  {
-    id: 1,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'John Doe',
-    subtitle: 'Unknwon',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 2,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'John Doe',
-    subtitle: 'Unknwon',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 3,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'John Doe',
-    subtitle: 'Unknwon',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 4,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'John Doe',
-    subtitle: 'Unknwon',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 5,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'John Doe',
-    subtitle: 'Unknwon',
-    image: '/images/paintbrush (2).png',
-  },
-  {
-    id: 6,
-    reviews:
-      '   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Ab dolore nisi sunt quamquam...',
-    title: 'John Doe',
-    subtitle: 'Unknwon',
-    image: '/images/paintbrush (2).png',
-  },
-];
-
 const Section = styled.section`
   background-color: ${theme.darkAccent};
   padding-bottom: 5rem;
