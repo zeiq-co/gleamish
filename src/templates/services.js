@@ -20,6 +20,12 @@ const Section = styled.div`
     margin-top: 1em;
     margin-bottom: 1rem;
   }
+  .slick-slide {
+    &:focus,
+    a {
+      outline: none !important;
+    }
+  }
   .slick-list {
     outline: none !important;
   }
@@ -38,6 +44,9 @@ const Section = styled.div`
   .slick-dots li.slick-active button:before {
     color: #fff !important;
     font-size: 10px;
+  }
+  .column.is-three-fifths {
+    margin-right: 1px;
   }
 `;
 
@@ -68,7 +77,7 @@ const Services = ({ data }) => {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 600,
     slidesToShow: 1,
@@ -91,7 +100,7 @@ const Services = ({ data }) => {
       <Section className="section ">
         <div className="container ">
           <div className="columns is-centered ">
-            <div className="column is-three-fifths ">
+            <div className="column is-three-fifths">
               <Slider {...settings}>
                 {service.images.map((item) => (
                   <Img
