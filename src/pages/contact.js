@@ -42,7 +42,7 @@ const Contact = ({ data }) => {
       />
       <Container className="section">
         <div className="container ">
-          <div className="columns is-centered ">
+          <div className="columns is-centered">
             <div className="column is-6 ">
               <ContactForm />
             </div>
