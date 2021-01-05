@@ -9,15 +9,15 @@ export default {
       name: 'image',
       type: 'image',
     },
-    {
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-      options: {
-        list: ['Exterior', 'Interior', 'Stairwell'],
-        layout: 'dropdown',
-      },
-    },
+    // {
+    //   name: 'category',
+    //   title: 'Category',
+    //   type: 'string',
+    //   options: {
+    //     list: ['Exterior', 'Interior', 'Stairwell'],
+    //     layout: 'dropdown',
+    //   },
+    // },
   ],
 };
 

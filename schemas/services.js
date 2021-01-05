@@ -2,8 +2,18 @@ export default {
   name: 'services',
   title: 'Services',
   type: 'document',
-
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'order',
+    }
+  },
   fields: [
+    {
+      title: 'Order',
+      name: 'order',
+      type: 'number'
+    },
     {
       name: 'title',
       title: 'Title',
