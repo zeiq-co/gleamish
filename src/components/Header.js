@@ -5,6 +5,9 @@ import HeaderInformation from './HeaderInformation';
 import { theme } from '../utils/theme';
 
 const Section = styled.div`
+  nav {
+    background: ${theme.darkAccent};
+  }
   font-family: ${theme.primaryFontFamily};
   .navbar-brand {
     margin-left: -1.5rem !important;
@@ -34,7 +37,7 @@ const Section = styled.div`
     a {
       font-size: ${theme.fontSizeMedium}px;
       font-family: ${theme.primaryFontFamily};
-      color: ${theme.textColor};
+      color: ${theme.textColorLite};
       :focus {
         background-color: transparent;
       }
@@ -48,7 +51,7 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${theme.darkShades};
+      background-color: ${theme.textColorLite} !important;
       width: 0%;
       bottom: 1.5rem;
     }
