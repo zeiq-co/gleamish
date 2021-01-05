@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+
 import ReactMarkdown from 'react-markdown';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { theme } from '../utils/theme';
 import OverlayButton from '../components/elements/OverlayButton';
 import config from '../utils/config';
 import Seo from '../components/Seo';
@@ -13,12 +15,16 @@ import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
 
 const Section = styled.div`
+  .slick-dots li button:before {
+    color: ${theme.darkAccent} !important;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
   margin-top: 3.5rem;
   ul {
     list-style: disc outside;
     margin-left: 2em;
-    margin-top: 1em;
-    margin-bottom: 1rem;
   }
   .slick-slide {
     &:focus,
@@ -42,11 +48,11 @@ const Section = styled.div`
     bottom: 26px;
   }
   .slick-dots li.slick-active button:before {
-    color: #fff !important;
+    color: ${theme.lightAccent} !important;
     font-size: 10px;
   }
   .column.is-three-fifths {
-    margin-right: 1px;
+    margin-right: 2px;
   }
 `;
 

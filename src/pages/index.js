@@ -53,6 +53,8 @@ export const query = graphql`
         }
       }
       whyChoose {
+        title
+        subtitle
         description
         image {
           asset {

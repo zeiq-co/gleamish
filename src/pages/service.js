@@ -13,10 +13,11 @@ const Wrapper = styled.div`
 
 export const query = graphql`
   query servicePageQueries {
-    allSanityServices {
+    allSanityServices(sort: { fields: order, order: ASC }) {
       edges {
         node {
           _id
+          order
           title
           slug {
             current

@@ -22,7 +22,13 @@ const HomeAboutUs = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
-        <Heading centered>Why Choose Us?</Heading>
+        <Heading centered>{data.title}</Heading>
+        <div className="columns is-centered">
+          <div className="column is-7">
+            <p className="mb-5 has-text-centered">{data.subtitle}</p>
+          </div>
+        </div>
+
         <div className="columns is-variable is-6">
           <div className="column">
             <Image
@@ -44,13 +50,13 @@ const HomeAboutUs = ({ data }) => {
                   <p className="">{item}</p>
                 </div>
               ))}
-              <OverlayButton
-                marginTop
-                marginLeft
-                linkTo="/service"
-                buttonText=" View More"
-              />
             </div>
+            <OverlayButton
+              marginTop
+              marginLeft
+              linkTo="/service"
+              buttonText=" View More"
+            />
           </div>
         </div>
       </div>

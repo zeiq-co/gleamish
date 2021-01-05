@@ -15,7 +15,7 @@ const Img = styled.img`
 `;
 
 const Heading = ({ children, centered, hideBottomIcon, primary }) => (
-  <div className={hideBottomIcon ? 'mb-2' : 'mb-6'}>
+  <div className={hideBottomIcon ? 'mb-2' : 'mb-5'}>
     <Text
       primary={primary}
       className={`is-size-2 has-text-weight-normal mb-4 is-size-4-mobile  ${
