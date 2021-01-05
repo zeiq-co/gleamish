@@ -8,17 +8,19 @@ const GalleryWrapper = styled.div`
 `;
 
 const Gallery = ({ heading, data }) => {
+  console.log('main', data);
   return (
     <section className="section">
       <div className="container">
         {heading && <Heading centered>Gallery</Heading>}
 
         <GalleryWrapper className="columns is-multiline">
-          {data.map((item) => {
+          {data.map(({ node: item }) => {
             return (
               <GalleryCard
-                key={item.id}
-                image={item.node.image ? item.node.image.asset.fluid : ' '}
+                key={item._id}
+                alt={item.alternative}
+                image={item.image ? item.image.asset.fluid : ' '}
               />
             );
           })}

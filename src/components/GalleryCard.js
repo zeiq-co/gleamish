@@ -10,12 +10,12 @@ const Image = styled(Img)`
   object-fit: cover;
 `;
 
-const GalleryCard = ({ image }) => {
+const GalleryCard = ({ image, alt }) => {
   return (
     <div className="column is-4">
       <CardWrapper className="card">
         <div className="card-image">
-          <Image fluid={image} alt="gallery" />
+          <Image fluid={image} alt={alt} />
         </div>
       </CardWrapper>
     </div>

@@ -11,7 +11,8 @@ export const query = graphql`
     allSanityGallery {
       edges {
         node {
-          id
+          _id
+          alternative
           image {
             asset {
               fluid(maxWidth: 1200) {
