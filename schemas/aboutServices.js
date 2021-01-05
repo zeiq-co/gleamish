@@ -12,7 +12,7 @@ export default {
     {
       title: 'Description',
       name: 'description',
-      type: 'string',
+      type: 'text',
       validation: Rule => Rule.required().max(150),
     },
   ],
