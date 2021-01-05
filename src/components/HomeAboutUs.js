@@ -22,18 +22,17 @@ const HomeAboutUs = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
-        <Heading centered>{data.title}</Heading>
         <div className="columns is-centered">
           <div className="column is-7">
             <p className="mb-5 has-text-centered">{data.subtitle}</p>
           </div>
         </div>
-
+        <Heading centered>{data.title}</Heading>
         <div className="columns is-variable is-6">
           <div className="column">
             <Image
               fluid={data.image ? data.image.asset.fluid : ' '}
-              alt="placeholder-img"
+              alt={data.title}
             />
           </div>
           <div className="column ">

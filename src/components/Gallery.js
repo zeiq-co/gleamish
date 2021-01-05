@@ -5,10 +5,13 @@ import Heading from './elements/Heading';
 
 const GalleryWrapper = styled.div`
   margin-top: 15px;
+  img {
+    height: 280px;
+    object-fit: cover;
+  }
 `;
 
 const Gallery = ({ heading, data }) => {
-  console.log('main', data);
   return (
     <section className="section">
       <div className="container">
@@ -20,7 +23,7 @@ const Gallery = ({ heading, data }) => {
               <GalleryCard
                 key={item._id}
                 alt={item.alternative}
-                image={item.image ? item.image.asset.fluid : ' '}
+                src={item.image ? item.image.asset.fluid.src : ' '}
               />
             );
           })}
