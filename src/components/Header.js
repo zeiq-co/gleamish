@@ -7,6 +7,7 @@ import { theme } from '../utils/theme';
 const Section = styled.div`
   nav {
     background: ${theme.darkAccent};
+    padding: 0rem 2rem 0rem 2rem;
   }
   font-family: ${theme.primaryFontFamily};
   .navbar-brand {
@@ -29,7 +30,8 @@ const Section = styled.div`
     }
   }
   .navbar-burger {
-    color: ${theme.textColorLite};
+    background: ${theme.mainBrandColor};
+    color: ${theme.darkAccent};
     opacity: 0.5;
     border-radius: 4px;
   }
@@ -85,8 +87,8 @@ const Header = ({ home }) => {
               href="#"
               className={
                 isActive
-                  ? 'is-active navbar-burger has-text-white mt-3'
-                  : 'navbar-burger has-text-white mt-3'
+                  ? 'is-active navbar-burger  mt-5'
+                  : 'navbar-burger  mt-5'
               }
               aria-label="menu"
               aria-expanded="false"
