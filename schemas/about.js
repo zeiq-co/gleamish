@@ -31,5 +31,10 @@ export default {
       type: 'array',
       of: [{type: 'aboutServices'}]
     },
+    {
+      name: 'featuredImage',
+      title: 'Featured Image',
+      type: 'image',
+    },
   ],
 };
