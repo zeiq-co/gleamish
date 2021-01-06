@@ -35,6 +35,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-remark-images": "^3.3.25",
     "gatsby-source-sanity": "^6.0.4",
+    "graphql-request": "^3.4.0",
     "hero-slider": "^2.0.3",
     "lodash": "^4.17.20",
     "polished": "^3.6.5",

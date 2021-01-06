@@ -49,7 +49,7 @@ const News = ({ node }) => {
               </h1>
               <p className="subtitle is-6">
                 {truncate(node.description, {
-                  length: 150,
+                  length: 160,
                 })}
               </p>
               <div className="border-bottom" />

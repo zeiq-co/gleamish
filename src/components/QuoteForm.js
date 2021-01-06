@@ -2,6 +2,7 @@ import React from 'react';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import styled from 'styled-components';
+
 import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
@@ -41,7 +42,7 @@ const QuoteForm = ({
 }) => {
   return (
     <Section>
-      <form method="post" action="#" onSubmit={handleSubmit}>
+      <form method="post" onSubmit={handleSubmit}>
         <div className="columns ">
           <div className="column">
             <input
@@ -132,11 +133,8 @@ const QuoteForm = ({
 
 export default withFormik({
   mapPropsToValues: () => ({
-    name: '',
     email: '',
-    phoneNumber: '',
-    message: '',
-    subject: '',
+    password: '',
   }),
   validationSchema: Yup.object().shape({
     name: Yup.string().required('Name is required!'),
@@ -152,18 +150,11 @@ export default withFormik({
     subject: Yup.string().required('Your subject is required!'),
     message: Yup.string().required('Message is required!'),
   }),
-  handleSubmit: (values, { setSubmitting }) => {
-    console.log(values);
-    // swal('Subscribed successfully, thank you!');
-    // addToMailchimp(values.email)
-    //   .then(() => {
-    //     swal('Subscribed successfully, thank you!');
-    //     setSubmitting(false);
-    //   })
-    //   .catch(() => {
-    //     swal('Subscription failed, please try again.', 'error');
-    //     setSubmitting(false);
-    //   });
+  handleSubmit: (values, { setSubmitting, props }) => {
+    props.onSubmit(values).finally(() => {
+      setSubmitting(false);
+    });
   },
-  displayName: 'ContactForm', // helps with React DevTools
+
+  displayName: 'QuoteForm', // helps with React DevTools
 })(QuoteForm);
