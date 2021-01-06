@@ -21,6 +21,11 @@ const CardWrapper = styled(Link)`
   }
 `;
 
+const Image = styled(Img)`
+  height: 300px;
+  object-fit: cover;
+`;
+
 const News = ({ node }) => {
   return (
     <CardWrapper
@@ -29,7 +34,7 @@ const News = ({ node }) => {
     >
       <div className="card-image">
         {node.image && (
-          <Img
+          <Image
             fluid={node.image ? node.image.asset.fluid : ''}
             alt={node.title}
             className="blog-img"

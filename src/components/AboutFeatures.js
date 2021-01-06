@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 import Heading from './elements/Heading';
 
 const Section = styled.section`
@@ -45,7 +46,7 @@ const AboutFeatures = ({ data }) => {
             ))}
           </div>
           <div className="column">
-            <img src="/images/contactbg02.png" alt="about us" />
+            <Img fluid={data.featuredImage.asset.fluid} alt="about us" />
           </div>
           <div className="column ">
             {data.services.slice(2, 4).map((item, index) => (

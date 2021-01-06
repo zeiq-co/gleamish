@@ -33,6 +33,13 @@ export const aboutQuery = graphql`
     sanityAbout {
       heroTitle
       heroDescription
+      featuredImage {
+        asset {
+          fluid(maxWidth: 1000) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
       image {
         asset {
           fluid(maxWidth: 800) {
