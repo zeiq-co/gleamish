@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { GraphQLClient, gql } from 'graphql-request';
+// import { GraphQLClient, gql } from 'graphql-request';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
@@ -11,19 +11,19 @@ const Container = styled.div`
   padding: 5rem 1.5rem; !important;
 `;
 
-const quoteMutation = gql`
-  mutation quote($email: String!, $name: String!, $message: message!) {
-    contact(input: { email: $email, name: $name, message: $message }) {
-      email
-    }
-  }
-`;
+// const quoteMutation = gql`
+//   mutation quote($email: String!, $name: String!, $message: message!) {
+//     contact(input: { email: $email, name: $name, message: $message }) {
+//       email
+//     }
+//   }
+// `;
 
 const QuoteFormPage = () => {
   // const [executeMutation, { data, loading, error }] = useMutation(
   //   quoteMutation,
   // );
-  const endpoint = 'http://192.168.100.153:4000/api';
+  // const endpoint = 'http://192.168.100.153:4000/api';
   return (
     <Layout>
       <Seo title="Quote" />
