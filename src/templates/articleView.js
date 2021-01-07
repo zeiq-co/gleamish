@@ -39,16 +39,20 @@ const PageView = ({ data }) => {
       />
       <section className="section">
         <div className="container">
-          <Heading centered>{news.title}</Heading>
-          <div className="mb-5 mt-5">
-            <Img
-              fluid={
-                news.image && news.image.asset ? news.image.asset.fluid : ''
-              }
-            />
-          </div>
-          <div className="markdown-container">
-            <ReactMarkdown source={news.description} />
+          <div className="columns is-centered">
+            <div className="column is-8">
+              <Heading centered>{news.title}</Heading>
+              <div className="mb-5 mt-5">
+                <Img
+                  fluid={
+                    news.image && news.image.asset ? news.image.asset.fluid : ''
+                  }
+                />
+              </div>
+              <div className="markdown-container">
+                <ReactMarkdown source={news.description} />
+              </div>
+            </div>
           </div>
         </div>
       </section>
