@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
+import Img from 'gatsby-image';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Heading from '../components/elements/Heading';
@@ -39,6 +40,13 @@ const PageView = ({ data }) => {
       <section className="section">
         <div className="container">
           <Heading centered>{news.title}</Heading>
+          <div className="mb-5 mt-5">
+            <Img
+              fluid={
+                news.image && news.image.asset ? news.image.asset.fluid : ''
+              }
+            />
+          </div>
           <div className="markdown-container">
             <ReactMarkdown source={news.description} />
           </div>
