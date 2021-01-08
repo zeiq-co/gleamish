@@ -113,23 +113,27 @@ const GlobalStyle = createGlobalStyle`
   }
   .markdown-container {
     h1 {
-      font-size:40px;
+      font-size: 40px;
       margin-top: 1.2rem;
       margin-bottom: 1.5rem;
+      color: ${theme.darkAccent};
     }
       h4, h5, h6 {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
       font-size: 1.5rem;
+      color: ${theme.darkAccent};
     }
     h2 {
       font-size: 24px;
       margin-top: 1.3rem;
       margin-bottom: 1.3rem;
+      color: ${theme.darkAccent};
     }
     h3 {
       margin-top: 1.3rem;
       margin-bottom: 1.3rem;
+      color: ${theme.darkAccent};
     }
     ol, ul {
       list-style: disc !important;

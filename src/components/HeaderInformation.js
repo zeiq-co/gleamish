@@ -8,6 +8,7 @@ const Section = styled.div`
   }
   .mail-icon,
   .phone-icon {
+    margin-bottom: -2px;
     margin-right: 7px;
     font-size: ${(props) => props.theme.fontSize}px;
   }
@@ -71,7 +72,7 @@ const HeaderInformation = ({ home }) => {
                 </div>
               )}
               {home.facebook && (
-                <div className="level-item mr-5">
+                <div className="level-item mr-2">
                   <a
                     href={home.facebook}
                     target="_blank"
