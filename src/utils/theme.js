@@ -39,8 +39,8 @@ export const theme = {
   textColorLite: '#FFFFFF',
   textColorDark: '#585858',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Merriweather', sans-serif",
-  secondaryFontFamily: "'Merriweather', sans-serif",
+  primaryFontFamily: "'Roboto Slab', sans-serif",
+  secondaryFontFamily: "'Roboto Slab', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 

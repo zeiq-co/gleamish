@@ -51,7 +51,7 @@ const Bottom = styled.div`
   }
 `;
 
-const Information = [
+const information = [
   { id: 1, name: 'Faq', url: '/page/faq' },
   { id: 2, name: 'Term and condition', url: '/page/terms-and-condition' },
   { id: 3, name: 'Privacy Policy', url: '/page/privacy-policy' },
@@ -94,7 +94,7 @@ const Footer = ({ home }) => {
                 Our Information
               </h1>
               <ul>
-                {Information.map((item) => (
+                {information.map((item) => (
                   <li key={item.id}>
                     <Link to={item.url}>{item.name}</Link>
                   </li>

@@ -20,17 +20,17 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
           />
+
           <script
             defer
             src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
           />
-
           {/* Font Family */}
+
           <link
-            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap"
             rel="stylesheet"
           />
-
           <script src="/js/scripts.js" />
           {/* Add custom css or scripts here */}
 
