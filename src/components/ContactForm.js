@@ -115,7 +115,7 @@ export default withFormik({
       .required('Email is required!'),
     message: Yup.string().required('Message is required!'),
   }),
-  handleSubmit: (values, { setSubmitting }) => {
+  handleSubmit: () => {
     swal('Subscribed successfully, thank you!');
     // addToMailchimp(values.email)
     //   .then(() => {

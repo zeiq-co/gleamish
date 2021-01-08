@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export default class HTML extends React.Component {
   render() {
     return (
-      <html {...this.props.htmlAttributes}>
+      <html lang="en" {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -24,10 +24,13 @@ export default class HTML extends React.Component {
             defer
             src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
           />
+
+          {/* Font Family */}
           <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
             rel="stylesheet"
           />
+
           <script src="/js/scripts.js" />
           {/* Add custom css or scripts here */}
 

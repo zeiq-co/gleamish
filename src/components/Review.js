@@ -2,11 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { Parallax } from 'react-parallax';
-import { theme } from '../utils/theme';
 import Heading from './elements/Heading';
 
 const Section = styled.section`
-  // background-color: ${theme.darkAccent};
   padding-bottom: 5rem;
   .card {
     box-shadow: none;

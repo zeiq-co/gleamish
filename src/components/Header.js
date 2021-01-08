@@ -83,8 +83,9 @@ const Header = ({ home }) => {
             <Link className="navbar-item ml-2" to="/">
               <img src="/images/logo.png" alt="site logo" />
             </Link>
-            <a
-              href="#"
+            <button
+              type="button"
+              // href="#"
               className={
                 isActive
                   ? 'is-active navbar-burger  mt-5'
@@ -98,7 +99,7 @@ const Header = ({ home }) => {
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
-            </a>
+            </button>
           </div>
 
           <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>

@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { lighten } from 'polished';
 import SocialIcon from './SocialIcon';
 import { theme } from '../utils/theme';
-import config from '../utils/config';
 
 const Container = styled.footer`
   padding: 7rem 0;

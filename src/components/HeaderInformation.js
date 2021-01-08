@@ -43,7 +43,12 @@ const HeaderInformation = ({ home }) => {
           <div className="has-text-left is-flex  is-justify-content-center">
             <div className="level">
               <div className="level-item mr-5">
-                <a href={home.twitter} target="_blank" className="social-icon">
+                <a
+                  href={home.twitter}
+                  target="_blank"
+                  className="social-icon"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-twitter has-text-black" />
                 </a>
               </div>
@@ -52,12 +57,18 @@ const HeaderInformation = ({ home }) => {
                   href={home.instagram}
                   target="_blank"
                   className="social-icon"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-instagram has-text-black" />
                 </a>
               </div>
               <div className="level-item mr-5">
-                <a href={home.facebook} target="_blank" className="social-icon">
+                <a
+                  href={home.facebook}
+                  target="_blank"
+                  className="social-icon"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-facebook has-text-blackS" />
                 </a>
               </div>

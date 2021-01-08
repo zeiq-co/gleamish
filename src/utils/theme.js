@@ -23,6 +23,7 @@ export const theme = {
   // or as the background for inverted designs.
   darkShades,
   dangerColor: '#f44336',
+
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
   backgroundColor: '#f0f4f7',
@@ -38,8 +39,8 @@ export const theme = {
   textColorLite: '#FFFFFF',
   textColorDark: '#585858',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Poppins', sans-serif",
-  secondaryFontFamily: "'Poppins', sans-serif",
+  primaryFontFamily: "'Merriweather', sans-serif",
+  secondaryFontFamily: "'Merriweather', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 
@@ -51,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
-    .columns {
+     .columns {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
