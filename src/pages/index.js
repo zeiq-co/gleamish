@@ -17,6 +17,7 @@ export const query = graphql`
       title
       description
       keywords
+      information
       homeHero {
         _key
         title
@@ -54,7 +55,6 @@ export const query = graphql`
       }
       whyChoose {
         title
-        subtitle
         description
         image {
           asset {
@@ -92,7 +92,7 @@ const IndexPage = ({ data }) => {
         url={config.siteUrl}
       />
       <HeroSlider data={home} />
-      <HomeAboutUs data={homeAboutUs} />
+      <HomeAboutUs data={homeAboutUs} home={home} />
       <Features data={homeFeatures} />
       <Review review={review} />
       <Members data={brands} />

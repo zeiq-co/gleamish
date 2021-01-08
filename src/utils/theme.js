@@ -29,7 +29,7 @@ export const theme = {
   backgroundColor: '#f0f4f7',
   backgroundInputColor: '#b5b5b5',
   backgroundInputColorDark: darkShades,
-  fontSize: 16,
+  fontSize: 17,
   fontSizeSmall: 14,
   fontSizeExtraSmall: 12,
   fontSizeMedium: 18,
@@ -110,6 +110,30 @@ const GlobalStyle = createGlobalStyle`
   }
   .line-height{
     line-height:26px !important;
+  }
+  .markdown-container {
+    h1 {
+      font-size:40px;
+      margin-top: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+      h4, h5, h6 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 1.3rem;
+      margin-bottom: 1.3rem;
+    }
+    h3 {
+      margin-top: 1.3rem;
+      margin-bottom: 1.3rem;
+    }
+    ol, ul {
+      list-style: disc !important;
+    }
   }
 `;
 

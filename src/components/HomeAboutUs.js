@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+
+import ReactMarkdown from 'react-markdown';
 import Heading from './elements/Heading';
 import OverlayButton from './elements/OverlayButton';
 
@@ -18,13 +20,15 @@ const Image = styled(Img)`
   object-fit: cover;
 `;
 
-const HomeAboutUs = ({ data }) => {
+const HomeAboutUs = ({ data, home }) => {
   return (
     <Section className="section">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-7">
-            <p className="mb-5 has-text-centered">{data.subtitle}</p>
+            <div className="markdown-container has-text-centered">
+              <ReactMarkdown source={home.information} />
+            </div>
           </div>
         </div>
         <Heading centered>{data.title}</Heading>
