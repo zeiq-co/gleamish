@@ -24,13 +24,15 @@ const HomeAboutUs = ({ data, home }) => {
   return (
     <Section className="section">
       <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-7">
-            <div className="markdown-container has-text-centered">
-              <ReactMarkdown source={home.information} />
+        {home.information && (
+          <div className="columns is-centered">
+            <div className="column is-7">
+              <div className="markdown-container has-text-centered">
+                <ReactMarkdown source={home.information} />
+              </div>
             </div>
           </div>
-        </div>
+        )}
         <Heading centered>{data.title}</Heading>
         <div className="columns is-variable is-6">
           <div className="column">
