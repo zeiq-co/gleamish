@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
-     .columns {
+    .columns {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
