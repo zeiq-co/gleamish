@@ -38,15 +38,23 @@ export default {
       of: [{type: 'banner'}]
     },
     {
-      title: 'Home Features',
-      name: 'homeFeatures',
-      type: 'array',
-      of: [{type: 'homeFeatures'}]
+      name: 'information',
+      title: 'Information',
+      type: 'markdown',
+      options: {
+        minRows: 12,
+      },
     },
     {
       title: 'Why Choose Us',
       name: 'whyChoose',
       type: 'whyChooseUs',
+    },
+    {
+      title: 'Home Features',
+      name: 'homeFeatures',
+      type: 'array',
+      of: [{type: 'homeFeatures'}]
     },
     {
       name: 'contact',
