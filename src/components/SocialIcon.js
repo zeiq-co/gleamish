@@ -31,19 +31,25 @@ const SocialIcon = ({ home }) => {
   return (
     <Container className="level">
       <div className="level-item">
-        <a href={home.twitter} target="_blank">
-          <Icon className="fab fa-twitter" />
-        </a>
+        {home.twitter && (
+          <a href={home.twitter} target="_blank" rel="noopener noreferrer">
+            <Icon className="fab fa-twitter" />
+          </a>
+        )}
       </div>
       <div className="level-item">
-        <a href={home.instagram} target="_blank">
-          <Icon className="fab fa-instagram" />
-        </a>
+        {home.instagram && (
+          <a href={home.instagram} target="_blank" rel="noopener noreferrer">
+            <Icon className="fab fa-instagram" />
+          </a>
+        )}
       </div>
       <div className="level-item">
-        <a href={home.facebook} target="_blank">
-          <Icon className="fab fa-facebook" />
-        </a>
+        {home.instagram && (
+          <a href={home.facebook} target="_blank" rel="noopener noreferrer">
+            <Icon className="fab fa-facebook" />
+          </a>
+        )}
       </div>
     </Container>
   );
