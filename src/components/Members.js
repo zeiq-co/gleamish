@@ -18,11 +18,11 @@ const Members = ({ data }) => {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 500,
+    speed: 600,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 700,

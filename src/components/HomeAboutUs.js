@@ -10,6 +10,9 @@ const Section = styled.div`
   .info-section {
     line-height: 24px;
   }
+  .checkboxes {
+    font-size: 14px;
+  }
 `;
 
 const Icon = styled.i`
@@ -41,18 +44,18 @@ const HomeAboutUs = ({ data, home }) => {
               alt={data.title}
             />
           </div>
-          <div className="column ">
-            <h1 className="mb-4 ml-3 is-size-6 info-section">
+          <div className="column">
+            <p className="mb-4 ml-3 is-size-6 info-section">
               {data.description}
-            </h1>
-            <div className="columns is-multiline ">
+            </p>
+            <div className="columns is-multiline">
               {data.featuresList.map((item) => (
                 <div
                   key={item}
-                  className="column is-6 is-flex is-align-items-center "
+                  className="column is-6 is-flex is-align-items-center"
                 >
-                  <Icon className="far fa-check-circle mr-4" />
-                  <p className="">{item}</p>
+                  <Icon className="far fa-check-circle mr-3" />
+                  <p className="info-section checkboxes">{item}</p>
                 </div>
               ))}
             </div>

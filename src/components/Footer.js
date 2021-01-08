@@ -55,7 +55,7 @@ const information = [
   { id: 1, name: 'Faq', url: '/page/faq' },
   { id: 2, name: 'Term and condition', url: '/page/terms-and-condition' },
   { id: 3, name: 'Privacy Policy', url: '/page/privacy-policy' },
-  { id: 4, name: 'Blogs', url: '/blog' },
+  { id: 4, name: 'News & Updates', url: '/blog' },
 ];
 const Footer = ({ home }) => {
   return (

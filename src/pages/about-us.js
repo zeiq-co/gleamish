@@ -71,7 +71,7 @@ const About = ({ data }) => {
       <AboutFeatures data={aboutUs} />
       <div className="section">
         <div className="container">
-          <Heading centered>News & Blog</Heading>
+          <Heading centered>News & Updates</Heading>
           <div className="columns is-multiline">
             {posts.map(({ node }) => (
               <div className="column is-4">
