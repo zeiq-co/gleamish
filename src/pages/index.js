@@ -54,6 +54,7 @@ export const query = graphql`
         }
       }
       whyChoose {
+        _key
         title
         description
         image {
@@ -69,7 +70,7 @@ export const query = graphql`
     allSanityReview {
       edges {
         node {
-          id
+          _id
           personName
           comment
         }

@@ -24,7 +24,7 @@ const HomeAboutUs = ({ data, home }) => {
   return (
     <Section className="section">
       <div className="container">
-        {home.information && (
+        {home && home.information && (
           <div className="columns is-centered">
             <div className="column is-7">
               <div className="markdown-container has-text-centered">
@@ -48,7 +48,7 @@ const HomeAboutUs = ({ data, home }) => {
             <div className="columns is-multiline ">
               {data.featuresList.map((item) => (
                 <div
-                  key={item._key}
+                  key={item}
                   className="column is-6 is-flex is-align-items-center "
                 >
                   <Icon className="far fa-check-circle mr-4" />

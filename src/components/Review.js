@@ -86,21 +86,21 @@ const Review = ({ review }) => {
             Client Reviews
           </Heading>
           <Slider {...settings}>
-            {review.map(({ node }) => (
-              <div className="columns">
+            {review.map(({ node: data }) => (
+              <div className="columns" key={data._id}>
                 <div className="column">
                   <Icon className="fas fa-quote-left is-size-3 mb-2" />
-                  <div className="card" key={node.id}>
+                  <div className="card">
                     <div className="card-content">
                       <p className="review-section is-family-primary mb-4">
                         {' '}
-                        {node.comment}
+                        {data.comment}
                       </p>
                       <div className="media">
                         <div className="media-content">
                           <p className="title reviews-name is-size-6 has-text-weight-normal">
                             {' '}
-                            {node.personName}
+                            {data.personName}
                           </p>
                         </div>
                       </div>

@@ -48,7 +48,6 @@ const OverlayContainers = styled(OverlayContainer)`
 
 const HomeSlider = ({ data }) => {
   const [count, setCount] = useState(1);
-
   useEffect(() => {
     setCount(1);
   }, [count]);
@@ -72,7 +71,6 @@ const HomeSlider = ({ data }) => {
             slidingDelay: 50,
             shouldAutoplay: true,
             shouldDisplayButtons: true,
-
             height: '90vh',
           }}
         >
