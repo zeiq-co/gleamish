@@ -47,6 +47,9 @@ const LogoImg = styled.img`
 const Bottom = styled.div`
   padding: 2rem !important;
   background-color: ${theme.darkAccent};
+  h2 {
+    font-size: 14px !important;
+  }
 `;
 
 const Information = [
@@ -100,18 +103,19 @@ const Footer = ({ home }) => {
               </ul>
             </div>
           </div>
-          <div className="has-text-centered is-flex  is-justify-content-center">
+          <div className="has-text-centered is-flex is-justify-content-center">
             <SocialIcon home={home} />
           </div>
         </div>
       </Container>
       <Bottom className="has-text-centered ">
         <h2 className="has-text-white">
-          Copyright © 2020 - Midas-Paint | build by{' '}
+          Copyright © 2020 - Midas Brush Decorating | build by{' '}
           <a
             href="https://www.zeiq.co/"
             target="_blank"
             className="has-text-white"
+            rel="noopener noreferrer"
           >
             Zeiq.co
           </a>

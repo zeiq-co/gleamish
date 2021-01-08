@@ -23,7 +23,6 @@ export const theme = {
   // or as the background for inverted designs.
   darkShades,
   dangerColor: '#f44336',
-
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
   backgroundColor: '#f0f4f7',
@@ -52,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
-     .columns {
+    .columns {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }

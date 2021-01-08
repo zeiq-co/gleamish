@@ -79,6 +79,7 @@ const HomeSlider = ({ data }) => {
           {data.homeHero.map((item) => (
             <>
               <Slide
+                key={item._key}
                 background={{
                   backgroundImage: item.image
                     ? item.image.asset.fluid.src

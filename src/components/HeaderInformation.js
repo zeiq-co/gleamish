@@ -8,7 +8,7 @@ const Section = styled.div`
   }
   .mail-icon,
   .phone-icon {
-    margin-right: ${(props) => props.theme.fontSize}px;
+    margin-right: 7px;
     font-size: ${(props) => props.theme.fontSize}px;
   }
   .mailWrapper {
