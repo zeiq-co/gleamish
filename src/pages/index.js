@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
         title={home.title}
         description={home.description}
         url={config.siteUrl}
-        image={`${config.siteUrl}/${config.logo}`}
+        image={`${config.logo}`}
       />
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />
