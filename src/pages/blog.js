@@ -45,11 +45,11 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="News & Updates"
+        title="Latest Projects"
         description={`Latest news at ${config.siteName}`}
         url={`${config.siteUrl}/account`}
       />
-      <HeroHeader heading="News & Updates" title="News & Updates" />
+      <HeroHeader heading="Latest Projects" title="Latest Projects" />
       <NewsWrapper className="section">
         <div className="container">
           <div className="columns is-multiline">
