@@ -31,12 +31,10 @@ const ServiceFeatures = ({ item, number }) => {
                 })}
               />
             </p>
-            <Link className="has-text-centered" to="/details">
-              <OverlayButton
-                linkTo={item.slug ? item.slug.current : '#'}
-                buttonText="View Details"
-              />
-            </Link>
+            <OverlayButton
+              linkTo={item.slug ? item.slug.current : ''}
+              buttonText="View Details"
+            />
           </div>
           <div className="column">
             <Img

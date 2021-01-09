@@ -59,12 +59,9 @@ const HomeAboutUs = ({ data, home }) => {
                 </div>
               ))}
             </div>
-            <OverlayButton
-              marginTop
-              marginLeft
-              linkTo="/service"
-              buttonText=" View More"
-            />
+            <div className="mt-4 ml-3">
+              <OverlayButton linkTo="/service" buttonText="View More" />
+            </div>
           </div>
         </div>
       </div>

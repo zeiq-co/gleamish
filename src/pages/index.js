@@ -2,6 +2,8 @@ import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { graphql } from 'gatsby';
+
+import logo from '../../static/images/logo.png';
 import config from '../utils/config';
 import HeroSlider from '../components/HeroSlider';
 import Seo from '../components/Seo';
@@ -86,14 +88,14 @@ const IndexPage = ({ data }) => {
   const brands = data.sanitySiteSettings;
   const homeAboutUs = data.sanitySiteSettings.whyChoose;
   const review = data.allSanityReview.edges;
-
+  console.log(logo, 'data');
   return (
     <Layout>
       <Seo
         title={home.title}
         description={home.description}
         url={config.siteUrl}
-        image="https://paint-dev.netlify.app/images/logo.png"
+        image={logo}
       />
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />

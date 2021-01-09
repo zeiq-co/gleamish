@@ -4,8 +4,6 @@ import { Link } from 'gatsby';
 import { theme } from '../../utils/theme';
 
 const LinkStyled = styled(Link)`
-  margin-top: ${(props) => (props.marginTop ? '14px' : '')};
-  margin-left: ${(props) => (props.marginLeft ? '12px' : '')};
   button {
     cursor: pointer;
     font-size: 18px;
@@ -124,9 +122,9 @@ const LinkStyled = styled(Link)`
   }
 `;
 
-const OverlayButton = ({ buttonText, linkTo, marginTop, marginLeft }) => {
+const OverlayButton = ({ buttonText, linkTo }) => {
   return (
-    <LinkStyled to={linkTo} marginTop={marginTop} marginLeft={marginLeft}>
+    <LinkStyled to={linkTo}>
       <button to={linkTo} type="button" className="grow_skew_backward">
         {buttonText}
       </button>
