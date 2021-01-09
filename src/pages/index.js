@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
         title={home.title}
         description={home.description}
         url={config.siteUrl}
-        image={`${config.logo}`}
+        image="https://www.sanity.io/static/images/opengraph/social.png"
       />
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />
