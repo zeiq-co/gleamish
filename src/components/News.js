@@ -29,6 +29,7 @@ const Image = styled(Img)`
 const News = ({ node }) => {
   return (
     <CardWrapper
+      key={node._id}
       to={`/article/${node.slug ? node.slug.current : ''}`}
       className="card"
     >

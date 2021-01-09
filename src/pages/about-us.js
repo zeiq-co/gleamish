@@ -31,6 +31,7 @@ export const aboutQuery = graphql`
       }
     }
     sanityAbout {
+      _id
       heroTitle
       heroDescription
       featuredImage {
@@ -56,7 +57,7 @@ export const aboutQuery = graphql`
   }
 `;
 
-const About = ({ data }) => {
+const AboutUs = ({ data }) => {
   const { edges: posts } = data.allSanityArticle;
   const aboutUs = data.sanityAbout;
   return (
@@ -74,8 +75,8 @@ const About = ({ data }) => {
           <Heading centered>Latest Projects</Heading>
           <div className="columns is-multiline">
             {posts.map(({ node: post }) => (
-              <div className="column is-4">
-                <News key={post._id} node={post} />
+              <div className="column is-4" key={post._id}>
+                <News node={post} />
               </div>
             ))}
           </div>
@@ -84,4 +85,4 @@ const About = ({ data }) => {
     </Layout>
   );
 };
-export default About;
+export default AboutUs;
