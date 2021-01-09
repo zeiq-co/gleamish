@@ -71,11 +71,11 @@ const About = ({ data }) => {
       <AboutFeatures data={aboutUs} />
       <div className="section">
         <div className="container">
-          <Heading centered>News & Updates</Heading>
+          <Heading centered>Latest Projects</Heading>
           <div className="columns is-multiline">
-            {posts.map(({ node }) => (
+            {posts.map(({ node: post }) => (
               <div className="column is-4">
-                <News key={node._id} node={node} />
+                <News key={post._id} node={post} />
               </div>
             ))}
           </div>
