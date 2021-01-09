@@ -68,15 +68,21 @@ const Footer = ({ home }) => {
                 Contact Us
               </h1>
               <ul>
-                <li>
-                  <a href={`tel:${home.telephone}`}>{home.telephone}</a>
-                </li>
-                <li>
-                  <a href={`mailto:${home.email}`}>{home.email}</a>
-                </li>
-                <li>
-                  <span>{home.address}</span>
-                </li>
+                {home.telephone && (
+                  <li>
+                    <a href={`tel:${home.telephone}`}>{home.telephone}</a>
+                  </li>
+                )}
+                {home.email && (
+                  <li>
+                    <a href={`mailto:${home.email}`}>{home.email}</a>
+                  </li>
+                )}
+                {home.address && (
+                  <li>
+                    <span>{home.address}</span>
+                  </li>
+                )}
               </ul>
             </div>
             <div className="column has-text-centered is-5">
@@ -85,9 +91,11 @@ const Footer = ({ home }) => {
                 alt="footer-logo"
                 className="mb-5"
               />
-              <p className="has-text-white is-size-3">
-                {home.footerDescription}
-              </p>
+              {home.footerDescription && (
+                <p className="has-text-white is-size-3">
+                  {home.footerDescription}
+                </p>
+              )}
             </div>
             <div className="column has-text-centered">
               <h1 className="has-text-weight-normal has-text-white is-size-4">

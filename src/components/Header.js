@@ -13,7 +13,9 @@ const Section = styled.div`
   .navbar-brand {
     margin-left: -1.5rem !important;
     .navbar-item img {
-      max-height: 5.5rem;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      max-height: 5rem;
     }
   }
   .navbar-item {
