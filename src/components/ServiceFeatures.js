@@ -24,13 +24,13 @@ const ServiceFeatures = ({ item, number }) => {
             <h3 className="title is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced has-text-centered">
               {item.title}
             </h3>
-            <p className="subtitle is-size-6 line-height mb-5 react-markdown">
+            <div className="line-height mb-5 react-markdown">
               <ReactMarkdown
                 source={truncate(item.description, {
                   length: 300,
                 })}
               />
-            </p>
+            </div>
             <OverlayButton
               linkTo={item.slug ? item.slug.current : ''}
               buttonText="View Details"

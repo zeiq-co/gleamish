@@ -103,13 +103,14 @@ const Services = ({ data }) => {
         heading={service.title}
         title={service.slug ? service.slug.current : ''}
       />
-      <Section className="section ">
-        <div className="container ">
-          <div className="columns is-centered ">
-            <div className="column is-three-fifths">
+      <Section className="section">
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column is-three-fifths ">
               <Slider {...settings}>
                 {service.images.map((item) => (
                   <Img
+                    className="mb-5"
                     fluid={item.asset ? item.asset.fluid : ''}
                     key={item._key}
                     alt={service.title}
