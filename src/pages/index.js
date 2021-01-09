@@ -45,6 +45,7 @@ export const query = graphql`
       }
       brands {
         _key
+        title
         image {
           asset {
             fluid(maxWidth: 1200) {
@@ -85,12 +86,14 @@ const IndexPage = ({ data }) => {
   const brands = data.sanitySiteSettings;
   const homeAboutUs = data.sanitySiteSettings.whyChoose;
   const review = data.allSanityReview.edges;
+  console.log(config.logo, 'logo');
   return (
     <Layout>
       <Seo
         title={home.title}
         description={home.description}
         url={config.siteUrl}
+        image={config.logo}
       />
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />
