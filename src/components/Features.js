@@ -23,7 +23,7 @@ const Features = ({ data }) => {
                   <figure className="image is-64x64">
                     <Img
                       fluid={item.image ? item.image.asset.fluid : ' '}
-                      alt={item.title}
+                      alt={item.title ? item.title : 'Features'}
                     />
                   </figure>
                 </div>

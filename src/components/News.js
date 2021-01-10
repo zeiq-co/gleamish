@@ -37,7 +37,7 @@ const News = ({ node }) => {
         {node.image && (
           <Image
             fluid={node.image ? node.image.asset.fluid : ''}
-            alt={node.title}
+            alt={node.title ? node.title : 'Latest projects'}
             className="blog-img"
           />
         )}

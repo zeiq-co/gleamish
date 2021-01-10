@@ -39,7 +39,7 @@ const ServiceFeatures = ({ item, number }) => {
           <div className="column">
             <Img
               fluid={item.images[0] ? item.images[0].asset.fluid : ''}
-              alt="service-img"
+              alt={item.title ? item.title : 'Services'}
             />
           </div>
         </Wrapper>
