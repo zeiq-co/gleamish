@@ -19,7 +19,7 @@ const Members = ({ data }) => {
     infinite: true,
     arrows: false,
     speed: 600,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -48,8 +48,8 @@ const Members = ({ data }) => {
         <SliderContainer {...settings}>
           {data.brands.map((item) => (
             <div key={item._key} className="column is-3 has-text-centered item">
-              <img
-                src={item.image ? item.image.asset.fluid.src : ' '}
+              <Img
+                fluid={item.image ? item.image.asset.fluid : ' '}
                 alt={item.title}
               />
             </div>
