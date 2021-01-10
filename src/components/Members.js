@@ -50,7 +50,7 @@ const Members = ({ data }) => {
             <div key={item._key} className="column is-3 has-text-centered item">
               <Img
                 fluid={item.image ? item.image.asset.fluid : ' '}
-                alt={item.title}
+                alt={item.title ? item.title : 'Members'}
               />
             </div>
           ))}
