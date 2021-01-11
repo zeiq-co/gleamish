@@ -75,7 +75,7 @@ const PageView = ({ data }) => {
                 {news.otherImages.map((item) => (
                   <Img
                     className="mb-5 mt-5"
-                    fluid={item.asset ? item.asset.fluid : ''}
+                    fluid={item && item.asset ? item.asset.fluid : ''}
                     key={item._key}
                     alt={item.title}
                   />
