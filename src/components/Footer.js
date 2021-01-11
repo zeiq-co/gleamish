@@ -53,9 +53,8 @@ const Bottom = styled.div`
 
 const information = [
   { id: 1, name: 'Faq', url: '/page/faq' },
-  { id: 2, name: 'Term and condition', url: '/page/terms-and-condition' },
-  { id: 3, name: 'Privacy Policy', url: '/page/privacy-policy' },
-  { id: 4, name: 'Latest Projects', url: '/blog' },
+  { id: 2, name: 'Find us', url: '/page/find-us' },
+  { id: 3, name: 'Latest Projects', url: '/blog' },
 ];
 const Footer = ({ home }) => {
   return (
