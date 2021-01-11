@@ -33,18 +33,34 @@ export const query = graphql`
         }
       }
     }
+    sanitySiteSettings {
+      coverImage {
+        servicePage {
+          asset {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
 const Service = ({ data }) => {
   const service = data.allSanityServices.edges;
+  const cover = data.sanitySiteSettings.coverImage;
   return (
     <Layout>
       <Seo title="Service" />
       <HeroHeader
         heading="Service"
         title="Service"
-        background="/images/cantact.jpg"
+        background={
+          cover && cover.servicePage && cover.servicePage.asset
+            ? cover.servicePage.asset.fluid.src
+            : ''
+        }
       />
       <Wrapper>
         {service.map(({ node }, index) => (
