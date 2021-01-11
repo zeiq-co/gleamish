@@ -38,7 +38,7 @@ export const query = graphql`
         subtitle
         image {
           asset {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 600) {
               ...GatsbySanityImageFluid
             }
           }
@@ -49,7 +49,7 @@ export const query = graphql`
         title
         image {
           asset {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 600) {
               ...GatsbySanityImageFluid
             }
           }
