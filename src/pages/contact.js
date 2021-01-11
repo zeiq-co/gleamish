@@ -25,20 +25,43 @@ export const query = graphql`
           }
         }
       }
+      coverImage {
+        contactPage {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
     }
   }
 `;
 
 const Contact = ({ data }) => {
-  const { contact } = data.sanitySiteSettings;
+  const contact = data.sanitySiteSettings;
   return (
     <Layout>
       <Seo title="Contact Us" />
-      <HeroHeader heading="Contact" title="contact" />
+      <HeroHeader
+        heading="Contact"
+        title="contact"
+        background={
+          contact.coverImage &&
+          contact.coverImage &&
+          contact.coverImage.contactPage
+            ? contact.coverImage.contactPage.asset.fluid.src
+            : ''
+        }
+      />
       <ImageAfterBefore
-        title={contact.title}
-        description={contact.description}
-        image={contact && contact.image ? contact.image.asset.fluid : ' '}
+        title={contact.contact.title}
+        description={contact.contact.description}
+        image={
+          contact && contact.contact.image
+            ? contact.contact.image.asset.fluid
+            : ' '
+        }
       />
       <Container className="section">
         <div className="container ">

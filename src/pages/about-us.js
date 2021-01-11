@@ -34,9 +34,16 @@ export const aboutQuery = graphql`
       _id
       heroTitle
       heroDescription
+      coverImage {
+        asset {
+          fluid(maxWidth: 800) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
       featuredImage {
         asset {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbySanityImageFluid
           }
         }
@@ -54,16 +61,34 @@ export const aboutQuery = graphql`
         description
       }
     }
+    sanitySiteSettings {
+      coverImage {
+        aboutPageCover {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
 const AboutUs = ({ data }) => {
   const { edges: posts } = data.allSanityArticle;
   const aboutUs = data.sanityAbout;
+  const cover = data.sanitySiteSettings.coverImage;
   return (
     <Layout>
-      <Seo title="about" description={`about  ${config.siteName}`} />
-      <HeroHeader heading="About" title="About" />
+      <Seo title="about" description={`about ${config.siteName}`} />
+      <HeroHeader
+        heading="About"
+        title="About"
+        background={
+          cover.aboutPageCover ? cover.aboutPageCover.asset.fluid.src : ''
+        }
+      />
       <ImageAfterBefore
         title={aboutUs.heroTitle}
         description={aboutUs.heroDescription}

@@ -41,7 +41,11 @@ const Service = ({ data }) => {
   return (
     <Layout>
       <Seo title="Service" />
-      <HeroHeader heading="Service" title="Service" />
+      <HeroHeader
+        heading="Service"
+        title="Service"
+        background="/images/cantact.jpg"
+      />
       <Wrapper>
         {service.map(({ node }, index) => (
           <ServiceFeatures key={node._id} item={node} number={index + 1} />

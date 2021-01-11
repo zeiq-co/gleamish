@@ -49,7 +49,11 @@ const Blog = ({ data }) => {
         description={`Latest news at ${config.siteName}`}
         url={`${config.siteUrl}/account`}
       />
-      <HeroHeader heading="Latest Projects" title="Latest Projects" />
+      <HeroHeader
+        heading="Latest Projects"
+        title="Latest Projects"
+        background="/images/cantact.jpg"
+      />
       <NewsWrapper className="section">
         <div className="container">
           <div className="columns is-multiline">

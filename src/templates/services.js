@@ -101,6 +101,7 @@ const Services = ({ data }) => {
       />
       <HeroHeader
         heading={service.title}
+        background="/images/cantact.jpg"
         title={service.slug ? service.slug.current : ''}
       />
       <Section className="section">

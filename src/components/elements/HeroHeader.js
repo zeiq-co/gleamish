@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background-image: url('/images/cantact.jpg');
+  background-image: url(${(props) => props.background});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,9 +11,9 @@ const HeaderWrapper = styled.div`
   }
 `;
 
-const HeroHeader = ({ heading, title }) => {
+const HeroHeader = ({ heading, title, background }) => {
   return (
-    <HeaderWrapper className="hero ">
+    <HeaderWrapper className="hero" background={background}>
       <div className="hero-body">
         <div className="container has-text-centered py-6">
           <h1 className="has-text-white is-size-1">{heading}</h1>

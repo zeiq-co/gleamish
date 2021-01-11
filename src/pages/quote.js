@@ -27,7 +27,11 @@ const QuoteFormPage = () => {
   return (
     <Layout>
       <Seo title="Quote" />
-      <HeroHeader heading="Get a Quote " title="Quote" />
+      <HeroHeader
+        heading="Get a Quote "
+        title="Quote"
+        background="/images/cantact.jpg"
+      />
       <Container className="section">
         <div className="container ">
           <div className="columns is-centered ">
