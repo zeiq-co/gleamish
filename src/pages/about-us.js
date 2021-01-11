@@ -34,13 +34,6 @@ export const aboutQuery = graphql`
       _id
       heroTitle
       heroDescription
-      coverImage {
-        asset {
-          fluid(maxWidth: 800) {
-            ...GatsbySanityImageFluid
-          }
-        }
-      }
       featuredImage {
         asset {
           fluid(maxWidth: 800) {
