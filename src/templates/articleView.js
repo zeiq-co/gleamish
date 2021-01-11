@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
+import Slider from 'react-slick';
+
 import Img from 'gatsby-image';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
@@ -23,13 +25,30 @@ export const pageQuery = graphql`
           }
         }
       }
+      otherImages {
+        asset {
+          fluid(maxWidth: 800) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
     }
   }
 `;
 
 const PageView = ({ data }) => {
   const news = data.sanityArticle;
-
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    lazyLoad: true,
+  };
   return (
     <Layout>
       <Seo
@@ -40,7 +59,7 @@ const PageView = ({ data }) => {
       <section className="section">
         <div className="container">
           <div className="columns is-centered">
-            <div className="column is-8">
+            <div className="column is-9">
               <Heading centered>{news.title}</Heading>
               <div className="mb-5 mt-5">
                 <Img
@@ -52,6 +71,16 @@ const PageView = ({ data }) => {
               <div className="markdown-container">
                 <ReactMarkdown source={news.description} />
               </div>
+              <Slider {...settings}>
+                {news.otherImages.map((item) => (
+                  <Img
+                    className="mb-5 mt-5"
+                    fluid={item.asset ? item.asset.fluid : ''}
+                    key={item._key}
+                    alt={item.title}
+                  />
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

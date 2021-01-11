@@ -114,7 +114,7 @@ const Services = ({ data }) => {
                     className="mb-5"
                     fluid={item.asset ? item.asset.fluid : ''}
                     key={item._key}
-                    alt={service.title}
+                    alt="services"
                   />
                 ))}
               </Slider>
