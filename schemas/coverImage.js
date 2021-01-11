@@ -6,18 +6,29 @@ export default {
   fields: [
     {
       name: 'aboutPageCover',
-      title: 'About Page Cover Image',
+      title: 'About Page',
       type: 'image',
     },
     {
       name: 'galleryImage',
-      title: 'Gallery Page Cover Image',
+      title: 'Gallery Page',
       type: 'image',
     },
     {
       name: 'contactPage',
-      title: 'Contact Page Cover Image',
+      title: 'Contact Page',
       type: 'image',
     },
+    {
+      name: 'servicePage',
+      title: 'Service Page',
+      type: 'image',
+    },
+    {
+      name: 'blogPage',
+      title: 'Blog Page',
+      type: 'image',
+    },
+
   ],
 };
