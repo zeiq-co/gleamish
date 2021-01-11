@@ -31,5 +31,15 @@ export default {
       title: 'image',
       type: 'image',
     },
+    {
+      name: 'otherImages',
+      title: 'Other Images',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+        },
+      ],
+    },
   ],
 };

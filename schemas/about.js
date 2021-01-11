@@ -10,11 +10,15 @@ export default {
   ],
   fields: [
     {
+      name: 'coverImage',
+      title: 'Cover Image',
+      type: 'image',
+    },
+    {
       name: 'heroTitle',
       title: 'Hero Title',
       type: 'string',
     },
-
     {
       name: 'heroDescription',
       title: 'Hero Description',

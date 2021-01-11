@@ -102,5 +102,10 @@ export default {
       type: 'string',
       title: 'Address',
     },
+    {
+      name: 'coverImage',
+      type: 'coverImage',
+      title: 'Cover Image',
+    },
   ],
 };

@@ -12,6 +12,7 @@ import address from './address';
 import review from './review';
 import about from './about';
 import aboutServices from './aboutServices';
+import coverImage from "./coverImage";
 
 import localeString from './locale/String';
 import localeText from './locale/Text';
@@ -50,6 +51,7 @@ export default createSchema({
     homeFeatures,
     brands,
     whyChooseUs,
+    coverImage,
     aboutServices,
   ]),
 });
