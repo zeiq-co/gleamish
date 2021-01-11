@@ -47,9 +47,7 @@ const Contact = ({ data }) => {
         heading="Contact"
         title="contact"
         background={
-          contact.coverImage &&
-          contact.coverImage &&
-          contact.coverImage.contactPage
+          contact && contact.coverImage && contact.coverImage.contactPage
             ? contact.coverImage.contactPage.asset.fluid.src
             : ''
         }
