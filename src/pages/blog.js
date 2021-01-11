@@ -28,6 +28,17 @@ export const blogQuery = graphql`
         }
       }
     }
+    sanitySiteSettings {
+      coverImage {
+        blogPage {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -41,6 +52,7 @@ const NewsWrapper = styled.section`
 
 const Blog = ({ data }) => {
   const { edges: aboutUs } = data.allSanityArticle;
+  const cover = data.sanitySiteSettings.coverImage;
 
   return (
     <Layout>
@@ -52,7 +64,9 @@ const Blog = ({ data }) => {
       <HeroHeader
         heading="Latest Projects"
         title="Latest Projects"
-        background="/images/cantact.jpg"
+        background={
+          cover && cover.blogPage ? cover.blogPage.asset.fluid.src : ''
+        }
       />
       <NewsWrapper className="section">
         <div className="container">
