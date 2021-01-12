@@ -1,4 +1,7 @@
 import React from 'react';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 import Slider from 'react-slick';
