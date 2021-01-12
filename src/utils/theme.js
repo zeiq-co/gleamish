@@ -116,7 +116,12 @@ const GlobalStyle = createGlobalStyle`
       font-size: 40px;
       margin-top: 1.2rem;
       margin-bottom: 1.5rem;
-      color: ${theme.darkAccent};
+      color: ${theme.darkAccent} !important;
+      line-height: 48px;
+    }
+    strong{
+      cursor: pointer !important;
+      color: ${theme.darkAccent} !important;
     }
       h4, h5, h6 {
       margin-top: 1.5rem;
