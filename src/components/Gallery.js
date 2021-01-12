@@ -9,6 +9,9 @@ const GalleryWrapper = styled.div`
     height: 280px;
     object-fit: cover;
   }
+  .modal_small_image {
+    width: 100% !important;
+  }
 `;
 
 const Gallery = ({ heading, data }) => {
