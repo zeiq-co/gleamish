@@ -107,7 +107,6 @@ const IndexPage = ({ data }) => {
         image={config.logo}
       />
       <HeroSlider data={home} />
-
       <HomeAboutUs data={homeAboutUs} home={home} />
       <Features data={homeFeatures} />
       <Review review={review} home={home} />
