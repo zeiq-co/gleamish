@@ -63,7 +63,6 @@ const Blog = ({ data }) => {
       />
       <HeroHeader
         heading="Past Projects"
-        title="Past Projects"
         background={
           cover && cover.blogPage ? cover.blogPage.asset.fluid.src : ''
         }

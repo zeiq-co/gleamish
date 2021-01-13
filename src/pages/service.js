@@ -55,7 +55,6 @@ const Service = ({ data }) => {
       <Seo title="Services" />
       <HeroHeader
         heading="Services"
-        title="Services"
         background={
           cover && cover.servicePage && cover.servicePage.asset
             ? cover.servicePage.asset.fluid.src

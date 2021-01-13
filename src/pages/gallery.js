@@ -44,7 +44,6 @@ const Gallery = ({ data }) => {
       <Seo title="Gallery" />
       <HeroHeader
         heading="Gallery"
-        title="Gallery"
         background={
           cover.galleryImage && cover.galleryImage.asset
             ? cover.galleryImage.asset.fluid.src

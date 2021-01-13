@@ -101,8 +101,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title={home.title}
-        description={home.description}
+        title={home.description}
+        // description={home.description}
         url={config.siteUrl}
         image={config.logo}
       />

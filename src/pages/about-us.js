@@ -74,10 +74,9 @@ const AboutUs = ({ data }) => {
   const cover = data.sanitySiteSettings.coverImage;
   return (
     <Layout>
-      <Seo title="about" description={`about ${config.siteName}`} />
+      <Seo title="About" description={`About Us ${config.siteName}`} />
       <HeroHeader
         heading="About"
-        title="About"
         background={
           cover.aboutPageCover ? cover.aboutPageCover.asset.fluid.src : ''
         }
