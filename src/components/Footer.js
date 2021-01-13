@@ -46,9 +46,6 @@ const LogoImg = styled.img`
 const Bottom = styled.div`
   padding: 2rem !important;
   background-color: ${theme.darkAccent};
-  h2 {
-    font-size: 14px !important;
-  }
 `;
 
 const information = [

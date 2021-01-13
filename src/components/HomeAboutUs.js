@@ -11,7 +11,7 @@ const Section = styled.div`
     line-height: 24px;
   }
   .checkboxes {
-    font-size: 14px;
+    font-size: ${(props) => props.theme.fontSizeSmall}px;
   }
   .column.is-6 {
     padding-bottom: 4px;
