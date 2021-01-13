@@ -13,11 +13,14 @@ const Section = styled.div`
   .checkboxes {
     font-size: 14px;
   }
+  .column.is-6 {
+    padding-bottom: 4px;
+  }
 `;
 
 const Icon = styled.i`
   color: ${(props) => props.theme.mainBrandColor};
-  width: 0.9em !important;
+  width: 1.5em !important;
 `;
 
 const Image = styled(Img)`
@@ -29,7 +32,7 @@ const HomeAboutUs = ({ data, home }) => {
     <Section className="section">
       <div className="container">
         {home && home.information && (
-          <div className="columns is-centered">
+          <div className="columns is-centered mb-6">
             <div className="column is-7">
               {home.informationTitle && (
                 <Heading centered>{home.informationTitle}</Heading>
