@@ -9,8 +9,8 @@ export default {
       type: 'string',
     },
     {
-      name: 'heroDescription',
-      title: 'Hero Description',
+      name: 'description',
+      title: 'Description',
       type: 'markdown',
       options: {
         minRows: 10,
