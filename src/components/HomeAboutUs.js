@@ -30,6 +30,9 @@ const HomeAboutUs = ({ data, home }) => {
         {home && home.information && (
           <div className="columns is-centered">
             <div className="column is-7">
+              {home.informationTitle && (
+                <Heading centered>{home.informationTitle}</Heading>
+              )}
               <div className="markdown-container has-text-centered">
                 <ReactMarkdown source={home.information} />
               </div>

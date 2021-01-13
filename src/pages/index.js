@@ -18,6 +18,7 @@ export const query = graphql`
       title
       description
       keywords
+      informationTitle
       information
       homeHero {
         _key
