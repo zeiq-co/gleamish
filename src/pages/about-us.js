@@ -90,7 +90,7 @@ const AboutUs = ({ data }) => {
       <AboutFeatures data={aboutUs} />
       <div className="section">
         <div className="container">
-          <Heading centered>Latest Projects</Heading>
+          <Heading centered>Past Projects</Heading>
           <div className="columns is-multiline">
             {posts.map(({ node: post }) => (
               <div className="column is-4" key={post._id}>

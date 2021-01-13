@@ -57,13 +57,13 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Latest Projects"
+        title="Past Projects"
         description={`Latest news at ${config.siteName}`}
         url={`${config.siteUrl}/account`}
       />
       <HeroHeader
-        heading="Latest Projects"
-        title="Latest Projects"
+        heading="Past Projects"
+        title="Past Projects"
         background={
           cover && cover.blogPage ? cover.blogPage.asset.fluid.src : ''
         }

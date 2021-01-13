@@ -54,7 +54,7 @@ const Bottom = styled.div`
 const information = [
   { id: 1, name: 'FAQ', url: '/page/faq' },
   { id: 2, name: 'Find us', url: '/page/find-us' },
-  { id: 3, name: 'Latest Projects', url: '/blog' },
+  { id: 3, name: 'Past Projects', url: '/blog' },
 ];
 const Footer = ({ home }) => {
   return (

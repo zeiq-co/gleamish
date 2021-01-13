@@ -108,7 +108,7 @@ const IndexPage = ({ data }) => {
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />
       <Features data={homeFeatures} />
-      <Review review={review} data={home} />
+      <Review review={review} home={home} />
       <Members data={brands} />
     </Layout>
   );
