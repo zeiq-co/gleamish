@@ -17,7 +17,10 @@ export default {
     {
       name: 'heroDescription',
       title: 'Hero Description',
-      type: 'string',
+      type: 'markdown',
+      options: {
+        minRows: 10,
+      },
     },
     {
       name: 'image',

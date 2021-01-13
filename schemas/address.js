@@ -9,9 +9,12 @@ export default {
       type: 'string',
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'string',
+      name: 'heroDescription',
+      title: 'Hero Description',
+      type: 'markdown',
+      options: {
+        minRows: 10,
+      },
     },
     {
       name: 'image',
