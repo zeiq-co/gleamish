@@ -51,9 +51,7 @@ const HomeAboutUs = ({ data, home }) => {
             />
           </div>
           <div className="column">
-            <p className="mb-4 ml-3 is-size-6 info-section">
-              {data.description}
-            </p>
+            <p className="mb-4 ml-3 info-section">{data.description}</p>
             <div className="columns is-multiline">
               {data.featuresList.map((item) => (
                 <div
