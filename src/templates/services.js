@@ -68,7 +68,7 @@ export const serviceQuery = graphql`
       images {
         _key
         asset {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }

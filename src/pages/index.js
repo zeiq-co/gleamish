@@ -52,7 +52,7 @@ export const query = graphql`
         title
         image {
           asset {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 800) {
               ...GatsbySanityImageFluid
             }
           }
@@ -64,7 +64,7 @@ export const query = graphql`
         description
         image {
           asset {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1200) {
               ...GatsbySanityImageFluid
             }
           }
@@ -73,7 +73,7 @@ export const query = graphql`
       }
       reviewBackground {
         asset {
-          fluid(maxWidth: 900) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }

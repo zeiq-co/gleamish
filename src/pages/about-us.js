@@ -22,7 +22,7 @@ export const aboutQuery = graphql`
           description
           image {
             asset {
-              fluid(maxWidth: 800) {
+              fluid(maxWidth: 1200) {
                 ...GatsbySanityImageFluid
               }
             }
@@ -36,14 +36,14 @@ export const aboutQuery = graphql`
       heroDescription
       featuredImage {
         asset {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }
       }
       image {
         asset {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }
@@ -58,7 +58,7 @@ export const aboutQuery = graphql`
       coverImage {
         aboutPageCover {
           asset {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1200) {
               ...GatsbySanityImageFluid
             }
           }

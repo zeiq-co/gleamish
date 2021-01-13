@@ -23,14 +23,14 @@ export const pageQuery = graphql`
       description
       image {
         asset {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }
       }
       otherImages {
         asset {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }

@@ -26,7 +26,7 @@ export const query = graphql`
       coverImage {
         galleryImage {
           asset {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1200) {
               ...GatsbySanityImageFluid
             }
           }

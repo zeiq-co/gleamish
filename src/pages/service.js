@@ -25,7 +25,7 @@ export const query = graphql`
           description
           images {
             asset {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 1200) {
                 ...GatsbySanityImageFluid
               }
             }
@@ -37,8 +37,8 @@ export const query = graphql`
       coverImage {
         servicePage {
           asset {
-            fluid {
-              src
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
             }
           }
         }

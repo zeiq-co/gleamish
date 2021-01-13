@@ -28,7 +28,7 @@ export const query = graphql`
       coverImage {
         contactPage {
           asset {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1200) {
               ...GatsbySanityImageFluid
             }
           }

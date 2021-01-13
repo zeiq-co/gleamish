@@ -20,7 +20,7 @@ export const blogQuery = graphql`
           description
           image {
             asset {
-              fluid(maxWidth: 800) {
+              fluid(maxWidth: 1200) {
                 ...GatsbySanityImageFluid
               }
             }
@@ -32,7 +32,7 @@ export const blogQuery = graphql`
       coverImage {
         blogPage {
           asset {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1200) {
               ...GatsbySanityImageFluid
             }
           }
