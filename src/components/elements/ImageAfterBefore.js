@@ -7,7 +7,7 @@ const Section = styled.div`
   margin-top: 3rem;
   .column.is-6 {
     position: relative;
-    margin: 2rem 0rem -1rem 0rem !important;
+    // margin: 2rem 0rem -1rem 0rem !important;
     right: 9%;
   }
   p {
@@ -36,7 +36,7 @@ const ImageAfterBefore = ({ title, description, image, showButton }) => {
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-10">
-            <div className="columns is-gapless">
+            <div className="columns is-gapless is-vcentered">
               <div className="column is-8">
                 <BoxWrapper>
                   <h2 className="title is-3 has-text-white is-family-primary">
