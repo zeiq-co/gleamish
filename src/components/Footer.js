@@ -46,11 +46,19 @@ const LogoImg = styled.img`
 const Bottom = styled.div`
   padding: 2rem !important;
   background-color: ${theme.darkAccent};
+  h2 {
+    font-size: 14px !important;
+  }
 `;
 
 const information = [
   { id: 1, name: 'FAQ', url: '/page/faq' },
-  { id: 2, name: 'Find us', url: '/page/find-us' },
+  {
+    id: 2,
+    name: 'Find us',
+    url:
+      'https://www.google.co.uk/maps/place/Midas+Brush+Decorating+Ltd/@51.5235464,-0.3270559,10z/data=!3m1!4b1!4m5!3m4!1s0x48761d651e743bc5:0x58af084bccd7b2fc!8m2!3d51.5238801!4d-0.0468676',
+  },
   { id: 3, name: 'Past Projects', url: '/blog' },
 ];
 const Footer = ({ home }) => {
@@ -100,7 +108,7 @@ const Footer = ({ home }) => {
               <ul>
                 {information.map((item) => (
                   <li key={item.id}>
-                    <Link to={item.url}>{item.name}</Link>
+                    <a href={item.url}>{item.name}</a>
                   </li>
                 ))}
               </ul>
