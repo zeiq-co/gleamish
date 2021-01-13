@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+
+import ReactMarkdown from 'react-markdown';
 import OverlayButton from './OverlayButton';
 
 const Section = styled.div`
@@ -42,7 +44,11 @@ const ImageAfterBefore = ({ title, description, image, showButton }) => {
                   <h2 className="title is-3 has-text-white is-family-primary">
                     {title}
                   </h2>
-                  <p className="mb-5 is-size-6">{description}</p>
+                  {description && (
+                    <div className="markdown-container">
+                      <ReactMarkdown source={description} />
+                    </div>
+                  )}
                   {showButton && (
                     <OverlayButton linkTo="/details" buttonText="View More" />
                   )}
