@@ -5,7 +5,7 @@ import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
 import News from '../components/News';
 import AboutFeatures from '../components/AboutFeatures';
-import ImageAfterBefore from '../components/elements/ImageAfterBefore';
+import Information from '../components/elements/Information';
 import Heading from '../components/elements/Heading';
 import config from '../utils/config';
 
@@ -82,7 +82,7 @@ const AboutUs = ({ data }) => {
           cover.aboutPageCover ? cover.aboutPageCover.asset.fluid.src : ''
         }
       />
-      <ImageAfterBefore
+      <Information
         title={aboutUs.heroTitle}
         description={aboutUs.heroDescription}
         image={aboutUs.image ? aboutUs.image.asset.fluid : ''}

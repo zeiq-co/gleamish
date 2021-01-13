@@ -5,7 +5,7 @@ import ContactForm from '../components/ContactForm';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
-import ImageAfterBefore from '../components/elements/ImageAfterBefore';
+import Information from '../components/elements/Information';
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
@@ -52,7 +52,7 @@ const Contact = ({ data }) => {
             : ''
         }
       />
-      <ImageAfterBefore
+      <Information
         title={contact.contact.title}
         description={contact.contact.description}
         image={
