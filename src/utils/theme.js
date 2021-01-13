@@ -29,11 +29,10 @@ export const theme = {
   backgroundColor: '#f0f4f7',
   backgroundInputColor: '#b5b5b5',
   backgroundInputColorDark: darkShades,
-  fontSize: 17,
+  fontSize: 17, // 'default text-size"'
   fontSizeSmall: 15,
-  fontSizeExtraSmall: 15,
   fontSizeMedium: 17,
-  fontSizeLarge: 40, // 'Use className is-size-2'
+  fontSizeLarge: 40, // 'Use className="is-size-2"'
   textColor: darkShades, // '#0A0B11',
   textColorInverse: lightShades,
   textColorLite: '#FFFFFF',

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Section = styled.div`
   padding: 10px 0px;
   .has-text-left {
-    font-size: ${(props) => props.theme.fontSizeExtraSmall}px;
+    font-size: ${(props) => props.theme.fontSizeSmall}px;
   }
   .mail-icon,
   .phone-icon {
