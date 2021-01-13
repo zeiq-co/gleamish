@@ -45,7 +45,6 @@ const Contact = ({ data }) => {
       <Seo title="Contact Us" />
       <HeroHeader
         heading="Contact"
-        title="contact"
         background={
           contact && contact.coverImage && contact.coverImage.contactPage
             ? contact.coverImage.contactPage.asset.fluid.src
