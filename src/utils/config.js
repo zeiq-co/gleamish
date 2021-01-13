@@ -1,10 +1,10 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
 
-  siteName: 'midasbrush-decorating',
+  siteName: 'Midas Brush Decorating',
   author: 'zeiq.co',
   description:
-    'Welcome to Midas Brush Decorating, a friendly and reliable service who serve customers throughout London producing the finest quality at competitive rates. We transform both residential and commercial properties inside and out with our unique Midas touch and our tremendous eye for detail.Our aim is to achieve one hundred percent satisfaction with our customers, making sure that we are clean and tidy during work and when we complete our projects.',
+    'Top-Rated Painters and Decorators in London',
   siteUrl: 'https://www.midasbrush-decorating.co.uk/',
   logo: '/images/logo.png',
 
