@@ -61,7 +61,7 @@ const HomeAboutUs = ({ data, home }) => {
                   key={item}
                   className="column is-6 is-flex is-align-items-center"
                 >
-                  <Icon className="far fa-check-circle mr-3" />
+                  <Icon className="far fa-check-circle mr-2" />
                   <p className="info-section checkboxes">{item}</p>
                 </div>
               ))}

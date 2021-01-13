@@ -111,9 +111,9 @@ const GlobalStyle = createGlobalStyle`
   .line-height{
     line-height:26px !important;
   }
-  // .is-size-6 {
-  //   font-size: 17px !important;
-  // }
+  .is-size-6 {
+    font-size: 17px !important;
+  }
   .markdown-container {
     h1 {
       font-size: 40px;
