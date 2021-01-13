@@ -16,12 +16,13 @@ module.exports = {
         watchMode: true,
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-mailchimp',
-    //   options: {
-    //     endpoint: config.mailchimp,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#e9bd16`,
+        showSpinner: false,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
