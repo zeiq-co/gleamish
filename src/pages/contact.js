@@ -14,6 +14,8 @@ const Container = styled.div`
 export const query = graphql`
   query ContactPageQuery {
     sanitySiteSettings {
+      email
+      telephone
       contact {
         title
         description
@@ -52,6 +54,8 @@ const Contact = ({ data }) => {
         }
       />
       <Information
+        telephone={contact.telephone}
+        email={contact.email}
         title={contact.contact.title}
         description={contact.contact.description}
         image={

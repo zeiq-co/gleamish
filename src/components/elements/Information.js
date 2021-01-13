@@ -22,6 +22,10 @@ const Section = styled.div`
   }
 `;
 const BoxWrapper = styled.div`
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   padding: 5rem 8rem 3rem 5rem !important;
   background: #f1f5f7;
   @media screen and (min-width: 1400px) {
@@ -32,7 +36,14 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const Information = ({ title, description, image, showButton }) => {
+const Information = ({
+  title,
+  description,
+  image,
+  showButton,
+  telephone,
+  email,
+}) => {
   return (
     <Section className="section ">
       <div className="container">
@@ -44,11 +55,25 @@ const Information = ({ title, description, image, showButton }) => {
                   <h2 className="title is-3 has-text-white is-family-primary">
                     {title}
                   </h2>
+
                   {description && (
                     <div className="markdown-container">
                       <ReactMarkdown source={description} />
                     </div>
                   )}
+
+                  <ul>
+                    <li>
+                      {telephone && <h1 className="title is-5">Contact Us</h1>}
+                    </li>
+                    <li>
+                      {telephone && (
+                        <a href={`tel:${telephone}`}>{telephone}</a>
+                      )}
+                    </li>
+                    <li>{email && <a href={`mailto:${email}`}>{email}</a>}</li>
+                  </ul>
+
                   {showButton && (
                     <OverlayButton linkTo="/details" buttonText="View More" />
                   )}
