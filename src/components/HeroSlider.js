@@ -87,12 +87,17 @@ const HomeSlider = ({ data }) => {
               >
                 <OverlayContainers className="columns is-mobile is-centered">
                   <Wrapper className="column is-8 has-text-centered">
-                    <h1 className="heading is-size-1 is-size-3-mobile has-text-weight-normal has-text-white mb-4 is-family-primary ">
-                      {item.title}
-                    </h1>
-                    <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
-                      {item.subtitle}
-                    </h1>
+                    {' '}
+                    {item.title && (
+                      <h1 className="heading is-size-1 is-size-3-mobile has-text-weight-normal has-text-white mb-4 is-family-primary ">
+                        {item.title}
+                      </h1>
+                    )}
+                    {item.subtitle && (
+                      <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
+                        {item.subtitle}
+                      </h1>
+                    )}
                     <OverlayButton
                       linkTo={`/${item.linkTo}`}
                       buttonText="Get a Quote"

@@ -17,6 +17,7 @@ const Section = styled.div`
 
 const Icon = styled.i`
   color: ${(props) => props.theme.mainBrandColor};
+  width: 0.9em !important;
 `;
 
 const Image = styled(Img)`
