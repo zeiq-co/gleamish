@@ -67,6 +67,11 @@ export default {
       type: 'address',
     },
     {
+      title: 'Home Page Review Background',
+      name: 'reviewBackground',
+      type: 'image',
+    },
+    {
       title: 'Brands',
       name: 'brands',
       type: 'array',
