@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background-image: url(${(props) => props.background});
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.5),
+      rgba(12, 12, 12, 0.5)
+    ),
+    url(${(props) => props.background});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
