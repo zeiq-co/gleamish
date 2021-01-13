@@ -94,7 +94,7 @@ const Services = ({ data }) => {
     <Layout>
       <Seo
         title={service.title}
-        description={`Read news & updates about ${service.title}`}
+        description={`Read ${service.title}`}
         url={`${config.siteUrl}/page/${
           service.slug ? service.slug.current : ''
         }`}
@@ -102,7 +102,7 @@ const Services = ({ data }) => {
       <HeroHeader
         heading={service.title}
         background="/images/cantact.jpg"
-        title={service.slug ? service.slug.current : ''}
+        title={`Services / ${service.slug ? service.slug.current : ''}`}
       />
       <Section className="section">
         <div className="container">
