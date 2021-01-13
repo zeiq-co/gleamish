@@ -33,9 +33,11 @@ const HomeAboutUs = ({ data, home }) => {
               {home.informationTitle && (
                 <Heading centered>{home.informationTitle}</Heading>
               )}
-              <div className="markdown-container has-text-centered">
-                <ReactMarkdown source={home.information} />
-              </div>
+              {home.information && (
+                <div className="markdown-container has-text-centered">
+                  <ReactMarkdown source={home.information} />
+                </div>
+              )}
             </div>
           </div>
         )}
