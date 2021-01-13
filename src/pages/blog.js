@@ -53,7 +53,6 @@ const NewsWrapper = styled.section`
 const Blog = ({ data }) => {
   const { edges: aboutUs } = data.allSanityArticle;
   const cover = data.sanitySiteSettings.coverImage;
-
   return (
     <Layout>
       <Seo
