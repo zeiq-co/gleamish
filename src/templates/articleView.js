@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 import Slider from 'react-slick';
+import styled from 'styled-components';
 
 import Img from 'gatsby-image';
 import Seo from '../components/Seo';
@@ -37,6 +38,11 @@ export const pageQuery = graphql`
       }
     }
   }
+`;
+
+const Image = styled(Img)`
+  object-fit: cover;
+  height: 90vh;
 `;
 
 const PageView = ({ data }) => {
@@ -76,7 +82,7 @@ const PageView = ({ data }) => {
               </div>
               <Slider {...settings}>
                 {news.otherImages.map((item) => (
-                  <Img
+                  <Image
                     className="mb-5 mt-5"
                     fluid={item && item.asset ? item.asset.fluid : ''}
                     key={item._key}
