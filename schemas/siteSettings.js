@@ -38,6 +38,11 @@ export default {
       of: [{type: 'banner'}]
     },
     {
+      name: 'informationTitle',
+      type: 'string',
+      title: 'Information Title',
+    },
+    {
       name: 'information',
       title: 'Information',
       type: 'markdown',
