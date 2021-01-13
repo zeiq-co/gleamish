@@ -18,7 +18,7 @@ module.exports = {
   type: 'website',
   googleAnalytics: 'UA-169811954-1',
   backgroundColor: '#e0e0e0',
-  themeColor: '#c62828',
+  themeColor: '#e9bd16',
   sanityId: 'mczms7bd',
   mailchimp: '',
 };
