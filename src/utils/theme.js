@@ -31,7 +31,7 @@ export const theme = {
   backgroundInputColorDark: darkShades,
   fontSize: 17,
   fontSizeSmall: 14,
-  fontSizeExtraSmall: 12,
+  fontSizeExtraSmall: 14,
   fontSizeMedium: 18,
   fontSizeLarge: 22,
   textColor: darkShades, // '#0A0B11',
