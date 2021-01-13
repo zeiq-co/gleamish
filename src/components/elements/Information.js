@@ -66,12 +66,16 @@ const Information = ({
                     <li>
                       {telephone && <h1 className="title is-5">Contact Us</h1>}
                     </li>
-                    <li>
-                      {telephone && (
-                        <a href={`tel:${telephone}`}>{telephone}</a>
-                      )}
-                    </li>
-                    <li>{email && <a href={`mailto:${email}`}>{email}</a>}</li>
+                    {telephone && (
+                      <li>
+                        Telephone : <a href={`tel:${telephone}`}>{telephone}</a>
+                      </li>
+                    )}
+                    {email && (
+                      <li>
+                        Email : <a href={`mailto:${email}`}>{email}</a>
+                      </li>
+                    )}
                   </ul>
 
                   {showButton && (
