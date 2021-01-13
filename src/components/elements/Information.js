@@ -63,9 +63,11 @@ const Information = ({
                   )}
 
                   <ul>
-                    <li>
-                      {telephone && <h1 className="title is-5">Contact Us</h1>}
-                    </li>
+                    {telephone && (
+                      <li>
+                        <h1 className="title is-5">Contact Us</h1>
+                      </li>
+                    )}
                     {telephone && (
                       <li>
                         Telephone : <a href={`tel:${telephone}`}>{telephone}</a>

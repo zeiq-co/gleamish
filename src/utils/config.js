@@ -3,8 +3,7 @@ module.exports = {
 
   siteName: 'Midas Brush Decorating',
   author: 'zeiq.co',
-  description:
-    'Top-Rated Painters and Decorators in London',
+  description: 'Top-Rated Painters and Decorators in London',
   siteUrl: 'https://www.midasbrush-decorating.co.uk/',
   logo: '/images/logo.png',
 
