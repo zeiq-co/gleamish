@@ -6,7 +6,7 @@ import { theme } from '../../utils/theme';
 const LinkStyled = styled(Link)`
   button {
     cursor: pointer;
-    font-size: 18px;
+    font-size: ${theme.fontSizeMedium} !important;
     font-weight: 600;
     background: ${theme.textColorLite};
     color: ${theme.darkAccent};

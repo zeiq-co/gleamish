@@ -39,7 +39,6 @@ const Section = styled.div`
   }
   .navbar-end {
     a {
-      font-size: ${theme.fontSizeMedium}px;
       font-family: ${theme.primaryFontFamily};
       color: ${theme.textColorLite};
       :focus {

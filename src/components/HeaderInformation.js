@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const Section = styled.div`
   padding: 10px 0px;
   .has-text-left {
-    font-size: ${(props) => props.theme.fontSizeSmall}px;
+    font-size: ${(props) => props.theme.fontSizeMedium}px;
   }
   .mail-icon,
   .phone-icon {
-    margin-bottom: -2px;
+    margin-bottom: -0.8px;
     margin-right: 7px;
-    font-size: ${(props) => props.theme.fontSize}px;
+    font-size: ${(props) => props.theme.fontSizeMedium}px;
   }
   .mailWrapper {
     margin-right: 64px;
