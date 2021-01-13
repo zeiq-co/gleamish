@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
   background-image: linear-gradient(
-      rgba(12, 12, 12, 0.5),
-      rgba(12, 12, 12, 0.5)
+      rgba(12, 12, 12, 0.3),
+      rgba(12, 12, 12, 0.3)
     ),
     url(${(props) => props.background});
   background-repeat: no-repeat;
