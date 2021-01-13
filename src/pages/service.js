@@ -52,10 +52,10 @@ const Service = ({ data }) => {
   const cover = data.sanitySiteSettings.coverImage;
   return (
     <Layout>
-      <Seo title="Service" />
+      <Seo title="Services" />
       <HeroHeader
-        heading="Service"
-        title="Service"
+        heading="Services"
+        title="Services"
         background={
           cover && cover.servicePage && cover.servicePage.asset
             ? cover.servicePage.asset.fluid.src

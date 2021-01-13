@@ -9,6 +9,11 @@ const HeaderWrapper = styled.div`
   .bottom-content {
     font-size: ${(props) => props.theme.fontSizeMedium}px;
   }
+  a {
+    :hover {
+      color: ${(props) => props.theme.mainBrandColor};
+    }
+  }
 `;
 
 const HeroHeader = ({ heading, title, background }) => {
