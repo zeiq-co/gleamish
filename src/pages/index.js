@@ -20,6 +20,7 @@ export const query = graphql`
       keywords
       informationTitle
       information
+
       homeHero {
         _key
         title
@@ -45,6 +46,7 @@ export const query = graphql`
           }
         }
       }
+
       brands {
         _key
         title
@@ -68,6 +70,13 @@ export const query = graphql`
           }
         }
         featuresList
+      }
+      reviewBackground {
+        asset {
+          fluid(maxWidth: 900) {
+            ...GatsbySanityImageFluid
+          }
+        }
       }
     }
     allSanityReview {
@@ -99,7 +108,7 @@ const IndexPage = ({ data }) => {
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />
       <Features data={homeFeatures} />
-      <Review review={review} />
+      <Review review={review} data={home} />
       <Members data={brands} />
     </Layout>
   );

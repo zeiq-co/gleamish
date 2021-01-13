@@ -19,7 +19,7 @@ const Members = ({ data }) => {
     infinite: true,
     arrows: false,
     speed: 600,
-    slidesToShow: 6,
+    slidesToShow: 7,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,

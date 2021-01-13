@@ -49,7 +49,7 @@ const ParallaxContainer = styled(Parallax)`
   }
 `;
 
-const Review = ({ review }) => {
+const Review = ({ review, home }) => {
   const settings = {
     dots: true,
     arrows: false,
@@ -79,7 +79,14 @@ const Review = ({ review }) => {
     ],
   };
   return (
-    <ParallaxContainer bgImage="/images/gallery4.jpg" strength={400}>
+    <ParallaxContainer
+      bgImage={
+        home && home.reviewBackground
+          ? home.reviewBackground.asset.fluid.src
+          : '/images/gallery4.jpg'
+      }
+      strength={400}
+    >
       <Section className="section">
         <div className="container">
           <Heading primary centered>
