@@ -63,7 +63,7 @@ const Footer = ({ home }) => {
         <div className="container">
           <div className="columns  ">
             <div className="column has-text-centered ">
-              <h1 className="has-text-weight-normal has-text-white is-size-3">
+              <h1 className="has-text-weight-normal has-text-white is-size-4">
                 Contact Us
               </h1>
               <ul>
