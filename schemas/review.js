@@ -1,7 +1,11 @@
+import { RiArticleFill } from 'react-icons/ri'
+
 export default {
   name: 'review',
   title: 'Review',
   type: 'document',
+
+  icon:  RiArticleFill,
   fields: [
     {
       name: 'personName',

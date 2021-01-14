@@ -1,7 +1,9 @@
+import { SiAcademia } from 'react-icons/si'
 export default {
   name: 'about',
   title: 'About Us',
   type: 'document',
+  icon:  SiAcademia,
   __experimental_actions: [
     // 'create',
     'update',

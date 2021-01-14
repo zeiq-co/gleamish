@@ -1,7 +1,10 @@
+import { GrServices } from 'react-icons/gr'
+
 export default {
   name: 'services',
   title: 'Services',
   type: 'document',
+  icon:  GrServices,
   preview: {
     select: {
       title: 'title',

@@ -1,14 +1,16 @@
+import { GrGallery } from 'react-icons/gr'
 export default {
   name: 'gallery',
   title: 'Gallery',
   type: 'document',
+  icon:  GrGallery,
+
   preview: {
     select: {
       media:"image",
       title:"alternative",
     }
   },
-
   fields: [
     {
       name: 'alternative',

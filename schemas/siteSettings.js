@@ -1,7 +1,11 @@
+import { GrSettingsOption } from 'react-icons/gr'
+
 export default {
   name: 'siteSettings',
   type: 'document',
+  icon:  GrSettingsOption,
   title: 'Site Settings',
+
   __experimental_actions: [
     // 'create',
     'update',

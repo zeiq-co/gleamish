@@ -1,7 +1,10 @@
+import { GiNewspaper } from 'react-icons/gi'
 export default {
   name: 'article',
   title: 'Article',
   type: 'document',
+  icon:  GiNewspaper,
+
   fields: [
     {
       name: 'title',
