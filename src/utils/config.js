@@ -5,7 +5,7 @@ module.exports = {
   author: 'zeiq.co',
   description: 'Top-Rated Painters and Decorators in London',
   siteUrl: 'https://www.midasbrush-decorating.co.uk/',
-  logo: '/images/logo.png',
+  logo: '/images/logo.jpg',
 
   telephone: '07572575313',
   email: 'eldan@midasbrushdecorating.co.uk',

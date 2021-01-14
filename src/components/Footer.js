@@ -88,7 +88,7 @@ const Footer = ({ home }) => {
             </div>
             <div className="column has-text-centered is-5">
               <LogoImg
-                src="/images/logo.png"
+                src="/images/logo.jpg"
                 alt="footer-logo"
                 className="mb-5"
               />
