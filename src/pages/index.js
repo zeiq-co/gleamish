@@ -4,7 +4,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import { graphql } from 'gatsby';
 
 import config from '../utils/config';
-import Heading from '../components/elements/Heading';
 import HeroSlider from '../components/HeroSlider';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';

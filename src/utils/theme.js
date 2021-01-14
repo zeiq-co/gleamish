@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.textColor};
-    // letter-spacing: 0.03rem !important;
+    letter-spacing: 0.04rem !important;
     font-size: 17px;
     .columns {
     margin-left: 0 !important;
