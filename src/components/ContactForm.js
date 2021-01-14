@@ -73,7 +73,7 @@ const ContactForm = ({
               onChange={handleChange}
               onBlur={handleBlur}
             />
-            {errors.name && touched.name && (
+            {errors.email && touched.email && (
               <p className="help is-danger">{errors.email}</p>
             )}
           </div>
