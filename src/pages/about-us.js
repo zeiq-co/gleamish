@@ -72,9 +72,10 @@ const AboutUs = ({ data }) => {
   const { edges: posts } = data.allSanityArticle;
   const aboutUs = data.sanityAbout;
   const cover = data.sanitySiteSettings.coverImage;
+  console.log(image, 'image');
   return (
     <Layout>
-      <Seo title="About" description={`About Us ${config.siteName}`} />
+      <Seo title="About" description={`About Us ${config.siteName}`} image />
       <HeroHeader
         heading="About"
         background={
