@@ -57,7 +57,7 @@ const Seo = ({ title, description, url, image, keywords }) => {
 
 Seo.defaultProps = {
   url: config.siteUrl,
-  image: `${config.siteUrl}/${config.metaLogo}`,
+  image: config.metaLogo,
   description: config.description,
 };
 
