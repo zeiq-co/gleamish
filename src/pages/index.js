@@ -99,7 +99,7 @@ const IndexPage = ({ data }) => {
   const review = data.allSanityReview.edges;
   return (
     <Layout>
-      <Seo title={home.title} url={config.siteUrl} image={config.logo} />
+      <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />
       <Features data={homeFeatures} />
