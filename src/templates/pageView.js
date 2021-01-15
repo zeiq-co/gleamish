@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import Heading from '../components/elements/Heading';
+import HeroHeader from '../components/elements/HeroHeader';
 
 export const pageQuery = graphql`
   query PageByPath($slug: String!) {
@@ -45,9 +45,14 @@ const PageView = ({ data }) => {
         description={`Read news & updates about ${page.title}`}
         url={`${config.siteUrl}/page/${page.slug ? page.slug.current : ''}`}
       />
+      <HeroHeader
+        heading={page.title}
+        background={
+          page.image ? page.image.asset.fluid.src : '/images/contact.jpg'
+        }
+      />
       <section className="section">
         <div className="container">
-          <Heading centered>{page.title}</Heading>
           <MarkdownContainer>
             <div className="markdown-container">
               <ReactMarkdown source={page.description} />

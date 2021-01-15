@@ -30,7 +30,7 @@ const QuoteFormPage = () => {
       <HeroHeader
         heading="Get a Quote "
         title="Quote"
-        background="/images/cantact.jpg"
+        background="/images/contact.jpg"
       />
       <Container className="section">
         <div className="container ">
