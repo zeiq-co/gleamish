@@ -105,9 +105,6 @@ const GlobalStyle = createGlobalStyle`
   .is-family-primary {
     font-family: ${theme.primaryFontFamily} !important;
   }
-  .is-family-secondary {
-    font-family: ${theme.secondaryFontFamily} !important;
-  }
   .line-height{
     line-height:26px !important;
   }

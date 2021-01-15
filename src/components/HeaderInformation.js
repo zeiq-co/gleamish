@@ -29,7 +29,7 @@ const HeaderInformation = ({ home }) => {
             {home.email && (
               <a
                 href={`mailto:${home.email}`}
-                className="has-text-weight-normal has-text-black is-family-secondary mailWrapper"
+                className="has-text-weight-normal has-text-black mailWrapper"
               >
                 <i className="far fa-envelope mail-icon" />
                 {home.email}
@@ -38,7 +38,7 @@ const HeaderInformation = ({ home }) => {
             {home.telephone && (
               <a
                 href={`tel:${home.telephone}`}
-                className="has-text-weight-normal has-text-black is-family-secondary "
+                className="has-text-weight-normal has-text-black"
               >
                 <i className="fas fa-phone-volume phone-icon" />
                 {home.telephone}

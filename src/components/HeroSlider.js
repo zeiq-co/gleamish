@@ -75,9 +75,8 @@ const HomeSlider = ({ data }) => {
           }}
         >
           {data.homeHero.map((item) => (
-            <>
+            <div key={item._key}>
               <Slide
-                key={item._key}
                 background={{
                   backgroundImage: item.image
                     ? item.image.asset.fluid.src
@@ -94,7 +93,7 @@ const HomeSlider = ({ data }) => {
                       </h1>
                     )}
                     {item.subtitle && (
-                      <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5 is-family-secondary">
+                      <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
                         {item.subtitle}
                       </h1>
                     )}
@@ -105,7 +104,7 @@ const HomeSlider = ({ data }) => {
                   </Wrapper>
                 </OverlayContainers>
               </Slide>
-            </>
+            </div>
           ))}
           <Nav />
         </HeroSlider>
