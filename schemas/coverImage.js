@@ -29,6 +29,10 @@ export default {
       title: 'Blog Page',
       type: 'image',
     },
-
+    {
+      name: 'quotePage',
+      title: 'Quote Page',
+      type: 'image',
+    },
   ],
 };
