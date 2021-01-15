@@ -41,6 +41,11 @@ export default {
       },
     },
     {
+      title: 'Cover Image',
+      name: 'coverImage',
+      type: 'image',
+    },
+    {
       title: 'Images',
       name: 'images',
       type: 'array',
