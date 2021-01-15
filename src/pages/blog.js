@@ -70,8 +70,8 @@ const Blog = ({ data }) => {
         <div className="container">
           <div className="columns is-multiline">
             {aboutUs.map(({ node }) => (
-              <div className="column is-4">
-                <News key={node._id} node={node} />
+              <div className="column is-4" key={node._id}>
+                <News node={node} />
               </div>
             ))}
           </div>

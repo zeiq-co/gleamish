@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { truncate } from 'lodash';
-import dayjs from 'dayjs';
 
 const CardWrapper = styled(Link)`
   border-radius: 0;
@@ -54,13 +53,6 @@ const News = ({ node }) => {
                 })}
               </p>
               <div className="border-bottom" />
-              <div className="comment-section is-flex is-justify-content-space-between">
-                <div className="comments is-size-7" />
-                <div className="comments is-size-7">
-                  {dayjs(node._createdAt).format('MMMM YYYY')}
-                </div>
-                <div className="comments is-size-7" />
-              </div>
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.textColor};
-    letter-spacing: 0.04rem !important;
+    letter-spacing: 0.7px !important;
     font-size: 17px;
     .columns {
     margin-left: 0 !important;
@@ -119,9 +119,10 @@ const GlobalStyle = createGlobalStyle`
       color: ${theme.darkAccent} !important;
       line-height: 48px;
     }
-    strong{
+    strong {
       cursor: pointer !important;
       color: ${theme.darkAccent} !important;
+      font-weight:600 !important;
     }
       h4, h5, h6 {
       margin-top: 1.5rem;
@@ -139,6 +140,10 @@ const GlobalStyle = createGlobalStyle`
       margin-top: 1.3rem;
       margin-bottom: 1.3rem;
       color: ${theme.darkAccent};
+    }
+    p {
+      margin-block-start: 0em;
+      margin-block-end: 0.7em;
     }
     ol, ul {
       list-style: disc !important;

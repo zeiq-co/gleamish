@@ -30,6 +30,7 @@ export const pageQuery = graphql`
         }
       }
       otherImages {
+        _key
         asset {
           fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
@@ -45,7 +46,7 @@ const Image = styled(Img)`
   height: 90vh;
 `;
 
-const PageView = ({ data }) => {
+const ArticleView = ({ data }) => {
   const news = data.sanityArticle;
   const settings = {
     dots: true,
@@ -98,4 +99,4 @@ const PageView = ({ data }) => {
   );
 };
 
-export default PageView;
+export default ArticleView;
