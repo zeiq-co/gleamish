@@ -120,7 +120,6 @@ const GlobalStyle = createGlobalStyle`
       line-height: 48px;
     }
     strong {
-      cursor: pointer !important;
       color: ${theme.darkAccent} !important;
       font-weight:600 !important;
     }

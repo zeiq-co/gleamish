@@ -65,6 +65,13 @@ export const serviceQuery = graphql`
         current
       }
       description
+      coverImage {
+        asset {
+          fluid(maxWidth: 1200) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
       images {
         _key
         asset {
@@ -101,13 +108,17 @@ const Services = ({ data }) => {
       />
       <HeroHeader
         heading={service.title}
-        background="/images/contact.jpg"
+        background={
+          service && service.coverImage
+            ? service.coverImage.asset.fluid.src
+            : '/images/contact.jpg'
+        }
         title={`Services / ${service.slug ? service.slug.current : ''}`}
       />
       <Section className="section">
         <div className="container">
           <div className="columns is-centered">
-            <div className="column is-three-fifths ">
+            <div className="column is-three-fifths">
               <Slider {...settings}>
                 {service.images.map((item) => (
                   <Img

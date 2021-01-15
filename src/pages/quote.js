@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 // import { GraphQLClient, gql } from 'graphql-request';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
@@ -18,29 +19,41 @@ const Container = styled.div`
 //     }
 //   }
 // `;
+export const query = graphql`
+  query QuotePageQuery {
+    sanitySiteSettings {
+      coverImage {
+        quotePage {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
-const QuoteFormPage = () => {
-  // const [executeMutation, { data, loading, error }] = useMutation(
-  //   quoteMutation,
-  // );
-  // const endpoint = 'http://192.168.100.153:4000/api';
+const QuoteFormPage = ({ data }) => {
+  const image = data.sanitySiteSettings.coverImage;
   return (
     <Layout>
       <Seo title="Quote" />
       <HeroHeader
-        heading="Get a Quote "
+        heading="Get a Quote"
         title="Quote"
-        background="/images/contact.jpg"
+        background={
+          image && image.quotePage
+            ? image.quotePage.asset.fluid.src
+            : '/images/contact.jpg'
+        }
       />
       <Container className="section">
         <div className="container ">
           <div className="columns is-centered ">
             <div className="column is-6 ">
-              <QuoteForm
-              // onSubmit={(formData) =>
-              //   executeMutation({ variables: formData })
-              // }
-              />
+              <QuoteForm />
             </div>
           </div>
         </div>
