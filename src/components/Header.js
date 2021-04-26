@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import HeaderInformation from './HeaderInformation';
 import { theme } from '../utils/theme';
 
 const Section = styled.div`
@@ -72,17 +71,16 @@ const Section = styled.div`
   }
 `;
 
-const Header = ({ home }) => {
+const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <Section>
-      <HeaderInformation home={home} />
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item ml-2" to="/">
-              <img src="/images/logo.jpg" alt="site logo" />
+              <img src="/images/logo.png" alt="site logo" />
             </Link>
             <button
               type="button"

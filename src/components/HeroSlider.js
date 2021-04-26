@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HeroSlider, { Slide, Nav, OverlayContainer } from 'hero-slider';
 import styled from 'styled-components';
-import OverlayButton from './elements/OverlayButton';
 
 const Section = styled.div`
   .slide-button-container {
@@ -13,12 +12,14 @@ const Section = styled.div`
     height: 40px;
     width: 40px;
   }
+
   .slide-button-button-svg:hover svg {
     opacity: 1;
     width: 40px;
     height: 40px;
     color: #ffffff;
   }
+
   .fCJHue .slide-button-button-svg svg {
     width: 40px;
     height: 40px;
@@ -88,19 +89,15 @@ const HomeSlider = ({ data }) => {
                   <Wrapper className="column is-8 has-text-centered">
                     {' '}
                     {item.title && (
-                      <h1 className="heading is-size-1 is-size-3-mobile has-text-weight-normal has-text-white mb-4 is-family-primary ">
+                      <h1 className="heading is-size-1 is-size-3-mobile has-text-weight-normal has-text-white is-family-primary ">
                         {item.title}
                       </h1>
                     )}
                     {item.subtitle && (
-                      <h1 className="subheading is-size-5 has-text-weight-normal has-text-white mb-5">
+                      <h1 className="subheading is-size-5 has-text-weight-normal has-text-white">
                         {item.subtitle}
                       </h1>
                     )}
-                    <OverlayButton
-                      linkTo={`/${item.linkTo}`}
-                      buttonText="Get a Quote"
-                    />
                   </Wrapper>
                 </OverlayContainers>
               </Slide>

@@ -36,11 +36,11 @@ export const theme = {
   fontSizeExtraLarge: 40, // 'Use className="is-size-2"'
   textColor: darkShades, // '#0A0B11',
   textColorInverse: lightShades,
-  textColorLite: '#FFFFFF',
+  textColorLite: '#ffffff',
   textColorDark: '#585858',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Roboto Condensed', sans-serif",
-  secondaryFontFamily: "'Roboto Condensed', sans-serif",
+  primaryFontFamily: "'Montserrat', sans-serif",
+  secondaryFontFamily: "'Montserrat', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 
