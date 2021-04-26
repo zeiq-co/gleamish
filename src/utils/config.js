@@ -1,9 +1,9 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
 
-  siteName: 'Midas Brush Decorating',
+  siteName: 'Gleamish Beauty',
   author: 'zeiq.co',
-  description: 'Top-Rated Painters and Decorators in London',
+  description: 'Top-Rated Artist',
   siteUrl: 'https://www.midasbrush-decorating.co.uk/',
   logo: '/images/logo.jpg',
   metaLogo: 'https://www.midasbrush-decorating.co.uk/images/logo.jpg',
@@ -19,6 +19,6 @@ module.exports = {
   googleAnalytics: 'UA-169811954-1',
   backgroundColor: '#e0e0e0',
   themeColor: '#e9bd16',
-  sanityId: 'mczms7bd',
+  sanityId: 'r42hgbxw',
   mailchimp: '',
 };
