@@ -35,6 +35,7 @@ const Section = styled.div`
 const Wrapper = styled.div`
   .heading {
     line-height: 4rem;
+    font-size: 6rem;
   }
   .subheading {
     font-size: ${(props) => props.theme.fontSizeMedium}px !important;
@@ -89,12 +90,12 @@ const HomeSlider = ({ data }) => {
                   <Wrapper className="column is-8 has-text-centered">
                     {' '}
                     {item.title && (
-                      <h1 className="heading is-size-1 is-size-3-mobile has-text-weight-normal has-text-white is-family-primary ">
+                      <h1 className="heading is-size-3-mobile has-text-weight-normal has-text-white is-family-primary">
                         {item.title}
                       </h1>
                     )}
                     {item.subtitle && (
-                      <h1 className="subheading is-size-5 has-text-weight-normal has-text-white">
+                      <h1 className="subheading has-text-weight-normal has-text-white">
                         {item.subtitle}
                       </h1>
                     )}

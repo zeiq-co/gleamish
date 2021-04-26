@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import { lighten } from 'polished';
 import SocialIcon from './SocialIcon';
 import { theme } from '../utils/theme';
@@ -88,7 +87,7 @@ const Footer = ({ home }) => {
             </div>
             <div className="column has-text-centered is-5">
               <LogoImg
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="footer-logo"
                 className="mb-5"
               />
