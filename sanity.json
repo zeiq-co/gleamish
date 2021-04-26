@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "mczms7bd",
+    "projectId": "r42hgbxw",
     "dataset": "production"
   },
   "project": {
-    "name": "Paint"
+    "name": "Gleamish-Beauty"
   },
   "plugins": [
     "@sanity/base",
