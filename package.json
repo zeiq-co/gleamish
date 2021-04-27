@@ -1,15 +1,15 @@
 {
-  "name": "gleamish-beauty",
+  "name": "web",
   "description": "static gatsby website",
   "version": "2.0.1",
   "author": "zeiq.co",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeiq-co/Paint.git"
+    "url": "https://github.com/zeiq-co/gleamish.git"
   },
   "bugs": {
-    "url": "https://github.com/zeiq-co/Paint/issues"
+    "url": "https://github.com/zeiq-co/gleamish/issues"
   },
   "homepage": "https://github.com/zeiq-co/Paint/blob/master/README.md",
   "scripts": {
@@ -17,7 +17,10 @@
     "develop": "z develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
-    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\""
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\"",
+    "now-dev": "gatsby develop",
+    "now-build": "gatsby build",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
