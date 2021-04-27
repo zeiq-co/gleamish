@@ -20,6 +20,11 @@ const ImagesGrid = () => {
               <img src="/images/img1.webp" alt="site logo" />
             </figure>
           </div>
+          <div className="tile is-parent">
+            <figure className="image">
+              <img src="/images/img8.jpg" alt="site logo" />
+            </figure>
+          </div>
           <div className="tile is-vertical">
             <div className="tile is-parent">
               <figure className="image">
@@ -28,23 +33,33 @@ const ImagesGrid = () => {
             </div>
             <div className="tile">
               <div className="tile is-parent">
-                <img src="/images/img3.webp" alt="site logo" />
+                <figure className="image">
+                  <img src="/images/img3.webp" alt="site logo" />
+                </figure>
               </div>
-              <div className="tile is-parent is-vertical">
-                <img src="/images/gallery4.jpg" alt="site logo" />
+              <div className="tile is-parent">
+                <figure className="image">
+                  <img src="/images/gallery4.jpg" alt="site logo" />
+                </figure>
               </div>
             </div>
           </div>
         </div>
         <div className="tile is-ancestor">
           <div className="tile is-parent is-2">
-            <img src="/images/img5.webp" alt="site logo" />
+            <figure className="image">
+              <img src="/images/img5.webp" alt="site logo" />
+            </figure>
           </div>
           <div className="tile is-parent is-4">
-            <img src="/images/img4.webp" alt="site logo" />
+            <figure className="image">
+              <img src="/images/img4.webp" alt="site logo" />
+            </figure>
           </div>
           <div className="tile is-parent is-6">
-            <img src="/images/img2.webp" alt="site logo" />
+            <figure className="image">
+              <img src="/images/img2.webp" alt="site logo" />
+            </figure>
           </div>
         </div>
         <div className="has-text-centered my-6">
