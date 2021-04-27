@@ -43,7 +43,7 @@ const Section = styled.div`
   .navbar-end {
     a {
       font-family: ${theme.primaryFontFamily};
-      color: ${theme.darkAccent};
+      color: ${theme.textColorLite};
       :focus {
         background-color: transparent;
       }

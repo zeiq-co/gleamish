@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p, .title, .box {
     color: ${theme.textColor} !important;
+    font-family: ${theme.primaryFontFamily} !important;
   }
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;
@@ -128,6 +129,7 @@ const GlobalStyle = createGlobalStyle`
       margin-bottom: 1.5rem;
       font-size: 1.5rem;
       color: ${theme.darkAccent};
+      font-family: ${theme.primaryFontFamily} !important;
     }
     h2 {
       font-size: 24px;
@@ -146,6 +148,9 @@ const GlobalStyle = createGlobalStyle`
     }
     ol, ul {
       list-style: disc !important;
+    }
+    a {
+      font-family: ${theme.primaryFontFamily} !important;
     }
   }
 `;

@@ -14,7 +14,7 @@
   "homepage": "https://github.com/zeiq-co/Paint/blob/master/README.md",
   "scripts": {
     "start": "npm run develop",
-    "develop": "gatsby develop",
+    "develop": "z develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\""
