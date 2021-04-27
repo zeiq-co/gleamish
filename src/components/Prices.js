@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = styled.section`
-  /* .subtitle {
-    line-height: 30px;
-  } */
-`;
+const Section = styled.section``;
 
 const Prices = () => (
   <Section className="section">
