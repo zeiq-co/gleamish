@@ -3,7 +3,7 @@ import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#e9bd16';
-const lightShades = '#F5F5F5';
+const lightShades = '##f7f8f9;';
 const darkAccent = '#000000';
 const darkShades = '#333333';
 

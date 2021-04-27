@@ -117,7 +117,7 @@ const Footer = ({ home }) => {
       </Container>
       <Bottom className="has-text-centered ">
         <h2 className="has-text-white">
-          Copyright © 2020 - Midas Brush Decorating | build by{' '}
+          Copyright © 2020 -Gleamish Beauty | build by
           <a
             href="https://www.zeiq.co/"
             target="_blank"
