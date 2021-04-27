@@ -1,4 +1,4 @@
-# Paint
+# Gleamish
 
 Fetch data from Sanity CMS
 
