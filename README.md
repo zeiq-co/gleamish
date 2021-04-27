@@ -1,4 +1,4 @@
-# Gleamish
+# Gleamish.co.uk
 
 Fetch data from Sanity CMS
 
