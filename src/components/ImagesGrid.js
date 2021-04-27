@@ -14,7 +14,7 @@ const Container = styled.section`
 const ImagesGrid = () => {
   return (
     <Container classNameName="section">
-      <div className="container py-4">
+      <div className="container py-4 mt-6">
         <div className="tile is-ancestor">
           <div className="tile is-parent">
             <figure className="image">
@@ -41,8 +41,11 @@ const ImagesGrid = () => {
             </div>
           </div>
         </div>
+        <figure className="image is-3by1">
+          <img src="/images/img6.webp" alt="site-logo" />
+        </figure>
         <div className="has-text-centered my-6">
-          <OverlayButton linkTo="/gallery" buttonText="View More" />
+          <OverlayButton linkTo="/gallery" buttonText="View more" />
         </div>
       </div>
     </Container>

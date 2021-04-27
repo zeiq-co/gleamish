@@ -12,6 +12,7 @@ import Layout from '../components/Layout';
 import Review from '../components/Review';
 import Members from '../components/Members';
 import ImagesGrid from '../components/ImagesGrid';
+import Prices from '../components/Prices';
 
 export const query = graphql`
   query HomePageQuery {
@@ -104,6 +105,7 @@ const IndexPage = ({ data }) => {
       <HeroSlider data={home} />
       {/* <HomeAboutUs data={homeAboutUs} home={home} /> */}
       <ImagesGrid home={home} />
+      <Prices home={home} />
       {/* <Features data={homeFeatures} /> */}
       <Review review={review} home={home} />
       <Members data={brands} />

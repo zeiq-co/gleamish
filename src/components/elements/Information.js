@@ -21,6 +21,7 @@ const Section = styled.div`
     }
   }
 `;
+
 const BoxWrapper = styled.div`
   li {
     margin-top: 1rem;
