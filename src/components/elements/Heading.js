@@ -23,7 +23,7 @@ const Heading = ({ children, centered, hideBottomIcon, primary }) => (
       }`}
     >
       {children}
-    </Text>{' '}
+    </Text>
     {!hideBottomIcon && (
       <div className="has-text-centered">
         <Img src="/images/paint-roller.png" alt="paint-roller" />
