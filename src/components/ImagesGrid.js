@@ -39,7 +39,7 @@ const ImagesGrid = () => {
               </div>
               <div className="tile is-parent">
                 <figure className="image">
-                  <img src="/images/gallery4.jpg" alt="site logo" />
+                  <img src="/images/gallery4.jpg" alt="site-logo" />
                 </figure>
               </div>
             </div>
@@ -48,12 +48,12 @@ const ImagesGrid = () => {
         <div className="tile is-ancestor">
           <div className="tile is-parent is-2">
             <figure className="image">
-              <img src="/images/img5.webp" alt="site logo" />
+              <img src="/images/img5.webp" alt="site-logo" />
             </figure>
           </div>
           <div className="tile is-parent is-4">
             <figure className="image">
-              <img src="/images/img4.webp" alt="site logo" />
+              <img src="/images/img4.webp" alt="site-logo" />
             </figure>
           </div>
           <div className="tile is-parent is-6">
