@@ -19,7 +19,7 @@ Run:
 
 ```
 
-yarn instal
+yarn install
 
 ```
 

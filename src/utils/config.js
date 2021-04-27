@@ -5,8 +5,8 @@ module.exports = {
   author: 'zeiq.co',
   description: 'Top-Rated Artist',
   siteUrl: 'https://www.midasbrush-decorating.co.uk/',
-  logo: '/images/logo.jpg',
-  metaLogo: 'https://www.midasbrush-decorating.co.uk/images/logo.jpg',
+  logo: '/images/logo.png',
+  metaLogo: 'https://www.midasbrush-decorating.co.uk/images/logo.png',
 
   telephone: '07572575313',
   email: 'eldan@midasbrushdecorating.co.uk',
