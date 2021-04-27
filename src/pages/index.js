@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
   const homeAboutUs = data.sanitySiteSettings.whyChoose;
   const review = data.allSanityReview.edges;
   return (
-    <Layout>
+    <Layout hideHeader>
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       <HomeAboutUs data={homeAboutUs} home={home} />

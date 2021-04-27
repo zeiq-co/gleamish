@@ -4,8 +4,12 @@ import { Link } from 'gatsby';
 import { theme } from '../utils/theme';
 
 const Section = styled.div`
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
   nav {
-    background: ${theme.darkAccent};
+    background: transparent;
     padding: 0rem 2rem 0rem 2rem;
   }
   font-family: ${theme.primaryFontFamily};
@@ -39,7 +43,7 @@ const Section = styled.div`
   .navbar-end {
     a {
       font-family: ${theme.primaryFontFamily};
-      color: ${theme.textColorLite};
+      color: ${theme.darkAccent};
       :focus {
         background-color: transparent;
       }
@@ -63,7 +67,7 @@ const Section = styled.div`
   }
   @media screen and (max-width: 700px) {
     .navbar-menu {
-      background: ${theme.borderColor} !important;
+      background: transparent;
     }
   }
   button.is-secondary.is-normal {
