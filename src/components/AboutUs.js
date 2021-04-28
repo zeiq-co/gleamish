@@ -4,24 +4,35 @@ import styled from 'styled-components';
 import OverlayButton from './elements/OverlayButton';
 
 const Container = styled.section`
-  background-color: ${(props) => props.theme.backgroundInputColor};
+  background-image: url(/images/hairs-img.jpg);
+  background-repeat: 'no-repeat' !important;
+  background-size: 'cover' !important;
+  padding-bottom: 13rem;
+  padding-top: 4rem;
   .image-box {
     position: relative;
   }
-  .home-bg {
-    /* width: 349px; */
-  }
-  .programer-image {
+  .overlay-image {
     position: absolute;
     top: 10rem;
     right: 0;
+  }
+  .title {
+    color: ${(props) => props.theme.textColorLite} !important;
+  }
+  .subtitle {
+    color: ${(props) => props.theme.textColorLite} !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .paragraph {
+    color: ${(props) => props.theme.textColorLite} !important;
   }
   @media screen and (max-width: 768px) {
     .home-bg {
       padding-top: 2.75rem;
       width: 65%;
     }
-    .programer-image {
+    .overlay-image {
       position: absolute;
       left: 1.5rem;
     }
@@ -29,19 +40,19 @@ const Container = styled.section`
 `;
 
 const AboutUS = () => (
-  <Container className="hero is-large">
+  <Container className="hero">
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered">
           <div className="column">
             <div className="my-6 has-text-centered">
-              <h3 className="is-size-4 mb-4 is-uppercase">
+              <h3 className="is-size-6 is-uppercase has-text-weight-semibold subtitle">
                 new york • since 2004{' '}
               </h3>
-              <h1 className="is-size-1 mb-4 has-text-weight-semibold">
+              <h1 className="title is-size-1 mb-4 has-text-weight-semibold">
                 READY TO IMPRESS
               </h1>
-              <p>
+              <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
@@ -53,7 +64,7 @@ const AboutUS = () => (
           </div>
           <div className="column is-6 is-offset-1 ">
             <div className="image-box">
-              <figure className="home-bg">
+              <figure className="hair-dreiser">
                 <img
                   src="/images/imgone.jpg"
                   className=""
@@ -61,7 +72,7 @@ const AboutUS = () => (
                 />
               </figure>
 
-              <figure className="programer-image">
+              <figure className="overlay-image">
                 <img src="/images/imgtwo.jpg" className="" alt="home-png" />
               </figure>
             </div>

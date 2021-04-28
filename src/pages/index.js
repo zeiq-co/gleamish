@@ -14,6 +14,7 @@ import Members from '../components/Members';
 import ImagesGrid from '../components/ImagesGrid';
 import Prices from '../components/Prices';
 import AboutUs from '../components/AboutUs';
+import HaircutPrices from '../components/HaircutPrices';
 
 export const query = graphql`
   query HomePageQuery {
@@ -121,9 +122,10 @@ const IndexPage = ({ data }) => {
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       {/* <HomeAboutUs data={homeAboutUs} home={home} /> */}
-      <AboutUs />
       <Prices home={home} />
       <ImagesGrid gallery={gallery} />
+      <AboutUs />
+      <HaircutPrices />
       {/* <Features data={homeFeatures} /> */}
       <Review review={review} home={home} />
       <Members data={brands} />
