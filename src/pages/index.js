@@ -120,8 +120,8 @@ const IndexPage = ({ data }) => {
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       {/* <HomeAboutUs data={homeAboutUs} home={home} /> */}
-      <ImagesGrid gallery={gallery} />
       <Prices home={home} />
+      <ImagesGrid gallery={gallery} />
       {/* <Features data={homeFeatures} /> */}
       <Review review={review} home={home} />
       <Members data={brands} />

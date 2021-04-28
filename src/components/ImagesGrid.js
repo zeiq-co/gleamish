@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import OverlayButton from './elements/OverlayButton';
 
 const Container = styled.section`
-  background-color: ${(props) => props.theme.lightShades};
+  background-color: ${(props) => props.theme.backgroundInputColor};
   img {
     object-fit: cover;
     width: 100%;

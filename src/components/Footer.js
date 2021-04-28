@@ -14,11 +14,11 @@ const Container = styled.footer`
     font-size: ${theme.fontSizeMedium}px !important;
     color: #9b9b9b !important;
     :hover {
-      color:  ${theme.textColorLite}; !important;
+      color: ${theme.textColorLite} !important;
     }
   }
   p {
-    color: ${theme.textColorLite}; !important;
+    color: ${theme.textColorLite} !important;
   }
   .container {
     position: inherit !important;
