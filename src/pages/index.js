@@ -90,6 +90,20 @@ export const query = graphql`
         }
       }
     }
+    allSanityGallery(limit: 5, sort: { fields: _createdAt, order: DESC }) {
+      edges {
+        node {
+          alternative
+          image {
+            asset {
+              fluid(maxWidth: 1200) {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -98,13 +112,15 @@ const IndexPage = ({ data }) => {
   // const homeFeatures = data.sanitySiteSettings;
   const brands = data.sanitySiteSettings;
   // const homeAboutUs = data.sanitySiteSettings.whyChoose;
+  const gallery = data.allSanityGallery.edges;
+
   const review = data.allSanityReview.edges;
   return (
     <Layout hideHeader>
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       {/* <HomeAboutUs data={homeAboutUs} home={home} /> */}
-      <ImagesGrid home={home} />
+      <ImagesGrid gallery={gallery} />
       <Prices home={home} />
       {/* <Features data={homeFeatures} /> */}
       <Review review={review} home={home} />
