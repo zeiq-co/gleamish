@@ -1,6 +1,6 @@
 import React from 'react';
-
 import styled from 'styled-components';
+
 import OverlayButton from './elements/OverlayButton';
 
 const Container = styled.section`

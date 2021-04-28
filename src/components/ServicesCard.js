@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import OverlayButton from './elements/OverlayButton';
-
 const Card = styled.div`
   background-color: #fff;
   padding: 10rem 0rem;

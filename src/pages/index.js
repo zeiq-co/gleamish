@@ -13,6 +13,7 @@ import Review from '../components/Review';
 import Members from '../components/Members';
 import ImagesGrid from '../components/ImagesGrid';
 import Prices from '../components/Prices';
+import AboutUs from '../components/AboutUs';
 
 export const query = graphql`
   query HomePageQuery {
@@ -120,6 +121,7 @@ const IndexPage = ({ data }) => {
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       {/* <HomeAboutUs data={homeAboutUs} home={home} /> */}
+      <AboutUs />
       <Prices home={home} />
       <ImagesGrid gallery={gallery} />
       {/* <Features data={homeFeatures} /> */}
