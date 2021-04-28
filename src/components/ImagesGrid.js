@@ -20,7 +20,14 @@ const ImagesGrid = ({ gallery }) => {
           <div className="tile is-parent">
             <figure className="image">
               <img
-                src={gallery[0].node.image.asset.fluid.src}
+                src={
+                  gallery[0] &&
+                  gallery[0].node &&
+                  gallery[0].node.image &&
+                  gallery[0].node.image.asset
+                    ? gallery[0].node.image.asset.fluid.src
+                    : ''
+                }
                 alt={gallery[0].node.alternative}
               />
             </figure>
@@ -29,7 +36,14 @@ const ImagesGrid = ({ gallery }) => {
             <div className="tile is-parent">
               <figure className="image">
                 <img
-                  src={gallery[1].node.image.asset.fluid.src}
+                  src={
+                    gallery[1] &&
+                    gallery[1].node &&
+                    gallery[1].node.image &&
+                    gallery[1].node.image.asset
+                      ? gallery[1].node.image.asset.fluid.src
+                      : ''
+                  }
                   alt={gallery[1].node.alternative}
                 />
               </figure>
@@ -37,7 +51,14 @@ const ImagesGrid = ({ gallery }) => {
             <div className="tile is-parent">
               <figure className="image">
                 <img
-                  src={gallery[2].node.image.asset.fluid.src}
+                  src={
+                    gallery[2] &&
+                    gallery[2].node &&
+                    gallery[2].node.image &&
+                    gallery[2].node.image.asset
+                      ? gallery[2].node.image.asset.fluid.src
+                      : ''
+                  }
                   alt={gallery[2].node.alternative}
                 />
               </figure>
@@ -47,7 +68,14 @@ const ImagesGrid = ({ gallery }) => {
             <div className="tile is-parent">
               <figure className="image">
                 <img
-                  src={gallery[3].node.image.asset.fluid.src}
+                  src={
+                    gallery[3] &&
+                    gallery[3].node &&
+                    gallery[3].node.image &&
+                    gallery[3].node.image.asset
+                      ? gallery[3].node.image.asset.fluid.src
+                      : ''
+                  }
                   alt={gallery[3].node.alternative}
                 />
               </figure>
@@ -56,7 +84,14 @@ const ImagesGrid = ({ gallery }) => {
         </div>
         <figure className="image is-3by1">
           <img
-            src={gallery[4].node.image.asset.fluid.src}
+            src={
+              gallery[4] &&
+              gallery[4].node &&
+              gallery[4].node.image &&
+              gallery[4].node.image.asset
+                ? gallery[4].node.image.asset.fluid.src
+                : ''
+            }
             alt={gallery[4].node.alternative}
           />
         </figure>
