@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   background-color: ${(props) => props.theme.backgroundInputColor};
-  .title {
-    color: ${(props) => props.theme.menuTintColor};
+  .heading {
+    color: ${(props) => props.theme.menuTintColor} !important;
   }
 `;
 
@@ -51,15 +51,17 @@ const HaircutPrices = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
-        <div className="column is-5">
-          <h1 className="title has-text-right mb-0 is-size-1 is-uppercase">
-            HairCut
-          </h1>
-          <h1 className="title has-text-right  mb-0 is-size-1 is-uppercase">
-            Prices
-          </h1>
+        <div className="column is-4">
+          <div className="mr-2 has-text-right">
+            <h1 className="heading has-text-weight-bold mb-0 is-size-1 is-uppercase">
+              HairCut
+            </h1>
+            <h1 className="heading has-text-weight-bold  mb-0 is-size-1 is-uppercase">
+              Prices
+            </h1>
+          </div>
         </div>
-        <div className="column is-5">
+        <div className="column is-6">
           {ServiceItem &&
             ServiceItem.map((item) => (
               <div key={item.id} className="mb-4">

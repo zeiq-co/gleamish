@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Tile from './elements/Tile';
 
 const Container = styled.section`
+  background-color: ${(props) => props.theme.backgroundInputColor};
   img {
     object-fit: cover;
     width: 100%;
