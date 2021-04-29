@@ -86,7 +86,6 @@ const AboutUs = ({ data }) => {
         description={aboutUs.heroDescription}
         image={aboutUs.image ? aboutUs.image.asset.fluid : ''}
       />
-      <AboutFeatures data={aboutUs} />
       <div className="section">
         <div className="container">
           <Heading centered>Past Projects</Heading>
