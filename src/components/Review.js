@@ -38,9 +38,6 @@ const Section = styled.section`
   .card {
     background-color: transparent;
   }
-  .container {
-    margin-top: 5rem !important;
-  }
 `;
 const Icon = styled.div`
   color: ${(props) => props.theme.mainBrandColor};

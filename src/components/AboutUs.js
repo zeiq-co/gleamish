@@ -41,7 +41,7 @@ const Container = styled.section`
 `;
 
 const AboutUS = () => (
-  <Container className="hero">
+  <Container className="hero section">
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered">

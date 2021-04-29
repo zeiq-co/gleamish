@@ -57,6 +57,9 @@ const GlobalStyle = createGlobalStyle`
     margin-right: 0 !important;
   }
   }
+  .section {
+    padding: 150px 25px !important;
+}
   .title {
     font-family: ${theme.secondaryFontFamily};
   }

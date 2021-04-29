@@ -2,15 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Card = styled.div`
-  background-color: #fff;
-
-  box-shadow: rgb(0 0 0 / 0%) 0px 7px 18px;
+  box-shadow: none !important ;
   border-radius: 0rem;
-  height: 806px;
+  min-height: 806px;
   background: ${(props) =>
     props.isMedium
       ? props.theme.darkAccent
       : props.theme.textColorLite} !important;
+  :hover {
+    margin: 1rem;
+    border: 2px solid;
+    border-color: ${(props) => props.theme.mainBrandColor};
+  }
   .headline {
     font-family: cursive;
     color: ${(props) => props.theme.mainBrandColor};

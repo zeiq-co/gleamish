@@ -51,7 +51,7 @@ const HaircutPrices = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
-        <div className="column is-5 ">
+        <div className="column is-5">
           <h1 className="title has-text-right mb-0 is-size-1 is-uppercase">
             HairCut
           </h1>
