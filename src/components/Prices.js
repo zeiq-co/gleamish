@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ServicesCard from './ServicesCard';
 
 const Section = styled.section`
-  padding: 0rem 0rem;
+  /* padding: 0rem 0rem; */
 `;
 
 const Prices = () => (

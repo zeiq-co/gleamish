@@ -7,15 +7,16 @@ const Container = styled.section`
   background-image: url(/images/hairs-img.jpg);
   background-repeat: 'no-repeat' !important;
   background-size: 'cover' !important;
-  padding-bottom: 13rem;
-  padding-top: 4rem;
+  min-height: 578px;
   .image-box {
+    width: 300px;
     position: relative;
   }
   .overlay-image {
     position: absolute;
-    top: 10rem;
-    right: 0;
+    width: 300px;
+    left: 8rem;
+    top: 8rem;
   }
   .title {
     color: ${(props) => props.theme.textColorLite} !important;

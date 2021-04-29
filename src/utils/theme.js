@@ -25,7 +25,7 @@ export const theme = {
   dangerColor: '#f44336',
 
   primaryColor: mainBrandColor,
-  borderColor: '#e0e6ef',
+  borderColor: '#c6c7c7',
   backgroundColor: '#f0f4f7',
   backgroundInputColor: '#f7f8f9',
   backgroundInputColorDark: darkShades,
@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5rem;
   }
   p, .title, .box {
-    color: ${theme.textColor} !important;
+    color: ${theme.textColor}  !important;
     font-family: ${theme.primaryFontFamily} !important;
   }
   .subtitle {

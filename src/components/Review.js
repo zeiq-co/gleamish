@@ -5,7 +5,7 @@ import { Parallax } from 'react-parallax';
 import Heading from './elements/Heading';
 
 const Section = styled.section`
-  padding-bottom: 5rem;
+  min-height: 578px;
   .card {
     box-shadow: none;
   }
@@ -37,6 +37,9 @@ const Section = styled.section`
   }
   .card {
     background-color: transparent;
+  }
+  .container {
+    margin-top: 5rem !important;
   }
 `;
 const Icon = styled.div`
@@ -94,7 +97,7 @@ const Review = ({ review, home }) => {
           </Heading>
           <Slider {...settings}>
             {review.map(({ node: data }) => (
-              <div className="columns" key={data._id}>
+              <div className="columns is-vcentered" key={data._id}>
                 <div className="column">
                   <Icon className="fas fa-quote-left is-size-3 mb-2" />
                   <div className="card">
