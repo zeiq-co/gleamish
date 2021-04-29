@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+// import Gallery from 'react-grid-gallery';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
@@ -36,8 +37,17 @@ export const query = graphql`
   }
 `;
 
-const Gallery = ({ data }) => {
+const GalleryComponent = ({ data }) => {
   const galleryData = data.allSanityGallery.edges;
+
+  // const images = galleryData
+  //   ? galleryData.map(({ node: o }) => ({
+  //       src: o.image.asset.fluid.src,
+  //       thumbnail: o.image.asset.fluid.src,
+  //       caption: o.alternative,
+  //     }))
+  //   : [];
+
   const cover = data.sanitySiteSettings.coverImage;
   return (
     <Layout>
@@ -51,7 +61,8 @@ const Gallery = ({ data }) => {
         }
       />
       <GalleryImage data={galleryData} />
+      {/* <Gallery images={images} />, */}
     </Layout>
   );
 };
-export default Gallery;
+export default GalleryComponent;
