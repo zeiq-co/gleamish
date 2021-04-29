@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/zeiq-co/gleamish/issues"
   },
-  "homepage": "https://github.com/zeiq-co/Paint/blob/master/README.md",
+  "homepage": "https://github.com/zeiq-co/gleamish",
   "scripts": {
     "start": "npm run develop",
     "develop": "gatsby develop",
@@ -35,7 +35,7 @@
     "gatsby-plugin-nprogress": "^2.8.0",
     "gatsby-plugin-offline": "^3.2.22",
     "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sharp": "^2.6.25",
+    "gatsby-plugin-sharp": "^3.4.0",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-remark-images": "^3.3.25",
     "gatsby-source-sanity": "^6.0.4",

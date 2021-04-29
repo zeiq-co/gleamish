@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 const Container = styled.article``;
 
 const Tile = ({ item }) => {
+  if (!item) {
+    return null;
+  }
   return (
     <Container className="tile is-child ">
-      <img
-        src={item.node.image.asset.fluid.src}
-        className="image"
-        alt={item.node.alternative}
-      />
+      <Img fluid={item.asset.fluid} className="image" alt={item.alternative} />
     </Container>
   );
 };

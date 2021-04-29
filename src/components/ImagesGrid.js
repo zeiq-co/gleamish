@@ -12,25 +12,28 @@ const Container = styled.section`
   }
 `;
 
-const ImagesGrid = ({ gallery }) => {
+const ImagesGrid = ({ home }) => {
+  if (!home) {
+    return null;
+  }
   return (
     <Container className="section">
       <div className="container">
         <div className="tile is-ancestor">
           <div className="tile is-parent">
-            {gallery[0] && <Tile item={gallery[0]} />}
+            {home[0] && <Tile item={home[0]} />}
           </div>
           <div className="tile is-vertical">
             <div className="tile is-parent">
-              {gallery[1] && <Tile item={gallery[1]} />}
+              {home[1] && <Tile item={home[1]} />}
             </div>
             <div className="tile">
               <div className="tile is-parent">
-                {gallery[2] && <Tile item={gallery[2]} />}
+                {home[2] && <Tile item={home[2]} />}
               </div>
               <div className="tile is-parent is-vertical">
-                {gallery[3] && <Tile item={gallery[3]} />}
-                {gallery[4] && <Tile item={gallery[4]} />}
+                {home[3] && <Tile item={home[3]} />}
+                {home[4] && <Tile item={home[4]} />}
               </div>
             </div>
           </div>
