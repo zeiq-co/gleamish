@@ -47,6 +47,12 @@ export default {
       title: 'Information Title',
     },
     {
+      title: 'Home Page Grid',
+      name: 'homeGrid',
+      type: 'array',
+      of: [{type: 'image'}]
+    },
+    {
       name: 'information',
       title: 'Information',
       type: 'markdown',
