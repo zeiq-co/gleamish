@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 // import Gallery from 'react-grid-gallery';
+
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';

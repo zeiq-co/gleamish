@@ -29,13 +29,14 @@ const Container = styled.section`
     color: ${(props) => props.theme.textColorLite} !important;
   }
   @media screen and (max-width: 768px) {
-    .home-bg {
-      padding-top: 2.75rem;
-      width: 65%;
+    .hair-dreiser {
+      width: 247px;
     }
     .overlay-image {
+      width: 242px;
       position: absolute;
-      left: 1.5rem;
+      left: 3.5rem;
+      top: 6rem;
     }
   }
 `;
@@ -72,7 +73,6 @@ const AboutUS = () => (
                   alt="background-png"
                 />
               </figure>
-
               <figure className="overlay-image">
                 <img src="/images/imgtwo.jpg" className="" alt="home-png" />
               </figure>

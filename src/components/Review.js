@@ -55,8 +55,8 @@ const Review = ({ review, home }) => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     responsive: [
@@ -94,8 +94,11 @@ const Review = ({ review, home }) => {
           </Heading>
           <Slider {...settings}>
             {review.map(({ node: data }) => (
-              <div className="columns is-vcentered" key={data._id}>
-                <div className="column">
+              <div
+                className="columns  is-vcentered is-justify-content-center is-flex"
+                key={data._id}
+              >
+                <div className="column has-text-centered  is-half">
                   <Icon className="fas fa-quote-left is-size-3 mb-2" />
                   <div className="card">
                     <div className="card-content">
