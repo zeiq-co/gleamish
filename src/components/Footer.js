@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { lighten } from 'polished';
+
 import SocialIcon from './SocialIcon';
 import { theme } from '../utils/theme';
 
 const Container = styled.footer`
-  padding: 7rem 0;
-  padding-bottom: 1rem;
   background-color: ${theme.darkAccent};
   li,
   p {
