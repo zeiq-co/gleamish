@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { Parallax } from 'react-parallax';
+
 import Heading from './elements/Heading';
 
 const Section = styled.section`

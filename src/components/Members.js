@@ -3,17 +3,20 @@ import styled from 'styled-components';
 
 import Img from 'gatsby-image';
 
-const Container = styled.div`
-  /*  */
+const Container = styled.section`
+  padding: 26px 25px !important;
 `;
 
 const Members = ({ data }) => {
   return (
     <Container className="section">
       <div className="container">
-        <div className="columns">
+        <div className="columns is-vcentered">
           {data.brands.map((item) => (
-            <div key={item._key} className="column is-3 has-text-centered">
+            <div
+              key={item._key}
+              className="column is-flex is-justify-content-center"
+            >
               <figure className="image is-128x128">
                 <Img
                   fluid={item.image ? item.image.asset.fluid : ' '}

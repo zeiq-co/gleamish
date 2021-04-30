@@ -18,6 +18,7 @@ const Container = styled.section`
     left: 8rem;
     top: 8rem;
   }
+
   .title {
     color: ${(props) => props.theme.textColorLite} !important;
   }
@@ -29,6 +30,9 @@ const Container = styled.section`
     color: ${(props) => props.theme.textColorLite} !important;
   }
   @media screen and (max-width: 768px) {
+    .headline {
+      margin-top: 0rem !important;
+    }
     .hair-dreiser {
       width: 247px;
     }
@@ -47,7 +51,7 @@ const AboutUS = () => (
       <div className="container">
         <div className="columns is-vcentered">
           <div className="column">
-            <div className="my-6 has-text-centered">
+            <div className="my-6 has-text-centered headline">
               <h3 className="is-size-6 is-uppercase has-text-weight-semibold subtitle">
                 new york • since 2004{' '}
               </h3>

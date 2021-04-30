@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
-import ContactForm from '../components/ContactForm';
 import Seo from '../components/Seo';
+
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
+import ContactForm from '../components/ContactForm';
 import Information from '../components/elements/Information';
 
 const Container = styled.div`

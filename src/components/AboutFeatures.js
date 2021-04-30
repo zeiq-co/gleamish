@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+
 import Heading from './elements/Heading';
 
 const Section = styled.section`

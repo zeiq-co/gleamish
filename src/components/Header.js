@@ -29,6 +29,7 @@ const Section = styled.div`
   .navbar-menu {
     margin-right: -1.5rem !important;
     @media screen and (max-width: 600px) {
+      background-color: ${theme.darkAccent} !important;
       position: absolute;
       width: 100%;
       transition: 0.6s;
