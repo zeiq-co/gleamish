@@ -9,7 +9,7 @@ module.exports = {
   metaLogo: 'https://www.midasbrush-decorating.co.uk/images/logo.png',
 
   telephone: '+44 7455054213',
-  email: 'eldan@midasbrushdecorating.co.uk',
+  email: 'gleamish@gleamish.co.uk',
   address: 'Gleamish Beauty ,west midland uk',
   twitter: 'https://twitter.com/',
   facebook: 'https://www.facebook.com/',

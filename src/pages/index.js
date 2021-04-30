@@ -24,7 +24,6 @@ export const query = graphql`
       keywords
       informationTitle
       information
-
       homeHero {
         _key
         title
@@ -38,15 +37,11 @@ export const query = graphql`
           }
         }
       }
-      homeFeatures {
-        _key
-        title
-        subtitle
-        image {
-          asset {
-            fluid(maxWidth: 600) {
-              ...GatsbySanityImageFluid
-            }
+
+      homeGrid {
+        asset {
+          fluid(maxWidth: 1600) {
+            ...GatsbySanityImageFluid
           }
         }
       }
@@ -62,19 +57,7 @@ export const query = graphql`
           }
         }
       }
-      whyChoose {
-        _key
-        title
-        description
-        image {
-          asset {
-            fluid(maxWidth: 1000) {
-              ...GatsbySanityImageFluid
-            }
-          }
-        }
-        featuresList
-      }
+
       reviewBackground {
         asset {
           fluid(maxWidth: 1200) {
@@ -92,20 +75,6 @@ export const query = graphql`
         }
       }
     }
-    allSanityGallery(limit: 5, sort: { fields: _createdAt, order: DESC }) {
-      edges {
-        node {
-          alternative
-          image {
-            asset {
-              fluid(maxWidth: 1200) {
-                ...GatsbySanityImageFluid
-              }
-            }
-          }
-        }
-      }
-    }
   }
 `;
 
@@ -114,8 +83,6 @@ const IndexPage = ({ data }) => {
   // const homeFeatures = data.sanitySiteSettings;
   const brands = data.sanitySiteSettings;
   // const homeAboutUs = data.sanitySiteSettings.whyChoose;
-  const gallery = data.allSanityGallery.edges;
-
   const review = data.allSanityReview.edges;
   return (
     <Layout hideHeader>
@@ -123,7 +90,7 @@ const IndexPage = ({ data }) => {
       <HeroSlider data={home} />
       {/* <HomeAboutUs data={homeAboutUs} home={home} /> */}
       <Prices home={home} />
-      <ImagesGrid gallery={gallery} />
+      <ImagesGrid home={home.homeGrid} />
       <AboutUs />
       <HaircutPrices />
       {/* <Features data={homeFeatures} /> */}
