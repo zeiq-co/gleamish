@@ -45,7 +45,7 @@ const Container = styled.section`
   }
 `;
 
-const AboutUS = () => (
+const AboutUS = ({ home }) => (
   <Container className="hero section">
     <div className="hero-body">
       <div className="container">
@@ -53,16 +53,12 @@ const AboutUS = () => (
           <div className="column">
             <div className="my-6 has-text-centered headline">
               <h3 className="is-size-6 is-uppercase has-text-weight-semibold subtitle">
-                new york • since 2004{' '}
+                {home.heading}
               </h3>
               <h1 className="title is-size-1 mb-4 has-text-weight-semibold">
-                READY TO IMPRESS
+                {home.title}
               </h1>
-              <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
+              <p className="paragraph">{home.description}</p>
             </div>
             <div className="has-text-centered">
               <OverlayButton linkTo="/gallery" buttonText="View more" />
@@ -72,13 +68,17 @@ const AboutUS = () => (
             <div className="image-box">
               <figure className="hair-dreiser">
                 <img
-                  src="/images/imgone.jpg"
+                  src={home.frontImage.asset.url}
                   className=""
                   alt="background-png"
                 />
               </figure>
               <figure className="overlay-image">
-                <img src="/images/imgtwo.jpg" className="" alt="home-png" />
+                <img
+                  src={home.backImage.asset.url}
+                  className=""
+                  alt="home-png"
+                />
               </figure>
             </div>
           </div>

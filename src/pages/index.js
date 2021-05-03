@@ -36,6 +36,27 @@ export const query = graphql`
         }
       }
 
+      haircutPrices {
+        title
+        description
+        price
+      }
+      homeAbout {
+        heading
+        title
+        description
+        frontImage {
+          asset {
+            url
+          }
+        }
+        backImage {
+          asset {
+            url
+          }
+        }
+      }
+
       homeGrid {
         asset {
           fluid(maxWidth: 1600) {
@@ -55,7 +76,6 @@ export const query = graphql`
           }
         }
       }
-
       reviewBackground {
         asset {
           fluid(maxWidth: 1200) {
@@ -80,14 +100,19 @@ const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
   const brands = data.sanitySiteSettings;
   const review = data.allSanityReview.edges;
+  const { haircutPrices } = data.sanitySiteSettings;
+  const { homeAbout } = data.sanitySiteSettings;
+  // console.log('haircutPrices', haircutPrices);
+  // console.log('homeAbout', homeAbout);
+
   return (
     <Layout hideHeader>
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
       <Prices home={home} />
       <ImagesGrid home={home.homeGrid} />
-      <AboutUs />
-      <HaircutPrices />
+      <AboutUs home={homeAbout} />
+      <HaircutPrices pricesList={haircutPrices} />
       <Review review={review} home={home} />
       <Members data={brands} />
     </Layout>
