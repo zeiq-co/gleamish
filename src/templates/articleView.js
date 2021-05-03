@@ -12,6 +12,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Heading from '../components/elements/Heading';
 import config from '../utils/config';
+import HeroHeader from '../components/elements/HeroHeader';
 
 export const pageQuery = graphql`
   query ArticlePage($slug: String!) {
@@ -38,6 +39,17 @@ export const pageQuery = graphql`
         }
       }
     }
+    sanitySiteSettings {
+      coverImage {
+        aboutPageCover {
+          asset {
+            fluid(maxWidth: 1200) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -48,6 +60,7 @@ const Image = styled(Img)`
 
 const ArticleView = ({ data }) => {
   const news = data.sanityArticle;
+  const cover = data.sanitySiteSettings.coverImage;
   const settings = {
     dots: true,
     arrows: false,
@@ -65,6 +78,12 @@ const ArticleView = ({ data }) => {
         title={news.title}
         description={`Read blog post about ${news.title}`}
         url={`${config.siteUrl}/article/${news.slug ? news.slug.current : ''}`}
+      />
+      <HeroHeader
+        heading="Article"
+        background={
+          cover.aboutPageCover ? cover.aboutPageCover.asset.fluid.src : ''
+        }
       />
       <section className="section">
         <div className="container">
