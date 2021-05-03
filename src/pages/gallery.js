@@ -1,11 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import Gallery from 'react-grid-gallery';
 
+import ReactGallery from '../components/ReactGallery';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
-import GalleryImage from '../components/Gallery';
 
 export const query = graphql`
   query GalleryPageQuery {
@@ -41,13 +40,13 @@ export const query = graphql`
 const GalleryComponent = ({ data }) => {
   const galleryData = data.allSanityGallery.edges;
 
-  // const images = galleryData
-  //   ? galleryData.map(({ node: o }) => ({
-  //       src: o.image.asset.fluid.src,
-  //       thumbnail: o.image.asset.fluid.src,
-  //       caption: o.alternative,
-  //     }))
-  //   : [];
+  const images = galleryData
+    ? galleryData.map(({ node: o }) => ({
+        src: o.image.asset.fluid.src,
+        thumbnail: o.image.asset.fluid.src,
+        caption: o.alternative,
+      }))
+    : [];
 
   const cover = data.sanitySiteSettings.coverImage;
   return (
@@ -61,8 +60,7 @@ const GalleryComponent = ({ data }) => {
             : ''
         }
       />
-      <GalleryImage data={galleryData} />
-      {/* <Gallery images={images} />, */}
+      <ReactGallery images={images} />;
     </Layout>
   );
 };
