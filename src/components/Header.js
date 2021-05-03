@@ -31,12 +31,6 @@ const Section = styled.div`
   }
   .navbar-menu {
     margin-right: -1.5rem !important;
-    @media screen and (max-width: 600px) {
-      background-color: ${theme.darkAccent} !important;
-      position: absolute;
-      width: 100%;
-      transition: 0.6s;
-    }
   }
   .navbar-burger {
     background: ${theme.mainBrandColor};
@@ -69,13 +63,26 @@ const Section = styled.div`
       width: 65%;
     }
   }
+  button.is-secondary.is-normal {
+    background: transparent !important;
+  }
   @media screen and (max-width: 700px) {
     .navbar-menu {
       background: transparent;
+      background-color: ${theme.darkAccent} !important;
+      position: absolute;
+      width: 100%;
+      transition: 0.6s;
     }
-  }
-  button.is-secondary.is-normal {
-    background: transparent !important;
+    .navbar-brand {
+    margin-left: -1.5rem !important;
+    .navbar-item img {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      max-height: 5rem;
+      width: 133px;
+      height: 133px;
+    }
   }
 `;
 
