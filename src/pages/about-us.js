@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HeroHeader from '../components/elements/HeroHeader';
 import News from '../components/News';
-// import AboutFeatures from '../components/AboutFeatures';
 import Information from '../components/elements/Information';
 import Heading from '../components/elements/Heading';
 import config from '../utils/config';
