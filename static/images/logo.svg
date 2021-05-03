@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 39">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 20.2px;
+        fill: #fff;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-2 {
+        fill: #fdc5ce;
+      }
+
+      .cls-3 {
+        font-size: 8.98px;
+        fill: #333;
+        font-family: EBGaramond-SemiBold, EB Garamond;
+        font-weight: 600;
+        letter-spacing: 0.45em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.42em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.46em;
+      }
+    </style>
+  </defs>
+  <title>Logo-2</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 17.95)">GLEAMISH</text>
+    <path class="cls-2" d="M42.1,25.66c7.09-.59,15.66.64,22.82.12a249.9,249.9,0,0,1,26.39-.25c0,.47-.76,1.16-.06,1.41,2.82.78,2.79,1.72,2.75,2.66,0,.47-2.14-.05-1.45.44-2.13-.06-5.71.08-3.59.61.7.49,3.57.09,4.25.82s-.77,1.39-.08,2.11l2.85.08c.69.49-.77,1.39-.06,1.41,2.12.52,5,.36,7.82.44,0,.47.68,1-.75,1.15-25-.18-50.64.09-75.54-1.26-2.84-.31-.67-1.2,1.5-1.85-.72.22-.69-.49-1.42-.27,0-.71,1.5-1.84,4.36-2l-2.13-.06c-.71-.25,0-.71,0-1.18.72,0,1.43,0,1.44-.19l0-.94-2.84-.08c.71,0,1.42,0,1.43-.2l0-.94c1.43-.19,3.55.33,5,.13l0-.7a36.09,36.09,0,0,0-5-.13c.73-.22.74-.45.76-.92,2.14-.18,4.25.58,6.42-.07L35,25.94C36.43,24.8,40,25.84,42.1,25.66Z"/>
+    <text class="cls-3" transform="translate(32.28 34.09)">BE<tspan class="cls-4" x="18.71" y="0">A</tspan><tspan x="28.88" y="0">U</tspan><tspan class="cls-5" x="39.58" y="0">T</tspan><tspan x="49.86" y="0">Y</tspan></text>
+  </g>
+</svg>

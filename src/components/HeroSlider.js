@@ -57,7 +57,6 @@ const HomeSlider = ({ data }) => {
     <Section className="">
       <div className="">
         <HeroSlider
-          slidingAnimation="left_to_right"
           orientation="horizontal"
           initialSlide={1}
           onBeforeChange={(previousSlide, nextSlide) =>
@@ -83,7 +82,6 @@ const HomeSlider = ({ data }) => {
                   backgroundImage: item.image
                     ? item.image.asset.fluid.src
                     : ' ',
-                  backgroundAnimation: 'zoom',
                 }}
               >
                 <OverlayContainers className="columns is-mobile is-centered">

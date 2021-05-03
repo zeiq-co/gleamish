@@ -19,6 +19,8 @@ const Section = styled.div`
       margin-top: 3px;
       margin-bottom: 3px;
       max-height: 5rem;
+      width: 200px;
+      height: 200px;
     }
   }
   .navbar-item {
@@ -85,7 +87,7 @@ const Header = () => {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item ml-2" to="/">
-              <img src="/images/logo.png" alt="site logo" />
+              <img src="/images/logo.svg" alt="site logo" className="logo" />
             </Link>
             <button
               type="button"

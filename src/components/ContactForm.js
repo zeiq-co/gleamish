@@ -29,7 +29,7 @@ const Section = styled.div`
   }
   input ::placeholder,
   textarea ::placeholder {
-    color: ${(props) => props.theme.backgroundInputColor};
+    color: ${(props) => props.theme.borderColor};
     font-size: ${(props) => props.theme.fontSizeSmall}px;
     font-weight: 400;
   }
