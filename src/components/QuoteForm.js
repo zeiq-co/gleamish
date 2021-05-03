@@ -58,7 +58,6 @@ const QuoteForm = ({
             {errors.name && touched.name && (
               <p className="help is-danger">{errors.name}</p>
             )}
-
             <div>
               <input
                 className="input is-medium"
@@ -89,7 +88,6 @@ const QuoteForm = ({
             {errors.email && touched.email && (
               <p className="help is-danger">{errors.email}</p>
             )}
-
             <div>
               <input
                 className="input is-medium"
