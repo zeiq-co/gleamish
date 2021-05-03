@@ -6,7 +6,7 @@ module.exports = {
   description: 'Top-Rated Artist',
   siteUrl: 'https://gleamish.vercel.app/',
   logo: '/images/logo.png',
-  metaLogo: 'https://www.midasbrush-decorating.co.uk/images/logo.png',
+  metaLogo: 'https://gleamish.vercel.app/images/logo.png',
 
   telephone: '+44 7455054213',
   email: 'gleamish@gleamish.co.uk',
