@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
 
 const Container = styled.article``;
 
@@ -10,7 +9,11 @@ const Tile = ({ item }) => {
   }
   return (
     <Container className="tile is-child">
-      <Img fluid={item.asset.fluid} className="image" alt={item.alternative} />
+      <img
+        src={item.asset.fluid.src}
+        className="image"
+        alt={item.alternative}
+      />
     </Container>
   );
 };
