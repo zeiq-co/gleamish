@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import ReactMarkdown from 'react-markdown';
 import { truncate } from 'lodash';
+
 import OverlayButton from './elements/OverlayButton';
 
 const Wrapper = styled.div`
