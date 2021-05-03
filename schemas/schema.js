@@ -23,6 +23,9 @@ import brands from './brands';
 import whyChooseUs from './whyChooseUs';
 import services from './services';
 import gallery from './gallery';
+import homeAboutUs from './homeAboutUs';
+import pricingItem from './pricingItem';
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -48,6 +51,8 @@ export default createSchema({
     localeString,
     address,
     banner,
+    homeAboutUs,
+    pricingItem,
     homeFeatures,
     brands,
     whyChooseUs,

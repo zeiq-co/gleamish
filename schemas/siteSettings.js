@@ -42,6 +42,17 @@ export default {
       of: [{type: 'banner'}]
     },
     {
+      title: 'Home About',
+      name: 'homeAbout',
+      type: 'homeAboutUs',
+    },
+    {
+      title: 'Haircut Prices',
+      name: 'haircutPrices',
+      type: 'array',
+      of: [{type: 'pricingItem'}]
+    },
+    {
       name: 'informationTitle',
       type: 'string',
       title: 'Information Title',
