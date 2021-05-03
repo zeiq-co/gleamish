@@ -9,7 +9,7 @@ const Tile = ({ item }) => {
     return null;
   }
   return (
-    <Container className="tile is-child ">
+    <Container className="tile is-child">
       <Img fluid={item.asset.fluid} className="image" alt={item.alternative} />
     </Container>
   );

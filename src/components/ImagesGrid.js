@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Tile from './elements/Tile';
+import OverlayButton from './elements/OverlayButton';
 
 const Container = styled.section`
   background-color: ${(props) => props.theme.backgroundInputColor};
@@ -37,6 +38,9 @@ const ImagesGrid = ({ home }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="has-text-centered mt-6">
+          <OverlayButton linkTo="/gallery" buttonText="View more" />
         </div>
       </div>
     </Container>

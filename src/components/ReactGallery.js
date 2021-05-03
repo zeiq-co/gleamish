@@ -1,6 +1,17 @@
 import React, { useState, useCallback } from 'react';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
+import styled from 'styled-components';
+
+const GalleryWrapper = styled.div`
+  img {
+    height: 280px;
+    object-fit: cover;
+  }
+  .modal_small_image {
+    width: 100% !important;
+  }
+`;
 
 function ReactGallery(props) {
   const { images } = props;
@@ -20,7 +31,12 @@ function ReactGallery(props) {
 
   return (
     <div className="section">
-      <Gallery photos={images} onClick={openLightbox} />
+      <div className="container">
+        <GalleryWrapper className="columns is-multiline">
+          <Gallery photos={images} onClick={openLightbox} />
+        </GalleryWrapper>
+      </div>
+
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
