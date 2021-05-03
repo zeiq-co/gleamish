@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+
 import { theme } from '../utils/theme';
 
 const Section = styled.div`
@@ -86,8 +87,8 @@ const Header = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <Link className="navbar-item ml-2" to="/">
-              <img src="/images/logo.svg" alt="site logo" className="logo" />
+            <Link className="navbar-item" to="/">
+              <img src="/images/logo.svg" alt="site-logo" />
             </Link>
             <button
               type="button"
@@ -110,7 +111,6 @@ const Header = () => {
 
           <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
             <div className="navbar-end">
-              {' '}
               <Link
                 to="/"
                 className="navbar-item has-text-weight-normal is-size-4 p-5 animated-line"

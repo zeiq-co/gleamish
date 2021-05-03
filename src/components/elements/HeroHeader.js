@@ -22,7 +22,7 @@ const HeaderWrapper = styled.div`
 
 const HeroHeader = ({ heading, title, background }) => {
   return (
-    <HeaderWrapper className="hero is-large" background={background}>
+    <HeaderWrapper className="hero is-medium" background={background}>
       <div className="hero-body">
         <div className="container has-text-centered py-6">
           <h1 className="has-text-white is-size-1">{heading}</h1>
