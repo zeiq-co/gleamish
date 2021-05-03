@@ -10,7 +10,7 @@ module.exports = {
 
   telephone: '+44 7455054213',
   email: 'gleamish@gleamish.co.uk',
-  address: 'Gleamish Beauty ,west midland uk',
+  address: 'Gleamish Beauty,west midland uk',
   twitter: 'https://twitter.com/',
   facebook: 'https://www.facebook.com/',
   instagram: 'https://www.instagram.com/',

@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#e9bd16';
+const mainBrandColor = '#fdc5ce';
 const lightShades = '##f7f8f9;';
 const darkAccent = '#000';
 const darkShades = '#333333';
@@ -12,7 +12,7 @@ export const theme = {
   mainBrandColor,
   // Accent colors can be used to bring attention to design elements
   // by contrasting with the rest of the palette.
-  lightAccent: '#e9bd16',
+  lightAccent: '#fdc5ce',
   // Use this color as the background for your dark-on-light designs,
   // or the text color of an inverted design.
   lightShades,

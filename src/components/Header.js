@@ -58,7 +58,7 @@ const Section = styled.div`
       height: 0.1rem;
       content: '';
       position: absolute;
-      background-color: ${theme.textColorLite} !important;
+      background-color: ${theme.mainBrandColor} !important;
       width: 0%;
       bottom: 1.5rem;
     }
