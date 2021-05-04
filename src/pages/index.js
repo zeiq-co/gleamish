@@ -10,7 +10,7 @@ import Layout from '../components/Layout';
 import Review from '../components/Review';
 import Members from '../components/Members';
 import ImagesGrid from '../components/ImagesGrid';
-import Prices from '../components/Prices';
+import ServicesBanners from '../components/ServicesBanners';
 import AboutUs from '../components/AboutUs';
 import HaircutPrices from '../components/HaircutPrices';
 
@@ -34,6 +34,13 @@ export const query = graphql`
             }
           }
         }
+      }
+      servicesBanner {
+        _key
+        hasColor
+        heading
+        title
+        description
       }
 
       haircutPrices {
@@ -102,6 +109,8 @@ const IndexPage = ({ data }) => {
   const review = data.allSanityReview.edges;
   const { haircutPrices } = data.sanitySiteSettings;
   const { homeAbout } = data.sanitySiteSettings;
+  const { servicesBanner } = data.sanitySiteSettings;
+
   // console.log('haircutPrices', haircutPrices);
   // console.log('homeAbout', homeAbout);
 
@@ -109,7 +118,7 @@ const IndexPage = ({ data }) => {
     <Layout hideHeader>
       <Seo title={home.title} url={config.siteUrl} image={config.metaLogo} />
       <HeroSlider data={home} />
-      <Prices home={home} />
+      <ServicesBanners home={servicesBanner} />
       <ImagesGrid home={home.homeGrid} />
       <AboutUs home={homeAbout} />
       <HaircutPrices pricesList={haircutPrices} />

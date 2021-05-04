@@ -19,9 +19,9 @@ const Card = styled.div`
         ? props.theme.darkAccent
         : props.theme.textColorLite} !important;
     :hover {
-    border: 2px solid;
-    border-color: ${(props) => props.theme.mainBrandColor};
-
+      border: 2px solid;
+      border-color: ${(props) => props.theme.mainBrandColor};
+    }
   }
   .headline {
     font-family: cursive;
@@ -43,22 +43,26 @@ const Card = styled.div`
   }
 `;
 
-const ServicesCard = ({ headline, title, subtitle, isMedium }) => {
+const ServicesCard = ({ item }) => {
   return (
     <Card
       className="card is-flex is-align-items-center is-justify-content-center"
-      isMedium={isMedium}
+      isMedium={item.hasColor}
     >
       <div className="card card-box is-flex is-align-items-center is-justify-content-center	">
         <div className="card-content">
           <div className="mb-3">
-            <h1 className="headline is-size-1">{headline}</h1>
+            <h1 className="headline is-size-1">{item.heading}</h1>
           </div>
           <div className="mb-3">
-            <h2 className="title has-text-weight-bold is-uppercase">{title}</h2>
+            <h2 className="title has-text-weight-bold is-uppercase">
+              {item.title}
+            </h2>
           </div>
           <div className="mb-3">
-            <h3 className="subtitle has-text-weight-medium">{subtitle}</h3>
+            <h3 className="subtitle has-text-weight-medium">
+              {item.description}
+            </h3>
           </div>
         </div>
       </div>
