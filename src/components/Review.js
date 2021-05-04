@@ -41,6 +41,7 @@ const Section = styled.section`
     background-color: transparent;
   }
 `;
+
 const Icon = styled.div`
   color: ${(props) => props.theme.mainBrandColor};
 `;

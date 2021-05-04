@@ -5,8 +5,8 @@ import Seo from '../components/Seo';
 
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
-import ContactForm from '../components/ContactForm';
 import Information from '../components/elements/Information';
+import Subscribe from '../components/forms/Subscribe';
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
@@ -69,7 +69,8 @@ const Contact = ({ data }) => {
         <div className="container ">
           <div className="columns is-centered">
             <div className="column is-6 ">
-              <ContactForm />
+              {/* <ContactForm /> */}
+              <Subscribe />
             </div>
           </div>
         </div>
