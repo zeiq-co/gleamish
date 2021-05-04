@@ -5,7 +5,8 @@ import styled from 'styled-components';
 
 const GalleryWrapper = styled.div`
   img {
-    height: 280px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
   }
   .modal_small_image {
@@ -33,7 +34,9 @@ function ReactGallery(props) {
     <div className="section">
       <div className="container">
         <GalleryWrapper className="columns is-multiline">
-          <Gallery photos={images} onClick={openLightbox} />
+          <div className="column">
+            <Gallery photos={images} onClick={openLightbox} />
+          </div>
         </GalleryWrapper>
       </div>
 

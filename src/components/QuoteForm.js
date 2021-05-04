@@ -122,7 +122,7 @@ const QuoteForm = ({
           )}
         </div>
         <div className="send-button mt-5">
-          <OverlayButton buttonText="Send" onClick={handleSubmit} />
+          <OverlayButton linkTo="/" buttonText="Send" onClick={handleSubmit} />
         </div>
       </form>
     </Section>

@@ -95,7 +95,7 @@ const ContactForm = ({
           )}
         </div>
         <div className="mt-5">
-          <OverlayButton buttonText="Send Message" />
+          <OverlayButton linkTo="/" buttonText="Send Message" />
         </div>
       </form>
     </Section>
