@@ -12,6 +12,7 @@ const SliderContainer = styled(Slider)`
     align-items: center;
   }
   figure {
+    width: 300px;
     height: auto !important;
     margin: 0 auto;
   }
@@ -22,7 +23,7 @@ const Members = ({ data }) => {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 600,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -51,13 +52,15 @@ const Members = ({ data }) => {
       <div className="container">
         <SliderContainer {...settings}>
           {data.brands.map((item) => (
-            <div key={item._key} className="">
-              <figure className="image is-128x128">
-                <Img
-                  fluid={item.image ? item.image.asset.fluid : ' '}
-                  alt={item.title ? item.title : 'Members'}
-                />
-              </figure>
+            <div key={item._key} className="columns">
+              <div key={item._key} className="column">
+                <figure className="image">
+                  <Img
+                    fluid={item.image ? item.image.asset.fluid : ' '}
+                    alt={item.title ? item.title : 'Members'}
+                  />
+                </figure>
+              </div>
             </div>
           ))}
         </SliderContainer>
