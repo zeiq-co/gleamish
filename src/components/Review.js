@@ -6,6 +6,7 @@ import { Parallax } from 'react-parallax';
 import Heading from './elements/Heading';
 
 const Section = styled.section`
+  object-fit: cover;
   min-height: 578px;
   .card {
     box-shadow: none;
@@ -104,13 +105,11 @@ const Review = ({ review, home }) => {
                   <div className="card">
                     <div className="card-content">
                       <p className="review-section is-family-primary mb-4">
-                        {' '}
                         {data.comment}
                       </p>
                       <div className="media">
                         <div className="media-content">
                           <p className="title reviews-name is-size-6 has-text-weight-normal">
-                            {' '}
                             {data.personName}
                           </p>
                         </div>

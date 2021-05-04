@@ -75,13 +75,14 @@ const Section = styled.div`
       transition: 0.6s;
     }
     .navbar-brand {
-    margin-left: -1.5rem !important;
-    .navbar-item img {
-      margin-top: 3px;
-      margin-bottom: 3px;
-      max-height: 5rem;
-      width: 133px;
-      height: 133px;
+      margin-left: -1.5rem !important;
+      .navbar-item img {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        max-height: 5rem;
+        width: 133px;
+        height: 133px;
+      }
     }
   }
 `;
