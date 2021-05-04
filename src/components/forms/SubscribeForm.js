@@ -26,7 +26,7 @@ const SubscribeForm = () => {
     },
   });
 
-  console.log(formik);
+  console.log(formik.values);
 
   return (
     <form onSubmit={formik.handleSubmit}>
