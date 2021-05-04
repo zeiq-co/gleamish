@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HeroHeader from '../components/elements/HeroHeader';
 import Information from '../components/elements/Information';
-import Subscribe from '../components/forms/Subscribe';
+import SubscribeForm from '../components/forms/SubscribeForm';
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
@@ -70,7 +70,7 @@ const Contact = ({ data }) => {
           <div className="columns is-centered">
             <div className="column is-6 ">
               {/* <ContactForm /> */}
-              <Subscribe />
+              <SubscribeForm />
             </div>
           </div>
         </div>

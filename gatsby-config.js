@@ -39,7 +39,14 @@ module.exports = {
         trackingId: config.googleAnalytics,
       },
     },
-
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        timeout: 3500,
+        endpoint:
+          'https://marcusmth.us19.list-manage.com/subscribe/post?u=ad029d5ad74ac2e045f7d5d6b&id=603f11dd41',
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
