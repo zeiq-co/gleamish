@@ -42,6 +42,11 @@ export default {
       of: [{type: 'banner'}]
     },
     {
+      title: 'Services Banners',
+      name: 'servicesBanners',
+      type: 'array',
+    },
+    {
       title: 'Home About',
       name: 'homeAbout',
       type: 'homeAboutUs',

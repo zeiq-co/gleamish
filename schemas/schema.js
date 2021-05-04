@@ -25,6 +25,7 @@ import services from './services';
 import gallery from './gallery';
 import homeAboutUs from './homeAboutUs';
 import pricingItem from './pricingItem';
+import servicesBanners from './servicesBanners';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -51,6 +52,7 @@ export default createSchema({
     localeString,
     address,
     banner,
+    servicesBanners,
     homeAboutUs,
     pricingItem,
     homeFeatures,
