@@ -20,6 +20,5 @@ module.exports = {
   backgroundColor: '#e0e0e0',
   themeColor: '#e9bd16',
   sanityId: 'r42hgbxw',
-  mailchimp:
-    'https://app.us1.list-manage.com/subscribe/post?u=e94f8fc2aae3b640dcead8182&amp;id=0af354cdbf',
+  mailchimp: '',
 };
