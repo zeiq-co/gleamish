@@ -1,8 +1,13 @@
 export default {
-  title: 'Services Banners',
-  name: 'servicesBanners',
+  title: 'Services Banner',
+  name: 'servicesBanner',
   type: 'object',
   fields: [
+    {
+      title: 'Has Color',
+      name: 'hasColor',
+      type: 'boolean'
+    },
     {
       title: 'Heading',
       name: 'heading',

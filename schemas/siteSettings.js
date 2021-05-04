@@ -42,9 +42,10 @@ export default {
       of: [{type: 'banner'}]
     },
     {
-      title: 'Services Banners',
-      name: 'servicesBanners',
+      title: 'Services Banner',
+      name: 'servicesBanner',
       type: 'array',
+      of: [{type: 'servicesBanner'}]
     },
     {
       title: 'Home About',
