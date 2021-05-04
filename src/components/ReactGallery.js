@@ -33,10 +33,8 @@ function ReactGallery(props) {
   return (
     <div className="section">
       <div className="container">
-        <GalleryWrapper className="columns is-multiline">
-          <div className="column">
-            <Gallery photos={images} onClick={openLightbox} />
-          </div>
+        <GalleryWrapper>
+          <Gallery photos={images} onClick={openLightbox} />
         </GalleryWrapper>
       </div>
 
