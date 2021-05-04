@@ -35,6 +35,7 @@ export const query = graphql`
           }
         }
       }
+
       servicesBanner {
         _key
         hasColor
@@ -48,6 +49,7 @@ export const query = graphql`
         description
         price
       }
+
       homeAbout {
         heading
         title
@@ -83,6 +85,7 @@ export const query = graphql`
           }
         }
       }
+
       reviewBackground {
         asset {
           fluid(maxWidth: 1200) {
@@ -91,6 +94,7 @@ export const query = graphql`
         }
       }
     }
+
     allSanityReview {
       edges {
         node {
