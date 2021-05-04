@@ -41,6 +41,12 @@ const Card = styled.div`
         : props.theme.darkAccent} !important;
     font-size: ${(props) => props.theme.fontSizeSmall};
   }
+  @media screen and (max-width: 700px) {
+    min-height: 600px;
+    .card-box {
+      min-height: 580px;
+    }
+  }
 `;
 
 const ServicesCard = ({ item }) => {
