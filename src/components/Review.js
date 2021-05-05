@@ -39,6 +39,11 @@ const Section = styled.section`
   .card {
     background-color: transparent;
   }
+  @media screen and (max-width: 700px) {
+    .slick-dots {
+      bottom: -2rem;
+    }
+  }
 `;
 
 const Icon = styled.div`

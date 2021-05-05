@@ -4,8 +4,8 @@ import * as Yup from 'yup';
 import styled from 'styled-components';
 import swal from 'sweetalert';
 
-import Heading from './elements/Heading';
-import OverlayButton from './elements/OverlayButton';
+import Heading from '../elements/Heading';
+import OverlayButton from '../elements/OverlayButton';
 
 const Section = styled.div`
   .columns {
