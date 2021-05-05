@@ -18,6 +18,17 @@ const CardWrapper = styled(Link)`
     border-top: 1px solid #e5e5e5;
     padding-top: 10px;
   }
+  @media screen and (max-width: 700px) {
+    .box {
+      position: unset;
+      top: 0rem;
+      border-radius: 0;
+      box-shadow: none !important;
+    }
+    .card-content {
+      padding: 0rem;
+    }
+  }
 `;
 
 const Image = styled(Img)`
