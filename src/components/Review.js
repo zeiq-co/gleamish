@@ -7,7 +7,6 @@ import Heading from './elements/Heading';
 
 const Section = styled.section`
   object-fit: cover;
-  min-height: 578px;
   .card {
     box-shadow: none;
   }

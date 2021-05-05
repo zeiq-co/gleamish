@@ -21,7 +21,7 @@ const ServiceFeatures = ({ item, number }) => {
           className="columns is-vcentered is-variable is-6"
         >
           <div className="column content">
-            <h3 className="title is-family-primary has-text-weight-normal is-size-4 mb-5 is-spaced has-text-centered">
+            <h3 className="title is-family-primary has-text-weight-medium is-size-2 mb-5 is-spaced has-text-centered">
               {item.title}
             </h3>
             <div className="line-height mb-5 react-markdown">

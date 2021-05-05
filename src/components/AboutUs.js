@@ -34,13 +34,14 @@ const Container = styled.section`
       margin-top: 0rem !important;
     }
     .hair-dreiser {
-      width: 247px;
+      width: 210px;
+      margin-top: 2rem;
     }
     .overlay-image {
-      width: 242px;
+      width: 210px;
       position: absolute;
-      left: 3.5rem;
-      top: 6rem;
+      left: 4.5rem;
+      top: 5rem;
     }
   }
 `;
