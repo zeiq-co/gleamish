@@ -47,6 +47,11 @@ const Icon = styled.div`
 `;
 
 const ParallaxContainer = styled(Parallax)`
+  .react-parallax-bgimage {
+    @media screen and (max-width: 700px) {
+      height: 690px !important;
+    }
+  }
   .react-parallax-content {
     background-color: rgba(12, 12, 12, 0.7) !important;
   }
