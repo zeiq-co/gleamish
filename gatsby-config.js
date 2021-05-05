@@ -42,9 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        timeout: 3500,
         endpoint:
-          'https://marcusmth.us19.list-manage.com/subscribe/post?u=ad029d5ad74ac2e045f7d5d6b&id=603f11dd41',
+          'https://app.us1.list-manage.com/subscribe/post?u=e94f8fc2aae3b640dcead8182&amp;id=0af354cdbf',
       },
     },
     {
