@@ -8,6 +8,11 @@ const GalleryWrapper = styled.div`
     width: 332px;
     height: 300px;
     object-fit: cover;
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      width: 316px;
+      height: 300px;
+      object-fit: cover;
+    }
   }
   .modal_small_image {
     width: 100% !important;

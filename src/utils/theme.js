@@ -59,7 +59,10 @@ const GlobalStyle = createGlobalStyle`
   }
   .section {
     padding: 150px 25px !important;
-}
+    @media screen and (max-width: 700px) {
+      padding: 53px 25px !important;
+    }
+  }
   .title {
     font-family: ${theme.secondaryFontFamily};
   }

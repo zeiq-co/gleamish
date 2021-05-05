@@ -35,7 +35,6 @@ const Section = styled.div`
   .navbar-burger {
     background: ${theme.mainBrandColor};
     color: ${theme.darkAccent};
-    opacity: 0.5;
     border-radius: 4px;
   }
   .navbar-end {
