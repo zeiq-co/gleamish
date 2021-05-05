@@ -13,11 +13,13 @@ const ServicesBanners = ({ home }) => {
   return (
     <Section className="section">
       <div className="columns has-text-centered">
-        {home.map((item) => (
-          <div className="column">
-            <ServicesCard item={item} key={item._key} />
-          </div>
-        ))}
+        {home.map((item) => {
+          return (
+            <div className="column">
+              <ServicesCard item={item} />
+            </div>
+          );
+        })}
       </div>
     </Section>
   );
