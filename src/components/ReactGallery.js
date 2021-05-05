@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 const GalleryWrapper = styled.div`
   img {
-    width: 400px;
-    height: 400px;
+    width: 332px;
+    height: 300px;
     object-fit: cover;
   }
   .modal_small_image {
