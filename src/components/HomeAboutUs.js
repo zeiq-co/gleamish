@@ -48,12 +48,11 @@ const HomeAboutUs = ({ data, home }) => {
         )}
         <Heading centered>{data.title}</Heading>
         <div className="columns is-variable is-6">
-          <div className="column">
-            <Image
-              fluid={data.image ? data.image.asset.fluid : ' '}
-              alt={data.title}
-            />
-          </div>
+          {data.image.asset && (
+            <div className="column">
+              <Image fluid={data.image.asset.fluid} alt={data.title} />
+            </div>
+          )}
           <div className="column">
             <p className="mb-4 ml-3 info-section">{data.description}</p>
             <div className="columns is-multiline">
