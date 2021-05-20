@@ -34,7 +34,7 @@ const Section = styled.div`
 
 const Wrapper = styled.div`
   .heading {
-    line-height: 4rem;
+    line-height: 6rem;
     font-size: 6rem;
   }
   .subheading {
