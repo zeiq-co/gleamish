@@ -16,7 +16,7 @@ module.exports = {
   instagram: 'https://www.instagram.com/',
 
   type: 'website',
-  googleAnalytics: 'UA-169811954-1',
+  googleAnalytics: 'UA-1698119541-1',
   backgroundColor: '#e0e0e0',
   themeColor: '#e9bd16',
   sanityId: 'r42hgbxw',
