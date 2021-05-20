@@ -51,8 +51,7 @@ const information = [
   {
     id: 2,
     name: 'Find us',
-    url:
-      'https://www.google.co.uk/maps/place/Midas+Brush+Decorating+Ltd/@51.5235464,-0.3270559,10z/data=!3m1!4b1!4m5!3m4!1s0x48761d651e743bc5:0x58af084bccd7b2fc!8m2!3d51.5238801!4d-0.0468676',
+    url: 'https://www.facebook.com/gleamish.co.uk/',
   },
   { id: 3, name: 'Past Projects', url: '/blog' },
 ];
