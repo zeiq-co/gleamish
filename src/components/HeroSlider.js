@@ -34,8 +34,8 @@ const Section = styled.div`
 
 const Wrapper = styled.div`
   .heading {
-    line-height: 6rem;
-    font-size: 6rem;
+    line-height: 4rem;
+    font-size: 4rem;
   }
   .subheading {
     font-size: ${(props) => props.theme.fontSizeMedium}px !important;
