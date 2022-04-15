@@ -51,12 +51,13 @@ const Brands = ({ data, item }) => {
         breakpoint: 1024,
         settings: {
           autoplay: true,
-          speed: 3500,
+          speed: 3000,
           autoplaySpeed: 3500,
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          cssEase: 'linear',
+          // dots: true,
         },
       },
       {

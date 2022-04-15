@@ -26,7 +26,6 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        maxPosts: 40,
         username: `gleamishbeauty`,
         instagram_id: 'gleamishbeauty',
         access_token:
