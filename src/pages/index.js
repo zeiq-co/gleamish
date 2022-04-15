@@ -13,6 +13,7 @@ import ImagesGrid from '../components/ImagesGrid';
 import ServicesBanners from '../components/ServicesBanners';
 import AboutUs from '../components/AboutUs';
 import HaircutPrices from '../components/HaircutPrices';
+import Brands from '../components/Brands';
 
 export const query = graphql`
   query HomePageQuery {
@@ -104,6 +105,18 @@ export const query = graphql`
         }
       }
     }
+
+    allInstagramContent {
+      edges {
+        node {
+          id
+          localImage {
+            url
+            name
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -114,6 +127,7 @@ const IndexPage = ({ data }) => {
   const { haircutPrices } = data.sanitySiteSettings;
   const { homeAbout } = data.sanitySiteSettings;
   const { servicesBanner } = data.sanitySiteSettings;
+  const instagram = data.allInstagramContent.edges;
 
   // console.log('haircutPrices', haircutPrices);
   // console.log('homeAbout', homeAbout);
@@ -127,6 +141,7 @@ const IndexPage = ({ data }) => {
       <AboutUs home={homeAbout} />
       <HaircutPrices pricesList={haircutPrices} />
       <Review review={review} home={home} />
+      <Brands data={instagram} item={home} />
       <Members data={brands} />
     </Layout>
   );

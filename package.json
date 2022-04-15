@@ -38,6 +38,7 @@
     "gatsby-plugin-sharp": "^3.4.0",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-remark-images": "^3.3.25",
+    "gatsby-source-instagram-all": "^5.2.1",
     "gatsby-source-sanity": "^6.0.4",
     "graphql-request": "^3.4.0",
     "hero-slider": "^2.0.3",

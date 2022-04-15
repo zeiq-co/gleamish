@@ -23,6 +23,16 @@ module.exports = {
         showSpinner: false,
       },
     },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        maxPosts: 40,
+        username: `gleamishbeauty`,
+        instagram_id: 'gleamishbeauty',
+        access_token:
+          'IGQVJWSXhNdjZA2MVZAXbzMzWTNRYndxeWpiN0NPcXpOM2llRVQzeWhiNmJ4cFFyOXMyZAUhRRFlTV0U0aE5NenlkNjhjUzdPTzFia2tqal9HdzRvS2FVdjlZAOU5rTXc1ZAVo2eU03aTNDTDNYVFNKY05NUAZDZD',
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
