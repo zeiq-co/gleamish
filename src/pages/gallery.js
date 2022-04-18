@@ -34,17 +34,28 @@ export const query = graphql`
         }
       }
     }
+    allInstagramContent {
+      edges {
+        node {
+          id
+          localImage {
+            url
+            name
+          }
+        }
+      }
+    }
   }
 `;
 
 const GalleryComponent = ({ data }) => {
-  const galleryData = data.allSanityGallery.edges;
+  const galleryData = data.allInstagramContent.edges;
 
   const images = galleryData
     ? galleryData.map(({ node: o }) => ({
-        src: o.image.asset.fluid.src,
-        thumbnail: o.image.asset.fluid.src,
-        caption: o.alternative,
+        src: o.localImage ? o.localImage.url : '',
+        thumbnail: o.localImage ? o.localImage.url : '',
+        caption: o.localImage ? o.localImage.url : '',
       }))
     : [];
 
