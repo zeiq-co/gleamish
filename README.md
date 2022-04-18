@@ -1,5 +1,6 @@
-# Gleamish.co.uk.
+# Gleamish.co.uk
 
+ 
 Fetch data from Sanity CMS
 
 ## Stack
