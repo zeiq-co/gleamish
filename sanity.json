@@ -23,7 +23,9 @@
     "dashboard-widget-notes",
     "media",
     "asset-source-unsplash",
-    "@sanity/vision"
+    "@sanity/vision",
+    "vercel-deploy",
+    "dashboard-widget-vercel"
   ],
   "parts": [
     {

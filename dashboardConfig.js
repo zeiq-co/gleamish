@@ -1,15 +1,9 @@
 export default {
   widgets: [
     {
-      name: 'project-info',
-    },
-    {
-      name: 'project-users',
-    },
-    {
-      name: 'notes',
+      name: 'vercel',
       layout: {
-        width: 'medium',
+        width: 'full', // full width is recommended!
       },
     },
   ],
