@@ -36,7 +36,7 @@ const HaircutPrices = ({ pricesList }) => {
                   <div className="is-flex is-align-items-flex-end">
                     <h1 className="title is-size-5 mb-0">{item.title}</h1>
                     <Line />
-                    <span>{item.price}$</span>
+                    <span>{item.price}£</span>
                   </div>
                   <h2 className="subtitle mt-2 is-size-6">
                     {item.description}
