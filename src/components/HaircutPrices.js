@@ -22,7 +22,7 @@ const HaircutPrices = ({ pricesList }) => {
           <div className="column is-4">
             <div className="mr-2 has-text-right has-text-centered-mobile">
               <h1 className="heading has-text-weight-bold mb-0 is-size-1 is-uppercase">
-                HairCut
+                Services
               </h1>
               <h1 className="heading has-text-weight-bold  mb-0 is-size-1 is-uppercase">
                 Prices
